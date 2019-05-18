@@ -1,0 +1,113 @@
+// Colours
+$color-primary: #001f3f; // Navy
+$color-secondary: #3D9970; // Olive
+$color-tertiary: #B10DC9; // Purple
+$color-success: #2ECC40;
+$color-warning: #FFDC00;
+$color-danger: #FF4136;
+
+// Shades
+$shade-dark: #111;
+$shade-medium-dark: #3BB;
+$shade-medium: #777;
+$shade-medium-lite: #B31;
+$shade-lite: #EEE;
+
+// Body
+$body-bg: $shade-lite;
+
+// Paragraphs (and all non-heading text)
+$p-font: Helvetica, Arial, Verdana, sans-serif;
+$p-font-size: 16;
+$p-font-weight: normal;
+$p-font-style: normal;
+$p-font-color: $shade-dark;
+$p-line-height: 1.3;
+$p-margin-bottom: 1rem;
+
+// Headings (h1; others based on this)
+$h1-font: Impact, Helvetica, Arial, Verdana, sans-serif;
+$h1-font-size: 3;
+$h1-font-weight: bold;
+$h1-font-style: normal;
+$h1-font-color: $p-font-color;
+$h1-line-height: $p-line-height;
+$h1-margin-bottom: $p-margin-bottom;
+
+$h2-font: $h1-font;
+$h2-font-size: $h1-font-size * 0.666;
+$h2-font-weight: $h1-font-weight;
+$h2-font-style: $h1-font-style;
+$h2-font-color: $h1-font-color;
+$h2-line-height: $h1-line-height;
+$h2-margin-bottom: $h1-margin-bottom;
+
+$h3-font: $h1-font;
+$h3-font-size: $h1-font-size / 2;
+$h3-font-weight: $h1-font-weight;
+$h3-font-style: $h1-font-style;
+$h3-font-color: $h1-font-color;
+$h3-line-height: $h1-line-height;
+$h3-margin-bottom: $h1-margin-bottom;
+
+$h4-font: $h1-font;
+$h4-font-size: $h1-font-size / 3;
+$h4-font-weight: $h1-font-weight;
+$h4-font-style: $h1-font-style;
+$h4-font-color: $h1-font-color;
+$h4-line-height: $h1-line-height;
+$h4-margin-bottom: $h1-margin-bottom;
+
+$h5-font: $h1-font;
+$h5-font-size: $h1-font-size * 0.3;
+$h5-font-weight: $h1-font-weight;
+$h5-font-style: $h1-font-style;
+$h5-font-color: $h1-font-color;
+$h5-line-height: $h1-line-height;
+$h5-margin-bottom: $h1-margin-bottom;
+
+$h6-font: $h1-font;
+$h6-font-size: $h1-font-size * 0.266;
+$h6-font-weight: $h1-font-weight;
+$h6-font-style: $h1-font-style;
+$h6-font-color: $h1-font-color;
+$h6-line-height: $h1-line-height;
+$h6-margin-bottom: $h1-margin-bottom;
+
+// Layout & Grid
+$layout-width: 1400px;
+$breakpoints: (
+	small: 0,
+	medium: 700px,
+	large: 1100px,
+);
+$grid-column-count: 12;
+$grid-gutters: (
+	small: 10px,
+	medium: 20px,
+	large: 30px
+);
+$grid-gutters-default: map-get($grid-gutters, large);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

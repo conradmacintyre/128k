@@ -1,0 +1,472 @@
+/*******************************************
+* FUNCTIONS
+********************************************/
+
+	//**********************************************************
+	// Function_Name
+	//**********************************************************
+	// Function_description
+	//
+	// @param {Number} $number - Number to remove unit from
+	// @return {Number} - Unitless number
+	//**********************************************************
+	@function funcName($input) {}
+
+	// @function explode() -- split a string into a list of strings
+	//  {string} $string: the string to be split
+	//  {string} $delimiter: the boundary string
+	//  @return {list} the result list
+	@function explode($string, $delimiter) {
+		$result: ();
+		@if $delimiter == "" {
+			@for $i from 1 through str-length($string) {
+				$result: append($result, str-slice($string, $i, $i));
+			}
+			@return $result;
+		}
+		$exploding: true;
+		@while $exploding {
+			$d-index: str-index($string, $delimiter);
+			@if $d-index {
+				@if $d-index > 1 {
+					$result: append($result, str-slice($string, 1, $d-index - 1));
+					$string: str-slice($string, $d-index + str-length($delimiter));
+				} @else if $d-index == 1 {
+					$string: str-slice($string, 1, $d-index + str-length($delimiter));
+				} @else {
+					$result: append($result, $string);
+					$exploding: false;
+				}
+			} @else {
+				$result: append($result, $string);
+				$exploding: false;
+			}
+		}
+		@return $result;
+	}
+
+	//**********************************************************
+	// Function_Name
+	//**********************************************************
+	// Function_description
+	//
+	// @param {Number} $number - Number to remove unit from
+	// @return {Number} - Unitless number
+	//**********************************************************
+	@function col-calc($input) {
+		@if ($input <= $grid-column-count) {
+			@return percentage( $input / $grid-column-count );
+		} @else {
+			@warn "Grid count too high";
+			@return false;
+		}
+	}
+
+	//**********************************************************
+	// Strip Unit by Hugo Giraudel
+	//**********************************************************
+	// Remove the unit of a length
+	//
+	// @param {Number} $number - Number to remove unit from
+	// @return {Number} - Unitless number
+	//**********************************************************
+	@function strip-unit($number) {
+		@if type-of($number) == 'number' and not unitless($number) {
+			@return $number / ($number * 0 + 1);
+		}
+		@return $number;
+	}
+
+	// Add Unit
+	/// Returns a unit-ed number with PX or REM based on the size of the number passed in
+	/// @param {Number} $number - a unitless number
+	/// @return {type} - desc
+	@function add-unit($number) {
+		$number: strip-unit($number);
+		@if $number >= 10 {
+			@return $number * 1px;
+		}
+		@return $number * 1rem;
+	}
+
+	/// Get Next Map Item by Simon Koch
+	/// returns next map item or fallback value if map, key or next item does not exist
+	/// @param {Map} $map - Sass list map
+	/// @param {String} $key - List map key
+	/// @param {Boolean} $fallback (false) - Fallback value if map, key or previous item does not exist
+	/// @param {String} $return (value) - Return value or key of previous list item
+	/// @param {Boolean} $debug (false) - Debug option
+	@function map-get-next($map, $key, $fallback: false, $return: value) {
+		// Check if map is valid
+		@if type-of($map) == map {
+		    // Check if key exists in map
+		    @if map-has-key($map, $key) {
+		        // Init index counter variable
+		        $i: 0;
+		        // Init key index
+		        $key-index: false;
+		        // Traverse map for key
+		        @each $map-key, $map-value in $map {
+		            // Update index
+		            $i: $i + 1;
+		            // If map key found, set key index
+		            @if $map-key == $key {
+		                $key-index: $i;
+		            }
+		            // If next index return next value or key based on $return
+		            @if $i == $key-index + 1 {
+		                @if $return == key {
+		                    @return $map-key;
+		                } @else {
+		                    @return $map-value;
+		                }
+		            }
+		            // If last entry return false
+		            @if $i == length($map) {
+		                @return $fallback;
+		            }
+		        }
+		        @warn 'No next map item for key #{$key}';
+		        @return $fallback;
+		    }
+		    @warn 'No valid key #{$key} in map';
+		    @return $fallback;
+		}
+		@warn 'No valid map';
+		@return $fallback;
+	}
+
+	/// Get Previous Map Item by Simon Koch
+	/// returns previous map item or fallback value if map, key or previous item does not exist
+	/// @param {Map} $map - Sass list map
+	/// @param {String} $key - List map key
+	/// @param {Boolean} $fallback (false) - Fallback value if map, key or previous item does not exist
+	/// @param {String} $return (value) - Return value or key of previous list item
+	/// @param {Boolean} $debug (false) - Debug option
+	@function map-get-prev($map, $key, $fallback: false, $return: value, $debug: false) {
+	    // Check if map is valid
+	    @if type-of($map) == map {
+	        @if $debug {
+	            @debug 'Map exists #{$map}';
+	        }
+	        // Check if key exists in map
+	        @if map-has-key($map, $key) {
+	            @if $debug {
+	                @debug 'Map has key #{$key}';
+	            }
+	            // Init index counter variable
+	            $i: 1;
+	            // Init key index
+	            $key-index: false;
+	            $previous-index: false;
+	            // Traverse map for key
+	            @each $map-key, $map-value in $map {
+	                @if $debug {
+	                    @debug 'map-key: #{$map-key}, map-value: #{$map-value}, i: #{$i}';
+	                }
+	                // If map key found, set key index
+	                @if $map-key == $key {
+	                    $key-index: $i;
+	                    @if $debug {
+	                        @debug 'found key-index: #{$key-index}';
+	                    }
+	                }
+	                // Update index
+	                $i: $i + 1;
+	            }
+	            // If the key-index exists, iterate through the map again
+	            @if $key-index != false {
+	                $previous-index: $key-index - 1;
+	                $i: 1;
+	                // If the previous key is less than one, use the fallback
+	                @if $previous-index < 1 {
+	                    @warn 'no previous item in map, returning fallback';
+	                    @return $fallback;
+	                }
+	                @else {
+	                    // Traverse map for key
+	                    @each $map-key, $map-value in $map {
+	                         @if $i == $previous-index {
+	                            @if $return == 'key' {
+	                                @if $debug {
+	                                    @debug 'found! returning map-key: #{$map-key}';
+	                                }
+	                                @return $map-key;
+	                            }
+	                            @else {
+	                                @if $debug {
+	                                    @debug 'found! returning map-value: #{$map-value}';
+	                                }
+	                                @return $map-value;
+	                            }
+	                        }
+	                        // Update index
+	                        $i: $i + 1;
+	                    }
+	                }
+	            }
+	            @else {
+	                @warn 'No previous map item for key #{$key}';
+	                @return $fallback;
+	            }
+	        }
+	        @else {
+	            @warn 'No valid key #{$key} in map';
+	            @return $fallback;
+	        }
+	    }
+	    @else {
+	        @warn 'No valid map';
+	        @return $fallback;
+	    }
+	}
+
+	//**************************************************************
+	// Browser Hacks
+	//**************************************************************
+	// Allows targeted "hacks" for a single browser
+	//
+	// @param {Keyword} $browser - The name of the browser you want
+	// to hack
+	//**************************************************************
+	@mixin hack ( $browser ) {
+		$browser: to-lower-case($browser);
+		@if ($browser == ie or edge) {
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				@content;
+			}
+		} @else if ($browser == safari) {
+			$mh: '\\0 screen';
+			@media #{$mh} {
+				@content;
+			}
+		} @else if ($browser == firefox or ff) {
+			@supports (-moz-appearance:meterbar) and (background-blend-mode:difference,normal) {
+				@content;
+			}
+		} @else if ($browser == chrome) {
+			@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+				@content;
+			}
+		} @else {
+			@warn 'No supported browser given';
+		}
+	}
+
+	//**************************************************************
+	// Breakpoint Calculator
+	//**************************************************************
+	// Define your breakpoints in the _variables file, then just
+	// use keywords with this mixin to wrap CSS rules in the needed
+	// media queries without worrying about the specifics. 
+	//
+	// @param {Keyword} $size - one of the keys from the 
+	// $breakpoints map in _variables
+	// 
+	// @param {Keyword} $direction - One of "up", "down", or "only"
+	//**************************************************************
+	@mixin bp ( $size, $direction:up ) {
+		@if ($direction == down) {
+			@if (map-get-next($breakpoints,$size)) {
+				@media (max-width: #{ map-get-next($breakpoints,$size) - 1px } ) {
+					@content;
+				}
+			} @else {
+				@content;
+			}
+		} @else if ($direction == up) {
+			@media (min-width: #{map-get($breakpoints,$size)}) {
+				@content;
+			}
+		} @else if ($direction == only) {
+			@if (map-get-next($breakpoints,$size)) {
+				@media (min-width: #{map-get($breakpoints,$size)}) and (max-width: #{map-get-next($breakpoints,$size) - 1px}) {
+					@content;
+				}
+			} @else {
+				@media (min-width: #{map-get($breakpoints,$size)}) {
+					@content;
+				}
+			}
+		}
+	}
+
+	//**********************************************************
+	// Container Maker
+	//**********************************************************
+	// Outputs containers for grid-constrained content, here
+	// defined as "rows" for ease of conception.
+	//
+	// @param {Boolean} $constrain - Keep within $layout-width
+	// 
+	// @param {Keyword} $orientation - Determines the flow of 
+	// child elements, "vertical" or "horizontal" are accepted.
+	// 
+	// @param {Boolean} $wrap - Allows or disallows wrapping of
+	// child elements
+	//**********************************************************
+	@mixin row($constrain:true, $orientation:horizontal, $wrap:true) {
+		display: flex;
+		@if ($constrain == true) {
+			max-width: $layout-width;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@if ($orientation == vertical) {
+			flex-direction: column;
+		}
+		@if ($wrap == true) {
+			flex-wrap: wrap;
+		}
+	}
+	
+	//**********************************************************
+	// Column Maker
+	//**********************************************************
+	// Outputs grid-constrained containers, here
+	// defined as "columns" for ease of conception.
+	//
+	// @param {Arglist} $cols - takes a Keyword followed by a 
+	// Numbereach pair should be separated by a comma. The
+	// Keyword should be one of the keys in $breakpoints and 
+	// the Number should be a value not greater than 
+	// $grid-column-count. FOR EXAMPLE, you might put:
+	// "small 12, medium 6, large 3". 
+	//**********************************************************
+	@mixin column($cols...) {
+		display: flex;
+		@if ( length($cols) > 0 ) {
+			@each $col in $cols {
+				@if ( length($col) == 2 ) {
+					$size: nth($col,1);
+					$columns: nth($col,2);
+
+					@if (map-get($breakpoints,$size)) {
+						@include bp($size) {
+							width: col-calc($columns);
+							
+							@if (map-get($grid-gutters,$size)) {
+								margin-left: map-get($grid-gutters,$size);
+								margin-right: map-get($grid-gutters,$size);
+							} @else {
+								margin-left: $grid-gutters-default;
+								margin-right: $grid-gutters-default;
+							}
+						}
+					}
+				}
+			}
+		} @else {
+			width: 100%;
+			margin-left: $grid-gutters-default;
+			margin-right: $grid-gutters-default;
+		}
+	}
+
+	//**********************************************************
+	// Billboard
+	//**********************************************************
+	// Outputs grid-constrained containers, here
+	// defined as "columns" for ease of conception.
+	//
+	// @param {Arglist} $cols - takes a Keyword followed by a 
+	// Numbereach pair should be separated by a comma. The
+	// Keyword should be one of the keys in $breakpoints and 
+	// the Number should be a value not greater than 
+	// $grid-column-count. FOR EXAMPLE, you might put:
+	// "small 12, medium 6, large 3". 
+	//**********************************************************
+	@mixin billboard($valign:middle, $halign:center, $content-width:100 50 33, $height:400 500 600, $text-color:$shade-lite, $header-color:inherit) {
+		@include row;
+		background-image: url(http://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2019/03/framing_john_delorean_1280.jpg);
+		background-size: cover;
+		background-position: center;
+		@if (type_of($height) == list) {
+			@each $bp, $value in $breakpoints {
+				@include bp($bp) {
+					$relative-height: nth( $height, index( ($breakpoints), ($bp $value) ) );
+					@if (type_of($relative-height) == number) {
+						min-height: $relative-height * 1px;
+					} @else {
+						min-height: $relative-height;
+					}
+				}
+			}
+		} @else {
+			max-width: $height;
+		}
+		&-slide {
+			@include column;
+			color: $text-color;
+			flex-direction: column;
+			@if ($valign == top) {
+				justify-content: start; //vertical	
+			} @else if ($valign == bottom) {
+				justify-content: end; //vertical	
+			} @else if ($valign == middle or center or centre) {
+				justify-content: center; //vertical	
+			} @else {
+				@warn '#{$valign} is an invalid vertical alignment, please use top, middle, or bottom';
+			}
+			// Horizontal alignment
+			@if ($halign == left) {
+				align-items: start;
+				text-align: left;
+			} @else if ($halign == right) {
+				align-items: end;
+				text-align: right;	
+			} @else if ($halign == middle or center or centre) {
+				align-items: center;
+				text-align: center;
+			} @else {
+				@warn '#{$halign} is an invalid horizontal alignment, please use left, center, or right';
+			}
+
+			> * {
+				@if (type_of($content-width) == list) {
+					@each $bp, $value in $breakpoints {
+						@include bp($bp) {
+							$relative-width: nth( $content-width, index( ($breakpoints), ($bp $value) ) );
+							@if (type_of($relative-width) == number) {
+								@if ($relative-width <= $grid-column-count) {
+									max-width: col-calc($relative-width);
+								} @else {
+									max-width: percentage($relative-width / 100);
+								}
+							} @else {
+								max-width: $relative-width;
+							}
+						}
+					}
+				} @else {
+					max-width: $content-width;
+				}
+			}
+			
+			h1, h2, h3, h4, h5, h6 {
+				color: $header-color;
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
