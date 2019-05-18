@@ -25,6 +25,10 @@
 	* v2.0 | 20110126
 	* License: none (public domain)
 	********************************************/
+* {
+  box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -225,9 +229,8 @@ img {
   margin-right: auto;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
-  background-image: url(http://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2019/03/framing_john_delorean_1280.jpg);
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden;
 }
 
 @media (min-width: 0) {
@@ -249,24 +252,95 @@ img {
 }
 
 .billboard-slide {
+  background-size: cover;
+  background-position: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   width: 100%;
   margin-left: 30px;
   margin-right: 30px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   color: #EEE;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.billboard-slide:not(.top):not(.middle):not(.bottom) {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
+}
+
+.billboard-slide:not(.left):not(.center):not(.right) {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
   text-align: center;
+}
+
+.billboard-slide.top {
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+          justify-content: start;
+}
+
+.billboard-slide.middle {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.billboard-slide.bottom {
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+          justify-content: end;
+}
+
+.billboard-slide.left {
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+          align-items: start;
+  text-align: left;
+}
+
+.billboard-slide.center {
+  -webkit-box-align: end;
+  -webkit-align-items: end;
+          align-items: end;
+  text-align: right;
+}
+
+.billboard-slide.right {
+  -webkit-box-align: end;
+  -webkit-align-items: end;
+          align-items: end;
+  text-align: right;
+}
+
+.billboard-slide.active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.billboard-slide.active ~ .billboard-slide {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 @media (min-width: 0) {

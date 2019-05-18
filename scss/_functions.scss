@@ -378,9 +378,8 @@
 	//**********************************************************
 	@mixin billboard($valign:middle, $halign:center, $content-width:100 50 33, $height:400 500 600, $text-color:$shade-lite, $header-color:inherit) {
 		@include row;
-		background-image: url(http://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2019/03/framing_john_delorean_1280.jpg);
-		background-size: cover;
-		background-position: center;
+		position: relative;
+		overflow: hidden;
 		@if (type_of($height) == list) {
 			@each $bp, $value in $breakpoints {
 				@include bp($bp) {
@@ -393,33 +392,77 @@
 				}
 			}
 		} @else {
-			max-width: $height;
+			min-height: $height;
 		}
 		&-slide {
+			background-size: cover;
+			background-position: center;
 			@include column;
+			margin-left: 0;
+			margin-right: 0;
+			padding: $grid-gutters-default;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
 			color: $text-color;
 			flex-direction: column;
-			@if ($valign == top) {
-				justify-content: start; //vertical	
-			} @else if ($valign == bottom) {
-				justify-content: end; //vertical	
-			} @else if ($valign == middle or center or centre) {
-				justify-content: center; //vertical	
-			} @else {
-				@warn '#{$valign} is an invalid vertical alignment, please use top, middle, or bottom';
+			&:not(.top):not(.middle):not(.bottom) {
+				@if ($valign == top) {
+					justify-content: start; //vertical	
+				} @else if ($valign == bottom) {
+					justify-content: end; //vertical	
+				} @else if ($valign == middle or center or centre) {
+					justify-content: center; //vertical	
+				} @else {
+					@warn '#{$valign} is an invalid vertical alignment, please use top, middle, or bottom';
+				}
 			}
 			// Horizontal alignment
-			@if ($halign == left) {
+			&:not(.left):not(.center):not(.right) {
+				@if ($halign == left) {
+					align-items: start;
+					text-align: left;
+				} @else if ($halign == right) {
+					align-items: end;
+					text-align: right;	
+				} @else if ($halign == middle or center or centre) {
+					align-items: center;
+					text-align: center;
+				} @else {
+					@warn '#{$halign} is an invalid horizontal alignment, please use left, center, or right';
+				}
+			}
+
+			&.top {
+				justify-content: start; 
+			}
+			&.middle {
+				justify-content: center;
+			}
+			&.bottom {
+				justify-content: end;
+			}
+			&.left {
 				align-items: start;
 				text-align: left;
-			} @else if ($halign == right) {
+			}
+			&.center {
 				align-items: end;
-				text-align: right;	
-			} @else if ($halign == middle or center or centre) {
-				align-items: center;
-				text-align: center;
-			} @else {
-				@warn '#{$halign} is an invalid horizontal alignment, please use left, center, or right';
+				text-align: right;
+			}
+			&.right {
+				align-items: end;
+				text-align: right;
+			}
+			transition: transform 0.6s linear;
+			transform: translateY(100%);
+			&.active {
+				transform: translateY(0%);
+			}
+			&.active ~ & {
+				transform: translateY(-100%);
 			}
 
 			> * {
