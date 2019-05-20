@@ -13,6 +13,76 @@
 * 
 ********************************************/
 
+.row {
+	@include row;
+}
+.col {
+	@each $size, $val in $breakpoints {
+		@for $i from 1 through $grid-column-count {
+			@include bp($size) {
+				&.#{$size}-#{$i} {
+					@include column($size $i);
+				}
+			}
+		}
+	}
+}
+
+.header {
+	@include row($wrap:false);
+	z-index: 1;
+	padding: 0 $grid-gutters-default;
+	display: flex;
+	align-items: center;
+	&-logo {
+		font-size: $h3-font-size;
+		font-weight: bold;
+		
+	}
+	&-nav-wrapper {
+		flex-grow: 1;
+		position: relative;
+	}
+	&-nav {
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		.mobile & {
+			flex-direction: column;
+			position: absolute;
+			top: 100%;
+			right: 0;
+			background: $shade-lite;
+		}
+		a {
+			display: inline-block;
+			color: $color-primary;
+			font-size: 120%;
+			text-decoration: none;
+			padding: 15px 7.5px;
+			font-size: 80%;
+			// font-weight: bold;
+			text-transform: uppercase;
+			.mobile & {
+				padding: 7.5px 15px;
+
+			}
+		}
+		&-trigger {
+			display: none;
+			.mobile & {
+				display: flex;
+				justify-content: flex-end;
+				padding: 15px 7.5px;
+				// position: absolute;
+				// top: 0;
+				// right: 0;
+			}
+		}
+	}
+}
+
 .billboard {
 	@include billboard;
 }
+

@@ -14,15 +14,18 @@
 
 	<body>
 
-		<header>
-			<div class="logo"></div>
-			<nav>
-				<a href="">Link</a>
-				<a href="">Link</a>
-				<a href="">Link</a>
-				<a href="">Link</a>
-				<a href="">Link</a>
-			</nav>
+		<header class="header">
+			<div class="header-logo">128k.ca</div>
+			<div class="header-nav-wrapper">
+				<div class="header-nav-trigger" data-ts=".header-nav">MENU</div>
+				<nav class="header-nav" data-nav>
+					<a href="">Portfolio</a>
+					<a href="">Fanedits</a>
+					<a href="">Nintendo 64</a>
+					<a href="">Games</a>
+					<a href="">Other Stuff</a>
+				</nav>
+			</div>
 		</header>
 
 		<div class="billboard" data-billboard="4">
@@ -45,65 +48,77 @@
 			</div>
 		</div>
 
-		<h1>Heading 1</h1>
-		<h2>Heading 2</h2>
-		<h3>Heading 3</h3>
-		<h4>Heading 4</h4>
-		<h5>Heading 5</h5>
-		<h6>Heading 6</h6>
+		<div class="row">
+			<div class="col sm-12 md-6 lg-4">
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+			</div>
+			<div class="col sm-12 md-6 lg-4">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nemo animi distinctio ex omnis cupiditate facere quidem iure optio quibusdam natus, vero, quisquam aperiam dolore ea unde ipsum consectetur temporibus!</p>
+			</div>
+			<div class="col sm-12 md-6 lg-4">
+				<a href="#">This is a link</a>
+			</div>
+			<div class="col sm-12 md-6 lg-4">
+				<a href="#" class="button">This is a button</a>
+			</div>
+			<div class="col sm-12 md-6 lg-4">
+				<form action="">
+					<input type="text">
+					<select name="" id="">
+						<option value="test">test</option>
+					</select>
+					<input type="radio">
+					<input type="checkbox">
+				</form>
+			</div>
+			<div class="col sm-12 md-6 lg-4">
+				<ul>
+					<ol>List Item</ol>
+					<ol>List Item</ol>
+					<ol>List Item</ol>
+					<ol>List Item</ol>
+					<ol>List Item</ol>
+					<ol>List Item</ol>
+					<ol>List Item</ol>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<p>Hey Gang!</p>
+							</td>
+							<td>
+								<p>Hey Gang!</p>
+							</td>
+							<td>
+								<p>Hey Gang!</p>
+							</td>
+							<td>
+								<p>Hey Gang!</p>
+							</td>
+							<td>
+								<p>Hey Gang!</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint nemo animi distinctio ex omnis cupiditate facere quidem iure optio quibusdam natus, vero, quisquam aperiam dolore ea unde ipsum consectetur temporibus!</p>
+				<div class="alert"></div>
 
-		<a href="#">This is a link</a>
+				<div class="loading-bar"></div>
 
-		<a href="#" class="button">This is a button</a>
-
-		<form action="">
-			<input type="text">
-			<select name="" id="">
-				<option value="test">test</option>
-			</select>
-			<input type="radio">
-			<input type="checkbox">
-		</form>
-
-		<table>
-			<tbody>
-				<tr>
-					<td>
-						<p>Hey Gang!</p>
-					</td>
-					<td>
-						<p>Hey Gang!</p>
-					</td>
-					<td>
-						<p>Hey Gang!</p>
-					</td>
-					<td>
-						<p>Hey Gang!</p>
-					</td>
-					<td>
-						<p>Hey Gang!</p>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-
-		<div class="alert"></div>
-
-		<div class="loading-bar"></div>
-
-		<img src="http://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2019/03/framing_john_delorean_1280.jpg" alt="">
-
-		<ul>
-			<ol>List Item</ol>
-			<ol>List Item</ol>
-			<ol>List Item</ol>
-			<ol>List Item</ol>
-			<ol>List Item</ol>
-			<ol>List Item</ol>
-			<ol>List Item</ol>
-		</ul>
+				<img src="http://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2019/03/framing_john_delorean_1280.jpg" alt="">	
+			</div>
+		</div>
 		
 		<!-- Call Javascript -->
 		<script src="js/library.min.js"></script>

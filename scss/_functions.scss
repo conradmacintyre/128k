@@ -221,6 +221,16 @@
 	    }
 	}
 
+	@function grid-column-template() {
+		$output: '';
+		$types: $grid-column-count;
+		@while $types > 0 {
+			$output: $output + #{100 / $grid-column-count + 0%};
+			$types: $types -1;
+		}
+		@return $output;
+	}
+
 	//**************************************************************
 	// Browser Hacks
 	//**************************************************************
@@ -306,7 +316,11 @@
 	// child elements
 	//**********************************************************
 	@mixin row($constrain:true, $orientation:horizontal, $wrap:true) {
-		display: flex;
+		// display: flex;
+		display: grid;
+		grid-template-columns: grid-column-template();
+		grid-row-gap: 0;
+		grid-column-gap: $grid-gutters-default;
 		@if ($constrain == true) {
 			max-width: $layout-width;
 			margin-left: auto;
@@ -334,7 +348,7 @@
 	// "small 12, medium 6, large 3". 
 	//**********************************************************
 	@mixin column($cols...) {
-		display: flex;
+		display: block;
 		@if ( length($cols) > 0 ) {
 			@each $col in $cols {
 				@if ( length($col) == 2 ) {
@@ -346,11 +360,11 @@
 							width: col-calc($columns);
 							
 							@if (map-get($grid-gutters,$size)) {
-								margin-left: map-get($grid-gutters,$size);
-								margin-right: map-get($grid-gutters,$size);
+								// margin-left: map-get($grid-gutters,$size);
+								// margin-right: map-get($grid-gutters,$size);
 							} @else {
-								margin-left: $grid-gutters-default;
-								margin-right: $grid-gutters-default;
+								// margin-left: $grid-gutters-default;
+								// margin-right: $grid-gutters-default;
 							}
 						}
 					}
@@ -358,8 +372,8 @@
 			}
 		} @else {
 			width: 100%;
-			margin-left: $grid-gutters-default;
-			margin-right: $grid-gutters-default;
+			// margin-left: $grid-gutters-default;
+			// margin-right: $grid-gutters-default;
 		}
 	}
 

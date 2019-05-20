@@ -77,15 +77,15 @@ $h6-margin-bottom: $h1-margin-bottom;
 // Layout & Grid
 $layout-width: 1400px;
 $breakpoints: (
-	small: 0,
-	medium: 700px,
-	large: 1100px,
+	sm: 0,
+	md: 700px,
+	lg: 1100px,
 );
 $grid-column-count: 12;
 $grid-gutters: (
-	small: 10px,
-	medium: 20px,
-	large: 30px
+	sm: 10px,
+	md: 20px,
+	lg: 30px
 );
 $grid-gutters-default: map-get($grid-gutters, large);
 

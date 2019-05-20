@@ -10,7 +10,7 @@
 "creatorBuild": "29156",
 "files": {
 	"/fanedits/fanedit.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
@@ -21,7 +21,7 @@
 		"tS": 1
 		},
 	"/fanedits/fanedit.min.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
@@ -524,7 +524,7 @@
 		"oF": 0
 		},
 	"/fanedits/library.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
@@ -535,7 +535,7 @@
 		"tS": 1
 		},
 	"/fanedits/library.min.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
@@ -585,7 +585,7 @@
 		"oF": 0
 		},
 	"/js/library.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
@@ -596,7 +596,7 @@
 		"tS": 1
 		},
 	"/js/library.min.js": {
-		"bF": 0,
+		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
@@ -2579,7 +2579,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"bundleFormat": 0,
+		"bundleFormat": 4,
 		"createSourceMap": 1,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 3,
