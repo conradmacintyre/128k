@@ -222,13 +222,17 @@
 	}
 
 	@function grid-column-template() {
-		$output: '';
-		$types: $grid-column-count;
-		@while $types > 0 {
-			$output: $output + #{100 / $grid-column-count + 0%};
-			$types: $types -1;
+		$output: null;
+		$col-count: $grid-column-count;
+		@while $col-count > 0 {
+			@if ( $output != null ) {
+				$output: $output + ' ' + (100 / $grid-column-count + 0%);
+			} @else {
+				$output: (100 / $grid-column-count + 0%);
+			}
+			$col-count: $col-count - 1;
 		}
-		@return $output;
+		@return unquote($output);
 	}
 
 	//**************************************************************
@@ -318,9 +322,19 @@
 	@mixin row($constrain:true, $orientation:horizontal, $wrap:true) {
 		// display: flex;
 		display: grid;
-		grid-template-columns: grid-column-template();
+		grid-template-columns: repeat($grid-column-count,1fr); //grid-column-template();
 		grid-row-gap: 0;
 		grid-column-gap: $grid-gutters-default;
+		@each $bp, $value in $breakpoints {
+			@include bp( $bp ) {
+				@if ( map-get( $grid-gutters, $bp ) ) {
+					padding-left: map-get( $grid-gutters, $bp );
+					padding-right: map-get( $grid-gutters, $bp );
+				} @else {
+					@warn 'no gutter defined at this breakpoint';
+				}
+			}
+		}
 		@if ($constrain == true) {
 			max-width: $layout-width;
 			margin-left: auto;
@@ -349,31 +363,25 @@
 	//**********************************************************
 	@mixin column($cols...) {
 		display: block;
-		@if ( length($cols) > 0 ) {
+		@if ( length( $cols ) > 0 ) {
 			@each $col in $cols {
-				@if ( length($col) == 2 ) {
-					$size: nth($col,1);
-					$columns: nth($col,2);
+				@if ( length( $col ) == 2 ) {
+					$size: nth( $col, 1 );
+					$columns: nth( $col, 2 );
 
-					@if (map-get($breakpoints,$size)) {
-						@include bp($size) {
-							width: col-calc($columns);
-							
-							@if (map-get($grid-gutters,$size)) {
-								// margin-left: map-get($grid-gutters,$size);
-								// margin-right: map-get($grid-gutters,$size);
-							} @else {
-								// margin-left: $grid-gutters-default;
-								// margin-right: $grid-gutters-default;
-							}
+					@if ( map-get( $breakpoints, $size ) ) {
+						@include bp( $size ) {
+							grid-column-end: span $columns;
 						}
+					} @else {
+						@warn 'breakpoint does not exist';
 					}
+				} @else {
+					@warn 'incorrect numbers of args passed';
 				}
 			}
 		} @else {
-			width: 100%;
-			// margin-left: $grid-gutters-default;
-			// margin-right: $grid-gutters-default;
+			grid-column-end: span $grid-column-count;
 		}
 	}
 

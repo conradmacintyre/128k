@@ -83,11 +83,11 @@ $breakpoints: (
 );
 $grid-column-count: 12;
 $grid-gutters: (
-	sm: 10px,
-	md: 20px,
-	lg: 30px
+	sm: 5px,
+	md: 10px,
+	lg: 15px
 );
-$grid-gutters-default: map-get($grid-gutters, large);
+$grid-gutters-default: map-get($grid-gutters, lg);
 
 
 

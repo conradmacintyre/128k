@@ -19,10 +19,8 @@
 .col {
 	@each $size, $val in $breakpoints {
 		@for $i from 1 through $grid-column-count {
-			@include bp($size) {
-				&.#{$size}-#{$i} {
-					@include column($size $i);
-				}
+			&.#{$size}-#{$i} {
+				@include column($size $i);
 			}
 		}
 	}
