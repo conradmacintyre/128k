@@ -1,10 +1,6 @@
-/*******************************************
-* FUNCTIONS
-********************************************/
-
-	//**********************************************************
-	// Function_Name
-	//**********************************************************
+//**************************************************************
+// Function_Name
+//**************************************************************
 	// Function_description
 	//
 	// @param {Number} $number - Number to remove unit from
@@ -12,10 +8,16 @@
 	//**********************************************************
 	@function funcName($input) {}
 
-	// @function explode() -- split a string into a list of strings
-	//  {string} $string: the string to be split
-	//  {string} $delimiter: the boundary string
-	//  @return {list} the result list
+//**************************************************************
+// Explode String
+//**************************************************************
+	// Explodes a SASS string using any arbitrary delimiter
+	//
+	// @param {String} $string - The input string
+	// 
+	// @return {String} $delimiter - The delimiter for 
+	// exploding the string
+	//**********************************************************
 	@function explode($string, $delimiter) {
 		$result: ();
 		@if $delimiter == "" {
@@ -45,9 +47,9 @@
 		@return $result;
 	}
 
-	//**********************************************************
-	// Function_Name
-	//**********************************************************
+//**************************************************************
+// Function_Name
+//**************************************************************
 	// Function_description
 	//
 	// @param {Number} $number - Number to remove unit from
@@ -62,9 +64,9 @@
 		}
 	}
 
-	//**********************************************************
-	// Strip Unit by Hugo Giraudel
-	//**********************************************************
+//**************************************************************
+// Strip Unit by Hugo Giraudel
+//**************************************************************
 	// Remove the unit of a length
 	//
 	// @param {Number} $number - Number to remove unit from
@@ -77,10 +79,14 @@
 		@return $number;
 	}
 
-	// Add Unit
-	/// Returns a unit-ed number with PX or REM based on the size of the number passed in
-	/// @param {Number} $number - a unitless number
-	/// @return {type} - desc
+//**************************************************************
+// Add Unit
+//**************************************************************
+	// Adds a 'px' or 'rem' value to a unitless number, based 
+	// on value.
+	//
+	// @param {Number} $number - Number to add unit to
+	//**********************************************************
 	@function add-unit($number) {
 		$number: strip-unit($number);
 		@if $number >= 10 {
@@ -89,31 +95,52 @@
 		@return $number * 1rem;
 	}
 
-	/// Get Next Map Item by Simon Koch
-	/// returns next map item or fallback value if map, key or next item does not exist
-	/// @param {Map} $map - Sass list map
-	/// @param {String} $key - List map key
-	/// @param {Boolean} $fallback (false) - Fallback value if map, key or previous item does not exist
-	/// @param {String} $return (value) - Return value or key of previous list item
-	/// @param {Boolean} $debug (false) - Debug option
+//**************************************************************
+// Contrast Checker
+//**************************************************************
+	// Return a color that maximises contrast
+	//
+	// @param {String} $bg - The background color to check 
+	// against
+	// 
+	// @param {String} $dark - The DARK colour to return
+	// 
+	// @param {Boolean} $lite - The LIGHT colour to return
+	//**********************************************************
+	@function contrast($bg, $dark:$shade-dark, $lite:$shade-lite) {
+		@if (lightness($bg) > 50) {
+			@return $dark;
+		} @else {
+			@return $lite;
+		}
+	}
+
+//**************************************************************
+// Get Next Item in SASS Map (Simon Koch)
+//**************************************************************
+	// returns next map item or fallback value if map, key 
+	// or previous item does not exist
+	//
+	// @param {Map} $map - Sass list map
+	// 
+	// @param {String} $key - List map key
+	// 
+	// @param {Boolean} $fallback (false) - Fallback value if 
+	// map, key or previous item does not exist
+	// 
+	// @param {String} $return (value) - Return value or key of 
+	// previous list item
+	//**********************************************************
 	@function map-get-next($map, $key, $fallback: false, $return: value) {
-		// Check if map is valid
 		@if type-of($map) == map {
-		    // Check if key exists in map
 		    @if map-has-key($map, $key) {
-		        // Init index counter variable
 		        $i: 0;
-		        // Init key index
 		        $key-index: false;
-		        // Traverse map for key
 		        @each $map-key, $map-value in $map {
-		            // Update index
 		            $i: $i + 1;
-		            // If map key found, set key index
 		            @if $map-key == $key {
 		                $key-index: $i;
 		            }
-		            // If next index return next value or key based on $return
 		            @if $i == $key-index + 1 {
 		                @if $return == key {
 		                    @return $map-key;
@@ -121,12 +148,10 @@
 		                    @return $map-value;
 		                }
 		            }
-		            // If last entry return false
 		            @if $i == length($map) {
 		                @return $fallback;
 		            }
 		        }
-		        @warn 'No next map item for key #{$key}';
 		        @return $fallback;
 		    }
 		    @warn 'No valid key #{$key} in map';
@@ -136,108 +161,72 @@
 		@return $fallback;
 	}
 
-	/// Get Previous Map Item by Simon Koch
-	/// returns previous map item or fallback value if map, key or previous item does not exist
-	/// @param {Map} $map - Sass list map
-	/// @param {String} $key - List map key
-	/// @param {Boolean} $fallback (false) - Fallback value if map, key or previous item does not exist
-	/// @param {String} $return (value) - Return value or key of previous list item
-	/// @param {Boolean} $debug (false) - Debug option
-	@function map-get-prev($map, $key, $fallback: false, $return: value, $debug: false) {
-	    // Check if map is valid
+//**************************************************************
+// Get Previous Item in SASS Map (Simon Koch)
+//**************************************************************
+	// returns previous map item or fallback value if map, key 
+	// or previous item does not exist
+	//
+	// @param {Map} $map - Sass list map
+	// 
+	// @param {String} $key - List map key
+	// 
+	// @param {Boolean} $fallback (false) - Fallback value if 
+	// map, key or previous item does not exist
+	// 
+	// @param {String} $return (value) - Return value or key of 
+	// previous list item
+	//**********************************************************
+	@function map-get-prev($map, $key, $fallback: false, $return: value) {
 	    @if type-of($map) == map {
-	        @if $debug {
-	            @debug 'Map exists #{$map}';
-	        }
-	        // Check if key exists in map
 	        @if map-has-key($map, $key) {
-	            @if $debug {
-	                @debug 'Map has key #{$key}';
-	            }
-	            // Init index counter variable
 	            $i: 1;
-	            // Init key index
 	            $key-index: false;
 	            $previous-index: false;
-	            // Traverse map for key
 	            @each $map-key, $map-value in $map {
-	                @if $debug {
-	                    @debug 'map-key: #{$map-key}, map-value: #{$map-value}, i: #{$i}';
-	                }
-	                // If map key found, set key index
 	                @if $map-key == $key {
 	                    $key-index: $i;
-	                    @if $debug {
-	                        @debug 'found key-index: #{$key-index}';
-	                    }
 	                }
-	                // Update index
 	                $i: $i + 1;
 	            }
-	            // If the key-index exists, iterate through the map again
 	            @if $key-index != false {
 	                $previous-index: $key-index - 1;
 	                $i: 1;
-	                // If the previous key is less than one, use the fallback
 	                @if $previous-index < 1 {
-	                    @warn 'no previous item in map, returning fallback';
 	                    @return $fallback;
 	                }
 	                @else {
-	                    // Traverse map for key
 	                    @each $map-key, $map-value in $map {
 	                         @if $i == $previous-index {
 	                            @if $return == 'key' {
-	                                @if $debug {
-	                                    @debug 'found! returning map-key: #{$map-key}';
-	                                }
 	                                @return $map-key;
 	                            }
 	                            @else {
-	                                @if $debug {
-	                                    @debug 'found! returning map-value: #{$map-value}';
-	                                }
 	                                @return $map-value;
 	                            }
 	                        }
-	                        // Update index
 	                        $i: $i + 1;
 	                    }
 	                }
 	            }
 	            @else {
-	                @warn 'No previous map item for key #{$key}';
 	                @return $fallback;
 	            }
 	        }
 	        @else {
-	            @warn 'No valid key #{$key} in map';
+	            // @warn 'No valid key #{$key} in map';
 	            @return $fallback;
 	        }
 	    }
 	    @else {
-	        @warn 'No valid map';
+	        // @warn 'No valid map';
 	        @return $fallback;
 	    }
 	}
 
-	@function grid-column-template() {
-		$output: null;
-		$col-count: $grid-column-count;
-		@while $col-count > 0 {
-			@if ( $output != null ) {
-				$output: $output + ' ' + (100 / $grid-column-count + 0%);
-			} @else {
-				$output: (100 / $grid-column-count + 0%);
-			}
-			$col-count: $col-count - 1;
-		}
-		@return unquote($output);
-	}
-
-	//**************************************************************
-	// Browser Hacks
-	//**************************************************************
+//******************************************************************
+// Browser Hacks
+//******************************************************************
 	// Allows targeted "hacks" for a single browser
 	//
 	// @param {Keyword} $browser - The name of the browser you want
@@ -267,9 +256,9 @@
 		}
 	}
 
-	//**************************************************************
-	// Breakpoint Calculator
-	//**************************************************************
+//******************************************************************
+// Breakpoint Calculator
+//******************************************************************
 	// Define your breakpoints in the _variables file, then just
 	// use keywords with this mixin to wrap CSS rules in the needed
 	// media queries without worrying about the specifics. 
@@ -289,25 +278,37 @@
 				@content;
 			}
 		} @else if ($direction == up) {
-			@media (min-width: #{map-get($breakpoints,$size)}) {
-				@content;
-			}
-		} @else if ($direction == only) {
-			@if (map-get-next($breakpoints,$size)) {
-				@media (min-width: #{map-get($breakpoints,$size)}) and (max-width: #{map-get-next($breakpoints,$size) - 1px}) {
-					@content;
-				}
-			} @else {
+			@if (map-get-prev($breakpoints,$size)) {
 				@media (min-width: #{map-get($breakpoints,$size)}) {
 					@content;
 				}
+			} @else {
+				@content;
 			}
+		} @else if ($direction == only) {
+			@if ( map-get-prev($breakpoints,$size) and map-get-next($breakpoints,$size) ) {
+				@media ( min-width: #{map-get( $breakpoints, $size )} ) and (max-width: #{map-get-next($breakpoints,$size) - 1px}) {
+					@content;
+				}
+			} @else if ( map-get-prev($breakpoints,$size) ) {
+				@media ( min-width: #{map-get( $breakpoints, $size )} ) {
+					@content;
+				}
+			} @else if ( map-get-next($breakpoints,$size) ) {
+				@media (max-width: #{map-get-next($breakpoints,$size) - 1px}) {
+					@content;
+				}
+			} @else {
+				@content;
+			}
+		} @else {
+			@warn 'invalid direction given';
 		}
 	}
 
-	//**********************************************************
-	// Container Maker
-	//**********************************************************
+//**************************************************************
+// Row Maker
+//**************************************************************
 	// Outputs containers for grid-constrained content, here
 	// defined as "rows" for ease of conception.
 	//
@@ -322,19 +323,11 @@
 	@mixin row($constrain:true, $orientation:horizontal, $wrap:true) {
 		// display: flex;
 		display: grid;
-		grid-template-columns: repeat($grid-column-count,1fr); //grid-column-template();
+		grid-template-columns: repeat($grid-column-count,1fr);
 		grid-row-gap: 0;
 		grid-column-gap: $grid-gutters-default;
-		@each $bp, $value in $breakpoints {
-			@include bp( $bp ) {
-				@if ( map-get( $grid-gutters, $bp ) ) {
-					padding-left: map-get( $grid-gutters, $bp );
-					padding-right: map-get( $grid-gutters, $bp );
-				} @else {
-					@warn 'no gutter defined at this breakpoint';
-				}
-			}
-		}
+		width: 100%;
+		
 		@if ($constrain == true) {
 			max-width: $layout-width;
 			margin-left: auto;
@@ -347,10 +340,10 @@
 			flex-wrap: wrap;
 		}
 	}
-	
-	//**********************************************************
-	// Column Maker
-	//**********************************************************
+
+//***************************************************************
+// Column Maker
+//***************************************************************
 	// Outputs grid-constrained containers, here
 	// defined as "columns" for ease of conception.
 	//
@@ -359,7 +352,7 @@
 	// Keyword should be one of the keys in $breakpoints and 
 	// the Number should be a value not greater than 
 	// $grid-column-count. FOR EXAMPLE, you might put:
-	// "small 12, medium 6, large 3". 
+	// "sm 12, md 6, lg 3". 
 	//**********************************************************
 	@mixin column($cols...) {
 		display: block;
@@ -374,10 +367,10 @@
 							grid-column-end: span $columns;
 						}
 					} @else {
-						@warn 'breakpoint does not exist';
+						// @warn 'breakpoint does not exist';
 					}
 				} @else {
-					@warn 'incorrect numbers of args passed';
+					// @warn 'incorrect numbers of args passed (`#{$col}`)';
 				}
 			}
 		} @else {
@@ -385,9 +378,9 @@
 		}
 	}
 
-	//**********************************************************
-	// Billboard
-	//**********************************************************
+//***************************************************************
+// Column Shifter
+//***************************************************************
 	// Outputs grid-constrained containers, here
 	// defined as "columns" for ease of conception.
 	//
@@ -396,17 +389,66 @@
 	// Keyword should be one of the keys in $breakpoints and 
 	// the Number should be a value not greater than 
 	// $grid-column-count. FOR EXAMPLE, you might put:
-	// "small 12, medium 6, large 3". 
+	// "sm 12, md 6, lg 3". 
+	//**********************************************************
+	@mixin shift($cols...) {
+		display: block;
+		@if ( length( $cols ) > 0 ) {
+			@each $col in $cols {
+				@if ( length( $col ) == 2 ) {
+					$size: nth( $col, 1 );
+					$columns: nth( $col, 2 );
+
+					@if ( map-get( $breakpoints, $size ) ) {
+						@include bp( $size ) {
+							grid-column-start: $columns;
+						}
+					} @else {
+						// @warn 'breakpoint does not exist';
+					}
+				} @else {
+					// @warn 'incorrect numbers of args passed (`#{$col}`)';
+				}
+			}
+		}
+	}
+
+//***************************************************************
+// Billboard
+//***************************************************************
+	// Outputs grid-constrained containers, here
+	// defined as "columns" for ease of conception.
+	//
+	// @param {Keyword} $valign - Takes keyword for vertical 
+	// 		alignment. Accepts 'top', 'middle', and 'bottom'.
+	// @param {Keyword} $halign - Takes keyword for horizontal
+	// 		alignment. Accepts 'left', 'center', and 'right'.
+	// @param {Number(s)} $content-width - Any single numerical
+	// 		value or list of numerical values. You can use 
+	// 		column counts, percentages (with or without a unit), 
+	// 		or any arbitrary value. A list of values will be
+	// 		applied to subsequent breakpoints in order from 
+	// 		smallest to biggest.
+	// @param {Number(s)} $height - Any single numerical value 
+	// 		or list of numerical values. You can use pixel
+	//		heights (with or without a unit), or any 
+	// 		arbitrary value WITH a unit. A list of values will
+	// 		be applied to subsequent breakpoints in order from 
+	// 		smallest to biggest.
+	// @param {String} $text-color - Any valid CSS value for
+	// 		'color'. 
+	// @param {String} $header-color - Any valid CSS value for
+	// 		'color'.
 	//**********************************************************
 	@mixin billboard($valign:middle, $halign:center, $content-width:100 50 33, $height:400 500 600, $text-color:$shade-lite, $header-color:inherit) {
 		@include row;
 		position: relative;
 		overflow: hidden;
-		@if (type_of($height) == list) {
+		@if ( type_of($height) == list ) {
 			@each $bp, $value in $breakpoints {
-				@include bp($bp) {
-					$relative-height: nth( $height, index( ($breakpoints), ($bp $value) ) );
-					@if (type_of($relative-height) == number) {
+				@include bp( $bp ) {
+					$relative-height: nth( $height, index( ( $breakpoints ), ( $bp $value ) ) );
+					@if ( type_of( $relative-height ) == number and unitless( $relative-height ) ) {
 						min-height: $relative-height * 1px;
 					} @else {
 						min-height: $relative-height;
@@ -420,9 +462,7 @@
 			background-size: cover;
 			background-position: center;
 			@include column;
-			margin-left: 0;
-			margin-right: 0;
-			padding: $grid-gutters-default;
+			display: flex;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -430,63 +470,57 @@
 			bottom: 0;
 			color: $text-color;
 			flex-direction: column;
-			&:not(.top):not(.middle):not(.bottom) {
-				@if ($valign == top) {
-					justify-content: start; //vertical	
-				} @else if ($valign == bottom) {
-					justify-content: end; //vertical	
-				} @else if ($valign == middle or center or centre) {
-					justify-content: center; //vertical	
-				} @else {
-					@warn '#{$valign} is an invalid vertical alignment, please use top, middle, or bottom';
-				}
+			@include gutters($h:true);
+			@if ($valign == top) {
+				justify-content: flex-start;
+			} @else if ($valign == bottom) {
+				justify-content: flex-end;	
+			} @else if ($valign == middle or center or centre) {
+				justify-content: center;
+			} @else {
+				@warn '#{$valign} is an invalid vertical alignment, please use top, middle, or bottom';
 			}
-			// Horizontal alignment
-			&:not(.left):not(.center):not(.right) {
-				@if ($halign == left) {
-					align-items: start;
-					text-align: left;
-				} @else if ($halign == right) {
-					align-items: end;
-					text-align: right;	
-				} @else if ($halign == middle or center or centre) {
-					align-items: center;
-					text-align: center;
-				} @else {
-					@warn '#{$halign} is an invalid horizontal alignment, please use left, center, or right';
-				}
+			@if ($halign == left) {
+				align-items: flex-start;
+				text-align: left;
+			} @else if ($halign == right) {
+				align-items: flex-end;
+				text-align: right;	
+			} @else if ($halign == middle or center or centre) {
+				align-items: center;
+				text-align: center;
+			} @else {
+				@warn '#{$halign} is an invalid horizontal alignment, please use left, center, or right';
 			}
-
 			&.top {
-				justify-content: start; 
+				justify-content: flex-start; 
 			}
 			&.middle {
 				justify-content: center;
 			}
 			&.bottom {
-				justify-content: end;
+				justify-content: flex-end;
 			}
 			&.left {
-				align-items: start;
+				align-items: flex-start;
 				text-align: left;
 			}
 			&.center {
-				align-items: end;
+				align-items: flex-end;
 				text-align: right;
 			}
 			&.right {
-				align-items: end;
+				align-items: flex-end;
 				text-align: right;
 			}
 			transition: transform 0.6s linear;
-			transform: translateY(100%);
+			transform: translateX(-100%);
 			&.active {
-				transform: translateY(0%);
+				transform: translateX(0%);
 			}
 			&.active ~ & {
-				transform: translateY(-100%);
+				transform: translateX(100%);
 			}
-
 			> * {
 				@if (type_of($content-width) == list) {
 					@each $bp, $value in $breakpoints {
@@ -495,6 +529,8 @@
 							@if (type_of($relative-width) == number) {
 								@if ($relative-width <= $grid-column-count) {
 									max-width: col-calc($relative-width);
+								} @else if ( unit( $relative-width ) == '%' ) {
+									max-width: $relative-width;
 								} @else {
 									max-width: percentage($relative-width / 100);
 								}
@@ -507,19 +543,157 @@
 					max-width: $content-width;
 				}
 			}
-			
 			h1, h2, h3, h4, h5, h6 {
 				color: $header-color;
+				margin-bottom: 0;
 			}
 		}
 	}
 
+//**************************************************************
+// Button Maker
+//**************************************************************
+	// Makes Buttons
+	//
+	// @param {Number} $number - Number to remove unit from
+	// @return {Number} - Unitless number
+	//**********************************************************
+	@mixin button( $bg-color:$button-bg-color, $shade-shift:$button-shade-shift, $type:$button-type ) {
+		display: inline-flex;
+		border: 2px solid $bg-color;
+		@if ( $type == hollow ) {
+			background-image: linear-gradient(130deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.25) 50%);
+		} @else if ( $shade-shift == lighten ) {
+			background-image: linear-gradient(130deg, $color-primary 50%, lighten($color-primary, 50%) 50%);
+		} @else {
+			background-image: linear-gradient(130deg, $color-primary 50%, darken($color-primary, 50%) 50%);
+		}
+		border-radius: 3px;
+		padding: 15px 25px;
+		font-weight: bold;
+		text-decoration: none;
+		text-transform: uppercase;
+		@if ( $type == hollow ) {
+			color: $bg-color;
+		} @else {
+			color: contrast($bg-color);
+		}
+		background-size: 250%;
+		background-position: 0% center;
+		cursor: pointer;
+		transition: all 0.5s ease;
+		&:hover,
+		&:active {
+			background-position: 100% center;
+			@if ( $type != hollow ) {
+				color: contrast(lighten($bg-color, 50%));
+			}
+		}
+	}
 
+//**************************************************************
+// Alert Maker
+//**************************************************************
+	// Makes Alert Boxes
+	//
+	// @param {Number} $number - Number to remove unit from
+	// @return {Number} - Unitless number
+	//**********************************************************
+	@mixin alert( $bg:$primary-color, $link:false, $text:auto ) {
+		max-width: 100%;
+		background: $bg;
+	    padding-top: 4px;
+	    cursor: pointer;
+	    font-weight: 500;
+		font-size: 80%;
+		line-height: 4;
+		transition: letter-spacing 0.5s ease;
+		letter-spacing: 3px;
+		--color: #{$text};
+		@if ($text == auto) {
+	    	color: contrast($bg);
+	    } @else {
+	    	color: $text;
+	    }
+		@include bp(md) {
+			letter-spacing: 5px;
+		}
+		@if ($link == true) {
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+				letter-spacing: 6px;
+				@include bp(md) {
+					letter-spacing: 8px;
+				}
+			}
+		}
+	    * {
+	    	color: inherit;
+			font-weight: inherit;
+			letter-spacing: inherit;
+			font-size: inherit;
+			line-height: inherit;
+			cursor: inherit;
+			margin-bottom: 0;
+	    }
+	}
 
+//**************************************************************
+// Include Responsive Gutters
+//**************************************************************
+	// Returns Responsive Gutters on items that are not columns
+	//
+	// @param {Number} $number - Number to remove unit from
+	// 
+	// @return {Number} - Unitless number
+	//**********************************************************
+	@mixin gutters($type:padding, $h:false) {
+		@each $bp, $value in $breakpoints {
+			@include bp( $bp ) {
+				--bp: #{$bp};
+				@if ( map-get( $grid-gutters, $bp ) ) {
+					@if ($type = padding) {
+						padding-left: map-get( $grid-gutters, $bp );
+						padding-right: map-get( $grid-gutters, $bp );
+						@if ($h = true) {
+							padding-top: map-get( $grid-gutters, $bp );
+							padding-bottom: map-get( $grid-gutters, $bp );
+						}
+					} @else if ($type = margin) {
+						margin-left: map-get( $grid-gutters, $bp );
+						margin-right: map-get( $grid-gutters, $bp );
+						@if ($h = true) {
+							margin-top: map-get( $grid-gutters, $bp );
+							margin-bottom: map-get( $grid-gutters, $bp );
+						}
+					}
+				} @else {
+					@warn 'no bp??';
+				}
+			}
+		}
+	}
 
-
-
-
+//**************************************************************
+// Include Responsive Spacer Margins
+//**************************************************************
+	// Returns Responsive Gutters on items that are not columns
+	//
+	// @param {Number} $number - Number to remove unit from
+	// 
+	// @return {Number} - Unitless number
+	//**********************************************************
+	@mixin spacer($size...) {
+		@each $bp, $value in $breakpoints {
+			@include bp( $bp ) {
+				@if ( map-get( $vertical-spacing, $bp ) ) {
+					margin-top: map-get( $vertical-spacing, $bp );
+					margin-bottom: map-get( $vertical-spacing, $bp );
+				}
+			}
+		}
+	}
 
 
 

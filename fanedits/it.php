@@ -5,97 +5,130 @@
 		<link rel="stylesheet" type="text/css" href="styles.css?v=1.0">
 	</head>
 	<body>
-		<nav class="nav" data-fix>
-			<div class="nav__inner">
-				<div class="nav__128k">
-					<a href="/">128k.ca</a>
-				</div>
-				<div class="nav__internal">
-					<span class="mobile-toggle" data-ts=".mobile-flyout"></span>
-					<div class="mobile-flyout">
-						<a href="#purpose">Purpose</a>
+		<header class="header" data-fix>
+			<a class="header-logo" href="/index.php">128k.ca</a>
+			<div class="header-nav-wrapper">
+				<div class="header-nav-trigger" data-ts=".header-nav">MENU</div>
+				<nav class="header-nav" data-nav>
+					<a href="#purpose">Purpose</a>
 						<a href="#edits">Edits</a>
 						<a href="#info">Info</a>
 						<a href="#changelog">Changelog</a>
 						<a href="#compare">Comparison</a>
+				</nav>
+			</div>
+		</header>
+
+		<h1 class="main-title">
+			<span class="author">Stephen King's</span> <span class="title">It</span> <span class="subtitle">The Cinematic Cut</span>
+		</h1>
+		<div class="billboard" data-billboard="5">
+			<div class="billboard-slide bottom left active" data-bgimg="images/it/rotator-curry.jpg">
+				<h1>Tim Curry</h1>
+			</div>
+			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-brandis.jpg">
+				<h1>Jonathan Brandis</h1>
+			</div>
+			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-ritter.jpg">
+				<h1>John Ritter</h1>
+			</div>
+			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-perkins.jpg">
+				<h1>Emily Perkins</h1>
+			</div>
+			<div class="billboard-slide top right" data-bgimg="images/it/rotator-anderson.jpg">
+				<h1>Harry Anderson</h1>
+			</div>
+			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-christopher.jpg">
+				<h1>Dennis Christopher</h1>
+			</div>
+			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-crane.jpg">
+				<h1>Brandon Crane</h1>
+			</div>
+			<div class="billboard-slide top left" data-bgimg="images/it/rotator-faraizl.jpg">
+				<h1>Adam Faraizl</h1>
+			</div>
+			<div class="billboard-slide top right" data-bgimg="images/it/rotator-green.jpg">
+				<h1>Seth Green</h1>
+			</div>
+			<div class="billboard-slide bottom left" data-bgimg="images/it/rotator-hiller.jpg">
+				<h1>Ben Hiller</h1>
+			</div>
+			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-masur.jpg">
+				<h1>Richard Masur</h1>
+			</div>
+			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-otoole.jpg">
+				<h1>Annette O'Toole</h1>
+			</div>
+			<div class="billboard-slide bottom left" data-bgimg="images/it/rotator-reid.jpg">
+				<h1>Tim Reid</h1>
+			</div>
+			<div class="billboard-slide top left" data-bgimg="images/it/rotator-taylor.jpg">
+				<h1>Marlon Taylor</h1>
+			</div>
+			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-thomas.jpg">
+				<h1>Richard Thomas</h1>
+			</div>
+		</div>
+
+		<section class="banners">
+			<a class="trailer-banner popup-link" data-content="trailer-modal">
+				<h2>WATCH THE TRAILER NOW</h2>
+				<div id="trailer-modal" class="popup-content">
+					<div class="responsive-iframe">
+						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QGm4YPgfEME?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
 				</div>
-			</div>
-		</nav>
-		<h1 class="main-title">
-			<span class="author">Stephen King's</span> <span class="title">It</span> <span class="subtitle">The Cinematic Cut</span></h1>
-		<section class="hero-rotator">
-			<div class="hero-rotator__slide hero-rotator__slide--curry  		bottom 	right"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--brandis		bottom 	left"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--ritter 		bottom 	left"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--anderson 		top 	right"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--christopher	bottom 	right"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--crane 			bottom 	right"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--faraizl 		top 	left "></div>
-			<div class="hero-rotator__slide hero-rotator__slide--green  		top 	right"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--hiller 		bottom 	left"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--masur 			bottom 	right"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--otoole 		bottom 	right"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--perkins 		bottom 	right"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--reid 			bottom 	left"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--taylor  		top 	left"></div>
-			<div class="hero-rotator__slide hero-rotator__slide--thomas 		bottom 	right"></div>
-		</section>
-		<a class="section trailer popup-link" data-content="trailer-modal">
-			<h2>WATCH THE TRAILER NOW</h2>
-			<div id="trailer-modal" class="popup-content">
-				<div class="responsive-iframe">
-					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QGm4YPgfEME?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</a>
+			<a class="poster-banner popup-link" data-content="poster-modal">
+				<h2>VIEW THE POSTER</h2>
+				<div id="poster-modal" class="popup-content">
+					<img src="images/it_tcc_poster.jpg" alt="Movie Poster for IT: THE CINEMATIC CUT">
 				</div>
-			</div>
-		</a>
-		<a class="section poster popup-link" data-content="poster-modal">
-			<h2>VIEW THE POSTER</h2>
-			<div id="poster-modal" class="popup-content">
-				<img src="images/it_tcc_poster.jpg" alt="Movie Poster for IT: THE CINEMATIC CUT">
-			</div>
-		</a>
+			</a>
+		</section>
+
+
 		<section class="info" id="info">
 			<h2 class="sub-title"> Quick Info</h2>
-			<div class="info__item info__item--release">
-				<span class="info__image"></span>
-				<span class="info__content">
-					<span class="info__content--heading">Release Date</span>
-					<span class="info__content--body">October 1, 2017</span>
+			<div class="info-item release">
+				<span class="info-image"></span>
+				<span class="info-content">
+					<span class="info-heading">Release Date</span>
+					<span class="info-body">October 1, 2017</span>
 				</span>
 			</div>
-			<div class="info__item info__item--runtime">
-				<span class="info__image"></span>
-				<span class="info__content">
-					<span class="info__content--heading">Running Time</span>
-					<span class="info__content--body">160 Minutes</span>
+			<div class="info-item runtime">
+				<span class="info-image"></span>
+				<span class="info-content">
+					<span class="info-heading">Running Time</span>
+					<span class="info-body">160 Minutes</span>
 				</span>
 			</div>
-			<div class="info__item info__item--aspect">
-				<span class="info__image"></span>
-				<span class="info__content">
-					<span class="info__content--heading">Aspect Ratio</span>
-					<span class="info__content--body">16:9 (720p/Pan &amp; Scan)</span>
+			<div class="info-item aspect">
+				<span class="info-image"></span>
+				<span class="info-content">
+					<span class="info-heading">Aspect Ratio</span>
+					<span class="info-body">16:9 (720p/Pan &amp; Scan)</span>
 				</span>
 			</div>
-			<div class="info__item info__item--codecs">
-				<span class="info__image"></span>
-				<span class="info__content">
-					<span class="info__content--heading">Codecs</span>
-					<span class="info__content--body">h.264/AAC</span>
+			<div class="info-item codecs">
+				<span class="info-image"></span>
+				<span class="info-content">
+					<span class="info-heading">Codecs</span>
+					<span class="info-body">h.264/AAC</span>
 				</span>
 			</div>
-			<div class="info__item info__item--filesize">
-				<span class="info__image"></span>
-				<span class="info__content">
-					<span class="info__content--heading">File Size</span>
-					<span class="info__content--body">8.41GB</span>
+			<div class="info-item filesize">
+				<span class="info-image"></span>
+				<span class="info-content">
+					<span class="info-heading">File Size</span>
+					<span class="info-body">8.41GB</span>
 				</span>
 			</div>
-			<div class="info__item info__item--download">
-				<span class="info__image"></span>
-				<span class="info__content">
-					<a href="#" class="info__content--heading popup-link" data-content="download-modal">Download</a>
+			<div class="info-item download">
+				<span class="info-image"></span>
+				<span class="info-content">
+					<a href="#" class="info-heading popup-link" data-content="download-modal">Download</a>
 					<div id="download-modal" class="popup-content">
 						<h3>Please note:</h3>
 						<p><strong>You must own a legal copy of the original miniseries in order to view/download this content.</strong></p>
@@ -104,6 +137,7 @@
 				</span>
 			</div>
 		</section>
+
 		<section class="purpose" id="purpose">
 			<h2 class="sub-title">The Purpose of This Edit</h2>
 			<p>I've always loved the 1990 "IT" miniseries. I taped it off TV when it originally aired and it stayed in my collection for years; until the tape wore out. Now I have a Digital HD copy. The director's commentary is wonderful, by the way. So, it is announced that the new "IT" re-adaptation is coming out in September of 2017. Of course, I'm super excited to see what this will look like with modern effects and budgets. My take? It was fine. Without Stephen King's insane, coked-out, sex-pervert novel as the source material and especially without the iconic miniseries and work of Tim Curry (and -- I would argue -- Jonathan Brandis), I doubt folks turn out in droves for it after the string of poor King adaptations recently (Cell, Carrie, Dark Tower, etc).</p>
@@ -315,7 +349,7 @@
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script src="library.min.js"></script>
-		<script src="fanedit.min.js"></script>
+		<script src="../js/library.min.js"></script>
+		<!-- <script src="fanedit.min.js"></script> -->
 	</body>
 </html>

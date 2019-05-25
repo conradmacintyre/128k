@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "29156",
 "files": {
+	"/build/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/.gitignore",
+		"oF": 0
+		},
 	"/fanedits/fanedit.js": {
 		"bF": 4,
 		"ft": 64,
@@ -31,496 +39,545 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/fanedits/images/a_faraizl.jpg": {
-		"ft": 16384,
-		"iS": 315392,
-		"jF": 0,
+	"/fanedits/fanedit.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/a_faraizl.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"oAP": "/fanedits/fanedit.min.js.map",
+		"oF": 0
 		},
-	"/fanedits/images/a_otoole.jpg": {
-		"ft": 16384,
-		"iS": 198297,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/fanedits/images/a_otoole.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/fanedits/images/b_crane.jpg": {
-		"ft": 16384,
-		"iS": 243872,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/fanedits/images/b_crane.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/fanedits/images/b_hiller.jpg": {
-		"ft": 16384,
-		"iS": 260201,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/fanedits/images/b_hiller.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/fanedits/images/d_christopher.jpg": {
-		"ft": 16384,
-		"iS": 152552,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/fanedits/images/d_christopher.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/fanedits/images/e_perkins.jpg": {
-		"ft": 16384,
-		"iS": 236162,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/fanedits/images/e_perkins.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/fanedits/images/h_anderson.jpg": {
-		"ft": 16384,
-		"iS": 196608,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/fanedits/images/h_anderson.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/fanedits/images/it-cave-tcc.jpg": {
+	"/fanedits/images/it/compare-cave-tcc.jpg": {
 		"ft": 16384,
 		"iS": 112154,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it-cave-tcc.jpg",
+		"oAP": "/fanedits/images/it/compare-cave-tcc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/it-cave-toc.jpg": {
+	"/fanedits/images/it/compare-cave-toc.jpg": {
 		"ft": 16384,
 		"iS": 229213,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it-cave-toc.jpg",
+		"oAP": "/fanedits/images/it/compare-cave-toc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/it-credits-tcc.jpg": {
+	"/fanedits/images/it/compare-credits-tcc.jpg": {
 		"ft": 16384,
 		"iS": 148397,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it-credits-tcc.jpg",
+		"oAP": "/fanedits/images/it/compare-credits-tcc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/it-credits-toc.jpg": {
+	"/fanedits/images/it/compare-credits-toc.jpg": {
 		"ft": 16384,
 		"iS": 260662,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it-credits-toc.jpg",
+		"oAP": "/fanedits/images/it/compare-credits-toc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/it-deadlights-tcc.jpg": {
+	"/fanedits/images/it/compare-deadlights-tcc.jpg": {
 		"ft": 16384,
 		"iS": 106400,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it-deadlights-tcc.jpg",
+		"oAP": "/fanedits/images/it/compare-deadlights-tcc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/it-deadlights-toc.jpg": {
+	"/fanedits/images/it/compare-deadlights-toc.jpg": {
 		"ft": 16384,
 		"iS": 142044,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it-deadlights-toc.jpg",
+		"oAP": "/fanedits/images/it/compare-deadlights-toc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/it-georgie-tcc.jpg": {
+	"/fanedits/images/it/compare-georgie-tcc.jpg": {
 		"ft": 16384,
 		"iS": 135971,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it-georgie-tcc.jpg",
+		"oAP": "/fanedits/images/it/compare-georgie-tcc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/it-georgie-toc.jpg": {
+	"/fanedits/images/it/compare-georgie-toc.jpg": {
 		"ft": 16384,
 		"iS": 186292,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it-georgie-toc.jpg",
+		"oAP": "/fanedits/images/it/compare-georgie-toc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/it-mike-tcc.jpg": {
+	"/fanedits/images/it/compare-mike-tcc.jpg": {
 		"ft": 16384,
 		"iS": 285805,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it-mike-tcc.jpg",
+		"oAP": "/fanedits/images/it/compare-mike-tcc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/it-mike-toc.jpg": {
+	"/fanedits/images/it/compare-mike-toc.jpg": {
 		"ft": 16384,
 		"iS": 313479,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it-mike-toc.jpg",
+		"oAP": "/fanedits/images/it/compare-mike-toc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/it-plate-tcc.jpg": {
+	"/fanedits/images/it/compare-plate-tcc.jpg": {
 		"ft": 16384,
 		"iS": 200704,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it-plate-tcc.jpg",
+		"oAP": "/fanedits/images/it/compare-plate-tcc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/it-plate-toc.jpg": {
+	"/fanedits/images/it/compare-plate-toc.jpg": {
 		"ft": 16384,
 		"iS": 254073,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it-plate-toc.jpg",
+		"oAP": "/fanedits/images/it/compare-plate-toc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/it_banner.jpg": {
-		"ft": 16384,
-		"iS": 44532,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/fanedits/images/it_banner.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/fanedits/images/it_tcc_poster.jpg": {
+	"/fanedits/images/it/poster.jpg": {
 		"ft": 16384,
 		"iS": 99141,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/it_tcc_poster.jpg",
+		"oAP": "/fanedits/images/it/poster.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/j_brandis.jpg": {
+	"/fanedits/images/it/rotator-anderson.jpg": {
 		"ft": 16384,
 		"iS": 196608,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/j_brandis.jpg",
+		"oAP": "/fanedits/images/it/rotator-anderson.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/j_ritter.jpg": {
+	"/fanedits/images/it/rotator-brandis.jpg": {
 		"ft": 16384,
-		"iS": 199015,
+		"iS": 196608,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/j_ritter.jpg",
+		"oAP": "/fanedits/images/it/rotator-brandis.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/m_taylor.jpg": {
+	"/fanedits/images/it/rotator-christopher.jpg": {
 		"ft": 16384,
-		"iS": 241028,
+		"iS": 152552,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/m_taylor.jpg",
+		"oAP": "/fanedits/images/it/rotator-christopher.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/r_masur.jpg": {
+	"/fanedits/images/it/rotator-crane.jpg": {
 		"ft": 16384,
-		"iS": 232602,
+		"iS": 243872,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/r_masur.jpg",
+		"oAP": "/fanedits/images/it/rotator-crane.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/r_thomas.jpg": {
-		"ft": 16384,
-		"iS": 251759,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/fanedits/images/r_thomas.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/fanedits/images/s_green.jpg": {
-		"ft": 16384,
-		"iS": 208137,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/fanedits/images/s_green.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/fanedits/images/t_curry.jpg": {
+	"/fanedits/images/it/rotator-curry.jpg": {
 		"ft": 16384,
 		"iS": 249497,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/t_curry.jpg",
+		"oAP": "/fanedits/images/it/rotator-curry.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/t_reid.jpg": {
+	"/fanedits/images/it/rotator-faraizl.jpg": {
+		"ft": 16384,
+		"iS": 315392,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/it/rotator-faraizl.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/it/rotator-green.jpg": {
+		"ft": 16384,
+		"iS": 208137,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/it/rotator-green.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/it/rotator-hiller.jpg": {
+		"ft": 16384,
+		"iS": 260201,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/it/rotator-hiller.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/it/rotator-masur.jpg": {
+		"ft": 16384,
+		"iS": 232602,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/it/rotator-masur.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/it/rotator-otoole.jpg": {
+		"ft": 16384,
+		"iS": 198297,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/it/rotator-otoole.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/it/rotator-perkins.jpg": {
+		"ft": 16384,
+		"iS": 236162,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/it/rotator-perkins.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/it/rotator-reid.jpg": {
 		"ft": 16384,
 		"iS": 234988,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/t_reid.jpg",
+		"oAP": "/fanedits/images/it/rotator-reid.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/tcc-belch.jpg": {
+	"/fanedits/images/it/rotator-ritter.jpg": {
+		"ft": 16384,
+		"iS": 199015,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/it/rotator-ritter.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/it/rotator-taylor.jpg": {
+		"ft": 16384,
+		"iS": 241028,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/it/rotator-taylor.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/it/rotator-thomas.jpg": {
+		"ft": 16384,
+		"iS": 251759,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/it/rotator-thomas.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/it/tcc-belch.jpg": {
 		"ft": 16384,
 		"iS": 39528,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/tcc-belch.jpg",
+		"oAP": "/fanedits/images/it/tcc-belch.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/tcc-chicago.jpg": {
+	"/fanedits/images/it/tcc-chicago.jpg": {
 		"ft": 16384,
 		"iS": 79280,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/tcc-chicago.jpg",
+		"oAP": "/fanedits/images/it/tcc-chicago.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/tcc-credits.jpg": {
+	"/fanedits/images/it/tcc-credits.jpg": {
 		"ft": 16384,
 		"iS": 57475,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/tcc-credits.jpg",
+		"oAP": "/fanedits/images/it/tcc-credits.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/tcc-finale.jpg": {
+	"/fanedits/images/it/tcc-finale.jpg": {
 		"ft": 16384,
 		"iS": 79590,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/tcc-finale.jpg",
+		"oAP": "/fanedits/images/it/tcc-finale.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/tcc-georgie.jpg": {
+	"/fanedits/images/it/tcc-georgie.jpg": {
 		"ft": 16384,
 		"iS": 40830,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/tcc-georgie.jpg",
+		"oAP": "/fanedits/images/it/tcc-georgie.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/tcc-mike.jpg": {
+	"/fanedits/images/it/tcc-mike.jpg": {
 		"ft": 16384,
 		"iS": 52720,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/tcc-mike.jpg",
+		"oAP": "/fanedits/images/it/tcc-mike.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/tcc-title.jpg": {
+	"/fanedits/images/it/tcc-title.jpg": {
 		"ft": 16384,
 		"iS": 13312,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/tcc-title.jpg",
+		"oAP": "/fanedits/images/it/tcc-title.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/title_bg.png": {
+	"/fanedits/images/it/title_bg.png": {
 		"ft": 32768,
 		"iS": 16695,
 		"oA": 0,
-		"oAP": "/fanedits/images/title_bg.png",
+		"oAP": "/fanedits/images/it/title_bg.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/fanedits/images/toc-belch.jpg": {
+	"/fanedits/images/it/toc-belch.jpg": {
 		"ft": 16384,
 		"iS": 40817,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/toc-belch.jpg",
+		"oAP": "/fanedits/images/it/toc-belch.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/toc-chicago.jpg": {
+	"/fanedits/images/it/toc-chicago.jpg": {
 		"ft": 16384,
 		"iS": 63403,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/toc-chicago.jpg",
+		"oAP": "/fanedits/images/it/toc-chicago.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/toc-credits.jpg": {
+	"/fanedits/images/it/toc-credits.jpg": {
 		"ft": 16384,
 		"iS": 91286,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/toc-credits.jpg",
+		"oAP": "/fanedits/images/it/toc-credits.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/toc-finale.jpg": {
+	"/fanedits/images/it/toc-finale.jpg": {
 		"ft": 16384,
 		"iS": 69633,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/toc-finale.jpg",
+		"oAP": "/fanedits/images/it/toc-finale.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/toc-georgie.jpg": {
+	"/fanedits/images/it/toc-georgie.jpg": {
 		"ft": 16384,
 		"iS": 43873,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/toc-georgie.jpg",
+		"oAP": "/fanedits/images/it/toc-georgie.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/toc-mike.jpg": {
+	"/fanedits/images/it/toc-mike.jpg": {
 		"ft": 16384,
 		"iS": 44893,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/toc-mike.jpg",
+		"oAP": "/fanedits/images/it/toc-mike.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/images/toc-title.jpg": {
+	"/fanedits/images/it/toc-title.jpg": {
 		"ft": 16384,
 		"iS": 18606,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/fanedits/images/toc-title.jpg",
+		"oAP": "/fanedits/images/it/toc-title.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/fanedits/index.html": {
+	"/fanedits/images/landing-bg.jpg": {
+		"ft": 16384,
+		"iS": 207086,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/landing-bg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/landing-bg2.jpg": {
+		"ft": 16384,
+		"iS": 443639,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/landing-bg2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/poster.jpg": {
+		"ft": 16384,
+		"iS": 1880046,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/poster.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/poster.jpg": {
+		"ft": 16384,
+		"iS": 607201,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/poster.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/index.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fanedits/index.html",
+		"oAP": "/fanedits/index.php",
+		"oF": 0
+		},
+	"/fanedits/it.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fanedits/it.php",
 		"oF": 0
 		},
 	"/fanedits/library.js": {
@@ -544,6 +601,14 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"/fanedits/library.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fanedits/library.min.js.map",
+		"oF": 0
 		},
 	"/fanedits/styles.css": {
 		"aP": 1,
@@ -576,12 +641,12 @@
 		"oS": 1,
 		"uL": 1
 		},
-	"/index.htm": {
+	"/index.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/index.htm",
+		"oAP": "/index.php",
 		"oF": 0
 		},
 	"/js/library.js": {
@@ -707,11 +772,12 @@
 	"displayValue": "128k.ca",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-trap",
-	"iconImageWasSetByUser": 0
+	"iconImageWasSetByUser": 0,
+	"lastBuiltDate": 580147077.89170396
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerEnableIEGrid": 0,

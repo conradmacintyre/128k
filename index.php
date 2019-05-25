@@ -20,7 +20,7 @@
 				<div class="header-nav-trigger" data-ts=".header-nav">MENU</div>
 				<nav class="header-nav" data-nav>
 					<a href="">Portfolio</a>
-					<a href="">Fanedits</a>
+					<a href="fanedits/index.php">Fanedits</a>
 					<a href="">Nintendo 64</a>
 					<a href="">Games</a>
 					<a href="">Other Stuff</a>
@@ -41,7 +41,7 @@
 				<a href="#" class="button">Learn More</a>
 			</div>
 
-			<div class="billboard-slide bottom" data-bgimg="https://i0.wp.com/www.courthousenews.com/wp-content/uploads/2018/10/DeLorean.jpg">
+			<div class="billboard-slide bottom right" data-bgimg="https://i0.wp.com/www.courthousenews.com/wp-content/uploads/2018/10/DeLorean.jpg">
 				<h1>This is a header</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione rem vitae reiciendis sint sapiente eum dignissimos nulla, minus officia modi consectetur culpa libero aliquid ullam blanditiis, esse cupiditate? Cumque, odit.</p>
 				<a href="#" class="button">Learn More</a>

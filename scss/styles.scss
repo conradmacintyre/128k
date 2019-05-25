@@ -35,7 +35,6 @@
 	&-logo {
 		font-size: $h3-font-size;
 		font-weight: bold;
-		
 	}
 	&-nav-wrapper {
 		flex-grow: 1;
@@ -59,11 +58,9 @@
 			text-decoration: none;
 			padding: 15px 7.5px;
 			font-size: 80%;
-			// font-weight: bold;
 			text-transform: uppercase;
 			.mobile & {
 				padding: 7.5px 15px;
-
 			}
 		}
 		&-trigger {
@@ -72,9 +69,6 @@
 				display: flex;
 				justify-content: flex-end;
 				padding: 15px 7.5px;
-				// position: absolute;
-				// top: 0;
-				// right: 0;
 			}
 		}
 	}
@@ -83,4 +77,5 @@
 .billboard {
 	@include billboard;
 }
+
 
