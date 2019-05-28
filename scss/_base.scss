@@ -19,6 +19,8 @@
 		vertical-align: baseline;
 	}
 	html,body {
+		overflow-x: hidden;
+		overflow-y: auto;
 		height: 100%;
 	}
 	// HTML5 display-role reset for older browsers
@@ -141,6 +143,162 @@
 	.button {
 		@include button;
 	}
+
+	//*******************************************
+	// POPUPS
+	//*******************************************
+	.popup {
+		&-open {
+			overflow: hidden;
+		}
+		&-bg {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba($shade-dark,0.5);
+			overflow: hidden;
+			pointer-events: none;
+			opacity: 0;
+			transform: scaleY(0);
+			transition: 
+				opacity 0.25s ease,
+				transform 0.25s ease;
+			;
+			.popup-open & {
+				pointer-events: auto;
+				opacity: 1;
+				transform: scaleY(1);
+				z-index: 2;
+			}
+		}
+		&-wrap {
+			background: $shade-lite;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			max-width: 90vw;
+			max-height: 90vh;
+		}
+		&-container {
+			padding: 30px;
+			overflow: auto;
+			max-width: 90vw;
+			max-height: 90vh;
+		}
+		&-close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: block;
+			width: 30px; 
+			height: 30px;
+			transform: translate(40%, -40%);
+			background: $color-danger;
+			cursor: pointer;
+			text-align: center;
+			line-height: 23px;
+			color: white;
+			border: 3px solid $shade-lite;
+			border-radius: 50%;
+			font-size: 30px;
+			transition: transform 0.3s ease;
+			z-index: 1;
+			&:before {
+				content: '\00d7';
+			}
+			&:hover {
+				transform: translate(40%, -40%) rotate(90deg);
+			}
+		}
+		&-content {
+			display: none;
+		}
+	}
+
+	//*******************************************
+	// POPUPS
+	//*******************************************
+	.responsive-iframe {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		height: 0;
+		width: 90vw;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	//*******************************************
+	// FORMS
+	//*******************************************
+	
+	[type='text'], 
+	[type='password'], 
+	[type='date'], 
+	[type='datetime'], 
+	[type='datetime-local'], 
+	[type='month'], 
+	[type='week'], 
+	[type='email'], 
+	[type='number'], 
+	[type='search'], 
+	[type='tel'],
+	[type='time'], 
+	[type='url'], 
+	[type='color'], 
+	textarea {
+	    display: block;
+	    box-sizing: border-box;
+	    width: 100%;
+	    height: 2.4375rem;
+	    margin: 0 0 1rem;
+	    padding: .5rem;
+	    border: 1px solid #BFBFBF;
+	    border-radius: 3px;
+	    background-color: #fefefe;
+	    box-shadow: inset 0 1px 2px rgba(10,10,10,0.1);
+	    font-family: inherit;
+	    font-size: 1rem;
+	    font-weight: normal;
+	    color: #0a0a0a;
+	    transition: box-shadow 0.5s,border-color 0.25s ease-in-out;
+	    appearance: none;
+	    &:focus {
+	    	outline: none;
+		    border: 1px solid #8a8a8a;
+		    background-color: #fefefe;
+		    box-shadow: 0 0 5px #BFBFBF;
+		    transition: box-shadow 0.5s,border-color 0.25s ease-in-out;
+	    }
+	}
+	[type='file'] {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+		+ .file-placeholder {
+			@include button;
+
+		}
+		&:focus + .file-placeholder ,
+		& + .file-placeholder:hover {
+		    // background-color: red;
+		}
+	}
+	button,
+	[type='submit'] {
+		@include button;
+	}
+
 }
 
 

@@ -542,12 +542,166 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/fanedits/images/shining/compare-credits-tcc.jpg": {
+		"ft": 16384,
+		"iS": 385631,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/compare-credits-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/compare-credits-toc.jpg": {
+		"ft": 16384,
+		"iS": 506002,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/compare-credits-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/compare-date-tcc.jpg": {
+		"ft": 16384,
+		"iS": 690596,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/compare-date-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/compare-date-toc.jpg": {
+		"ft": 16384,
+		"iS": 685696,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/compare-date-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/compare-dream-tcc.jpg": {
+		"ft": 16384,
+		"iS": 500363,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/compare-dream-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/compare-dream-toc.jpg": {
+		"ft": 16384,
+		"iS": 576236,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/compare-dream-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/compare-opening-tcc.jpg": {
+		"ft": 16384,
+		"iS": 515051,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/compare-opening-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/compare-opening-toc.jpg": {
+		"ft": 16384,
+		"iS": 630083,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/compare-opening-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/compare-ullman-tcc.jpg": {
+		"ft": 16384,
+		"iS": 618556,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/compare-ullman-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/compare-ullman-toc.jpg": {
+		"ft": 16384,
+		"iS": 656610,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/compare-ullman-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/fanedits/images/shining/poster.jpg": {
 		"ft": 16384,
 		"iS": 1880046,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/fanedits/images/shining/poster.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/rotator-demornay.jpg": {
+		"ft": 16384,
+		"iS": 487515,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/rotator-demornay.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/rotator-mead.jpg": {
+		"ft": 16384,
+		"iS": 378661,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/rotator-mead.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/rotator-vanpeebles.jpg": {
+		"ft": 16384,
+		"iS": 519320,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/rotator-vanpeebles.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/shining/rotator-weber.jpg": {
+		"ft": 16384,
+		"iS": 580776,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/shining/rotator-weber.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -580,35 +734,44 @@
 		"oAP": "/fanedits/it.php",
 		"oF": 0
 		},
-	"/fanedits/library.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
+	"/fanedits/shining.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "/fanedits/library.min.js",
+		"oAP": "/fanedits/shining-min.css",
 		"oF": 0,
-		"sC": 3,
-		"tS": 1
+		"oS": 3
 		},
-	"/fanedits/library.min.js": {
-		"bF": 4,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/fanedits/library.min.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
-	"/fanedits/library.min.js.map": {
+	"/fanedits/shining.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/fanedits/library.min.js.map",
+		"oAP": "/fanedits/shining.css.map",
 		"oF": 0
+		},
+	"/fanedits/shining.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fanedits/shining.php",
+		"oF": 0
+		},
+	"/fanedits/shining.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/fanedits/shining.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
 		},
 	"/fanedits/styles.css": {
 		"aP": 1,
@@ -635,7 +798,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/fanedits/styles.css",
 		"oF": 0,
 		"oS": 1,
@@ -1203,7 +1366,7 @@
 		},
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 1,
+	"esLintEnvironmentsMask": 8193,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -1522,7 +1685,7 @@
 			"optionString": "{'allowParens': false}"
 			},
 		"no-console": {
-			"active": 1,
+			"active": 0,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {

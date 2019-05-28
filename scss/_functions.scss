@@ -397,7 +397,7 @@
 			@each $col in $cols {
 				@if ( length( $col ) == 2 ) {
 					$size: nth( $col, 1 );
-					$columns: nth( $col, 2 );
+					$columns: nth( $col, 2 ) + 1;
 
 					@if ( map-get( $breakpoints, $size ) ) {
 						@include bp( $size ) {
@@ -599,7 +599,8 @@
 	// @param {Number} $number - Number to remove unit from
 	// @return {Number} - Unitless number
 	//**********************************************************
-	@mixin alert( $bg:$primary-color, $link:false, $text:auto ) {
+	@mixin alert( $bg:$primary-color, $link:false, $text:auto, $contained:true ) {
+		display: block;
 		max-width: 100%;
 		background: $bg;
 	    padding-top: 4px;
@@ -608,24 +609,27 @@
 		font-size: 80%;
 		line-height: 4;
 		transition: letter-spacing 0.5s ease;
-		letter-spacing: 3px;
-		--color: #{$text};
+		line-height: 1.3;
+
+		@if ($contained == true) {
+		    padding: 15px;
+		    border-radius: 5px;
+		    border: 1px solid darkred;
+		    margin: 10px 0;
+		} @else {
+			padding: 20px 0;
+		}
+
 		@if ($text == auto) {
 	    	color: contrast($bg);
 	    } @else {
 	    	color: $text;
 	    }
-		@include bp(md) {
-			letter-spacing: 5px;
-		}
+
 		@if ($link == true) {
 			text-decoration: none;
 			&:hover {
 				text-decoration: none;
-				letter-spacing: 6px;
-				@include bp(md) {
-					letter-spacing: 8px;
-				}
 			}
 		}
 	    * {
@@ -684,18 +688,35 @@
 	// 
 	// @return {Number} - Unitless number
 	//**********************************************************
-	@mixin spacer($size...) {
+	@mixin spacer($location:both) {
 		@each $bp, $value in $breakpoints {
 			@include bp( $bp ) {
 				@if ( map-get( $vertical-spacing, $bp ) ) {
-					margin-top: map-get( $vertical-spacing, $bp );
-					margin-bottom: map-get( $vertical-spacing, $bp );
+					@if ($location == both) {
+						margin-top: map-get( $vertical-spacing, $bp );
+						margin-bottom: map-get( $vertical-spacing, $bp );
+					} @else if ($location == top) {
+						margin-top: map-get( $vertical-spacing, $bp );
+					} @else if ($location == bottom) {
+						margin-bottom: map-get( $vertical-spacing, $bp );
+					} @else {
+						@warn 'invalid location passed to spacer';
+					}
 				}
 			}
 		}
 	}
 
-
+//**************************************************************
+// Include Responsive Spacer Margins
+//**************************************************************
+	// Returns Responsive Gutters on items that are not columns
+	//
+	// @param {Number} $number - Number to remove unit from
+	// 
+	// @return {Number} - Unitless number
+	//**********************************************************
+	
 
 
 

@@ -70,7 +70,7 @@
 			</div>
 		</div>
 
-		<section class="banners">
+		<div class="banners">
 			<a class="trailer-banner popup-link" data-content="trailer-modal">
 				<h2>WATCH THE TRAILER NOW</h2>
 				<div id="trailer-modal" class="popup-content">
@@ -82,10 +82,10 @@
 			<a class="poster-banner popup-link" data-content="poster-modal">
 				<h2>VIEW THE POSTER</h2>
 				<div id="poster-modal" class="popup-content">
-					<img src="images/it_tcc_poster.jpg" alt="Movie Poster for IT: THE CINEMATIC CUT">
+					<img src="images/it/poster.jpg" alt="Movie Poster for IT: THE CINEMATIC CUT">
 				</div>
 			</a>
-		</section>
+		</div>
 
 
 		<section class="info" id="info">
@@ -253,13 +253,13 @@
 				<div class="compare__item">
 					<div class="compare__slider">
 						<div class="compare__image compare__image--toc">
-							<img src="images/it-mike-toc.jpg">
+							<img src="images/it/compare-mike-toc.jpg">
 						</div>
 						<div class="compare__resize">
 							<div class="compare__image compare__image--tcc">
-								<img src="images/it-mike-tcc.jpg">
+								<img src="images/it/compare-mike-tcc.jpg">
 							</div>
-							<div class="compare__handle">
+							<div class="compare__handle"></div>
 						</div>
 					</div>
 				</div>
@@ -268,13 +268,13 @@
 				<div class="compare__item">
 					<div class="compare__slider">
 						<div class="compare__image compare__image--toc">
-							<img src="images/it-georgie-toc.jpg">
+							<img src="images/it/compare-georgie-toc.jpg">
 						</div>
 						<div class="compare__resize">
 							<div class="compare__image compare__image--tcc">
-								<img src="images/it-georgie-tcc.jpg">
+								<img src="images/it/compare-georgie-tcc.jpg">
 							</div>
-							<div class="compare__handle">
+							<div class="compare__handle"></div>
 						</div>
 					</div>
 				</div>
@@ -283,13 +283,13 @@
 				<div class="compare__item">
 					<div class="compare__slider">
 						<div class="compare__image compare__image--toc">
-							<img src="images/it-plate-toc.jpg">
+							<img src="images/it/compare-plate-toc.jpg">
 						</div>
 						<div class="compare__resize">
 							<div class="compare__image compare__image--tcc">
-								<img src="images/it-plate-tcc.jpg">
+								<img src="images/it/compare-plate-tcc.jpg">
 							</div>
-							<div class="compare__handle">
+							<div class="compare__handle"></div>
 						</div>
 					</div>
 				</div>
@@ -298,13 +298,13 @@
 				<div class="compare__item">
 					<div class="compare__slider">
 						<div class="compare__image compare__image--toc">
-							<img src="images/it-deadlights-toc.jpg">
+							<img src="images/it/compare-deadlights-toc.jpg">
 						</div>
 						<div class="compare__resize">
 							<div class="compare__image compare__image--tcc">
-								<img src="images/it-deadlights-tcc.jpg">
+								<img src="images/it/compare-deadlights-tcc.jpg">
 							</div>
-							<div class="compare__handle">
+							<div class="compare__handle"></div>
 						</div>
 					</div>
 				</div>
@@ -313,13 +313,13 @@
 				<div class="compare__item">
 					<div class="compare__slider">
 						<div class="compare__image compare__image--toc">
-							<img src="images/it-cave-toc.jpg">
+							<img src="images/it/compare-cave-toc.jpg">
 						</div>
 						<div class="compare__resize">
 							<div class="compare__image compare__image--tcc">
-								<img src="images/it-cave-tcc.jpg">
+								<img src="images/it/compare-cave-tcc.jpg">
 							</div>
-							<div class="compare__handle">
+							<div class="compare__handle"></div>
 						</div>
 					</div>
 				</div>
@@ -328,13 +328,13 @@
 				<div class="compare__item">
 					<div class="compare__slider">
 						<div class="compare__image compare__image--toc">
-							<img src="images/it-credits-toc.jpg">
+							<img src="images/it/compare-credits-toc.jpg">
 						</div>
 						<div class="compare__resize">
 							<div class="compare__image compare__image--tcc">
-								<img src="images/it-credits-tcc.jpg">
+								<img src="images/it/compare-credits-tcc.jpg">
 							</div>
-							<div class="compare__handle">
+							<div class="compare__handle"></div>
 						</div>
 					</div>
 				</div>
@@ -350,6 +350,6 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src="../js/library.min.js"></script>
-		<!-- <script src="fanedit.min.js"></script> -->
+		<script src="fanedit.min.js"></script>
 	</body>
 </html>

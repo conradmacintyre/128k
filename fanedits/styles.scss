@@ -1,78 +1,18 @@
 //Variables
-	$color-danger: #6a2825;
-	$red: $color-danger;
-	$grey: #ddd;
-	$white: #efefef;
-	$black: #333;
-	$link: #d00;
 	$gutters: (
 		small: 10px,
 		medium: 20px,
 		large: 30px
 	);
+	$vertical-spacing: (
+		sm: 33px,
+		md: 66px,
+		lg: 100px
+	) !default;
 
 	@import '../scss/_router';
 
 //Functions & Mixins
-	@mixin mobile ( $dir:'only' ) {
-		@if ($dir == 'down') {
-			@media (max-width: #{map-get($breakpoints,md) - 1px}) {
-				@content;
-			}
-		} @else if ($dir == 'up') {
-			@content;
-		} @else if ($dir =='only') {
-			@media (max-width: #{map-get($breakpoints,md) - 1px}) {
-				@content;
-			}
-		}
-	}
-	@mixin tablet ( $dir:'up' ) {
-		@if ($dir == 'down') {
-			@media (max-width: #{map-get($breakpoints,lg) - 1px}) {
-				@content;
-			}
-		} @else if ($dir == 'up') {
-			@media (min-width: #{map-get($breakpoints,md)}) {
-				@content;
-			}
-		} @else if ($dir =='only') {
-			@media (min-width: #{map-get($breakpoints,md)}) and (max-width: #{map-get($breakpoints,lg) - 1px}) {
-				@content;
-			}
-		}
-	}
-	@mixin desktop ( $dir:'up' ) {
-		@if ($dir == 'down') {
-			@content;
-		} @else if ($dir == 'up') {
-			@media (min-width: #{map-get($breakpoints,lg)}) {
-				@content;
-			}
-		} @else if ($dir =='only') {
-			@media (min-width: #{map-get($breakpoints,lg)}) {
-				@content;
-			}
-		}
-	}
-	@mixin concat ($parent,$class,$type:class,$pseudo:before) {
-		$concat: ".";
-		@if $type == class {
-			$concat: ".";
-			@at-root {
-				#{$parent}.#{$class}:#{$pseudo} {
-					@content;
-				}
-			}
-		} @else if $type == pseudo {
-			@at-root {
-				#{$parent}:#{$class}:#{$pseudo} {
-					@content;
-				}
-			}
-		}
-		
-	}
 	%blood-drop-list {
 		position: relative;
 		list-style: none;
@@ -83,7 +23,7 @@
 			display: block;
 			width: 10px;
 			height: 10px;
-			background: $red;
+			background: $color-danger;
 			position: absolute;
 			top: 8px;
 			left: -20px;
@@ -91,9 +31,9 @@
 			transform: rotate(45deg);
 		}
 		&:after {
-			background: $white;
+			background: $shade-lite;
 		    transform: scale(.8) rotate(45deg);
-		    box-shadow: inset -4px 2px 0 0 $red
+		    box-shadow: inset -4px 2px 0 0 $color-danger;
 		}
 	}
 
@@ -115,6 +55,10 @@
 		padding: 0 $grid-gutters-default;
 		display: flex;
 		align-items: center;
+		position: sticky;
+		top: 0;
+		background-color: rgba($shade-lite,0.9);
+    	backdrop-filter: blur(5px);
 		&-logo {
 			font-size: $h3-font-size;
 			font-weight: bold;
@@ -178,9 +122,9 @@
 		& {
 			@include column(sm 12, md 6, lg 4);
 			margin-bottom: $grid-gutters-default;
-			border: 10px solid $black;
+			border: 10px solid $shade-dark;
 			padding: 10px 10px 65px;
-			background-color: $black;
+			background-color: $shade-dark;
 			position: relative;
 			transition: background-color 1s ease;
 			&:after {
@@ -189,10 +133,10 @@
 				left: 10px;
 				bottom: 10px;
 				width: calc(100% - 20px);
-				background: $black;
+				background: $shade-dark;
 				height: 50px;
 				font-family: Limelight;
-				color: darken($white, 50%);
+				color: darken($shade-lite, 50%);
 				text-align: center;
 				line-height: 50px;
 				font-size: 35px;
@@ -206,8 +150,8 @@
 			}
 		}
 		img {
-			background: $black;
-			border: 10px solid $black;
+			background: $shade-dark;
+			border: 10px solid $shade-dark;
 			opacity: 0.75;
 			transition: opacity 1s ease;
 
@@ -215,7 +159,7 @@
 		&:hover {
 			background-color: #00E5FB;
 			&:after {
-				color: $white;
+				color: $shade-lite;
 			}
 			img {
 				opacity: 1;
@@ -235,7 +179,7 @@
 		}
 		.title {
 			font-weight: 800;
-			color: $red;
+			color: $color-primary;
 			font-size: 125%;
 		}
 		.author,
@@ -246,29 +190,39 @@
 
 	// Rotator
 	.billboard {
-		@include billboard;
+		@include billboard( $height:calc( 120% / 16 * 9 ) );
 		text-transform: uppercase;
 	}
 
 	// Alert Banners
-	.trailer-banner {
-		@include column;
-		@include alert( $bg:$color-danger, $link:true );
-		display: block;
-		text-align: center;
-		width: 100%;
+	.banners {
+		@include row;
 	}
-	.poster-banner {
+	.banner {
 		@include column;
-		@include alert( $bg:$shade-dark, $link:true );
+		&-trailer {
+			@include alert( $bg:$color-primary, $link:true, $contained:false );
+		}
+		&-poster {
+			@include alert( $bg:$shade-dark, $link:true, $contained:false );
+		}
+		&-amazon {
+			@include alert( $bg:$color-warning, $link:true, $contained:false );
+		}
 		display: block;
 		text-align: center;
 		width: 100%;
+		letter-spacing: 5px;
+		&:hover {
+			text-decoration: none;
+			letter-spacing: 8px;
+		}
 	}
 
 	// Generic Subtitle
 	section {
 		@include row;
+		@include spacer;
 	}
 	.sub-title {
 		@include column;
@@ -290,19 +244,21 @@
 			padding-bottom: 100%;
 			background-color: $shade-dark;
 			&.download {
-				background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/it/title_bg.png);
 				text-transform: uppercase;
 				font-size: 125%;
 				text-shadow: 
-					1px 1px $white,
-					1px 0px $white,
-					0px 1px $white,
-					-1px -1px $white,
-					-1px 0px $white,
-					0px -1px $white
+					1px 1px $shade-lite,
+					1px 0px $shade-lite,
+					0px 1px $shade-lite,
+					-1px -1px $shade-lite,
+					-1px 0px $shade-lite,
+					0px -1px $shade-lite
 				;
 				&:hover {
-					background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url(images/it/title_bg.png);
+					a {
+						text-decoration: none;
+						color: $color-primary;
+					}
 				}
 			}
 		}
@@ -318,190 +274,55 @@
 			font-size: $h3-font-size;
 			font-weight: $h4-font-weight;
 			display: block;
-			border-bottom: 2px solid $color-danger;
+			border-bottom: 2px solid $color-primary;
 		}
 	}
 
-
-
-
-// ******************************
-// ******************************
-// 
-// Old Content. Remove ASAP
-// 
-// ******************************
-// ******************************
-	.main-title {
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		margin-top: 50px;	
-		margin-bottom: 50px;
-		span {
-			display: inline-block;
-		}
-		.title {
-			font-weight: 800;
-			color: $red;
-			font-size: 125%;
-		}
-		.author,
-		.subtitle {
-			font-weight: 100;
-		}
-	}
-	.subtitle {
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		margin-top: 50px;	
-		margin-bottom: 50px;
-		@include column(12);
-	}
-	section,
-	.section {
-		@include row;
-	}
-
-
-	.info {
-		&__image {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-size: cover;
-			background-position: center;
-			opacity: 0.5;
-		}
-		&__item {
-			$info: &;
-			@include column(6);
-			@include tablet {
-				@include column(4);
-			}
-			@include desktop {
-				@include column(2);
-			}
-			position: relative;
-			color: $white;
-			background-color: $black;
-			&:hover {
-				background-size: 75%;
-			}
-			&:before {
-				content: '';
-				display: block;
-				padding-top: 100%;
-			}
-			&--download {
-				text-transform: uppercase;
-				font-size: 125%;
-				text-shadow: 
-					1px 1px $white,
-					1px 0px $white,
-					0px 1px $white,
-					-1px -1px $white,
-					-1px 0px $white,
-					0px -1px $white
-				;
-			}
-		}
-		&__content {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-			&--heading {
-				font-weight: bold;
-				border-bottom: 2px solid $link;
-				line-height: 14px;
-				&.popup-link {
-					border-bottom: 0;
-					letter-spacing: 3px;
-				}
-			}
-			&--body {
-			}
-		}
-	}
+	// Purpose
 	.purpose {
-		p {
-			@include column(12);
-			@include tablet {
-				@include column(10);
-			}
-			@include desktop {
-				@include column(8);
-			}
+		> * {
+			@include column(sm 12, md 10, lg 8);
+			@include shift(md 1, lg 2);
 		}
 	}
+
+	// Edit List or Cut List
 	.edits {
-		p {
-			@include column(12);
-			@include tablet {
-				@include column(10);
-			}
-			@include desktop {
-				@include column(8);
-			}
+		> * {
+			@include column(sm 12, md 10, lg 8);
+			@include shift(md 1, lg 2);
 		}
-		ul {
-			@include column(11);
-			@include tablet {
-				@include column(9);
-			}
-			@include desktop {
-				@include column(7);
-			}
-			li {
-				@extend %blood-drop-list;
-			}
+		li {
+			@extend %blood-drop-list;
 		}
 	}
+
+	// Changelog over time
 	.changelog {
-		h3 {
-			@include column(12);
-			@include tablet {
-				@include column(10);
-			}
-			@include desktop {
-				@include column(8);
-			}
+		> * {
+			@include column(sm 12, md 10, lg 8);
+			@include shift(md 1, lg 2);
 		}
-		ul {
-			@include column(11);
-			@include tablet {
-				@include column(9);
-			}
-			@include desktop {
-				@include column(7);
-			}
-			li {
-				@extend %blood-drop-list;
-			}
+		h3 {
+			margin-top: map-get($vertical-spacing, sm);
+		}
+		li {
+			@extend %blood-drop-list;
 		}
 	}
+
+	// Comparison
 	.compare {
-		margin-bottom: 100px;
-		h3 {
+		> * {
+			@include column;
 			text-align: center;
-			margin-bottom: 10px;;
 		}
-		&__inner {
-			@include column(12);
+		h3 {
+			// @include spacer(top);
+			color: $color-primary;
 		}
 		&__item {
-			width: 100%;
-			margin-bottom: 50px;
+			@include spacer(bottom);
 		}
 		&__slider {
 			position:relative;
@@ -520,9 +341,9 @@
 			&:before {
 			    position: absolute;
 			    top: 0;
-			    background: rgba($black,0.7);
+			    background: rgba($shade-dark,0.7);
 			    display: block;
-			    color: $white;
+			    color: $shade-lite;
 			    line-height: 28px;
 			    padding: 2px 8px 1px 8px;
 			    white-space: nowrap;
@@ -569,27 +390,54 @@
 				right: 50%; 
 				bottom: 50%;
 				transform: translate(50%,50%);
-				background: $red;
+				background: $color-primary;
 				cursor: ew-resize;
 				text-align: center;
 				line-height: 25px;
 				color: white;
-				border: 3px solid $white;
+				border: 3px solid $shade-lite;
 				border-radius: 50%;
 			}
 		}
 	}
+
+	// Popups
+	.trailer-modal .popup-container,
+	.poster-modal .popup-container {
+		padding: 0;
+	}
+	.poster-modal img {
+		max-height: 90vh;
+	}
+	.download-modal {
+		h3 {
+			color: $color-danger;
+			&:before {
+				content: "\26A0";
+				margin-right: 10px;
+			}
+			&:after {
+				content: "\26A0";
+				margin-left: 10px;
+			}
+		}
+		.alert {
+			@include alert($bg:$color-danger);
+		}
+	}
+
+	// Back To Top
 	.backtotop {
 		position: fixed;
 	    bottom: 15px;
 	    left: 15px;
-	    border: 2px solid $red;
-	    color: $red;
-	    background: $white;
+	    border: 2px solid $color-primary;
+	    color: $color-primary;
+	    background: $shade-lite;
 	    border-radius: 4px;
 	    padding: 0 8px 0 4px;
 	    font-size: 25px;
-	    box-shadow: 0 3px 5px rgba($black,0.5);
+	    box-shadow: 0 3px 5px rgba($shade-dark,0.5);
 	    transform: translateX(-200%);
 	    transition: transform 0.5s ease;
 	    &:before {
@@ -599,100 +447,6 @@
 		}
 		&.visible {
 			transform: translateX(0);
-		}
-	}
-
-//Widgets
-	.popup {
-		&-open {
-			overflow: hidden;
-		}
-		&-bg {
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background: rgba($black,0.5);
-			overflow: hidden;
-			pointer-events: none;
-			opacity: 0;
-			transform: scaleY(0);
-			transition: 
-				opacity 0.25s ease,
-				transform 0.25s ease;
-			;
-			.popup-open & {
-				pointer-events: auto;
-				opacity: 1;
-				transform: scaleY(1);
-				z-index: 2;
-			}
-		}
-		&-wrap {
-			background: $white;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%,-50%);
-			max-width: 90vw;
-			max-height: 90vh;
-		}
-		&-container {
-			padding: 30px;
-			overflow: auto;
-			max-width: 90vw;
-			max-height: 90vh;
-		}
-		&-close {
-			position: absolute;
-			top: 0;
-			right: 0;
-			display: block;
-			width: 30px; 
-			height: 30px;
-			transform: translate(40%, -40%);
-			background: $red;
-			cursor: pointer;
-			text-align: center;
-			line-height: 23px;
-			color: white;
-			border: 3px solid $white;
-			border-radius: 50%;
-			font-size: 30px;
-			transition: transform 0.3s ease;
-			z-index: 1;
-			&:before {
-				content: '\00d7';
-			}
-			&:hover {
-				transform: translate(40%, -40%) rotate(90deg);
-			}
-		}
-		&-content {
-			display: none;
-		}
-	}
-
-	// Responsive video
-	.popup-bg.trailer-modal .popup-container,
-	.popup-bg.poster-modal .popup-container {
-		padding: 0;
-	}
-	.popup-bg.poster-modal img {
-		max-height: 90vh;
-	}
-	.responsive-iframe {
-		position: relative;
-		padding-bottom: 56.25%; /* 16:9 */
-		height: 0;
-		width: 90vw;
-		iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
 		}
 	}
 
