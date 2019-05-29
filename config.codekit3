@@ -17,6 +17,19 @@
 		"oAP": "/build/.gitignore",
 		"oF": 0
 		},
+	"/fanedits/_fanedit.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/fanedits/_fanedit.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
 	"/fanedits/fanedit.js": {
 		"bF": 4,
 		"ft": 64,
@@ -734,6 +747,22 @@
 		"oAP": "/fanedits/it.php",
 		"oF": 0
 		},
+	"/fanedits/message_sender.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fanedits/message_sender.php",
+		"oF": 0
+		},
+	"/fanedits/message_sender_test.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fanedits/message_sender_test.php",
+		"oF": 0
+		},
 	"/fanedits/shining.css": {
 		"aP": 1,
 		"bl": 0,
@@ -769,37 +798,6 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/fanedits/shining.css",
-		"oF": 0,
-		"oS": 1,
-		"uL": 1
-		},
-	"/fanedits/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/fanedits/styles-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/fanedits/styles.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/fanedits/styles.css.map",
-		"oF": 0
-		},
-	"/fanedits/styles.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/fanedits/styles.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1

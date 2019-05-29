@@ -320,14 +320,21 @@
 	// @param {Boolean} $wrap - Allows or disallows wrapping of
 	// child elements
 	//**********************************************************
-	@mixin row($constrain:true, $orientation:horizontal, $wrap:true) {
+	@mixin row($constrain:true, $orientation:horizontal, $wrap:true, $h-gutter:false) {
 		// display: flex;
 		display: grid;
 		grid-template-columns: repeat($grid-column-count,1fr);
-		grid-row-gap: 0;
-		grid-column-gap: $grid-gutters-default;
+		@each $bp, $value in $breakpoints {
+			@include bp( $bp ) {
+				@if ( map-get( $grid-gutters, $bp ) ) {
+					grid-column-gap: map-get( $grid-gutters, $bp );
+					@if ($h-gutter == true) {
+						grid-row-gap: map-get( $grid-gutters, $bp );
+					}
+				}
+			}
+		}
 		width: 100%;
-		
 		@if ($constrain == true) {
 			max-width: $layout-width;
 			margin-left: auto;
@@ -456,7 +463,8 @@
 				}
 			}
 		} @else {
-			min-height: $height;
+			height: 0;
+			padding-bottom: $height;
 		}
 		&-slide {
 			background-size: cover;
@@ -558,7 +566,7 @@
 	// @param {Number} $number - Number to remove unit from
 	// @return {Number} - Unitless number
 	//**********************************************************
-	@mixin button( $bg-color:$button-bg-color, $shade-shift:$button-shade-shift, $type:$button-type ) {
+	@mixin button( $bg-color:$button-bg-color, $shade-shift:$button-shade-shift, $type:$button-type, $size:normal ) {
 		display: inline-flex;
 		border: 2px solid $bg-color;
 		@if ( $type == hollow ) {
@@ -569,7 +577,15 @@
 			background-image: linear-gradient(130deg, $color-primary 50%, darken($color-primary, 50%) 50%);
 		}
 		border-radius: 3px;
-		padding: 15px 25px;
+		@if ( $size == normal ) {
+			padding: 15px 25px;
+			font-size: inherit;
+		} @else if ( $size == small ) {
+			padding: 5px 10px;
+			font-size: 90%;
+		} @else {
+			
+		}
 		font-weight: bold;
 		text-decoration: none;
 		text-transform: uppercase;
@@ -657,17 +673,17 @@
 			@include bp( $bp ) {
 				--bp: #{$bp};
 				@if ( map-get( $grid-gutters, $bp ) ) {
-					@if ($type = padding) {
+					@if ($type == padding) {
 						padding-left: map-get( $grid-gutters, $bp );
 						padding-right: map-get( $grid-gutters, $bp );
-						@if ($h = true) {
+						@if ($h == true) {
 							padding-top: map-get( $grid-gutters, $bp );
 							padding-bottom: map-get( $grid-gutters, $bp );
 						}
-					} @else if ($type = margin) {
+					} @else if ($type == margin) {
 						margin-left: map-get( $grid-gutters, $bp );
 						margin-right: map-get( $grid-gutters, $bp );
-						@if ($h = true) {
+						@if ($h == true) {
 							margin-top: map-get( $grid-gutters, $bp );
 							margin-bottom: map-get( $grid-gutters, $bp );
 						}
@@ -708,7 +724,7 @@
 	}
 
 //**************************************************************
-// Include Responsive Spacer Margins
+// Make Full-Width
 //**************************************************************
 	// Returns Responsive Gutters on items that are not columns
 	//
@@ -716,7 +732,17 @@
 	// 
 	// @return {Number} - Unitless number
 	//**********************************************************
-	
+	@mixin full-width() {
+		@each $bp, $value in $breakpoints {
+			@include bp( $bp ) {
+				@if ( map-get( $grid-gutters, $bp ) ) {
+					margin-left: map-get( $grid-gutters, $bp ) * -1;
+					width: calc(100% + #{map-get( $grid-gutters, $bp ) * 2});
+					max-width: calc(100% + #{map-get( $grid-gutters, $bp ) * 2});
+				}
+			}
+		}
+	}
 
 
 

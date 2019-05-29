@@ -59,6 +59,7 @@
 		font-style: $p-font-style;
 		color: $p-font-color;
 		line-height: $p-line-height;
+		@include gutters;
 	}
 	p {
 		margin-bottom: $p-margin-bottom;
@@ -145,7 +146,7 @@
 	}
 
 	//*******************************************
-	// POPUPS
+	// POPUPS (Convert to mixin)
 	//*******************************************
 	.popup {
 		&-open {
@@ -208,6 +209,8 @@
 			z-index: 1;
 			&:before {
 				content: '\00d7';
+				position: relative;
+				top: -2px;
 			}
 			&:hover {
 				transform: translate(40%, -40%) rotate(90deg);
@@ -219,7 +222,7 @@
 	}
 
 	//*******************************************
-	// POPUPS
+	// POPUPS (convert to mixin)
 	//*******************************************
 	.responsive-iframe {
 		position: relative;
@@ -236,9 +239,35 @@
 	}
 
 	//*******************************************
-	// FORMS
+	// FORMS (convert to mixin)
 	//*******************************************
-	
+	.form-field {
+		position: relative;
+		margin-bottom: 25px;
+	}
+	.help-trigger {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+		width: 25px;
+		height: 25px;
+		border: 2px solid $color-warning;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 20px;
+		font-size: 90%;
+		color: $color-warning;
+		cursor: pointer;
+		&:hover,
+		&.open {
+			background-color: $shade-medium-dark;
+		}
+	}
+	label {
+		display: block;
+		margin-bottom: 5px;
+	}	
 	[type='text'], 
 	[type='password'], 
 	[type='date'], 
@@ -286,7 +315,7 @@
 		position: absolute;
 		z-index: -1;
 		+ .file-placeholder {
-			@include button;
+			@include button($size:small);
 
 		}
 		&:focus + .file-placeholder ,

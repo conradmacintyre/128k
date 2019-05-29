@@ -14,7 +14,7 @@ function cycleActiveItem( array, interval ) {
 			}
 		}
 	}
-	let cycleTimer = setInterval(() => cycle( array ), interval);
+	setInterval(() => cycle( array ), interval);
 }
 
 
@@ -373,7 +373,7 @@ function togglr() {
       }
     }
   }
-} togglr();
+} window.addEventListener('load', togglr);
 
 /*********************************
 * UserControlledElements.js
@@ -557,45 +557,57 @@ function userControlledElements(els) {
 
 
 // Custom Popup
-    (function(){
-        console.log('test');
-        //Popup Variables
-        var Body = document.body;
-        var PopUpContainer = document.getElementById( 'popup-container' );
-        var PopUpLinks = document.getElementsByClassName( 'popup-link' );
-        var PopUpBG = document.getElementById( 'popup-bg' );
-        var PopUpClose = document.getElementById( 'popup-close' );
-        //Open popup, attached to window for global access
-        window.openPopUp = function(DataVariable) {
-            DataVariable = document.getElementById( DataVariable );
-            Body.classList.add('popup-open'); //Uses a class on the body to open and close the pop-up with CSS so it can be easily formatted by the implementer without needing to mess with JS, this also allows freezing of the body (overflow:hidden) so Michael can stop worrying about background scrolling behind the popup
-            PopUpContainer.innerHTML = ''; //Empty #PopUpContainer
-            PopUpBG.classList.add( DataVariable.getAttribute('id') ); //Re-set the Class Name
-            PopUpContainer.innerHTML = DataVariable.innerHTML; //Populate #PopUpContainer
+    function customPopup() {
+        //Reusable Vars
+        const body = document.body;
+        const popUpContainer = document.getElementById( 'popup-container' );
+        let popUpLinks = [...document.getElementsByClassName( 'popup-link' )];
+        const popUpBG = document.getElementById( 'popup-bg' );
+        const popUpClose = document.getElementById( 'popup-close' );
+        // Make sure elements inside the popup are interactive
+        popUpContainer.addEventListener ( 'click', function(e) {
+            e.stopPropagation();
+        } );
+        // Hook up all the popup links
+        popUpLinks.forEach( link => {
+        	link.addEventListener( 'click', () => {
+        		openPopUp( link );
+        	});
+        });
+        // Clear out the popup
+        function removeContent( element ) {
+        	if ( element ) {
+        		element.appendChild( popUpContainer.children[0] );
+        	} else {
+        		console.log("no element defined");
+        	}
         }
-        //Close PopUp, attached to window for global access
-        window.closePopUp = function() {
-            PopUpBG.setAttribute( 'class', 'popup-bg' ); //Remove any Class Names
-            Body.classList.remove( 'popup-open' ); //Remove the Body class
-            PopUpContainer.innerHTML = ''; //Empty #PopUpContainer
-        }
-        //PopUp Links Present?
-        if ( PopUpLinks.length > 0 ) {
-            //Format links
-            for (let i=0; i<PopUpLinks.length; i++ ) {
-                var DataContent = PopUpLinks[i].getAttribute( 'data-content' ); //Get the data-content attribute
-                PopUpLinks[i].setAttribute( 'href','javascript:openPopUp(\'' + DataContent + '\')' ); //Sets the data-content as a variable in the JS link call
+        //Open popup
+        function openPopUp( link ) {
+            let element = document.getElementById( link.getAttribute( 'data-content' ) );
+            body.classList.add('popup-open'); 
+            popUpBG.classList.add( link.getAttribute( 'data-content' ) );
+            if ( popUpContainer.children.length > 0 ) {
+            	removeContent();
             }
-            //Set-Up Close Conditions
-            PopUpBG.setAttribute( 'onclick', 'closePopUp()' ); //Create onclick event to close popup
-            PopUpClose.setAttribute( 'onclick', 'closePopUp()' );  //Create onclick event to close popup
-            //Stop propogation from child elements of #PopUpContainer
-            PopUpContainer.addEventListener ( 'click', function(e) {
-                e.stopPropagation();
-            } );
+            popUpContainer.appendChild( element.children[0] );
+            popUpBG.addEventListener( 'click', () => {
+            	closePopUp( element ) 
+            });
+            popUpClose.addEventListener( 'click', () => {
+            	closePopUp( element ) 
+            });
         }
-    })();
+        // Close Popup
+        function closePopUp( element ) {
+        	popUpBG.setAttribute( 'class', 'popup-bg' ); //Remove any Class Names
+            body.classList.remove( 'popup-open' ); //Remove the Body class
+            removeContent( element );
+        }
+    } window.addEventListener('load',customPopup);
 
+
+    // Browse Field Prettifier
     var inputs = document.querySelectorAll( 'input[type=\'file\']' );
 	Array.prototype.forEach.call( inputs, function( input ) {
 		var label	 = input.nextElementSibling,

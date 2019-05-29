@@ -23,13 +23,13 @@
 			<span class="author">Stephen King's</span> <span class="title">The Shining</span> <span class="subtitle">The Cinematic Cut</span>
 		</h1>
 		<div class="billboard" data-billboard="5">
-			<div class="billboard-slide top right active" data-bgimg="images/shining/rotator-weber.jpg">
+			<div class="billboard-slide bottom right active" data-bgimg="images/shining/rotator-weber.jpg">
 				<h1>Steven Weber</h1>
 			</div>
-			<div class="billboard-slide top left" data-bgimg="images/shining/rotator-demornay.jpg">
+			<div class="billboard-slide bottom left" data-bgimg="images/shining/rotator-demornay.jpg">
 				<h1>Rebecca De Mornay</h1>
 			</div>
-			<div class="billboard-slide top right" data-bgimg="images/shining/rotator-mead.jpg">
+			<div class="billboard-slide bottom right" data-bgimg="images/shining/rotator-mead.jpg">
 				<h1>Courtland Mead</h1>
 			</div>
 			<div class="billboard-slide bottom right" data-bgimg="images/shining/rotator-vanpeebles.jpg">
@@ -42,7 +42,7 @@
 				<h2>WATCH THE TRAILER NOW</h2>
 				<div id="trailer-modal" class="popup-content">
 					<div class="responsive-iframe">
-						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QGm4YPgfEME?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hmt42b6nUsA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
 				</div>
 			</a>
@@ -100,24 +100,39 @@
 				<span class="info-content">
 					<a href="#" class="info-heading popup-link" data-content="download-modal">Download</a>
 					<div id="download-modal" class="popup-content">
-						<h3>Please note:</h3>
-						<p><strong>You must own a legal copy of the original miniseries in order to view/download this content.</strong></p>
-						<p>In order to recieve a download link for this fanedit, I'll need proof that you own the original content. Please fill out the following form.</p>
-						<p>I will not keep your email or the picture.</p>
-						<p>If you do not yet own a copy of the original it is available on <a href="https://www.amazon.com/Triple-Terror-Collection-Stephen-Shining/dp/B008QE9Z8A/ref=sr_1_1?keywords=the+shining+1997&qid=1558982765&s=gateway&sr=8-1" target="_blank">Amazon.com</a></p>
-						<!--p><a href="https://drive.google.com/open?id=17-PiUDR3v_u9TFYkhtjPzvOYfNEdI4ST">Send in the clowns</a></p -->
-						<form class="contact" name="contact" method="post">
+						<div>
+							<h3>Please note:</h3>
+							<p><strong>You must own a legal copy of the original miniseries in order to view/download this content.</strong></p>
+							<p>In order to recieve a download link for this fanedit, I'll need proof that you own the original content. Please fill out the following form.</p>
+							<p>I will not keep your email or the picture.</p>
+							<p>If you do not yet own a copy of the original it is available on <a href="https://www.amazon.com/Triple-Terror-Collection-Stephen-Shining/dp/B008QE9Z8A/ref=sr_1_1?keywords=the+shining+1997&qid=1558982765&s=gateway&sr=8-1" target="_blank">Amazon.com</a></p>
 
-							<label for="form-email">Email:</label>
-							<input required type='email' name='email' id='form-email' value='' placeholder="Email">
+							<div class="alert error-message"></div>
 							
-							<label for="fileToUpload">Photo:</label>
-							<span class="alert">Please include a picture of your legally purchased copy with a note that says "King Minis Rock".</span>
-							<input required type="file" name="fileToUpload" id="fileToUpload" data-multiple-caption="{count} files selected" multiple>
-							<label for="fileToUpload" class="file-placeholder">Choose a file</label>
-							
-							<button type="submit" name='submit' id='form-submit' value="Submit">Submit</button>
-						</form>
+							<form id="request-copy" class="contact" name="contact" method="post">
+								<input required type='hidden' name='movie' id='form-movie' value='The Shining'>
+
+								<div class="form-field">
+									<label for="form-email">Email:</label>
+									<input required type='email' name='email' id='form-email' value='' placeholder="Email">
+								</div>
+
+								<div class="form-field">
+									<label for="fileToUpload">Photo:</label>									
+									<span class="upload-info">Please include a picture of your legally purchased copy with a note that says "King Minis Rock".</span>
+									<input required type="file" name="fileToUpload" id="fileToUpload" data-multiple-caption="{count} files selected" multiple>
+									<label for="fileToUpload" class="file-placeholder">Choose a file</label>
+								</div>
+
+								<div class="form-field">
+									<label for="form-textarea">Anything you'd like to add:</label>
+									<textarea name='textarea' id='form-textarea' value='' placeholder="Anything you'd like to add?"></textarea>
+								</div>
+								<button type="submit" name='submit' id='form-submit' value="Submit">Submit</button>
+							</form>
+
+							<!-- https://drive.google.com/open?id=17-PiUDR3v_u9TFYkhtjPzvOYfNEdI4ST -->
+						</div>
 					</div>
 				</span>
 			</div>

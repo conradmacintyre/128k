@@ -8,13 +8,14 @@ $color-danger: #FF4136 !default;
 
 // Shades
 $shade-dark: #111 !default;
-$shade-medium-dark: #3BB !default;
+$shade-medium-dark: #333 !default;
 $shade-medium: #777 !default;
-$shade-medium-lite: #B31 !default;
+$shade-medium-lite: #BBB !default;
 $shade-lite: #EEE !default;
 
 // Body
 $body-bg: $shade-lite !default;
+$body-padding: true !default;
 
 // Paragraphs (and all non-heading text)
 $p-font: San Francisco, Helvetica, Arial, Verdana, sans-serif !default;

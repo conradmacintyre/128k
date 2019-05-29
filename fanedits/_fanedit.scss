@@ -17,6 +17,7 @@
 		position: relative;
 		list-style: none;
 		margin-bottom: 15px;
+		margin-left: 20px;
 		&:before,
 		&:after {
 			content: "";
@@ -51,6 +52,7 @@
 	// Header - Universal
 	.header {
 		@include row($wrap:false);
+		@include full-width;
 		z-index: 1;
 		padding: 0 $grid-gutters-default;
 		display: flex;
@@ -190,13 +192,15 @@
 
 	// Rotator
 	.billboard {
-		@include billboard( $height:calc( 120% / 16 * 9 ) );
+		@include billboard( $height:calc( 100% / 16 * 9 ) );
+		@include full-width;
 		text-transform: uppercase;
 	}
 
 	// Alert Banners
 	.banners {
 		@include row;
+		@include full-width;
 	}
 	.banner {
 		@include column;
@@ -234,7 +238,7 @@
 	// Quick Info
 	.info {
 		@include spacer;
-		@include row;
+		@include row($h-gutter:true);
 		&-item {
 			@include column(sm 6, md 3, lg 2);
 			background-size: cover;
@@ -421,9 +425,15 @@
 				margin-left: 10px;
 			}
 		}
-		.alert {
-			@include alert($bg:$color-danger);
+		.upload-info {
+			display: block;
+			font-size: 80%;
+			margin-bottom: 10px;
 		}
+		.alert {
+			@include alert($bg:$shade-lite,$contained:false);
+		}
+		
 	}
 
 	// Back To Top

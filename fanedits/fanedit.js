@@ -1,4 +1,4 @@
-// Image comparison
+// Image comparison (requires jQuery)
 	// Call & init
 	function compareInit(){
 	  $('.compare__slider').each(function(){
@@ -78,4 +78,61 @@
 	  });
 	}
 
+// Form Submission (requires jQuery)
+	function submitForm() {
+
+		$("#form-submit").click(function (event) {
+
+	        //stop submit the form, we will post it manually.
+	        event.preventDefault();
+
+	        // Get form
+	        var form = $('#request-copy')[0];
+
+			// Create an FormData object 
+	        var data = new FormData(form);
+
+	        // check host
+	        let host = null;
+	        if ( location.hostname.indexOf('local') ) {
+	        	host = 'message_sender.php';
+	        } else {
+	        	host = '/test/fanedits/message_sender.php';
+	        }
+	        console.log(host);
+
+			// If you want to add an extra field for the FormData
+	        data.append("CustomField", "This is some extra data, testing");
+
+			// disabled the submit button
+	        $("#form-submit").prop("disabled", true);
+
+	        $.ajax({
+	            type: "POST",
+	            enctype: 'multipart/form-data',
+	            url: host,
+	            data: data,
+	            processData: false,
+	            contentType: false,
+	            cache: false,
+	            timeout: 600000,
+	            success: function (data) {
+
+	                $('#popup-container').html(data);
+	                // console.log("SUCCESS : ", data);
+
+	            },
+	            error: function (e) {
+
+	                $(".alert.error-message").text(e.responseText);
+	                // console.log("ERROR : ", e);
+	                $("#form-submit").prop("disabled", false);
+
+	            }
+	        });
+
+	    });
+	} window.addEventListener('load',submitForm);
+
+console.log(location.hostname);
 
