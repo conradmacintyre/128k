@@ -11,10 +11,11 @@
 				<div class="header-nav-trigger" data-ts=".header-nav">MENU</div>
 				<nav class="header-nav" data-nav>
 					<a href="#purpose">Purpose</a>
-						<a href="#edits">Edits</a>
-						<a href="#info">Info</a>
-						<a href="#changelog">Changelog</a>
-						<a href="#compare">Comparison</a>
+					<a href="#edits">Edits</a>
+					<a href="#info">Info</a>
+					<a href="#changelog">Changelog</a>
+					<a href="#compare">Comparison</a>
+					<a href="index.php">Other Edits</a>
 				</nav>
 			</div>
 		</header>

@@ -10,7 +10,7 @@
 		<meta name="author" content="Conrad MacIntyre">
 
 		<link href="https://fonts.googleapis.com/css?family=Limelight&display=swap&text=ComingSoonNowPlaying" rel="stylesheet">
-		<link rel="stylesheet" href="styles.css?v=0.1">
+		<link rel="stylesheet" href="index.css?v=0.1">
 	</head>
 
 	<body class="posters">

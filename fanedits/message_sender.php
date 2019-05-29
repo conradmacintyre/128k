@@ -59,7 +59,6 @@ class ajaxValidate {
 			$subject = "Request for a copy of " . $movie ;
 			
 			// Message for Website Administrator
-			$emailMessage .= "<div>";
 			$emailMessage .= "<p>Please send a link for <strong>" . $movie . "</strong>";
 			$emailMessage .= " to <strong>" . $email . "</strong>.</p>";
 			$emailMessage .= "<p>Here is the proof they own the original:</p>";
@@ -67,7 +66,6 @@ class ajaxValidate {
 			if ( $textarea ) {
 				$emailMessage .= "<p>With a special message of:</p><p>".$textarea."</p>";
 			}
-			$emailMessage .= "</div>";
 			
 			
 			$headers = "From:no-reply@conradmacintyre.com\r\n";
@@ -78,7 +76,7 @@ class ajaxValidate {
 			
 			mail($to,$subject,$emailMessage,$headers);	
 			
-			return $successMessage . $emailMessage;
+			return "<div>" . $successMessage . $emailMessage . "</div>";
 		
 		} else {
 		

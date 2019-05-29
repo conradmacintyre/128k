@@ -79,6 +79,12 @@
 				top: 100%;
 				right: 0;
 				background: $shade-lite;
+				transform-origin: top;
+    			transform: scale(1, 0);
+    			transition: transform 0.5s ease;
+    			&.open {
+    				transform: scale(1, 1);
+    			}
 			}
 			a {
 				display: inline-block;
@@ -108,6 +114,8 @@
 	    display: flex;
     	flex-direction: column;
     	main {
+    		@include full-width;
+    		@include gutters;
     		background-image: url(images/landing-bg2.jpg);
 			background-size: cover;
 			background-position: top center;

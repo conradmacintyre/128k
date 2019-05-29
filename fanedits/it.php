@@ -2,10 +2,10 @@
 	<head>
 		<title>Stephen King's It: The Cinematic Cut</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="styles.css?v=1.0">
+		<link rel="stylesheet" type="text/css" href="it.css?v=1.0">
 	</head>
 	<body>
-		<header class="header" data-fix>
+		<header class="header" sticky>
 			<a class="header-logo" href="/index.php">128k.ca</a>
 			<div class="header-nav-wrapper">
 				<div class="header-nav-trigger" data-ts=".header-nav">MENU</div>
@@ -15,6 +15,7 @@
 						<a href="#info">Info</a>
 						<a href="#changelog">Changelog</a>
 						<a href="#compare">Comparison</a>
+						<a href="index.php">Other Edits</a>
 				</nav>
 			</div>
 		</header>
@@ -22,7 +23,7 @@
 		<h1 class="main-title">
 			<span class="author">Stephen King's</span> <span class="title">It</span> <span class="subtitle">The Cinematic Cut</span>
 		</h1>
-		<div class="billboard" data-billboard="5">
+		<div class="billboard" data-billboard="4">
 			<div class="billboard-slide bottom left active" data-bgimg="images/it/rotator-curry.jpg">
 				<h1>Tim Curry</h1>
 			</div>
@@ -71,7 +72,7 @@
 		</div>
 
 		<div class="banners">
-			<a class="trailer-banner popup-link" data-content="trailer-modal">
+			<a class="banner banner-trailer popup-link" data-content="trailer-modal">
 				<h2>WATCH THE TRAILER NOW</h2>
 				<div id="trailer-modal" class="popup-content">
 					<div class="responsive-iframe">
@@ -79,11 +80,14 @@
 					</div>
 				</div>
 			</a>
-			<a class="poster-banner popup-link" data-content="poster-modal">
+			<a class=" banner banner-poster popup-link" data-content="poster-modal">
 				<h2>VIEW THE POSTER</h2>
 				<div id="poster-modal" class="popup-content">
 					<img src="images/it/poster.jpg" alt="Movie Poster for IT: THE CINEMATIC CUT">
 				</div>
+			</a>
+			<a class="banner banner-amazon" href="https://www.amazon.com/Stephen-Kings-Blu-ray-Tommy-Wallace/dp/B01L3TCBMQ/ref=sr_1_6?keywords=it+1990&qid=1559142129&s=gateway&sr=8-6" target="_blank">
+				<h2>BUY THE ORIGINAL</h2>
 			</a>
 		</div>
 
@@ -130,9 +134,39 @@
 				<span class="info-content">
 					<a href="#" class="info-heading popup-link" data-content="download-modal">Download</a>
 					<div id="download-modal" class="popup-content">
-						<h3>Please note:</h3>
-						<p><strong>You must own a legal copy of the original miniseries in order to view/download this content.</strong></p>
-						<p><a href="https://drive.google.com/open?id=17-PiUDR3v_u9TFYkhtjPzvOYfNEdI4ST">Send in the clowns</a></p>
+						<div>
+							<h3>Please note:</h3>
+							<p><strong>You must own a legal copy of the original miniseries in order to view/download this content.</strong></p>
+							<p>In order to recieve a download link for this fanedit, I'll need proof that you own the original content. Please fill out the following form.</p>
+							<p>I will not keep your email or the picture.</p>
+							<p>If you do not yet own a copy of the original it is available on <a href="https://www.amazon.com/Triple-Terror-Collection-Stephen-Shining/dp/B008QE9Z8A/ref=sr_1_1?keywords=the+shining+1997&qid=1558982765&s=gateway&sr=8-1" target="_blank">Amazon.com</a></p>
+
+							<div class="alert error-message"></div>
+							
+							<form id="request-copy" class="contact" name="contact" method="post">
+								<input required type='hidden' name='movie' id='form-movie' value='It'>
+
+								<div class="form-field">
+									<label for="form-email">Email:</label>
+									<input required type='email' name='email' id='form-email' value='' placeholder="Email">
+								</div>
+
+								<div class="form-field">
+									<label for="fileToUpload">Photo:</label>									
+									<span class="upload-info">Please include a picture of your legally purchased copy with a note that says "King Minis Rock".</span>
+									<input required type="file" name="fileToUpload" id="fileToUpload" data-multiple-caption="{count} files selected" multiple>
+									<label for="fileToUpload" class="file-placeholder">Choose a file</label>
+								</div>
+
+								<div class="form-field">
+									<label for="form-textarea">Anything you'd like to add:</label>
+									<textarea name='textarea' id='form-textarea' value='' placeholder="Anything you'd like to add?"></textarea>
+								</div>
+								<button type="submit" name='submit' id='form-submit' value="Submit">Submit</button>
+							</form>
+
+							<!-- https://drive.google.com/open?id=17-PiUDR3v_u9TFYkhtjPzvOYfNEdI4ST -->
+						</div>
 					</div>
 				</span>
 			</div>

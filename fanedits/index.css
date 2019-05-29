@@ -152,7 +152,7 @@ img {
 }
 
 a {
-  color: #009dff;
+  color: #300;
   text-decoration: none;
 }
 
@@ -164,9 +164,9 @@ a:hover, a:active {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: inline-flex;
-  border: 2px solid #009dff;
-  background-image: -webkit-linear-gradient(320deg, #009dff 50%, white 50%);
-  background-image: linear-gradient(130deg, #009dff 50%, white 50%);
+  border: 2px solid #300;
+  background-image: -webkit-linear-gradient(320deg, #300 50%, #ff3333 50%);
+  background-image: linear-gradient(130deg, #300 50%, #ff3333 50%);
   border-radius: 3px;
   padding: 15px 25px;
   font-size: inherit;
@@ -391,9 +391,9 @@ textarea:focus {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: inline-flex;
-  border: 2px solid #009dff;
-  background-image: -webkit-linear-gradient(320deg, #009dff 50%, white 50%);
-  background-image: linear-gradient(130deg, #009dff 50%, white 50%);
+  border: 2px solid #300;
+  background-image: -webkit-linear-gradient(320deg, #300 50%, #ff3333 50%);
+  background-image: linear-gradient(130deg, #300 50%, #ff3333 50%);
   border-radius: 3px;
   padding: 5px 10px;
   font-size: 90%;
@@ -418,9 +418,9 @@ button,
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: inline-flex;
-  border: 2px solid #009dff;
-  background-image: -webkit-linear-gradient(320deg, #009dff 50%, white 50%);
-  background-image: linear-gradient(130deg, #009dff 50%, white 50%);
+  border: 2px solid #300;
+  background-image: -webkit-linear-gradient(320deg, #300 50%, #ff3333 50%);
+  background-image: linear-gradient(130deg, #300 50%, #ff3333 50%);
   border-radius: 3px;
   padding: 15px 25px;
   font-size: inherit;
@@ -574,7 +574,7 @@ button:hover, button:active,
 
 .header-nav a {
   display: inline-block;
-  color: #009dff;
+  color: #300;
   font-size: 120%;
   text-decoration: none;
   padding: 15px 7.5px;
@@ -774,7 +774,7 @@ button:hover, button:active,
 
 .main-title .title {
   font-weight: 800;
-  color: #009dff;
+  color: #300;
   font-size: 125%;
 }
 
@@ -1014,7 +1014,7 @@ button:hover, button:active,
 .banner-trailer {
   display: block;
   max-width: 100%;
-  background: #009dff;
+  background: #300;
   padding-top: 4px;
   cursor: pointer;
   font-weight: 500;
@@ -1231,7 +1231,7 @@ section {
 
 .info-item.download:hover a {
   text-decoration: none;
-  color: #009dff;
+  color: #300;
 }
 
 .info-content {
@@ -1248,7 +1248,7 @@ section {
   font-size: 1.5rem;
   font-weight: bold;
   display: block;
-  border-bottom: 2px solid #009dff;
+  border-bottom: 2px solid #300;
 }
 
 .purpose > * {
@@ -1352,7 +1352,7 @@ section {
 }
 
 .compare h3 {
-  color: #009dff;
+  color: #300;
 }
 
 .compare__item {
@@ -1443,7 +1443,7 @@ section {
   bottom: 50%;
   -webkit-transform: translate(50%, 50%);
           transform: translate(50%, 50%);
-  background: #009dff;
+  background: #300;
   cursor: ew-resize;
   text-align: center;
   line-height: 25px;
@@ -1511,8 +1511,8 @@ section {
   position: fixed;
   bottom: 15px;
   left: 15px;
-  border: 2px solid #009dff;
-  color: #009dff;
+  border: 2px solid #300;
+  color: #300;
   background: #EEE;
   border-radius: 4px;
   padding: 0 8px 0 4px;
@@ -1537,4 +1537,4 @@ section {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-/*# sourceMappingURL=shining.css.map */
+/*# sourceMappingURL=index.css.map */
