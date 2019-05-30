@@ -24,8 +24,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 html, body {
-  overflow-x: hidden;
-  overflow-y: auto;
   height: 100%;
 }
 
@@ -52,7 +50,7 @@ table {
 }
 
 html {
-  font-size: 16px;
+  font-size: calc( 14px + ( 18 - 14 ) * ( ( 100vw - 320px ) / ( 1600 - 320 ) ));
 }
 
 body {
@@ -89,7 +87,7 @@ p {
 
 h1 {
   font-family: Avenir Next, Helvetica, Arial, Verdana, sans-serif;
-  font-size: 3rem;
+  font-size: calc( 30px + ( 54 - 30 ) * ( ( 100vw - 320px ) / ( 1600 - 320 ) ));
   font-weight: bold;
   font-style: normal;
   color: #000;
@@ -99,7 +97,7 @@ h1 {
 
 h2 {
   font-family: Avenir Next, Helvetica, Arial, Verdana, sans-serif;
-  font-size: 1.998rem;
+  font-size: calc( 25px + ( 33 - 25 ) * ( ( 100vw - 320px ) / ( 1600 - 320 ) ));
   font-weight: bold;
   font-style: normal;
   color: #000;
@@ -109,7 +107,7 @@ h2 {
 
 h3 {
   font-family: Avenir Next, Helvetica, Arial, Verdana, sans-serif;
-  font-size: 1.5rem;
+  font-size: calc( 21px + ( 26 - 21 ) * ( ( 100vw - 320px ) / ( 1600 - 320 ) ));
   font-weight: bold;
   font-style: normal;
   color: #000;
@@ -119,7 +117,7 @@ h3 {
 
 h4 {
   font-family: Avenir Next, Helvetica, Arial, Verdana, sans-serif;
-  font-size: 1rem;
+  font-size: calc( 14px + ( 18 - 14 ) * ( ( 100vw - 320px ) / ( 1600 - 320 ) ));
   font-weight: bold;
   font-style: normal;
   color: #000;
@@ -129,7 +127,7 @@ h4 {
 
 h5 {
   font-family: Avenir Next, Helvetica, Arial, Verdana, sans-serif;
-  font-size: 0.9rem;
+  font-size: calc( 13px + ( 16 - 13 ) * ( ( 100vw - 320px ) / ( 1600 - 320 ) ));
   font-weight: bold;
   font-style: normal;
   color: #000;
@@ -139,7 +137,7 @@ h5 {
 
 h6 {
   font-family: Avenir Next, Helvetica, Arial, Verdana, sans-serif;
-  font-size: 0.798rem;
+  font-size: calc( 11px + ( 14 - 11 ) * ( ( 100vw - 320px ) / ( 1600 - 320 ) ));
   font-weight: bold;
   font-style: normal;
   color: #000;
@@ -526,7 +524,7 @@ button:hover, button:active,
 }
 
 .header-logo {
-  font-size: 1.5rem;
+  font-size: calc( 21px + ( 26 - 21 ) * ( ( 100vw - 320px ) / ( 1600 - 320 ) ));
   font-weight: bold;
 }
 
@@ -1245,7 +1243,7 @@ section {
 }
 
 .info-heading {
-  font-size: 1.5rem;
+  font-size: calc( 21px + ( 26 - 21 ) * ( ( 100vw - 320px ) / ( 1600 - 320 ) ));
   font-weight: bold;
   display: block;
   border-bottom: 2px solid #300;

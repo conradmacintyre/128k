@@ -8,6 +8,8 @@
 	//**********************************************************
 	@function funcName($input) {}
 
+	
+
 //**************************************************************
 // Explode String
 //**************************************************************
@@ -88,11 +90,15 @@
 	// @param {Number} $number - Number to add unit to
 	//**********************************************************
 	@function add-unit($number) {
-		$number: strip-unit($number);
-		@if $number >= 10 {
-			@return $number * 1px;
+		@if ( type_of( $number ) == Number ) {
+			$number: strip-unit($number);
+			@if $number >= 10 {
+				@return $number * 1px;
+			}
+			@return $number * 1rem;
+		} @else {
+			@return $number;
 		}
-		@return $number * 1rem;
 	}
 
 //**************************************************************

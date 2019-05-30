@@ -8,7 +8,7 @@
 		<title>Fanedits | 128k.ca</title>
 		<meta name="description" content="Fanedits">
 		<meta name="author" content="Conrad MacIntyre">
-
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Limelight&display=swap&text=ComingSoonNowPlaying" rel="stylesheet">
 		<link rel="stylesheet" href="index.css?v=0.1">
 	</head>

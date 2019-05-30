@@ -38,13 +38,6 @@
 		}
 	}
 
-	@mixin text ($txmn:14, $txmx:26, $vpmn:320, $vpmx:1600) {
-		font-size: calc(#{$txmn}px + (#{$txmx} - #{$txmn}) * ((100vw - #{$vpmn}px) / (#{$vpmx} - #{$vpmn})));
-	}
-
-//Generics:
-
-
 //**************************
 // Layout
 //**************************

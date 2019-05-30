@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Stephen King's It: The Cinematic Cut</title>
+		<title>Stephen King's It: The Cinematic Cut | 128k.ca</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="it.css?v=1.0">
 	</head>
