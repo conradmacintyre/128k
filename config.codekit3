@@ -864,6 +864,90 @@
 		"oS": 1,
 		"uL": 1
 		},
+	"/images/bingo.jpg": {
+		"ft": 16384,
+		"iS": 26920,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/bingo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/blackjack.jpg": {
+		"ft": 16384,
+		"iS": 20519,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/blackjack.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/brand-wars.jpg": {
+		"ft": 16384,
+		"iS": 24593,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/brand-wars.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/family-feud.jpg": {
+		"ft": 16384,
+		"iS": 24315,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/family-feud.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/jeopardy.jpg": {
+		"ft": 16384,
+		"iS": 27264,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/jeopardy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/images/wheel-of-fortune.jpg": {
+		"ft": 16384,
+		"iS": 25062,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/wheel-of-fortune.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/index.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/index-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/index.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/index.css.map",
+		"oF": 0
+		},
 	"/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -871,6 +955,19 @@
 		"oA": 0,
 		"oAP": "/index.php",
 		"oF": 0
+		},
+	"/index.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/index.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
 		},
 	"/js/library.js": {
 		"bF": 4,

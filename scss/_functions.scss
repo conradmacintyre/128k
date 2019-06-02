@@ -535,6 +535,9 @@
 			&.active ~ & {
 				transform: translateX(100%);
 			}
+			&:only-child {
+				transform: translateX(0%);
+			}
 			> * {
 				@if (type_of($content-width) == list) {
 					@each $bp, $value in $breakpoints {
@@ -674,21 +677,25 @@
 	// 
 	// @return {Number} - Unitless number
 	//**********************************************************
-	@mixin gutters($type:padding, $h:false) {
+	@mixin gutters($type:padding, $h:false, $v:true) {
 		@each $bp, $value in $breakpoints {
 			@include bp( $bp ) {
 				--bp: #{$bp};
 				@if ( map-get( $grid-gutters, $bp ) ) {
 					@if ($type == padding) {
-						padding-left: map-get( $grid-gutters, $bp );
-						padding-right: map-get( $grid-gutters, $bp );
+						@if ($v == true) {
+							padding-left: map-get( $grid-gutters, $bp );
+							padding-right: map-get( $grid-gutters, $bp );
+						}
 						@if ($h == true) {
 							padding-top: map-get( $grid-gutters, $bp );
 							padding-bottom: map-get( $grid-gutters, $bp );
 						}
 					} @else if ($type == margin) {
-						margin-left: map-get( $grid-gutters, $bp );
-						margin-right: map-get( $grid-gutters, $bp );
+						@if ($v == true) {
+							margin-left: map-get( $grid-gutters, $bp );
+							margin-right: map-get( $grid-gutters, $bp );
+						}
 						@if ($h == true) {
 							margin-top: map-get( $grid-gutters, $bp );
 							margin-bottom: map-get( $grid-gutters, $bp );
@@ -710,17 +717,30 @@
 	// 
 	// @return {Number} - Unitless number
 	//**********************************************************
-	@mixin spacer($location:both) {
+	@mixin spacer($location:both, $type:margin) {
 		@each $bp, $value in $breakpoints {
 			@include bp( $bp ) {
 				@if ( map-get( $vertical-spacing, $bp ) ) {
 					@if ($location == both) {
-						margin-top: map-get( $vertical-spacing, $bp );
-						margin-bottom: map-get( $vertical-spacing, $bp );
+						@if ($type == margin) {
+							margin-top: map-get( $vertical-spacing, $bp );
+							margin-bottom: map-get( $vertical-spacing, $bp );
+						} @else if ($type == padding) {
+							padding-top: map-get( $vertical-spacing, $bp );
+							padding-bottom: map-get( $vertical-spacing, $bp );
+						}
 					} @else if ($location == top) {
-						margin-top: map-get( $vertical-spacing, $bp );
+						@if ($type == margin) {
+							margin-top: map-get( $vertical-spacing, $bp );
+						} @else if ($type == padding) {
+							padding-top: map-get( $vertical-spacing, $bp );
+						}
 					} @else if ($location == bottom) {
-						margin-bottom: map-get( $vertical-spacing, $bp );
+						@if ($type == margin) {
+							margin-bottom: map-get( $vertical-spacing, $bp );
+						} @else if ($type == padding) {
+							padding-bottom: map-get( $vertical-spacing, $bp );
+						}
 					} @else {
 						@warn 'invalid location passed to spacer';
 					}

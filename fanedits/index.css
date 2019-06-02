@@ -920,6 +920,11 @@ button:hover, button:active,
           transform: translateX(100%);
 }
 
+.billboard-slide:only-child {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
 .billboard-slide > * {
   max-width: 100%;
 }
