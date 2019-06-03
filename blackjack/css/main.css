@@ -1,0 +1,326 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+
+/* HTML5 display-role reset for older browsers */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Animate the dealing of the cards */
+
+* {
+  -moz-box-sizing: border-box;
+  		 box-sizing: border-box;
+  -webkit-transition: -webkit-transform 1s ease,
+                      left 1s ease;
+     -moz-transition: -moz-transform 1s ease,
+                      left 1s ease;
+       -o-transition: -o-transform 1s ease,
+                      left 1s ease;
+          transition: transform 1s ease,
+                      left 1s ease;
+}
+
+/* General Styles */
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #262;
+  background: url(../images/felt.jpg);
+  height: 100%;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.playsurface {
+  position: relative;
+  height: 100%;
+  padding-bottom: 150px;
+}
+
+.card {
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.card,
+.deck,
+.player,
+.dealer {
+  border: 10px solid #FFF;
+  border-radius: 5px;;
+  height: 272px;
+  left: 50%;
+  margin-left: -96px;
+  margin-top: -186px;
+  position: absolute;
+  top: 50%;
+  width: 192px;
+}
+
+.player,
+.dealer {
+  background: #FFF;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+  -ms-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.dealer {
+  left: 100%;
+}
+
+.player {
+  left: 0;
+  margin-left: 0;
+}
+
+.deck {
+  background: url(../images/card-back.jpg) no-repeat;
+  background-size: contain;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.9);
+  left: 50%;
+  margin-left: -96px;
+  z-index: 200;
+}
+
+.chip {
+    width: 90px;
+    height: 90px;
+    border-radius: 150px;
+    box-shadow: inset 0  0 1px 1px rgba(0,0,0, 0.1),
+                      0  0 5px 1px rgba(90,90,90, 0.1),
+                inset 0 35px 1px   rgba(255,255,255, 0.2),
+                      0  0 10px 0px #000;
+    border: 10px dotted #fff;
+    position: absolute;
+    top: -10px;
+}
+
+.chip div {
+    color: #FFF;
+    font-family: 'Racing Sans One', cursive;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2em;
+}
+
+.plyr {
+  background: navy;
+  left: -10px;
+}
+
+.delr {
+  background: #CC0022;
+  left: 100%;
+  margin-left: -80px;
+}
+
+
+/* Card-formatting madness!!! */
+
+ .cad {background: url(../images/playing-cards.jpg); background-position:     0px -249px;}
+ .c2d {background: url(../images/playing-cards.jpg); background-position:  -172px -249px;}
+ .c3d {background: url(../images/playing-cards.jpg); background-position:  -344px -249px;}
+ .c4d {background: url(../images/playing-cards.jpg); background-position:  -516px -249px;}
+ .c5d {background: url(../images/playing-cards.jpg); background-position:  -688px -249px;}
+ .c6d {background: url(../images/playing-cards.jpg); background-position:  -860px -249px;}
+ .c7d {background: url(../images/playing-cards.jpg); background-position: -1032px -249px;}
+ .c8d {background: url(../images/playing-cards.jpg); background-position: -1204px -249px;}
+ .c9d {background: url(../images/playing-cards.jpg); background-position: -1376px -249px;}
+.c10d {background: url(../images/playing-cards.jpg); background-position: -1548px -249px;}
+ .cjd {background: url(../images/playing-cards.jpg); background-position: -1720px -249px;}
+ .cqd {background: url(../images/playing-cards.jpg); background-position: -1892px -249px;}
+ .ckd {background: url(../images/playing-cards.jpg); background-position: -2064px -249px;}
+
+ .cac {background: url(../images/playing-cards.jpg); background-position:     0px 0px;}
+ .c2c {background: url(../images/playing-cards.jpg); background-position:  -172px 0px;}
+ .c3c {background: url(../images/playing-cards.jpg); background-position:  -344px 0px;}
+ .c4c {background: url(../images/playing-cards.jpg); background-position:  -516px 0px;}
+ .c5c {background: url(../images/playing-cards.jpg); background-position:  -688px 0px;}
+ .c6c {background: url(../images/playing-cards.jpg); background-position:  -860px 0px;}
+ .c7c {background: url(../images/playing-cards.jpg); background-position: -1032px 0px;}
+ .c8c {background: url(../images/playing-cards.jpg); background-position: -1204px 0px;}
+ .c9c {background: url(../images/playing-cards.jpg); background-position: -1376px 0px;}
+.c10c {background: url(../images/playing-cards.jpg); background-position: -1548px 0px;}
+ .cjc {background: url(../images/playing-cards.jpg); background-position: -1720px 0px;}
+ .cqc {background: url(../images/playing-cards.jpg); background-position: -1892px 0px;}
+ .ckc {background: url(../images/playing-cards.jpg); background-position: -2064px 0px;}
+ 
+ .cah {background: url(../images/playing-cards.jpg); background-position:     0px -500px;}
+ .c2h {background: url(../images/playing-cards.jpg); background-position:  -172px -500px;}
+ .c3h {background: url(../images/playing-cards.jpg); background-position:  -344px -500px;}
+ .c4h {background: url(../images/playing-cards.jpg); background-position:  -516px -500px;}
+ .c5h {background: url(../images/playing-cards.jpg); background-position:  -688px -500px;}
+ .c6h {background: url(../images/playing-cards.jpg); background-position:  -860px -500px;}
+ .c7h {background: url(../images/playing-cards.jpg); background-position: -1032px -500px;}
+ .c8h {background: url(../images/playing-cards.jpg); background-position: -1204px -500px;}
+ .c9h {background: url(../images/playing-cards.jpg); background-position: -1376px -500px;}
+.c10h {background: url(../images/playing-cards.jpg); background-position: -1548px -500px;}
+ .cjh {background: url(../images/playing-cards.jpg); background-position: -1720px -500px;}
+ .cqh {background: url(../images/playing-cards.jpg); background-position: -1892px -500px;}
+ .ckh {background: url(../images/playing-cards.jpg); background-position: -2064px -500px;}
+ 
+ .cas {background: url(../images/playing-cards.jpg); background-position:     0px -749px;}
+ .c2s {background: url(../images/playing-cards.jpg); background-position:  -172px -749px;}
+ .c3s {background: url(../images/playing-cards.jpg); background-position:  -344px -749px;}
+ .c4s {background: url(../images/playing-cards.jpg); background-position:  -516px -749px;}
+ .c5s {background: url(../images/playing-cards.jpg); background-position:  -688px -749px;}
+ .c6s {background: url(../images/playing-cards.jpg); background-position:  -860px -749px;}
+ .c7s {background: url(../images/playing-cards.jpg); background-position: -1032px -749px;}
+ .c8s {background: url(../images/playing-cards.jpg); background-position: -1204px -749px;}
+ .c9s {background: url(../images/playing-cards.jpg); background-position: -1376px -749px;}
+.c10s {background: url(../images/playing-cards.jpg); background-position: -1548px -749px;}
+ .cjs {background: url(../images/playing-cards.jpg); background-position: -1720px -749px;}
+ .cqs {background: url(../images/playing-cards.jpg); background-position: -1892px -749px;}
+ .cks {background: url(../images/playing-cards.jpg); background-position: -2064px -749px;}
+
+
+/* Styles for the wooden console */
+.wood {
+  background: url(../images/wood.jpg);
+  background-size: cover;
+  bottom: 0;
+  box-shadow:inset 0px 3px 10px rgba(255,255,255,0.3),
+             inset 1px 0px 100px rgba(0,0,0,0.5),
+             0px -10px 8px 0px rgba(0,0,0,0.5);
+  display: block;
+  height: 90px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 3000;
+}
+
+.messageOutput {
+  background: black;
+  border: 5px groove silver;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #b3ffbc;
+  font-size: 1.5rem;
+  font-family: 'VT323', monospace;
+  height: 70px;
+  left: 0;
+  line-height: 60px;
+  margin: 10px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  text-shadow: 0px 0px 2px #b3ffbc;
+  width: -webkit-calc(100% - 415px);
+}
+
+button {
+  background: url(../images/silver.jpg);
+  background-size: cover;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow:inset 0px -3px 10px rgba(0,0,0,0.9), 0px 2px 10px #000;
+  color: rgba(0,0,0,0.4);
+  cursor: pointer;
+  font-family: 'Racing Sans One', cursive;
+  font-size: 1.3rem;
+  font-weight: 800;
+  height: 70px;
+  letter-spacing: .1rem;
+  margin-top: 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 10px;
+  width: 100px;
+}
+
+.hit {
+  right: 275px;
+}
+
+.hold {
+  right: 150px;
+}
+
+.reset {
+  right: 25px;
+}
+
+@media all and (max-width: 875px) {  
+	.messageOutput {
+		line-height: 30px;
+	}
+}
+
+@media all and (max-width: 670px) {  
+	.wood {
+		height: 140px;
+	}
+	.messageOutput {
+		bottom: 80px;
+		height: 40px;
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+		width: -o-calc(100% - 20px);
+		width: calc(100% - 20px);
+	}
+	button {
+		top: 60px;
+	}
+	.hit {
+	  right: 25px;
+	}
+	.hold {
+	  right: -webkit-calc(50% - 50px);
+	  right: -moz-calc(50% - 50px);
+	  right: -o-calc(50% - 50px);
+	  right: calc(50% - 50px);
+	}
+	.reset {
+	  left: 25px;
+	}
+	
+}
+
+@media all and (max-width: 520px) {
+	.wood {
+		height: 170px;
+	}
+	.messageOutput {
+		bottom: 80px;
+		height: 70px;
+		width: -webkit-calc(100% - 20px);
+		width: -moz-calc(100% - 20px);
+		width: -o-calc(100% - 20px);
+		width: calc(100% - 20px);
+	}
+	button {
+		top: 90px;
+	}
+	.player {
+		margin-top: -250px;
+	}
+	.dealer {
+		margin-top: -122px;
+	}
+	.card,
+	.deck {
+		-webkit-transform: scale(0.6);
+		-moz-transform: scale(0.6);
+		-ms-transform: scale(0.6);
+		-o-transform: scale(0.6);
+		transform: scale(0.6);
+	}
+}

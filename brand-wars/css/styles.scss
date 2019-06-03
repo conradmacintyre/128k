@@ -1,0 +1,177 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: Avenir, Avenir Next, Helvetica Neue, Helvetica, Verdana;
+}
+
+p {
+	margin: 0;
+}
+
+#RosterOuterWrapper {
+	text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    
+    #RosterButton {
+		border-bottom: 1px solid transparent;
+		transition: padding .5s ease, margin .5s ease, border-color .5s ease;
+	    
+		&:before {
+			content: 'Show ';
+		}
+		&:after {
+			content: '+';
+			border: 1px solid black;
+			border-radius: 50%;
+			display: inline-block;
+			line-height: 14px;
+			width: 14px;
+			text-align: center;
+			margin-left: 5px;
+			position: relative;
+			top: -1px;
+		}
+		
+		&.open {
+			border-bottom-color: black;
+		    padding-bottom: 10px;
+		    margin-bottom: 0px;
+		    
+		    &:before {
+				content: 'Hide ';
+			}
+			&:after {
+				content: '-';
+			}
+			
+	    }
+	}
+	#RosterWrapper {
+		height: 0;
+		overflow: hidden;
+		transition: height .5s linear;
+		
+		#Roster {
+			display: block;
+			margin: 0 auto 20px;
+			overflow: auto;
+			-webkit-overflow-scrolling: touch;
+			
+			input[type=checkbox] {
+				display: none;
+			}
+			
+			label.Wrestler {
+			    display: table-cell;
+			    vertical-align: bottom;
+			    width: 150px;
+			    background-repeat: no-repeat; 
+			    background-position: top center;
+			    padding: 100px 20px 0;
+			    border: 1px solid black;
+			    border-top-width: 0;
+			    border-bottom-width: 0;
+			    
+			    &:hover {
+					background-color: rgba(0,0,0,0.5);
+					cursor: pointer;
+				}
+				
+				.DarkBG {
+					background: rgba(0,0,0,0.5);
+					color: #FFF;
+					width: calc(100% + 40px);
+					margin-left: -20px;
+					padding: 20px;
+					text-align: center;
+					
+					@media (max-width: 800px) {
+						padding: 10px;
+					}
+					
+					.Name,
+					b {
+					    font-weight: bold;
+					    text-transform: uppercase;
+					}
+					p {
+						margin: 1px 0;
+						&:not(.Name) {
+							display: table-cell;
+							width: 30px;
+							background: rgba(255,255,255,.75);
+							border-right: 1px solid black;
+							color: black;
+							
+							&:last-of-type {
+								border-right-width: 0;
+							}
+						}
+					}
+				}
+			}
+			input[type=checkbox]:checked + label.Wrestler {
+				background-color: rgb(100,0,0);
+			}
+			input[type=checkbox]:disabled + label.Wrestler {
+				opacity: 0.5;
+			}
+			
+		}
+	}
+}
+
+#MatchOptions {
+	text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+#MatchTriggers {
+	text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    
+    select {
+	    font-size: 16px;
+    }
+    
+	button {
+		background-color: #EEE;
+		border: 1px solid #CCC;
+		outline: none;
+		font-size: 14px;
+		text-transform: uppercase;
+		display: inline-block;
+		margin: 0 auto;
+		padding: 5px;
+		margin-top: 15px;
+		font-size: 18px;
+		padding: 8px;
+		
+		&#Rematch:not([data-rematch]) {
+			display: none;
+		}
+	}
+}
+
+#MatchOutcome {
+	text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+	#WinnerName {
+		text-align: center;
+		
+		p:nth-of-type(even) {
+			background-color: #f2f2f2;
+		}
+	}
+}

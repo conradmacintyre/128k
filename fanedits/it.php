@@ -383,7 +383,7 @@
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script src="../js/library.min.js"></script>
+		<script src="../_js/library.min.js"></script>
 		<script src="fanedit.min.js"></script>
 	</body>
 </html>

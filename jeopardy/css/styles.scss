@@ -1,0 +1,236 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+
+$border_width: 8px;
+$border : $border_width solid black;
+$body_padding: 10px;
+$title_height: 12%;
+$question_height: (100% - $title_height) / 5;
+
+$section1_left: $body_padding + $border_width ;
+$section2_left: calc(#{$body_padding + $border_width} + 20%);
+$section3_left: calc(#{$body_padding /* + $border_width */} + 40%);
+$section4_left: calc(#{$body_padding /* + $border_width */} + 60%);
+$section5_left: calc(#{$body_padding - $border_width} + 80%);
+
+$question1_top: calc( #{$body_padding} + #{$title_height} );
+$question2_top: calc( #{$body_padding - $border_width} + #{$title_height + ($question_height * 1)} );
+$question3_top: calc( #{$body_padding - $border_width} + #{$title_height + ($question_height * 2)} );
+$question4_top: calc( #{$body_padding - $border_width} + #{$title_height + ($question_height * 3)} );
+$question5_top: calc( #{$body_padding - $border_width} + #{$title_height + ($question_height * 4)} );
+
+html {
+	height: 100%;
+	background-color: blue;
+	font-family: Impact;
+	font-size: 25px;
+	color: white;
+}
+body {
+	@extend html;
+	padding: $body_padding;
+}
+
+section {
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	height: 100%;
+	border-left: $border;
+	&:last-of-type {
+		border-right: $border;
+	}
+	.answerkey & {
+		border-right: $border;
+		width: 100%;
+		display: block;
+	}
+	> p { //Title
+		border-top: $border;
+		border-bottom: $border;
+		height: $title_height;
+		line-height: 1.1;
+		background-color: white;
+		color: blue;
+		span {
+			display: table;
+			margin: auto;
+			position: relative;
+			top: 50%;
+			font-size: 40px;
+			transform: translateY(-50%);
+		}
+	}
+	> div {
+		border-bottom: $border;
+		height: $question_height;
+		position: relative;
+		span {
+			display: table;
+			margin: auto;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 50px;
+			.answerkey & {
+				display: none;
+			}
+		}
+		.answerkey &:before {
+			content: attr(data-answer);
+			display: table;
+			margin: auto;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 50px;
+		}
+	}
+}
+.answer {
+	position: absolute;
+	background: blue;
+	background-position: center;
+	background-size: cover;
+	border: 0px solid white;
+	width: calc(20% - #{$border_width * 2});
+	height: calc(#{$question_height} - #{$border_width * 2});
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 1s ease;
+	opacity: 0;
+	font-family: Times New Roman;
+	font-weight: bold;
+	font-size: 0px;
+	text-shadow: 5px 5px 5px black;
+	text-align: center;
+	padding: 0;
+	.answerkey & {
+		display: none;
+	}
+	//1-5, SECTION 1
+	&:nth-of-type(1) {
+		top: $question1_top;
+		left: $section1_left;
+	}
+	&:nth-of-type(2) {
+		top: $question2_top;
+		left: $section1_left;
+	}
+	&:nth-of-type(3) {
+		top: $question3_top;
+		left: $section1_left;
+	}
+	&:nth-of-type(4) {
+		top: $question4_top;
+		left: $section1_left;
+	}
+	&:nth-of-type(5) {
+		top: $question5_top;
+		left: $section1_left;
+	}
+	//1-5, SECTION 2
+	&:nth-of-type(6) {
+		top: $question1_top;
+		left: $section2_left;
+	}
+	&:nth-of-type(7) {
+		top: $question2_top;
+		left: $section2_left;
+	}
+	&:nth-of-type(8) {
+		top: $question3_top;
+		left: $section2_left;
+	}
+	&:nth-of-type(9) {
+		top: $question4_top;
+		left: $section2_left;
+	}
+	&:nth-of-type(10) {
+		top: $question5_top;
+		left: $section2_left;
+	}
+	//1-5, SECTION 3
+	&:nth-of-type(11) {
+		top: $question1_top;
+		left: $section3_left;
+	}
+	&:nth-of-type(12) {
+		top: $question2_top;
+		left: $section3_left;
+	}
+	&:nth-of-type(13) {
+		top: $question3_top;
+		left: $section3_left;
+	}
+	&:nth-of-type(14) {
+		top: $question4_top;
+		left: $section3_left;
+	}
+	&:nth-of-type(15) {
+		top: $question5_top;
+		left: $section3_left;
+	}
+	//1-5, SECTION 1
+	&:nth-of-type(16) {
+		top: $question1_top;
+		left: $section4_left;
+	}
+	&:nth-of-type(17) {
+		top: $question2_top;
+		left: $section4_left;
+	}
+	&:nth-of-type(18) {
+		top: $question3_top;
+		left: $section4_left;
+	}
+	&:nth-of-type(19) {
+		top: $question4_top;
+		left: $section4_left;
+	}
+	&:nth-of-type(20) {
+		top: $question5_top;
+		left: $section4_left;
+	}
+	//1-5, SECTION 1
+	&:nth-of-type(21) {
+		top: $question1_top;
+		left: $section5_left;
+	}
+	&:nth-of-type(22) {
+		top: $question2_top;
+		left: $section5_left;
+	}
+	&:nth-of-type(23) {
+		top: $question3_top;
+		left: $section5_left;
+	}
+	&:nth-of-type(24) {
+		top: $question4_top;
+		left: $section5_left;
+	}
+	&:nth-of-type(25) {
+		top: $question5_top;
+		left: $section5_left;
+	}
+	&.active {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+		border: 5px solid white;
+		z-index: 2;
+		padding: 100px;
+		font-size: 100px;
+	}
+	&.non-active {
+		opacity: 1;
+		font-size: 0;
+		pointer-events: none;
+		transform: scale(0.9);
+		background-position:0 300px;
+		background-repeat:no-repeat;
+	}
+}
+

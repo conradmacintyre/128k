@@ -1,0 +1,99 @@
+[
+	"Name something blue",
+	"The Sky|53",
+	"Ocean|22",
+	"Eyes|12",
+	"Jeans|8",
+	"Smurfs|5",
+	"",
+	"",
+	""
+],
+[
+	"Name an activity that might leave you with a sunburn",
+	"Swimming|44",
+	"Tanning|27",
+	"Volleyball|19",
+	"Yard Work|5",
+	"Boating|5",
+	"",
+	"",
+	""
+],
+[
+	"Name somethign that vampires hate",
+	"Sunlight|41",
+	"Garlic|30",
+	"Crucifix|9",
+	"Wooden Stake|8",
+	"Holy Water|7",
+	"Mirrors|5",
+	"",
+	""
+],
+[
+	"Name something you might see on a house roof",
+	"Chimney|34",
+	"Shingles|24",
+	"Birds|16",
+	"Satellite Dish|13",
+	"Leaves|8",
+	"Snow|5",
+	"",
+	""
+],
+[
+	"Name a city in England",
+	"Liverpool|51",
+	"Manchester|12",
+	"Leeds|10",
+	"London|8",
+	"Bristol|7",
+	"",
+	"",
+	""
+],
+[
+	"Name a famous \"George\"",
+	"Washington|40",
+	"Clooney|31",
+	"Bush|14",
+	"Jetson|8",
+	"Curious|7",
+	"",
+	"",
+	""
+],
+[
+	"Name something you put on pizza",
+	"Cheese|41",
+	"Pepperoni|28",
+	"Mushroom|11",
+	"Sausage|9",
+	"Sauce|6",
+	"Garlic|5",
+	"",
+	""
+],
+[
+	"Give me a woman's name that has just three letters",
+	"Ann|36",
+	"Sue|21",
+	"Eve|13",
+	"Pam|13",
+	"Kim|12",
+	"Amy|5",
+	"",
+	""
+],
+[
+	"Name something you associate with the original Star Trek",
+	"Captain Kirk|30",
+	" LP Space|27",
+	"Spock|20",
+	"USS Enterprise|13",
+	"Kahn|10",
+	"",
+	"",
+	""
+]

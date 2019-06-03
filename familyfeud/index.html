@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Family Feud</title>
+	<meta name="description" content="description_here">
+	<meta name="author" content="Conrad">
+	<style>
+		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+		
+		body {
+			background: black;
+		}
+		
+		section.puzzle {
+		    border: 1px solid black;
+		    position: relative;
+		    margin-top: 130px;
+			border-top: 3px solid yellow
+		}
+		
+		.question {
+		    font-family: Helvetica Neue;
+		    text-transform: uppercase;
+		    text-align: center;
+		    color: lightblue;
+		    background: black;
+		    padding: 20px;
+		    font-size: 30px;
+		}
+		
+		.total {
+			position: absolute;
+			top: 0;
+			background: black;
+			font-family: Menlo;
+			color: yellow;
+			font-size: 60px;
+			left: 50%;
+			transform: translate(-50%, -100%);
+			text-align: center;
+			line-height: 80px;
+			padding: 30px 100px 0;
+			border-top-left-radius: 50%;
+			border: 3px solid yellow;
+			border-bottom: 0;
+			border-top-right-radius: 50%;
+		}
+		
+		.answer {
+		    display: block;
+		    position: relative;
+		    border: 2px solid black;
+		    background: black;
+		    color: white;
+		    font-family: Helvetica Neue;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		    font-size: 20px;
+		    text-align: center;
+		    height: 80px;
+		    line-height: 80px;
+		    overflow: hidden;
+		}
+		.answers1 {
+		    float: left;
+		    width: 50%;
+		}
+		.answers2 {
+		    float: right;
+		    width: 50%;
+		}
+		.number {
+			background-image: linear-gradient(lightblue, blue);
+			position: relative;
+			height: 80px;
+			z-index: 3;
+		}
+		.number.open {
+			transition: transform .5s linear;
+			transform: translateY(100%);
+		}
+		.char {
+			content: '';
+			width: 100px;
+			height: 70px;
+			display: block;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-53%);
+			border-radius: 50%;
+			background: black;
+			border: 2px solid yellow;
+			position: absolute;
+			line-height: 64px;
+			font-size: 50px;
+		}
+		.nonum .char {
+			opacity: 0;
+		}
+		.text {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 80%;
+			height: 100%;
+			z-index: 2;
+			font-size: 60px;
+			border: 1px solid blue;
+		}
+		.value {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 20%;
+			height: 100%;
+			z-index: 2;
+			background-image: linear-gradient(blue,darkblue);
+			font-size: 50px;
+			line-height: 70px;
+		}
+		.errors {
+			transition: opacity .5s ease;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 542px;
+			height: 200px;
+			transform: translate(-50%, -50%);
+			z-index: 4;
+		}
+		.errors.hide {
+			opacity: 0;
+		}
+		.error {
+			width: 150px;
+			height: 200px;
+			border: 20px solid red;
+			background-image: 
+				linear-gradient(55deg, transparent calc(50% - 10px), red calc(50% - 10px), red calc(50% + 10px), transparent calc(50% + 10px)), 
+				linear-gradient(-55deg, transparent calc(50% - 10px), red calc(50% - 10px), red calc(50% + 10px), transparent calc(50% + 10px))
+			;
+			display: inline-block;
+			margin: 0 15px;
+		}
+		.error.hide {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<section class="puzzle" id="puzzle">
+		<div class="question"></div>
+		<div class="total" id="total">00</div>
+		<div class="answers1">
+			<div class="answer">
+				<div class="number nonum">
+					<div class="char">1</div>
+				</div>
+				<div class="text"></div>
+				<div class="value"></div>
+			</div>
+			<div class="answer">
+				<div class="number nonum">
+					<div class="char">2</div>
+				</div>
+				<div class="text"></div>
+				<div class="value"></div>
+			</div>
+			<div class="answer">
+				<div class="number nonum">
+					<div class="char">3</div>
+				</div>
+				<div class="text"></div>
+				<div class="value"></div>
+			</div>
+			<div class="answer">
+				<div class="number nonum">
+					<div class="char">4</div>
+				</div>
+				<div class="text"></div>
+				<div class="value"></div>
+			</div>
+		</div>
+		<div class="answers2">
+			<div class="answer">
+				<div class="number nonum">
+					<div class="char">5</div>
+				</div>
+				<div class="text"></div>
+				<div class="value"></div>
+			</div>
+			<div class="answer">
+				<div class="number nonum">
+					<div class="char">6</div>
+				</div>
+				<div class="text"></div>
+				<div class="value"></div>
+			</div>
+			<div class="answer">
+				<div class="number nonum">
+					<div class="char">7</div>
+				</div>
+				<div class="text"></div>
+				<div class="value"></div>
+			</div>
+			<div class="answer">
+				<div class="number nonum">
+					<div class="char">8</div>
+				</div>
+				<div class="text"></div>
+				<div class="value"></div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="errors hide">
+		<div class="error error1 hide"></div><div class="error error2 hide"></div><div class="error error3 hide"></div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+		puzzles = [
+			[
+				"Name a reason people prefer summer to winter",
+				"Warm Weather|39",
+				"Lighter Clothes|17",
+				"More Acivities|15",
+				"Beach|12",
+				"Fun|8",
+				"No Snow|4",
+				"Swimming|3",
+				"Happier|2"
+			],
+			[
+				"Besides eating, name something people do during their lunch hour",
+				"Sleep/Nap|34",
+				"Exercise|18",
+				"Read|16",
+				"Shop|13",
+				"Go to Bank|11",
+				"Talk on Phone|8",
+				"",
+				""
+			],
+			[
+				"Name the most annoying thing other drivers do on the road",
+				"No turn Signal|31",
+				"Cut you off|30",
+				"Drive too slow|13",
+				"Tailgating|12",
+				"Talk on cell phone|10",
+				"Speed|4",
+				"",
+				""
+			],
+			[
+				"Name something that's filtered",
+				"Water|50",
+				"Coffee|27",
+				"Air|10",
+				"Gasonline|5",
+				"Vacuum|4",
+				"Pool|4",
+				"",
+				""
+			],
+			[
+				"Name something associated with Zorro",
+				"Sword|49",
+				"\"Z\"|30",
+				"Mask|13",
+				"Cape|8",
+				"",
+				"",
+				"",
+				""
+			],
+			[
+				"Name an occupation bad drivers should avoid",
+				"Trucking|32",
+				"Bus Driver|28",
+				"Taxi Driver|21",
+				"Delivery Driver|6",
+				"Race Car|4",
+				"Ambulance|4",
+				"Chauffer|3",
+				"Heavy Equip.|2"
+			],
+			[
+				"Name something specific people make reservations for",
+				"Dinner|35",
+				"Hotel|32",
+				"Airplane|20",
+				"Tours|6",
+				"Vacation|3",
+				"Car Rental|2",
+				"Cruise|2",
+				""
+			],
+			[
+				"Name a phrase that starts with \"Happy\"",
+				"Birthday|38",
+				"New Year|18",
+				"Anniversary|14",
+				"Days|11",
+				"Meal|10",
+				"Go Lucky|9",
+				"",
+				""
+			],
+			[
+				"Name a type of business people call and expect to be put on hold",
+				"Dr's Office|30",
+				"Phone Co.|20",
+				"Bank|15",
+				"Insurance Co.|12",
+				"Dept Store|10",
+				"Restaurant|6",
+				"Electric/Power Co.|4",
+				"Credit Card Co.|3"
+			]
+		];
+	</script>
+	<script src="../_js/library.min.js?v=0.1"></script>
+	<script src="familyfeud.min.js?v=0.1"></script>
+</body>
+</html>

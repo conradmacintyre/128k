@@ -1,0 +1,94 @@
+##Puzzle 1
+- "Name a bad sport for someone who is afraid of the water",
+1. "Swimming|33",
+2. "Water Polo|21",
+3. "Water Skiing|17",
+4. "Diving|11",
+5. "Scuba|6",
+6. "Surfing|5",
+
+##Puzzle 2
+- Name a beverage that is served at a kid's birthday party",
+1. "Kool Aid|36",
+2. "Punch|34",
+3. "Pop/Soda|17",
+4. "Lemonade|10",
+5. "Milk|2",
+
+##Puzzle 3
+- "Name a type of ball you would be surprised to see a golder tee off with",
+1. "Basketball|30",
+2. "Football|23",
+3. "Baseball|20",
+4. "Tennis Ball|6",
+5. "Bowling Ball|5",
+6. "Soccer Ball|5",
+7. "Beach Ball|3",
+8. "Ping Pong Ball|2"
+
+##Puzzle 4
+- "Name something you only do when you're sick",
+1. "Nap|37",
+2. "Vomit|34",
+3. "Take Medicine|14",
+4. "Eat Soup|8",
+5. "Stay Home From Work/School|3",
+6. "Go To Doctor|3",
+
+##Puzzle 5
+- "Name something people consider a snack food",
+1. "Chips|51",
+2. "Popcorn|12",
+3. "Peanuts|10",
+4. "Crackers|8",
+5. "Pretzels|7",
+6. "Fruit|6",
+7. "Cookies|5",
+
+##Puzzle 6
+- "Name something you wear that covers your ears",
+1. "Earmuffs|50",
+2. "Hat|35",
+3. "Headphones|5",
+4. "Scarf|4",
+5. "Hood|3",
+
+##Puzzle 7
+- "Name something a little kid might tell you about Santa Claus",
+1. "He's plump|33",
+2. "He's jolly|14",
+3. "He has a beard|14",
+4. "He wears a red suit|12",
+5. "He's real|11",
+6. "He brings presents|9",
+7. "He lives at the North Pole|3",
+
+##Puzzle 8
+- "Name something you hope doesn't break while you're inside of it",
+1. "Car|53",
+2. "Elevator|26",
+3. "Airplane|13",
+4. "Roller Coaster|6",
+
+##Puzzle 9
+- "Where might you hear people say 'Good Luck'?",
+1. "Casino|29",
+2. "Sporting Event|21",
+3. "Wedding|17",
+4. "Performance|9",
+5. "Hospital|8",
+6. "Interview|6",
+7. "School|6",
+
+Just finished the regular season and Teddy lead all pitchers in:
+- Wins (26)
+- ERA (1.67)
+- HR Allowed (12)
+- Shutouts (8)
+- Strikeouts (298)
+- Complete Games (10)
+- WHIP (0.91)
+And won:
+- AL Rookie of the Year
+- AL MVP
+- AL Cy Young (Best Pitcher)

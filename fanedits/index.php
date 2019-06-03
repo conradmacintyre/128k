@@ -43,7 +43,7 @@
 		</main>
 		
 		<!-- Call Javascript -->
-		<script src="../js/library.min.js"></script>
+		<script src="../_js/library.min.js"></script>
 	</body>
 </html>
 
