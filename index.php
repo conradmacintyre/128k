@@ -53,7 +53,7 @@ Footer -->
 					<div class="project-billboard-slide" data-bgimg="https://r.hswstatic.com/w_907/gif/how-to-play-blackjack-lead.jpg">
 						<p class="project-title">Games</p>
 						<p>I've made several web games, including BlackJack, Jeopardy, and Buck 'N' Pat Bingo</p>
-						<button class="button popup-link" data-content="games">Check them out</button>
+						<button class="button popup-link" data-content="games">Try a game</button>
 					</div>
 				</div>
 				<div class="project-info popup-content" id="games">
@@ -94,17 +94,27 @@ Footer -->
 			<div class="project fanedits">
 				<div class="project-billboard">
 					<div class="project-billboard-slide" data-bgimg="https://www.screengeek.net/wp-content/uploads/2017/09/tim-curry-pennywise-it.jpg">
-						<p class="project-title">Games</p>
-						<p>I've made several web games, including BlackJack, Jeopardy, and Buck 'N' Pat Bingo</p>
-						<button class="button popup-link" data-content="games">Check them out</button>
+						<p class="project-title">Fanedits</p>
+						<p>I've always loved the Stephen King miniseries' from the 90s. But I've also always had gripes with them too. These are my attempts to polish them and turn them into single-sitting feature films.</p>
+						<button class="button popup-link" data-content="fanedits">Check them out</button>
 					</div>
 				</div>
-				<div class="project-info popup-content" id="games">
+				<div class="project-info popup-content" id="fanedits">
 					<div>
 						<div class="project-specifics">
-							<h3>Buck 'N' Pat Bingo</h3>
+							<h3>It (1990)</h3>
 							<img src="images/bingo.jpg" alt="">
-							<p>If you watch the Blue Jays much, you'll quickly hear some of the broadcaster's favourite phrases. This is an attempt to make those common sayings a little more fun. So tune into the Jays and <a href="#">play along</a>!</p>
+							<p>My refined take on the evil force that feeds on the fear of a small town in Maine. <a href="#">You'll float too</a>!</p>
+						</div>
+						<div class="project-specifics">
+							<h3>The Stand (1994)</h3>
+							<img src="images/bingo.jpg" alt="">
+							<p>I turned a 6-hour, 4-part miniseries into a single-sitting 3-hours-and-21-minute film. <a href="#">Take your stand</a>!</p>
+						</div>
+						<div class="project-specifics">
+							<h3>The Shining (1997)</h3>
+							<img src="images/bingo.jpg" alt="">
+							<p>I removed over half of the 4:30 runtime of the original mini. And I think this streamlined update makes this miniseries much more compelling. <a href="#">Shine on</a>!</p>
 						</div>
 					</div>
 				</div>
@@ -112,17 +122,17 @@ Footer -->
 			<div class="project n64">
 				<div class="project-billboard">
 					<div class="project-billboard-slide" data-bgimg="https://timedotcom.files.wordpress.com/2015/04/174122452.jpg">
-						<p class="project-title">Games</p>
-						<p>I've made several web games, including BlackJack, Jeopardy, and Buck 'N' Pat Bingo</p>
-						<button class="button popup-link" data-content="games">Check them out</button>
+						<p class="project-title">Nintendo 64</p>
+						<p>I got into collecting for the Nintendo 64 in 2017. But I needed a way to quickly assess the value of a set of games in Canadian dollars. So I built this site using data from pricecharting.com.</p>
+						<button class="button popup-link" data-content="n64">Price some games</button>
 					</div>
 				</div>
-				<div class="project-info popup-content" id="games">
+				<div class="project-info popup-content" id="n64">
 					<div>
 						<div class="project-specifics">
-							<h3>Buck 'N' Pat Bingo</h3>
+							<h3>N64 Bundlr</h3>
 							<img src="images/bingo.jpg" alt="">
-							<p>If you watch the Blue Jays much, you'll quickly hear some of the broadcaster's favourite phrases. This is an attempt to make those common sayings a little more fun. So tune into the Jays and <a href="#">play along</a>!</p>
+							<p>Wanna buy or sell some old N64 games and not sure what they're worth? <a href="#">Find out</a>!</p>
 						</div>
 					</div>
 				</div>
@@ -130,31 +140,33 @@ Footer -->
 			<div class="project videos">
 				<div class="project-billboard">
 					<div class="project-billboard-slide" data-bgimg="https://cdn.fstoppers.com/styles/large-16-9/s3/lead/2017/05/fcpx_new_timeline.png">
-						<p class="project-title">Games</p>
-						<p>I've made several web games, including BlackJack, Jeopardy, and Buck 'N' Pat Bingo</p>
-						<button class="button popup-link" data-content="games">Check them out</button>
+						<p class="project-title">Video Projects</p>
+						<p>Over the years I've done some video projects. These vary from wedding/funeral slideshows to event promotions, and youth group video projects.</p>
+						<button class="button popup-link" data-content="videos">Watch something.</button>
 					</div>
 				</div>
-				<div class="project-info popup-content" id="games">
+				<div class="project-info popup-content" id="videos">
 					<div>
 						<div class="project-specifics">
-							<h3>Buck 'N' Pat Bingo</h3>
+							<h3>My YouTube Channel</h3>
 							<img src="images/bingo.jpg" alt="">
-							<p>If you watch the Blue Jays much, you'll quickly hear some of the broadcaster's favourite phrases. This is an attempt to make those common sayings a little more fun. So tune into the Jays and <a href="#">play along</a>!</p>
+							<p>This is just where my content happens to be, you can check out the stuff I've published here. I'll add more items as I have time and inclination. <a href="#">Like, comment, and subscribe</a>!</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="design-thoughts" id="design-thoughts">
-			<h2 class="about-me_title">Thoughts on Design</h2>
-			<p>As I began in hobbyist web development (circa 1999), I regarded design and appearance as synonyms. Design was, to my mind, making something "look cool". Turns out "looking cool" is both extremely subjective and inadequate as a definition of design. While appearance is obviously not without its merit, it is but one facet of design.</p>
-			<p>It took years before this idea rooted itself in my mind. Some time in 2006 I had my first experience with an Apple product — the iPod. It was my girlfriend's and it was, much to my surprise as a then Mac-hater, awesome. And as I thought about why it was so awesome I realized that it was the union of the user interface and the user experience. The marriage of form and function.</p>
-			<p>It was the design. As Steve Jobs once said:</p>
-			<blockquote>Design is not just what it looks like and feels like. Design is how it works.
-			I believe this philosophy should permeate every aspect of what we do. Especially as a web designer.</blockquote>
-			<p>I always want to do something great. Something of value. Something that I'm proud to put my name on. 
-			Let's do that together.</p>
+			<div class="text-section">
+				<h2 class="about-me_title">Thoughts on Design</h2>
+				<p>As I began in hobbyist web development (circa 1999), I regarded design and appearance as synonyms. Design was, to my mind, making something "look cool". Turns out "looking cool" is both extremely subjective and inadequate as a definition of design. While appearance is obviously not without its merit, it is but one facet of design.</p>
+				<p>It took years before this idea rooted itself in my mind. Some time in 2006 I had my first experience with an Apple product — the iPod. It was my girlfriend's and it was, much to my surprise as a then Mac-hater, awesome. And as I thought about why it was so awesome I realized that it was the union of the user interface and the user experience. The marriage of form and function.</p>
+				<p>It was the design. As Steve Jobs once said:</p>
+				<blockquote>Design is not just what it looks like and feels like. Design is how it works.
+				I believe this philosophy should permeate every aspect of what we do. Especially as a web designer.</blockquote>
+				<p>I always want to do something great. Something of value. Something that I'm proud to put my name on. 
+				Let's do that together.</p>
+			</div>
 		</section>
 		<!-- Back to top -->
 		<a href="jacascript:void(0);" class="backtotop"></a>
