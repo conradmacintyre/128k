@@ -18,10 +18,11 @@
 		font-family: inherit;
 		vertical-align: baseline;
 	}
-	html,body {
-		// overflow-x: hidden;
-		// overflow-y: auto;
+	html {
 		height: 100%;
+	}
+	body {
+		min-height: 100%;
 	}
 	// HTML5 display-role reset for older browsers
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {

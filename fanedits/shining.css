@@ -23,8 +23,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
-html, body {
+html {
   height: 100%;
+}
+
+body {
+  min-height: 100%;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -615,7 +619,10 @@ button:hover, button:active,
   --bp: sm;
   padding-left: 5px;
   padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-image: url(images/landing-bg2.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-position: top center;
   -webkit-box-flex: 1;
@@ -628,9 +635,6 @@ button:hover, button:active,
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
 }
 
 @media (min-width: 700px) {
@@ -654,6 +658,8 @@ button:hover, button:active,
     --bp: md;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -662,6 +668,8 @@ button:hover, button:active,
     --bp: lg;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -675,6 +683,9 @@ button:hover, button:active,
   margin-right: auto;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
 }
 
 @media (min-width: 700px) {

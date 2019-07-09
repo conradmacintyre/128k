@@ -108,19 +108,21 @@
     	flex-direction: column;
     	main {
     		@include full-width;
-    		@include gutters;
+    		@include gutters($h:true);
     		background-image: url(images/landing-bg2.jpg);
+    		background-attachment: fixed;
 			background-size: cover;
 			background-position: top center;
 		    flex-grow: 1;
 		    display: flex;
 		    flex-direction: column;
-		    justify-content: center;
+		    // justify-content: center;
     	}
 	}
 	.poster {
 		&-container {
 			@include row;
+			justify-content: center;
 		}
 		& {
 			@include column(sm 12, md 6, lg 4);

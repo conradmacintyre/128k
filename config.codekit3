@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "29156",
 "files": {
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/_images/bingo.jpg": {
 		"ft": 16384,
 		"iS": 26920,
@@ -653,6 +661,49 @@
 		"oA": 0,
 		"oAP": "/build/.gitignore",
 		"oF": 0
+		},
+	"/css/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/css/main.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/css/main.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"/css/main_old.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/main_old-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/css/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/styles-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/familyfeud/Fam Feud Answer Key.txt": {
 		"cB": 0,

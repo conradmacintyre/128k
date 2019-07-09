@@ -1,0 +1,887 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic|Crimson+Text:400,600,700,400italic,600italic,700italic);
+
+@font-face {
+	font-family: '128k';
+	src:url('../fonts/128k.eot?-ngimc');
+	src:url('../fonts/128k.eot?#iefix-ngimc') format('embedded-opentype'),
+		 url('../fonts/128k.woff?-ngimc') 		format('woff'),
+		 url('../fonts/128k.ttf?-ngimc') 		format('truetype'),
+		 url('../fonts/128k.svg?-ngimc#128k') 	format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*****************************************************/
+/*! CSS Reset, thanks to Eric Meyer & Michael Whyte  */
+/*****************************************************/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+
+/****************/
+/*! Typography  */
+/****************/
+
+* {
+	-webkit-box-sizing: border-box;
+	-webkit-transition: color .1s ease,
+							  height .5s ease,
+							  padding .5s ease,
+							  margin-bottom .5s ease,
+							  border-bottom .5s ease;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: "Crimson Text", serif;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+a,
+a:visited {
+	border-bottom: 1px dotted #00F;
+	color: #00F;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	background: #DDD;
+}
+
+h1,
+h2,
+nav,
+footer {
+	clear: both;
+	font-family: "Arimo", "Myriad Pro", sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 8rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+@media screen and (max-width: 530px) {
+	h1 {
+		font-size: 6rem;
+	}
+	h2 {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 479px) {
+	h1 {
+		font-size: 5rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+}
+
+section h2:nth-child(1n+2) {
+	margin-top: 5rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p,
+ul {
+	margin-bottom: 1rem;
+}
+
+ul {
+	list-style: square;
+	margin-left: 20px;
+}
+
+input,
+textarea,
+#form-submit {
+	font-family: "Myriad Pro", sans-serif;
+	font-size: 1.3rem;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: '128k';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:after,
+[class*=" icon-"]:after {
+	font-size: 1rem;
+	vertical-align: middle;
+}
+
+.icon-wordpress:before {
+	content: "\e600";
+}
+.icon-twitter:before {
+	content: "\e601";
+}
+.icon-twitter:after {
+	content: " Twitter";
+}
+.icon-linkedin:before {
+	content: "\e602";
+}
+.icon-linkedin:after {
+	content: " LinkedIn";
+}
+.icon-github:before {
+	content: "\e603";
+}
+.icon-github:after {
+	content: " Github";
+}
+.icon-blog:before {
+	content: "\e604";
+}
+.icon-blog:after {
+	content: " Blog";
+}
+.icon-email:before {
+	content: "\e605";
+}
+.icon-email:after {
+	content: " Email";
+}
+.icon-branding:before {
+	content: "\e606";
+}
+.icon-development:before {
+	content: "\e607";
+}
+.icon-cms:before {
+	content: "\e608";
+}
+.icon-seo:before {
+	content: "\e609";
+}
+.icon-ecommerce:before {
+	content: "\e60a";
+}
+.icon-modern:before {
+	content: "\e60b";
+}
+
+/**********************/
+/*! Universal Styles  */
+/**********************/
+
+img {
+	max-width: 100%;
+}
+
+header,
+body > div {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+
+
+header:before,
+body > div:before {
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+	content: "";
+	position: absolute;
+	top:0;right:-5px;bottom:0;left:-5px;
+	z-index: 2;
+}
+
+section {
+	clear: both;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 2rem;
+}
+
+section h2 {
+	margin-bottom: 2rem;
+}
+
+section + div {
+	clear: both;
+}
+
+#services + div {
+	background: url(../imgs/bg-macbook-2000.jpg);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	background-position: center right;
+	height: 300px;
+}
+
+#portfolio + div {
+	background: url(../imgs/bg-conrad-2000.jpg);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	background-position: center left;
+	height: 300px;
+}
+
+#about + div {
+	background: url(../imgs/bg-seawall-2000.jpg);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	height: 300px;
+}
+
+#contact + div {
+	background: url(../imgs/bg-macintosh-2000.jpg);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	height: 300px;
+}
+
+@media screen and (max-width: 1500px) {
+	
+	#services + div {
+		background: url(../imgs/bg-macbook-1500.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+	}
+	
+	#portfolio + div {
+		background: url(../imgs/bg-conrad-1500.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+	}
+	
+	#about + div {
+		background: url(../imgs/bg-seawall-1500.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+	}
+	
+	#contact + div {
+		background: url(../imgs/bg-macintosh-1500.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-attachment: fixed;
+		background-position: center center;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	
+	#services + div {
+		background: url(../imgs/bg-macbook-1000.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center;
+	}
+	
+	#portfolio + div {
+		background: url(../imgs/bg-conrad-1000.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center;
+	}
+	
+	#about + div {
+		background: url(../imgs/bg-seawall-1000.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center;
+	}
+	
+	#contact + div {
+		background: url(../imgs/bg-macintosh-1000.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	
+	#services + div {
+		background: url(../imgs/bg-macbook-500.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center;
+		height: 200px;
+	}
+	
+	#portfolio + div {
+		background: url(../imgs/bg-conrad-500.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center;
+		height: 200px;
+	}
+	
+	#about + div {
+		background: url(../imgs/bg-seawall-500.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center;
+		height: 200px;
+	}
+	
+	#contact + div {
+		background: url(../imgs/bg-macintosh-500.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center;
+		height: 200px;
+	}
+
+}
+
+/****************/
+/*! Nav Styles  */
+/****************/
+
+nav {
+	line-height: 50px;
+	text-align: center;
+}
+
+nav a,
+nav a:visited {
+	border: none;
+	display: inline-block;
+	width: 25%;
+}
+
+nav a:hover,
+nav a:focus {
+	background: #EFEFEF;
+}
+
+/*******************/
+/*! Header Styles  */
+/*******************/
+
+
+header {
+	background: url(../imgs/bg-gastown-2000.jpg);
+	background-attachment: fixed;
+	background-position: center center;
+		  background-size: cover;
+	-webkit-background-size: cover;
+		-moz-background-size: cover;
+		  -o-background-size: cover;
+	color: #FFF;
+	padding: 200px 0 200px;
+	text-align: center;
+	text-shadow: 0px 0px 7px #000,
+					 0px 0px 7px #000,
+					 0px 0px 7px #000,
+					 0px 0px 7px #000;
+}
+
+@media screen and (max-width: 1500px) {
+	header {
+		background: url(../imgs/bg-gastown-1500.jpg);
+		background-attachment: fixed;
+		background-position: center center;
+				  background-size: cover;
+		-webkit-background-size: cover;
+			-moz-background-size: cover;
+			  -o-background-size: cover;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	header {
+		background: url(../imgs/bg-gastown-1000.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center;
+		padding: 100px 0 100px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	header {
+		background: url(../imgs/bg-gastown-500.jpg);
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-position: center center;
+		padding: 50px 0 50px;
+	}
+}
+
+/*********************/
+/*! Services Styles  */
+/*********************/
+
+#services>div {
+	display: inline-block;
+	padding: 2rem 0;
+	position: relative;
+	text-align: center;
+	width: 32.8%;
+}
+
+#services>div:hover,
+#services>div:focus {
+	color: #C0C0C0;
+}
+
+#services>div {
+	margin-bottom: 3rem;
+}
+
+.overlay {
+	background: rgba(0,0,0,0.8);
+	overflow: hidden;
+	padding: 1rem;
+	position: absolute;
+	top: 0; bottom:0; right:0; left:0;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+}
+
+.overlay p {
+	color: #FFF !important;
+	text-align: center;
+   width: 100%;
+   height: 100%;
+}
+
+#services>div span {
+	font-size: 8rem;
+}
+
+@media screen and (max-width: 970px) {
+	#services>div {
+		width: 49%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#services>div {
+		padding: 1rem 0;
+		width: 100%;
+	}
+}
+
+/**********************/
+/*! Portfolio Styles  */
+/**********************/
+
+#work {
+    position: relative;
+    z-index: 1
+}
+
+#screenshot-container {
+   margin-top: -1rem;
+   position: relative;
+}
+
+.work-frame {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+[id^=work-] img {
+    max-width: 100%;
+    position:absolute;
+    z-index:1
+}
+
+[id^=work-] img .active{
+	z-index:3
+}
+
+#work-imac {
+    position: absolute;
+    top: 9.6%;
+    left: 19.4%;
+    width: 60.8%;
+    z-index:1;
+}
+
+.macbook-frame {
+	z-index: 4;
+}
+
+#work-macbook {
+    position: absolute;
+    top: 47.3%;
+    left: 55.1%;
+    width: 37.1%;
+    z-index:4;
+}
+
+.ipad-frame {
+	z-index: 7;
+}
+
+#work-ipad {
+    position: absolute;
+    top: 47.4%;
+    left: 6%;
+    width: 19.2%;
+    z-index:7;
+}
+
+.iphone-frame {
+	z-index: 10;
+}
+
+#work-iphone {
+    position: absolute;
+    top: 68.9%;
+    left: 34.9%;
+    width: 7.7%;
+    z-index:10;
+}
+
+.project {
+	background: url(../imgs/portfolio-macbook.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	clear: both;
+	display: block;
+	height: 182px;
+	margin: 0 auto;
+	position: relative;
+	width: 300px;
+}
+
+.project-container {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+}
+
+.project-container h3,
+.project-container p {
+	text-align: center;
+}
+
+.project-container ul,
+.project-container p {
+	padding: 0 2rem;
+}
+
+.project img {
+	margin-top: 5.8%;
+	margin-left: 14.2%;
+	width: 71.6%;
+}
+
+.more-info {
+	background: rgb(29,29,29);
+	background:    -moz-linear-gradient(left,     rgb(19,19,19) 0%, rgb(39,39,39) 47%, rgb(19,19,19) 100%);
+	background: -webkit-linear-gradient(left,     rgb(19,19,19) 0%, rgb(39,39,39) 47%, rgb(19,19,19) 100%);
+	background:      -o-linear-gradient(left,     rgb(19,19,19) 0%, rgb(39,39,39) 47%, rgb(19,19,19) 100%);
+	background:     -ms-linear-gradient(left,     rgb(19,19,19) 0%, rgb(39,39,39) 47%, rgb(19,19,19) 100%);
+	background:         linear-gradient(to right, rgb(19,19,19) 0%, rgb(39,39,39) 47%, rgb(19,19,19) 100%);
+	color: #DDD;
+	height: 20rem;
+	overflow: hidden;
+	position: absolute;
+	left: 0; right:0;
+}
+
+.more-info div {
+	overflow: auto !important;
+	margin: auto;
+	max-width: 1000px;
+}
+
+.triangle {
+	background: transparent;
+	width: 0; 
+	height: 0; 
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 0 solid rgb(29,29,29);
+	margin: auto;
+}
+
+.more-info p {
+	float: left;
+	max-height: -webkit-calc(100% - 20px);
+	width: 50%;
+	margin: 10px 0;
+	text-align: left;
+}
+
+.more-info ul {
+	float: left;
+	max-height: -webkit-calc(100% - 20px);
+	width: 50%;
+	margin: 10px 0;
+	text-align: left;
+}
+ 
+@media screen and (max-width: 930px) {
+	.project-container {
+		background-position: center center;
+	background-size: contain;
+		width: 49.5%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	#portfolio {
+		padding: 2rem 0.5rem;
+	}
+	
+	.project-container {
+		background-position: center center;
+		background-size: contain;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.more-info p,
+	.more-info ul {
+		width: 100%;
+	}
+}
+
+ 
+/******************/
+/*! About Styles  */
+/******************/
+
+#ipods {
+	float: left;
+}
+
+.right {
+    text-align: right
+}
+
+@media screen and (max-width: 700px) {
+	#ipods {
+		max-width: 50%;
+	}
+}
+
+/********************/
+/*! Contact Styles  */
+/********************/
+
+#contact a {
+	border: none;
+}
+
+form input,
+form textarea,
+#form-submit  {
+	border: 1px solid #C0C0C0;
+	border-radius: 3px;
+	padding: 0.5rem;
+}
+
+form input {
+	float: left;
+	margin-bottom: 1rem;
+	width: 50%;
+	width: -webkit-calc( 50% - 0.5rem );
+}
+
+@media screen and (max-width: 700px) {
+	form input {
+		float: none;
+		width: 100%;
+	}
+}
+
+#form-name {
+	margin-right: 1rem;
+}
+
+#form-text {
+	height: 7.2rem;
+	width: 100%;
+}
+
+#form-submit {
+	background: #A0A0A0;
+	color: #FFF;
+	display: block;
+	margin: 0.5rem auto 2rem;
+	width: 10rem;
+}
+
+#form-submit:hover,
+#form-submit:focus {
+	background: #505050;
+	cursor: pointer;
+}
+
+#contact span {
+	border-radius: 8px;
+	color: #A0A0A0;
+	display: inline-block;
+	font-size: 2.5rem;
+	padding: 1rem;
+	text-align: center;
+	width: 19.5%;
+}
+
+#contact span:hover,
+#contact span:focus {
+	background: #EEE;
+	color: #505050;
+	cursor: pointer;
+}
+
+.message-container {
+	text-align: center;
+}
+
+label {
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+	#contact span {
+		width: 24.5%;
+	}
+	#contact .icon-blog {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 461px) and (max-width: 660px) {
+	#contact span {
+		width: 49.5%;
+	}
+	#contact span:nth-of-type(odd):before {
+		float: left;
+	}
+	#contact span:nth-of-type(even):before {
+		float: right;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	#contact span {
+		margin-bottom: 1rem;
+		width: 99.5%;
+	}
+}
+/********************/
+/*! Footer Styling  */
+/********************/
+
+footer {
+	background: #333;
+	color: #CCC;
+	font-size: .9rem;
+	padding: 2rem;
+}
+
+.overlay a:visited,
+.overlay a,
+.more-info a:visited,
+.more-info a,
+footer a,
+footer a:visited {
+	border-bottom: 1px dotted #FFF;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: #FFF !important;
+	text-decoration: none;
+}
+
+.overlay a:hover,
+.more-info a:hover,
+footer a:hover,
+.overlay a:focus,
+.more-info a:focus,
+footer a:focus {
+	background: #000;
+}
+
+/**********/
+/*! HIDE  */
+/**********/
+
+.hide {
+	border-bottom: 0;
+	height: 0;
+	padding: 0;
+}
