@@ -348,7 +348,8 @@ function togglr() {
       let toggleWithHover = toggleElement.getAttribute('data-ts-hover') ? toBoolean(toggleElement.getAttribute('data-ts-hover')) : false;
       let togglePropogation = toggleElement.getAttribute('data-ts-prop') ? toBoolean(toggleElement.getAttribute('data-ts-prop')) : true;
       let toggleGroup = toggleElement.getAttribute('data-ts-group');
-      let toggleTargets = Array.from( document.querySelectorAll( toggleElement.getAttribute('data-ts') ) );
+		let targs = typeof toggleElement.getAttribute('data-ts');
+      let toggleTargets = document.querySelectorAll( targs );
       let className = toggleElement.getAttribute('data-ts-class') ? toggleElement.getAttribute('data-ts-class') : 'open';
       //Create/modify grouping if required
       if ( toggleGroup ) {
@@ -455,6 +456,74 @@ function userControlledElements(els) {
     }
 } window.addEventListener('load', () => userControlledElements());
 
+/*********************************
+* ModalPopup.js
+**********************************
+	Pops up a modal dialog box that requires user interaction to dismiss
+	 
+	PARAMETERS:
+	@param: data-uce=""
+	@required: true
+	@description: Defines what element is user-controllable.
+	@value: String -- A UNIQUE name for the element to be controlled, so that it can be stored.
+	@default: none
+	 
+	DEPENDENCIES:
+	None
+*********************************/
+    function customPopup() {
+        //Reusable Vars
+        const body = document.body;
+        const popUpContainer = document.getElementById( 'popup-container' );
+        const popUpBG = document.getElementById( 'popup-bg' );
+        const popUpClose = document.getElementById( 'popup-close' );
+        let popUpLinks = [...document.getElementsByClassName( 'popup-link' )];
+        // Basic Setup
+        if (popUpContainer) {
+	        // Make sure elements inside the popup are interactive
+	        popUpContainer.addEventListener ( 'click', function(e) {
+	            e.stopPropagation();
+	        } );
+	        // Don't double-close the popup
+	        popUpClose.addEventListener ( 'click', function(e) {
+	            e.stopPropagation();
+	        } );
+	        // Hook up all the popup links
+	        popUpLinks.forEach( link => {
+	        	link.addEventListener( 'click', () => {
+	        		openPopUp( link );
+	        	});
+	        });
+	    }
+        // Clear out the popup
+        function removeContent( element ) {
+        	if ( element ) {
+        		element.appendChild( popUpContainer.children[0] );
+        	} else {
+        		console.log("ERROR: no element defined");
+        	}
+        }
+        //Open popup
+        function openPopUp( link ) {
+        	let el = link.getAttribute( 'data-content' );
+            let element = document.getElementById( el );
+            body.classList.add('popup-open'); 
+            popUpBG.classList.add( link.getAttribute( 'data-content' ) );
+            if ( popUpContainer.children.length > 0 ) {
+            	removeContent();
+            }
+            popUpContainer.appendChild( element.children[0] );
+            popUpBG.onclick =  () => { closePopUp( element ) };
+            popUpClose.onclick =  () => { closePopUp( element ) };
+        }
+        // Close Popup
+        function closePopUp( element ) {
+        	popUpBG.setAttribute( 'class', 'popup-bg' ); //Remove any Class Names
+            body.classList.remove( 'popup-open' ); //Remove the Body class
+            removeContent( element );
+        }
+    } window.addEventListener('load',customPopup);
+
 
 //Smooth Scroll
     //TO DO: -
@@ -547,60 +616,6 @@ function userControlledElements(els) {
         }
 
     } //window.addEventListener('load', () => backToTop() );
-
-
-
-// Custom Popup
-    function customPopup() {
-        //Reusable Vars
-        const body = document.body;
-        const popUpContainer = document.getElementById( 'popup-container' );
-        let popUpLinks = [...document.getElementsByClassName( 'popup-link' )];
-        const popUpBG = document.getElementById( 'popup-bg' );
-        const popUpClose = document.getElementById( 'popup-close' );
-        if (popUpContainer) {
-	        // Make sure elements inside the popup are interactive
-	        popUpContainer.addEventListener ( 'click', function(e) {
-	            e.stopPropagation();
-	        } );
-	        // Hook up all the popup links
-	        popUpLinks.forEach( link => {
-	        	link.addEventListener( 'click', () => {
-	        		openPopUp( link );
-	        	});
-	        });
-	    }
-        // Clear out the popup
-        function removeContent( element ) {
-        	if ( element ) {
-        		element.appendChild( popUpContainer.children[0] );
-        	} else {
-        		console.log("no element defined");
-        	}
-        }
-        //Open popup
-        function openPopUp( link ) {
-            let element = document.getElementById( link.getAttribute( 'data-content' ) );
-            body.classList.add('popup-open'); 
-            popUpBG.classList.add( link.getAttribute( 'data-content' ) );
-            if ( popUpContainer.children.length > 0 ) {
-            	removeContent();
-            }
-            popUpContainer.appendChild( element.children[0] );
-            popUpBG.addEventListener( 'click', () => {
-            	closePopUp( element ) 
-            });
-            popUpClose.addEventListener( 'click', () => {
-            	closePopUp( element ) 
-            });
-        }
-        // Close Popup
-        function closePopUp( element ) {
-        	popUpBG.setAttribute( 'class', 'popup-bg' ); //Remove any Class Names
-            body.classList.remove( 'popup-open' ); //Remove the Body class
-            removeContent( element );
-        }
-    } window.addEventListener('load',customPopup);
 
 
     // Browse Field Prettifier

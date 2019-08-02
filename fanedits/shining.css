@@ -158,13 +158,13 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:active {
+p a:hover,
+p a:active {
   text-decoration: underline;
 }
 
 .button {
   display: -webkit-inline-box;
-  display: -webkit-inline-flex;
   display: inline-flex;
   border: 2px solid #009dff;
   background-image: -webkit-linear-gradient(320deg, #009dff 50%, white 50%);
@@ -391,7 +391,6 @@ textarea:focus {
 
 [type='file'] + .file-placeholder {
   display: -webkit-inline-box;
-  display: -webkit-inline-flex;
   display: inline-flex;
   border: 2px solid #009dff;
   background-image: -webkit-linear-gradient(320deg, #009dff 50%, white 50%);
@@ -418,7 +417,6 @@ textarea:focus {
 button,
 [type='submit'] {
   display: -webkit-inline-box;
-  display: -webkit-inline-flex;
   display: inline-flex;
   border: 2px solid #009dff;
   background-image: -webkit-linear-gradient(320deg, #009dff 50%, white 50%);
@@ -486,10 +484,8 @@ button:hover, button:active,
   z-index: 1;
   padding: 0 15px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
           align-items: center;
   position: -webkit-sticky;
   position: sticky;
@@ -534,26 +530,21 @@ button:hover, button:active,
 
 .header-nav-wrapper {
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
           flex-grow: 1;
   position: relative;
 }
 
 .header-nav {
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
           justify-content: flex-end;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .mobile .header-nav {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
           flex-direction: column;
   position: absolute;
   top: 100%;
@@ -594,21 +585,17 @@ button:hover, button:active,
 
 .mobile .header-nav-trigger {
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
           justify-content: flex-end;
   padding: 15px 7.5px;
 }
 
 .posters {
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
           flex-direction: column;
 }
 
@@ -626,14 +613,11 @@ button:hover, button:active,
   background-size: cover;
   background-position: top center;
   -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
           flex-grow: 1;
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
           flex-direction: column;
 }
 
@@ -681,10 +665,8 @@ button:hover, button:active,
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
           justify-content: center;
 }
 
@@ -733,7 +715,7 @@ button:hover, button:active,
   background: #000;
   height: 50px;
   font-family: Limelight;
-  color: #6f6e6e;
+  color: #6f6f6f;
   text-align: center;
   line-height: 50px;
   font-size: 35px;
@@ -800,8 +782,7 @@ button:hover, button:active,
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
   position: relative;
   overflow: hidden;
   height: 0;
@@ -830,7 +811,6 @@ button:hover, button:active,
   display: block;
   grid-column-end: span 12;
   display: -webkit-box;
-  display: -webkit-flex;
   display: flex;
   position: absolute;
   top: 0;
@@ -840,7 +820,6 @@ button:hover, button:active,
   color: #EEE;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
           flex-direction: column;
   --bp: sm;
   padding-left: 5px;
@@ -848,10 +827,8 @@ button:hover, button:active,
   padding-top: 5px;
   padding-bottom: 5px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
           justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
           align-items: center;
   text-align: center;
   -webkit-transition: -webkit-transform 0.6s linear;
@@ -884,39 +861,33 @@ button:hover, button:active,
 
 .billboard-slide.top {
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
           justify-content: flex-start;
 }
 
 .billboard-slide.middle {
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
           justify-content: center;
 }
 
 .billboard-slide.bottom {
   -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
           justify-content: flex-end;
 }
 
 .billboard-slide.left {
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
           align-items: flex-start;
   text-align: left;
 }
 
 .billboard-slide.center {
   -webkit-box-align: end;
-  -webkit-align-items: flex-end;
           align-items: flex-end;
   text-align: right;
 }
 
 .billboard-slide.right {
   -webkit-box-align: end;
-  -webkit-align-items: flex-end;
           align-items: flex-end;
   text-align: right;
 }
@@ -981,8 +952,7 @@ button:hover, button:active,
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: -5px;
   width: calc(100% + 10px);
   max-width: calc(100% + 10px);
@@ -1030,7 +1000,6 @@ button:hover, button:active,
   max-width: 100%;
   background: #009dff;
   padding-top: 4px;
-  cursor: pointer;
   font-weight: 500;
   font-size: 80%;
   line-height: 4;
@@ -1061,7 +1030,6 @@ button:hover, button:active,
   max-width: 100%;
   background: #000;
   padding-top: 4px;
-  cursor: pointer;
   font-weight: 500;
   font-size: 80%;
   line-height: 4;
@@ -1092,7 +1060,6 @@ button:hover, button:active,
   max-width: 100%;
   background: #ff9900;
   padding-top: 4px;
-  cursor: pointer;
   font-weight: 500;
   font-size: 80%;
   line-height: 4;
@@ -1131,8 +1098,7 @@ section {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 33px;
   margin-bottom: 33px;
 }
@@ -1182,8 +1148,7 @@ section {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 700px) {
@@ -1500,7 +1465,6 @@ section {
   max-width: 100%;
   background: #EEE;
   padding-top: 4px;
-  cursor: pointer;
   font-weight: 500;
   font-size: 80%;
   line-height: 4;

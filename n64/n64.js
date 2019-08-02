@@ -2677,6 +2677,7 @@
 	});
 
 //DOM finished dynamically building function
+// TODO: Clean up this mess
 	var ajaxfired = -1; //-1 to account for fixer.io conversion data
 	$( document ).ajaxComplete(function() {
 		ajaxfired++;
@@ -2758,18 +2759,18 @@
 
 				var _cb = $('#currentBundle');
 				var tempBundle = _cb.val();
-				_cb.val(window.location.href + '?bundle=MyBundle~' + tempBundle);
+				var url = window.location.href + '?bundle=MyBundle~' + tempBundle;
+				_cb.val(url);
 				_cb.select();
-				try {
-					var successful = document.execCommand('copy');
-					var copied = successful ? true : false;
-					if ( copied === true ) {
-						alert('Your bundle has been copied to the clipboard. :)');
-					} else {
-						alert('Your bundle has NOT been copied to the clipboard. :(');
-					}
-				} catch (err) {
-					console.log('Oops, unable to copy');
+				var successful = document.execCommand('copy');
+				var copied = successful ? true : false;
+				if ( copied === true ) {
+					$(this).addClass('hide');
+					$('#sharingInstructions').removeClass('hide');
+					$('#sharingURL').val(url).removeClass('hide');
+					alert('Your bundle has been copied to the clipboard. :)');
+				} else {
+					alert('Your bundle has NOT been copied to the clipboard. You\'ll need to do so manually. :(');
 				}
 				_cb.val(tempBundle);
 			});			
@@ -2798,6 +2799,13 @@
 				        _wrap.addClass('mario-art--boo');
 				}
 			})();
+
+			// Random Color
+			// let root = document.documentElement;
+			// root.addEventListener("mousemove", e => {
+			// 	root.style.setProperty('--mouse-x', e.clientX + "px");
+			// 	root.style.setProperty('--mouse-y', e.clientY + "px");
+			// });
 	
 		} else {
 			// Animate the loading bar
