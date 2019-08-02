@@ -348,7 +348,7 @@ function togglr() {
       let toggleWithHover = toggleElement.getAttribute('data-ts-hover') ? toBoolean(toggleElement.getAttribute('data-ts-hover')) : false;
       let togglePropogation = toggleElement.getAttribute('data-ts-prop') ? toBoolean(toggleElement.getAttribute('data-ts-prop')) : true;
       let toggleGroup = toggleElement.getAttribute('data-ts-group');
-		let targs = typeof toggleElement.getAttribute('data-ts');
+		let targs = toggleElement.getAttribute('data-ts');
       let toggleTargets = document.querySelectorAll( targs );
       let className = toggleElement.getAttribute('data-ts-class') ? toggleElement.getAttribute('data-ts-class') : 'open';
       //Create/modify grouping if required
