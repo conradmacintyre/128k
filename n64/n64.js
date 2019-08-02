@@ -1803,49 +1803,49 @@
 			 "date": ""
 		},
 		"248": {
-			 "name": "The Legend of Zelda: Ocarina of Time",
+			 "name": "Legend of Zelda: Ocarina of Time, The",
 			 "pcid": "3977",
 			 "loose": "",
 			 "cib": "",
 			 "date": ""
 		},
 		"248a": {
-			 "name": "The Legend of Zelda: Ocarina of Time [Gold Cart] (Collector's Edition)",
+			 "name": "Legend of Zelda: Ocarina of Time, The [Gold Cart] (Collector's Edition)",
 			 "pcid": "14315",
 			 "loose": "",
 			 "cib": "",
 			 "date": ""
 		},
 		"249": {
-			 "name": "The Legend of Zelda: Majora's Mask",
+			 "name": "Legend of Zelda: Majora's Mask, The",
 			 "pcid": "3976",
 			 "loose": "",
 			 "cib": "",
 			 "date": ""
 		},
 		"249a": {
-			 "name": "The Legend of Zelda: Majora's Mask [Hologram Label] (Collector's Edition)",
+			 "name": "Legend of Zelda: Majora's Mask, The [Hologram Label] (Collector's Edition)",
 			 "pcid": "19305",
 			 "loose": "",
 			 "cib": "",
 			 "date": ""
 		},
 		"250": {
-			 "name": "The New Tetris",
+			 "name": "New Tetris, The",
 			 "pcid": "3853",
 			 "loose": "",
 			 "cib": "",
 			 "date": ""
 		},
 		"251": {
-			 "name": "The World Is Not Enough",
+			 "name": "World Is Not Enough, The",
 			 "pcid": "3966",
 			 "loose": "",
 			 "cib": "",
 			 "date": ""
 		},
 		"251a": {
-			"name": "The World Is Not Enough [Grey Cart]",
+			"name": "World Is Not Enough, The [Grey Cart]",
 			"pcid": "40361",
 			"loose": "",
 			"cib": "",
