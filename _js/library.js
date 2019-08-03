@@ -349,14 +349,11 @@ function togglr() {
 			let togglePropogation = toggleElement.getAttribute('data-ts-prop') ? toBoolean(toggleElement.getAttribute('data-ts-prop')) : true;
 			let toggleGroup = toggleElement.getAttribute('data-ts-group');
 			let toggleTargets;
-			function setToggleTargets {
+			function setToggleTargets() {
 				let targs = toggleElement.getAttribute('data-ts');
-				console.log(targs);
 				if (targs.length > 0) {
-					console.log(targs.length);
-					toggleTargets = document.querySelectorAll( targs );	
+					toggleTargets = document.querySelectorAll( targs );
 				} else {
-					console.log(targs.length);
 					toggleTargets = [];
 				}
 			}setToggleTargets();

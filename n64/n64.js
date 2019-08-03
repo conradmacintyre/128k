@@ -2552,48 +2552,12 @@
 	}
 	
 //Load Bundle
+	// This is defined here, but only used inline
+	// eslint-disable-next-line no-unused-vars
 	function loadBundle(_bundle){
 	    var _games = _bundle.getAttribute("data-bundle-items");
 	    highlightBundle(_games);
     }
-	
-//Open and close sidebar with a swipe. Code via http://stackoverflow.com/a/23230280
-	var xDown = null;
-	var yDown = null;
-	function handleTouchStart(evt) {                                         
-	    xDown = evt.touches[0].clientX;                                      
-	    yDown = evt.touches[0].clientY;                                      
-	}                                              
-	function handleTouchMove(evt) {
-	    if ( ! xDown || ! yDown ) {
-	        return;
-	    }
-	
-	    var xUp = evt.touches[0].clientX;                                    
-	    var yUp = evt.touches[0].clientY;
-	
-	    var xDiff = xDown - xUp;
-	    var yDiff = yDown - yUp;
-	
-	    if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) { //most significant
-	        if ( xDiff > 0 ) {
-	            $('#closeSidebar').click();
-	        } else {
-	            $('#mainMenu').click();
-	        }                       
-	    } else {
-	        if ( yDiff > 0 ) {
-				// up swipe 
-	        } else { 
-				// down swipe
-	        }                                                                 
-	    }
-		// reset values
-	    xDown = null;
-	    yDown = null;                                             
-	}
-	document.addEventListener('touchstart', handleTouchStart, false);        
-	document.addEventListener('touchmove', handleTouchMove, false);
 	
 //Bundle List
 	function listBundles() {
@@ -2624,7 +2588,7 @@
 		}
 		if ( localStorage.getItem( _bundleName ) === null ) {
 			localStorage.setItem( _bundleName , $('#currentBundle').val() );
-			closePopUp();
+			document.getElementById('popup-close').click();
 			alert("You bundle was saved as " + _bundleName + ".");
 		} else {
 			if ( _bundleName === 'MyBundle' ) {
@@ -2632,7 +2596,7 @@
 					if ( localStorage.getItem( _bundleName + i ) === null ) {
 						localStorage.setItem( _bundleName + i , $('#currentBundle').val() );
 						alert("You bundle was saved as " + _bundleName + i + ".");
-						closePopUp();
+						document.getElementById('popup-close').click();
 						break;
 					}
 				}
@@ -2652,6 +2616,8 @@
 	});
 	
 //Delete Bundle
+	// This is defined here, but only used inline
+	// eslint-disable-next-line no-unused-vars
 	function deleteBundle(_name) {
 		//var _bundleName = $('#bundleName').val();
 		localStorage.removeItem(_name);
@@ -2756,23 +2722,41 @@
 			//Copy URL to Clipboard:
 			$('#copyBundleUrl').click(function(){
 
-				var _cb = $('#currentBundle');
+				var _currentBundle = $('#currentBundle');
 				var tempBundle = _cb.val();
-				var url = window.location.href + '?bundle=MyBundle~' + tempBundle;
+				var url = window.location.href + '?bundle=MyBundle~' + _currentBundle.val();
 				_cb.val(url);
 				_cb.select();
 				var successful = document.execCommand('copy');
 				var copied = successful ? true : false;
 				if ( copied === true ) {
+					alert('Your bundle has been copied to the clipboard. :)');
+				} else {
 					$(this).addClass('hide');
 					$('#sharingInstructions').removeClass('hide');
 					$('#sharingURL').val(url).removeClass('hide');
-					alert('Your bundle has been copied to the clipboard. :)');
-				} else {
 					alert('Your bundle has NOT been copied to the clipboard. You\'ll need to do so manually. :(');
 				}
 				_cb.val(tempBundle);
-			});			
+			});
+
+			document.getElementById('copyBundleUrl').addEventListener('click', () => {
+				let _gameList = document.getElementById('currentBundle').value;
+				let _urlHolder = document.getElementById('sharingURL');
+				_urlHolder.value = window.location.href + '?bundle=MyBundle~' + _gameList;
+				_urlHolder.select();
+				let copyUrl = document.execCommand('copy');
+				let copied = copyUrl ? true : false;
+				if ( copied === true ) {
+					alert('Your bundle has been copied to the clipboard. :)');
+				} else {
+					this.classList.add('hide');
+					$('#sharingInstructions').classList.add('hide');
+					$('#sharingURL').val(url).classList.add('hide');
+					alert('Your bundle has NOT been copied to the clipboard. You\'ll need to do so manually. :(');
+				}
+
+			});
 			
 			//Add Mario Pixel Art Easter Egg
 			(function(){
