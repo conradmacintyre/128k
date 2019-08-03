@@ -1,5 +1,5 @@
 //TODO FOR ENTIRE FILE:
-	//Move to RAW JS to reduce HTTP requests, weight of page
+	//Move to RAW JS to reduce HTTP requests, dependencies, weight of page.
 
 //N64 Games List - Global Variable
 	var games = {
@@ -2535,6 +2535,7 @@
 			}
 		});
 		document.getElementById('currentBundle').value = currentBundle;
+		document.getElementById('sharingUrl').value = window.location.href + '?bundle=MyBundle~' + currentBundle;
 		localStorage.setItem( 'saveState' , currentBundle );
 	}
 	
@@ -2551,30 +2552,39 @@
 		}
 	}
 	
-//Load Bundle
-	// This is defined here, but only used inline
-	// eslint-disable-next-line no-unused-vars
-	function loadBundle(_bundle){
-	    var _games = _bundle.getAttribute("data-bundle-items");
-	    highlightBundle(_games);
-    }
-	
 //Bundle List
 	function listBundles() {
 		//window.console && console.log('listBundles was called');
-		$('#bundles').html(''); //Clear it out
+		let _bundles = document.getElementById('bundles');
+		_bundles.innerHTML = ''; //Clear it out
 		//Regex detects strings of numbers 3-5 characters long
-		var regEx = /^[1-9][0-9]{3,5}$/;
+		let regEx = /^[1-9][0-9]{3,5}$/;
 		//Get total number of items in localStorage
-		var lsl = localStorage.length;
+		let lsLength = localStorage.length;
 		//Loop through each localStorage item
-		for ( var i = 0; i < lsl; i++ ) {
+		for ( let i = 0; i < lsLength; i++ ) {
 			//Store the single item
-			var lsItem = localStorage.key(i);
-			//If the item exists and matches the regex
-			if ( lsItem !== null && !lsItem.match(regEx) && lsItem !== 'lastData' && lsItem !== 'saveState' ) {
-				var _games = localStorage.getItem( lsItem );
-				$('#bundles').append('<a class="bundleName" data-bundle-name="' + lsItem + '" data-bundle-items="' + _games + '" onclick="javascript:loadBundle(this);">' + lsItem + '</a><a class="deleteBundle" onclick="javascript:deleteBundle(\'' + lsItem + '\');"></a>');
+			let _thisBundle = localStorage.key(i);
+			//If the item exists and matches the regex and it NOT any of the internal storage items.
+			if ( _thisBundle !== null && !_thisBundle.match(regEx) && _thisBundle !== 'lastData' && _thisBundle !== 'saveState' ) {
+				let _games = localStorage.getItem( _thisBundle );
+				let _bundleSelector = document.createElement('a');
+				_bundleSelector.innerHTML = _thisBundle;
+				_bundleSelector.setAttribute('class', 'bundleName');
+				_bundleSelector.setAttribute('data-bundle-name', _thisBundle);
+				_bundleSelector.setAttribute('data-bundle-items', _games);
+				_bundleSelector.addEventListener('click', () => {
+					highlightBundle(_games);
+				});
+				_bundles.appendChild(_bundleSelector);
+
+				let _bundleDeleter = document.createElement('a');
+				_bundleDeleter.setAttribute('class', 'deleteBundle');
+				_bundleDeleter.addEventListener('click', () => {
+					deleteBundle(_thisBundle);
+				});
+				_bundles.appendChild(_bundleDeleter);
+				// $('#bundles').append('<a class="bundleName" data-bundle-name="' + _thisBundle + '" data-bundle-items="' + _games + '" onclick="javascript:loadBundle(this);">' + _thisBundle + '</a><a class="deleteBundle" onclick="javascript:deleteBundle(\'' + _thisBundle + '\');"></a>');
 			}
 		}
 	}
@@ -2642,7 +2652,7 @@
 	});
 
 //DOM finished dynamically building function
-// TODO: Clean up this mess
+	// TODO: Clean up this mess
 	var ajaxfired = -1; //-1 to account for fixer.io conversion data
 	$( document ).ajaxComplete(function() {
 		ajaxfired++;
@@ -2717,71 +2727,8 @@
 				if (confirm("Price data is automatically refreshed in about " + returnHours((parseInt(localStorage.lastData) + 86400000) - Date.now()) + " hours. Do you still want to reset the data?") === true) {
 			        resetData();
 			    }
-			});
-			
-			//Copy URL to Clipboard:
-			$('#copyBundleUrl').click(function(){
+			});		
 
-				var _currentBundle = $('#currentBundle');
-				var tempBundle = _cb.val();
-				var url = window.location.href + '?bundle=MyBundle~' + _currentBundle.val();
-				_cb.val(url);
-				_cb.select();
-				var successful = document.execCommand('copy');
-				var copied = successful ? true : false;
-				if ( copied === true ) {
-					alert('Your bundle has been copied to the clipboard. :)');
-				} else {
-					$(this).addClass('hide');
-					$('#sharingInstructions').removeClass('hide');
-					$('#sharingURL').val(url).removeClass('hide');
-					alert('Your bundle has NOT been copied to the clipboard. You\'ll need to do so manually. :(');
-				}
-				_cb.val(tempBundle);
-			});
-
-			document.getElementById('copyBundleUrl').addEventListener('click', () => {
-				let _gameList = document.getElementById('currentBundle').value;
-				let _urlHolder = document.getElementById('sharingURL');
-				_urlHolder.value = window.location.href + '?bundle=MyBundle~' + _gameList;
-				_urlHolder.select();
-				let copyUrl = document.execCommand('copy');
-				let copied = copyUrl ? true : false;
-				if ( copied === true ) {
-					alert('Your bundle has been copied to the clipboard. :)');
-				} else {
-					this.classList.add('hide');
-					$('#sharingInstructions').classList.add('hide');
-					$('#sharingURL').val(url).classList.add('hide');
-					alert('Your bundle has NOT been copied to the clipboard. You\'ll need to do so manually. :(');
-				}
-
-			});
-			
-			//Add Mario Pixel Art Easter Egg
-			(function(){
-				var _num = Math.floor(Math.random() * 6) + 1;
-				var _wrap = $('.mario-art');
-				switch ( parseInt(_num) ) {
-				    case 1:
-				        _wrap.addClass('mario-art--mario');
-				        break;
-				    case 2:
-				        _wrap.addClass('mario-art--mushroom');
-				        break;
-				    case 3:
-				        _wrap.addClass('mario-art--star');
-				        break;
-				    case 4:
-				        _wrap.addClass('mario-art--flower');
-				        break;
-				    case 5:
-				        _wrap.addClass('mario-art--chance');
-				        break;
-				    case 6:
-				        _wrap.addClass('mario-art--boo');
-				}
-			})();
 
 			// Random Color
 			// let root = document.documentElement;

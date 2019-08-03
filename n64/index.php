@@ -16,10 +16,9 @@
                     <div id="share-modal" class="popup-content">
                         <div class="share-modal__content">
                             <h2>Share this bundle</h2>
-                            <a id="copyBundleUrl" class="copyBundleUrl button">Copy URL to Clipboard</a>
                             <textarea id="currentBundle" class="currentBundle hide"></textarea>
-                            <div id="sharingInstructions" class="sharingInstructions hide">Copy and Paste the following:</div>
-                            <textarea id="sharingURL" class="sharingURL hide"></textarea>
+                            <div id="sharingInstructions" class="sharingInstructions">Copy and Paste the following:</div>
+                            <textarea id="sharingUrl" class="sharingUrl"></textarea>
                         </div>
                     </div>
 
