@@ -341,34 +341,44 @@ function togglr() {
   }
 
     // Initalization
-  function toggleInit() {
-    for (let i=0; i<toggleablesCount; i++) {
-      //Get properties or set fallbacks
-      let toggleElement = toggleables[i];
-      let toggleWithHover = toggleElement.getAttribute('data-ts-hover') ? toBoolean(toggleElement.getAttribute('data-ts-hover')) : false;
-      let togglePropogation = toggleElement.getAttribute('data-ts-prop') ? toBoolean(toggleElement.getAttribute('data-ts-prop')) : true;
-      let toggleGroup = toggleElement.getAttribute('data-ts-group');
-		let targs = toggleElement.getAttribute('data-ts');
-      let toggleTargets = document.querySelectorAll( targs );
-      let className = toggleElement.getAttribute('data-ts-class') ? toggleElement.getAttribute('data-ts-class') : 'open';
-      //Create/modify grouping if required
-      if ( toggleGroup ) {
-        addToToggleableGroups(toggleElement,toggleGroup);
-        toggleGroup = toggleableGroups[toggleGroup];
-      }
-      //Attach click/hover events as required
-      if ( toggleWithHover && !Modernizr.touchevents ) {
-        toggleElement.addEventListener("mouseenter", () => { toggleIt(toggleElement,'over',toggleGroup,toggleTargets,className); } );
-        toggleElement.addEventListener("mouseleave", () => { toggleIt(toggleElement,'out',toggleGroup,toggleTargets,className); } );
-      } else {
-        toggleElement.addEventListener("click", () => toggleIt(toggleElement,null,toggleGroup,toggleTargets,className) );
-      }
-      //Stops event propogation, if required
-      if (!togglePropogation) {
-        toggleElement.addEventListener("click", e => { e.stopPropagation(); } );
-      }
-    }
-  }
+	function toggleInit() {
+		for (let i=0; i<toggleablesCount; i++) {
+			//Get properties or set fallbacks
+			let toggleElement = toggleables[i];
+			let toggleWithHover = toggleElement.getAttribute('data-ts-hover') ? toBoolean(toggleElement.getAttribute('data-ts-hover')) : false;
+			let togglePropogation = toggleElement.getAttribute('data-ts-prop') ? toBoolean(toggleElement.getAttribute('data-ts-prop')) : true;
+			let toggleGroup = toggleElement.getAttribute('data-ts-group');
+			let toggleTargets;
+			function setToggleTargets {
+				let targs = toggleElement.getAttribute('data-ts');
+				console.log(targs);
+				if (targs.length > 0) {
+					console.log(targs.length);
+					toggleTargets = document.querySelectorAll( targs );	
+				} else {
+					console.log(targs.length);
+					toggleTargets = [];
+				}
+			}setToggleTargets();
+			let className = toggleElement.getAttribute('data-ts-class') ? toggleElement.getAttribute('data-ts-class') : 'open';
+			//Create/modify grouping if required
+			if ( toggleGroup ) {
+				addToToggleableGroups(toggleElement,toggleGroup);
+				toggleGroup = toggleableGroups[toggleGroup];
+			}
+			//Attach click/hover events as required
+			if ( toggleWithHover && !Modernizr.touchevents ) {
+				toggleElement.addEventListener("mouseenter", () => { toggleIt(toggleElement,'over',toggleGroup,toggleTargets,className); } );
+				toggleElement.addEventListener("mouseleave", () => { toggleIt(toggleElement,'out',toggleGroup,toggleTargets,className); } );
+			} else {
+				toggleElement.addEventListener("click", () => toggleIt(toggleElement,null,toggleGroup,toggleTargets,className) );
+			}
+			//Stops event propogation, if required
+			if (!togglePropogation) {
+				toggleElement.addEventListener("click", e => { e.stopPropagation(); } );
+			}
+		}
+	}
 } window.addEventListener('load', togglr);
 
 /*********************************

@@ -2179,7 +2179,6 @@
 	// var pcAuthToken = "09f74ba6c7119279d03ea5e16965cb6b650f1952";
 	var pcAuthToken = "00291687cb933b07d363351aa54b8d684d8d0059";
 	
-	
 //Global Variable to store all the game rows in an array, to avoid further DOM searches.
 	var gameRows;
 	
