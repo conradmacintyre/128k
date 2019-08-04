@@ -26,19 +26,55 @@
                     <div id="save-modal" class="popup-content">
                         <div class="save-modal__content">
                             <h2>Save This Bundle</h2>
-                            <input type="text" id="bundleName" class="bundleName" placeholder="Generic Bundle Name"><a id="saveBundleName" class="saveBundleName button">SAVE</a>
+                            <input type="text" id="bundleName" class="bundleName" placeholder="Generic Bundle Name"><a id="saveBundleName" class="save-bundle">SAVE</a>
                         </div>
                     </div>
 
-                    <a href="javascript:void(0);" class="popup-link" data-content="bundles-modal">Bundles</a>
+                    <a href="javascript:void(0);" class="popup-link" data-content="bundles-modal">Manage</a>
                     <div id="bundles-modal" class="popup-content">
                         <div class="bundles-modal__content">
                             <h2>Your Saved Bundles</h2>
                             <div id="bundles"></div>
                             <div class="emptyUl">You have not saved any bundles</div>
                             <br><br>
-                            <a id="resetBundles" class="resetBundles button">Remove all my bundles</a>
+                            <a id="resetBundles" class="resetBundles">Remove all my bundles</a>
+                            <br><br>
                             <small>Note that your saved bundles are only available on the device you saved them to. In order to make them available across all your devices, I would need a login system. And that means I would need your personal information and I do not want it. :)</small>
+                        </div>
+                    </div>
+
+                    <a href="javascript:void(0);" class="popup-link" data-content="pricing-modal">Pricing</a>
+                    <div id="pricing-modal" class="popup-content">
+                        <div class="pricing-modal__content">
+                            <div class="discount-description">You want to ask for a discount from a seller? Figure out what to offer a bundle at? This is a quick reference chart. Also offers approximate ebay fees, if you're into that sort of thing.</div>
+                            <table class="discount-table">
+                                <tbody>
+                                    <tr>
+                                        <td class="discount-value">10% Discount</td>
+                                        <td class="discount-dollars" id="discount10"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="discount-value">15% Discount</td>
+                                        <td class="discount-dollars" id="discount15"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="discount-value">20% Discount</td>
+                                        <td class="discount-dollars" id="discount20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="discount-value">25% Discount</td>
+                                        <td class="discount-dollars" id="discount25"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="discount-value">eBay Fees</td>
+                                        <td class="discount-dollars" id="ebayFees"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="discount-value">Total After eBay Fees</td>
+                                        <td class="discount-dollars" id="adjTotal"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
 
@@ -63,7 +99,7 @@
 
         <div class="title-wrap">
             <h1 class="main-title">
-                Nintendo 64 Bundler
+                <span class="n64">Nintendo 64</span> Bundler
             </h1>
         </div>
 
@@ -83,33 +119,17 @@
             </table>
 		</section>
         
-        <!-- COMMON FOOTER, CUSTOM SCRIPT CALLS -->
         <footer class="cta-strip cta-strip--searchbar">
-
             <input type="text" id="search" placeholder="Search"><button class="alert" id="clear">CLEAR</button>
-
             <div id="itemCount" class="item-callout item-callout--count">
                 <span id="itemNumber" class="item-callout__inner">0</span>
             </div>
-
             <div class="item-callout item-callout--total">
                 <a id="bundletotal" class="item-callout__inner popup-link" data-content="math-modal">0.00</a>
             </div>
-
-            <div id="math-modal" class="popup-content">
-                <div class="math-modal__content">
-                    <p class="valuePreamble">Total with a 10% discount: <span id="discount10" class="dollarValue">0</span></p>
-                    <p class="valuePreamble">Total with a 15% discount: <span id="discount15" class="dollarValue">0</span></p>
-                    <p class="valuePreamble">Total with a 20% discount: <span id="discount20" class="dollarValue">0</span></p>
-                    <p class="valuePreamble">Total with a 25% discount: <span id="discount25" class="dollarValue">0</span></p>
-                    <p class="valuePreamble">eBay/PayPal fees: <span id="ebayFees" class="dollarValue">0</span></p>
-                    <p class="valuePreamble">Total (minus fees): <span id="adjTotal" class="dollarValue">0</span></p>
-                    <p style="display:none;">Estimated shipping cost: <span id="estShipping">(coming soon)</span></p>
-                </div>
-            </div>
-
         </footer>
 
+        <!-- COMMON FOOTER, CUSTOM SCRIPT CALLS -->
 		<a href="jacascript:void(0);" class="backtotop"></a>
 
 		<div id="popup-bg" class="popup-bg">

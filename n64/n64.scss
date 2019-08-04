@@ -1,21 +1,28 @@
-//Variables
+// Variables
+    //N64 Colours
+    // $charcoal: ;
+    // $watermelon: ;
+    // $fire: ;
+    // $gold: ;
+    // $jungle: ;
+    $ice: #0BADCC;
+    // $grape: ;
+    // $smoke: ;
+
     // Colours
-    $color-primary: #001f3f !default; // Navy
-    $color-secondary: #3D9970 !default; // Olive
+    $color-primary: #011DA9 !default; // Navy
+    $color-secondary: #C1BED1 !default; // Olive
     $color-tertiary: #B10DC9 !default; // Purple
-    $color-success: #2ECC40 !default;
-    $color-warning: #ff9900 !default;
-    $color-danger: #FF4136 !default;
+    $color-success: #069330 !default;
+    $color-warning: #FFC001 !default;
+    $color-danger: #C20D02 !default;
 
     // Shades
     $shade-dark: #111 !default;
     $shade-medium-dark: #443e3c;
     $shade-medium: #777 !default;
-    $shade-medium-lite: #BBB !default;
+    $shade-medium-lite: $color-secondary;
     $shade-lite: #EEE !default;
-
-    // Fonts
-    $h1-font: Zurich, Avenir Next, Helvetica, Arial, Verdana, sans-serif;
 
     // Gutters
     $gutters: (
@@ -36,13 +43,13 @@
 $cta-spread: false;
 
 :root {
-    --color: #{$shade-medium-dark};
+    --color: #{$ice};
 }
 
 @font-face {
     font-family: 'Zurich';
-    src: url('zurchxk-webfont.woff2') format('woff2'),
-         url('zurchxk-webfont.woff') format('woff');
+    src: url('zurch.woff2') format('woff2'),
+         url('zurch.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -54,7 +61,8 @@ $cta-spread: false;
     display: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.n64 {
+    font-family: Zurich, Impact, sans-serif;
     text-transform: uppercase;
 }
 
@@ -69,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     position: sticky;
     top: 0;
-    background-color: rgba($shade-lite,0.9);
+    background-color: $color-secondary;
     backdrop-filter: blur(5px);
     &-logo {
         font-size: $h3-font-size;
@@ -88,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
             position: absolute;
             top: 100%;
             right: 0;
-            background: $shade-lite;
+            background: $color-secondary;
             transform-origin: top;
             transform: scale(1, 0);
             transition: transform 0.5s ease;
@@ -130,8 +138,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     text-align: center;
     color: $shade-lite;
-    background-image: url(header-iceblue.jpg);
+    background-image: url(header-ice.jpg);
     background-size: cover;
+    background-position: center;
     background-color: var(--color);
 }
 
@@ -140,7 +149,8 @@ section.game-table {
     margin: 25px 0 150px;
     @include row;
     table {
-        @include column(sm 12);
+        @include column(sm 12, md 8);
+        @include shift(md 2)
         display: table;
     }
     thead,
@@ -293,7 +303,8 @@ section.game-table {
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
     }
-    .sharingURL {
+    .sharingUrl {
+        margin-bottom: 0;
         border-top-right-radius: 0;
         border-top-left-radius: 0;
         height: 100px;
@@ -302,6 +313,9 @@ section.game-table {
 
 .save-modal__content {
     text-align: center;
+    .save-bundle {
+        @include button($bg-color:#{var(--color)}, $color:$shade-lite, $shade-shift:$color-primary, $shift-color:$shade-lite, $size:small);
+    }
 }
 
 .bundles-modal__content {
@@ -315,41 +329,20 @@ section.game-table {
         margin: 0 auto;
     }
     .bundleName {
-        width: 200px;
-        padding: 10px 5px;
-        line-height: 1.1;
-        color: $shade-dark;
-        border: 2px solid $shade-dark;
+        @include button($bg-color:#{var(--color)}, $color:$shade-lite, $shade-shift:$color-primary, $shift-color:$shade-lite, $size:small);
         margin: 5px 0;
-        border-radius: 5px 0px 0px 5px;
-        cursor: pointer;
-        &:hover {
-            background: rgba($color-success,0.5);
-        }
+        min-width: 200px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
     .deleteBundle {
-        width: 50px;
-        background: $shade-medium;
-        color: $shade-dark;
+        @include button($bg-color:$color-danger, $color:$shade-lite, $shade-shift:darken, $size:small);
         margin: 5px 0;
-        border-radius: 0px 5px 5px 0px;
-        border: 2px solid $shade-dark;
-        border-left: 0;
-        position: relative;
-        cursor: pointer;
-        &:before {
-            content: 'DELETE';
-            // color: $white;
-            font-size: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-        &:hover {
-            color: $shade-lite;
-            background: $color-danger;
-        }
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .resetBundles {
+        @include button($bg-color:$color-danger, $shade-shift:darken, $size:small);
     }
     .emptyUl {
         display: none;
@@ -358,9 +351,30 @@ section.game-table {
         display: block;
     }
     small {
-        display: block;
-        font-size: 75%;
-        margin-top: 25px;
+        @include alert($bg:$color-secondary,$text:$shade-medium-dark);
+    }
+}
+
+.pricing-modal__content {
+    .discount-description {
+        @include alert($bg:var(--color),$text:$shade-lite);
+    }
+    .discount-table {
+        margin: 0 auto;
+        td {
+            padding: 5px;
+            border-bottom: 2px solid var(--color);
+            &.discount-value {
+                padding-right: 25px;
+            }
+            &.discount-dollars {
+                padding-left: 25px;
+                border-left: 2px solid var(--color);
+                &:before {
+                    content: '$';
+                }
+            }
+        }
     }
 }
 
@@ -415,7 +429,7 @@ section.game-table {
         }
     }
     .option-button {
-        @include button($bg-color:$color-danger);
+        @include button($bg-color:$color-danger,$size:small);
     }
 }
 

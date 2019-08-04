@@ -575,15 +575,18 @@
 	// @param {Number} $number - Number to remove unit from
 	// @return {Number} - Unitless number
 	//**********************************************************
-	@mixin button( $bg-color:$button-bg-color, $shade-shift:$button-shade-shift, $type:$button-type, $size:normal ) {
+	@mixin button( $bg-color:$button-bg-color, $color:auto, $shade-shift:lighten, $shift-color:auto, $type:solid, $size:normal ) {
 		display: inline-flex;
+		align-items: center;
 		border: 2px solid $bg-color;
 		@if ( $type == hollow ) {
 			background-image: linear-gradient(130deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.25) 50%);
 		} @else if ( $shade-shift == lighten ) {
-			background-image: linear-gradient(130deg, $bg-color 50%, lighten($bg-color, 50%) 50%);
+			background-image: linear-gradient(130deg, $bg-color 50%, lighten($bg-color, 20%) 50%);
+		} @else if ( $shade-shift == darken ) {
+			background-image: linear-gradient(130deg, $bg-color 50%, darken($bg-color, 20%) 50%);
 		} @else {
-			background-image: linear-gradient(130deg, $bg-color 50%, darken($bg-color, 50%) 50%);
+			background-image: linear-gradient(130deg, $bg-color 50%, $shade-shift 50%);
 		}
 		border-radius: 3px;
 		@if ( $size == normal ) {
@@ -600,8 +603,10 @@
 		text-transform: uppercase;
 		@if ( $type == hollow ) {
 			color: $bg-color;
-		} @else {
+		} @else if ( $color == auto ) {
 			color: contrast($bg-color);
+		} @else {
+			color: $color;
 		}
 		background-size: 250%;
 		background-position: 0% center;
@@ -611,7 +616,15 @@
 		&:active {
 			background-position: 100% center;
 			@if ( $type != hollow ) {
-				color: contrast(lighten($bg-color, 50%));
+				@if ( $shift-color == auto and $shade-shift == lighten ) {
+					color: contrast(lighten($bg-color, 20%));
+				} @else if ( $shift-color == auto and $shade-shift == darken ) {
+					color: contrast(darken($bg-color, 20%));
+				} @else if ( $shift-color == auto and $shade-shift != lighten or darken ) {
+					color: contrast($shade-shift);
+				} @else {
+					color: $shift-color;
+				}
 			}
 		}
 	}

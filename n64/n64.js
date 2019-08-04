@@ -2579,6 +2579,7 @@
 				_bundles.appendChild(_bundleSelector);
 
 				let _bundleDeleter = document.createElement('a');
+				_bundleDeleter.innerHTML = 'DELETE';
 				_bundleDeleter.setAttribute('class', 'deleteBundle');
 				_bundleDeleter.addEventListener('click', () => {
 					deleteBundle(_thisBundle);

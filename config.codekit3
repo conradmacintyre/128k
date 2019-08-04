@@ -1869,6 +1869,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/n64/header-ice.jpg": {
+		"ft": 16384,
+		"iS": 155670,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/n64/header-ice.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/n64/header-iceblue.jpg": {
 		"ft": 16384,
 		"iS": 87500,
@@ -1997,6 +2008,22 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/n64/zurch.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/n64/zurch.woff",
+		"oF": 0
+		},
+	"/n64/zurch.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/n64/zurch.woff2",
+		"oF": 0
 		},
 	"/n64/zurchxk-webfont.woff": {
 		"cB": 0,
