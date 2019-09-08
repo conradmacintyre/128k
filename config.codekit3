@@ -2059,6 +2059,14 @@
 		"oA": 0,
 		"oAP": "/wheeloffortune/wheel-of-fortune.html",
 		"oF": 0
+		},
+	"/wishlist/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wishlist/index.php",
+		"oF": 0
 		}
 	},
 "hooks": [
