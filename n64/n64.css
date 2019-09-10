@@ -469,6 +469,11 @@ button:hover, button:active,
   text-transform: uppercase;
 }
 
+sup {
+  vertical-align: super;
+  font-size: 80%;
+}
+
 .header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -486,10 +491,9 @@ button:hover, button:active,
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-color: #C1BED1;
+  background-color: rgba(238, 238, 238, 0.75);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
@@ -601,6 +605,10 @@ button:hover, button:active,
   margin-left: -5px;
   width: calc(100% + 10px);
   max-width: calc(100% + 10px);
+  background-image: url(header-ice.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color);
 }
 
 @media (min-width: 700px) {
@@ -636,13 +644,10 @@ button:hover, button:active,
   grid-column-end: span 12;
   padding-top: 33px;
   padding-bottom: 33px;
+  margin-top: 50px;
   margin-bottom: 0;
   text-align: center;
   color: #EEE;
-  background-image: url(header-ice.jpg);
-  background-size: cover;
-  background-position: center;
-  background-color: var(--color);
 }
 
 @media (min-width: 700px) {
@@ -660,7 +665,6 @@ button:hover, button:active,
 }
 
 section.game-table {
-  margin: 25px 0 150px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 5px;
@@ -669,6 +673,7 @@ section.game-table {
   margin-left: auto;
   margin-right: auto;
   flex-wrap: wrap;
+  margin: 25px 0 150px;
 }
 
 @media (min-width: 700px) {
@@ -704,7 +709,7 @@ section.game-table table {
 
 section.game-table tr.selected {
   color: #EEE;
-  background: #069330;
+  background: var(--color);
 }
 
 section.game-table tr.selected .gameImage {
@@ -714,22 +719,31 @@ section.game-table tr.selected .gameImage {
 section.game-table tr.selected .gameImage:after {
   position: absolute;
   content: '';
-  top: 4px;
-  left: 8px;
-  width: 25px;
-  height: 10px;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 7px;
   display: block;
-  border: 5px solid #EEE;
+  border: 3px solid #EEE;
   border-top-width: 0;
   border-right-width: 0;
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: translate(-50%, -80%) rotate(-45deg);
 }
 
 section.game-table th,
 section.game-table td {
-  border: 2px solid #111;
-  padding: 5px;
+  padding: 5px 10px;
+}
+
+section.game-table th {
+  background-color: #443e3c;
+  color: #EEE;
+}
+
+section.game-table td {
+  border: 0px solid #111;
+  border-width: 0 1px 1px 0;
 }
 
 section.game-table td.gameImage {
@@ -737,6 +751,7 @@ section.game-table td.gameImage {
 }
 
 section.game-table td.gameLooseValue {
+  border-right-width: 0;
   text-align: right;
 }
 
@@ -862,7 +877,7 @@ section.game-table td.gameLooseValue:before {
 }
 
 .cta-strip--searchbar .item-callout--total:after {
-  content: "TOTAL (click for more)";
+  content: "TOTAL VALUE";
 }
 
 .cta-strip--searchbar .item-callout--total .item-callout__inner:before {

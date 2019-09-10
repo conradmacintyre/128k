@@ -66,6 +66,11 @@ $cta-spread: false;
     text-transform: uppercase;
 }
 
+sup {
+    vertical-align: super;
+    font-size: 80%;
+}
+
 
 // Header - Universal
 .header {
@@ -75,9 +80,9 @@ $cta-spread: false;
     padding: 0 $grid-gutters-default;
     display: flex;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
-    background-color: $color-secondary;
+    background-color: rgba($shade-lite, 0.75);
     backdrop-filter: blur(5px);
     &-logo {
         font-size: $h3-font-size;
@@ -131,27 +136,28 @@ $cta-spread: false;
 .title-wrap {
     @include row($wrap:false);
     @include full-width;    
-}
-.main-title {
-    @include column(sm 12);
-    @include spacer($type:padding);
-    margin-bottom: 0;
-    text-align: center;
-    color: $shade-lite;
     background-image: url(header-ice.jpg);
     background-size: cover;
     background-position: center;
     background-color: var(--color);
 }
+.main-title {
+    @include column(sm 12);
+    @include spacer($type:padding);
+    margin-top: 50px; //To account for menu;
+    margin-bottom: 0;
+    text-align: center;
+    color: $shade-lite;
+}
 
 // Game Table
 section.game-table {
-    margin: 25px 0 150px;
     @include row;
+    margin: 25px 0 150px;
     table {
         @include column(sm 12, md 8);
-        @include shift(md 2)
-        display: table;
+        @include shift(md 2);
+        display: table; //To override the column display style
     }
     thead,
     tbody {
@@ -159,36 +165,43 @@ section.game-table {
     tr {
         &.selected {
             color: $shade-lite;
-            background: $color-success;
+            background: var(--color);
             .gameImage {
                 position: relative;
                 &:after {
                     position: absolute;
                     content: '';
-                    top: 4px;
-                    left: 8px;
-                    width: 25px;
-                    height: 10px;
+                    top: 50%;
+                    left: 50%;
+                    width: 20px;
+                    height: 7px;
                     display: block;
-                    border: 5px solid $shade-lite;
+                    border: 3px solid $shade-lite;
                     border-top-width: 0;
                     border-right-width: 0;
-                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    transform: translate(-50%, -80%) rotate(-45deg);
                 }
             }
         }
     }
     th,
     td {
-        border: 2px solid $shade-dark;
-        padding: 5px;
+        padding: 5px 10px;
+    }
+    th {
+        background-color: $shade-medium-dark;
+        color: $shade-lite;
     }
     td {
+        border: 0px solid $shade-dark;
+        border-width: 0 1px 1px 0;
         &.gameImage {
             width: 50px;
         }
         &.gameTitle {}
         &.gameLooseValue {
+            border-right-width: 0;
             text-align: right;
             &:before {
                 content: '$';
@@ -280,7 +293,7 @@ section.game-table {
                 background-color: rgba($shade-lite, 1);
             }
             &:after {
-                content: "TOTAL (click for more)";
+                content: "TOTAL VALUE";
             }
             .item-callout__inner {
                 &:before {

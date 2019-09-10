@@ -1,66 +1,74 @@
 // General & Helper Funcitons
 
-function cycleActiveItem( array, interval ) {
-	function cycle( array ) {
-		for (let i=0; i<array.length; i++) {
-			if ( array[i].classList.contains('active') ) {
-				array[i].classList.remove('active');
-				if ( i == array.length - 1 ) {
-					array[0].classList.add('active');
-				} else {
-					array[i + 1].classList.add('active');
+// Cycle Active Item
+	// TODO: Document this thing.
+	function cycleActiveItem( array, interval ) {
+		function cycle( array ) {
+			for (let i=0; i<array.length; i++) {
+				if ( array[i].classList.contains('active') ) {
+					array[i].classList.remove('active');
+					if ( i == array.length - 1 ) {
+						array[0].classList.add('active');
+					} else {
+						array[i + 1].classList.add('active');
+					}
+					break;
 				}
-				break;
 			}
 		}
+		setInterval(() => cycle( array ), interval);
 	}
-	setInterval(() => cycle( array ), interval);
-}
 
 //Specific Library Functions
 
-function navStateSwitcher() {
-	const switchableNavs = document.querySelectorAll('[data-nav]');
-	switchableNavs.forEach( nav => {
-		let navItems = [...nav.children];
-		let minWidth = 0;
-		navItems.forEach( item => {
-			let itemStyles = getComputedStyle(item);
-			let itemWidth = item.offsetWidth + parseInt(itemStyles.marginLeft) + parseInt(itemStyles.marginRight);
-			minWidth += itemWidth;
+// Nav State Switcher
+	// TODO: Document this thing
+	function navStateSwitcher() {
+		const switchableNavs = document.querySelectorAll('[data-nav]');
+		switchableNavs.forEach( nav => {
+			let navItems = [...nav.children];
+			let minWidth = 0;
+			navItems.forEach( item => {
+				let itemStyles = getComputedStyle(item);
+				let itemWidth = item.offsetWidth + parseInt(itemStyles.marginLeft) + parseInt(itemStyles.marginRight);
+				minWidth += itemWidth;
+			});
+			let parent = nav.parentNode;
+			// Call the switcher
+			measureNav(minWidth, parent);
+			window.addEventListener('resize', () => measureNav(minWidth, parent));
 		});
-		let parent = nav.parentNode;
-		// Call the switcher
-		measureNav(minWidth, parent);
-		window.addEventListener('resize', () => measureNav(minWidth, parent));
-	});
-	function measureNav(minWidth, parent) {
-		let parentStyles = getComputedStyle(parent);
-		let maxWidth = parent.clientWidth - parseInt(parentStyles.paddingLeft) - parseInt(parentStyles.paddingRight);
-		if (minWidth >= maxWidth) {
-			parent.classList.add('mobile');
-		} else {
-			parent.classList.remove('mobile');
+		function measureNav(minWidth, parent) {
+			let parentStyles = getComputedStyle(parent);
+			let maxWidth = parent.clientWidth - parseInt(parentStyles.paddingLeft) - parseInt(parentStyles.paddingRight);
+			if (minWidth >= maxWidth) {
+				parent.classList.add('mobile');
+			} else {
+				parent.classList.remove('mobile');
+			}
 		}
-	}
-} window.addEventListener('load', () => navStateSwitcher());
+	} window.addEventListener('load', () => navStateSwitcher());
 
-function billboard() {
-	const billboards = document.querySelectorAll('[data-billboard]');
-	billboards.forEach( billboard => {
-		const slides = [...billboard.getElementsByClassName('billboard-slide')];
-		const interval = parseInt(billboard.getAttribute('data-billboard')) * 1000;
-		cycleActiveItem(slides,interval);
-	});
-} window.addEventListener('load', () => billboard());
+// Billboard
+	// TODO: Document this thing
+	function billboard() {
+		const billboards = document.querySelectorAll('[data-billboard]');
+		billboards.forEach( billboard => {
+			const slides = [...billboard.getElementsByClassName('billboard-slide')];
+			const interval = parseInt(billboard.getAttribute('data-billboard')) * 1000;
+			cycleActiveItem(slides,interval);
+		});
+	} window.addEventListener('load', () => billboard());
 
-function convertBgImage () {
-	const domNodes = document.querySelectorAll('[data-bgimg]');
-	domNodes.forEach( node => {
-		let bgImg = node.getAttribute('data-bgimg');
-		node.style.backgroundImage = 'url('+bgImg+')';
-	});
-} window.addEventListener('load', () => convertBgImage());
+// Convert Background Image
+	// TODO: Document & Rationale
+	function convertBgImage () {
+		const domNodes = document.querySelectorAll('[data-bgimg]');
+		domNodes.forEach( node => {
+			let bgImg = node.getAttribute('data-bgimg');
+			node.style.backgroundImage = 'url('+bgImg+')';
+		});
+	} window.addEventListener('load', () => convertBgImage());
 
 /*********************************
 * ScrollTriggr.js
@@ -84,81 +92,80 @@ function convertBgImage () {
 	 
 	DEPENDENCIES:
 	None
-*********************************/
+	*********************************/
+	function scrollTriggr() {
+		// Set some reference variables
+		let windowHeight = 0;
+		const scrollables = document.querySelectorAll('[data-st]');
+		const scrollableData = [];
 
-function scrollTriggr() {
-	// Set some reference variables
-	let windowHeight = 0;
-	const scrollables = document.querySelectorAll('[data-st]');
-	const scrollableData = [];
+		// scrollTriggr being called? Init!
+		if (scrollables.length) {
+		    scrollInit();
+		}
 
-	// scrollTriggr being called? Init!
-	if (scrollables.length) {
-	    scrollInit();
-	}
+		//Calculate element's distance from top of document. (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com
+		function getOffsetTop(elem) {
+			let distance = 0;
+			if (elem.offsetParent) {
+				do {
+					distance += elem.offsetTop;
+					elem = elem.offsetParent;
+				} while (elem);
+			}
+			return distance < 0 ? 0 : distance;
+		}
 
-	//Calculate element's distance from top of document. (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com
-	function getOffsetTop(elem) {
-	  let distance = 0;
-	  if (elem.offsetParent) {
-	    do {
-	      distance += elem.offsetTop;
-	      elem = elem.offsetParent;
-	    } while (elem);
-	  }
-	  return distance < 0 ? 0 : distance;
-	}
+		// Initalize the utility
+		function scrollInit() {
+			scrollableData.length = 0;
+			scrollables.forEach((element) => {
+				//Get properties or set fallbacks
+				let scrollClass = element.getAttribute('data-st') ? element.getAttribute('data-st') : 'on-screen';
+				let scrollOffset = element.getAttribute('data-st-offset') ? parseInt(element.getAttribute('data-st-offset')) : 20;
+				//Create an ojbect for the data and populate it
+				const scrollData = {};
+				scrollData.element = element;
+				scrollData.className = scrollClass;
+				scrollData.offset = scrollOffset;
+				//Add the new object to the array of objects.
+				scrollableData.push(scrollData);
+			});
+			// Call, the queue the resize event
+			scrollResize();
+			window.addEventListener('resize',scrollResize, false);
+		}
 
-	// Initalize the utility
-	function scrollInit() {
-	  scrollableData.length = 0;
-	  scrollables.forEach((element) => {
-	    //Get properties or set fallbacks
-	    let scrollClass = element.getAttribute('data-st') ? element.getAttribute('data-st') : 'on-screen';
-	    let scrollOffset = element.getAttribute('data-st-offset') ? parseInt(element.getAttribute('data-st-offset')) : 20;
-	    //Create an ojbect for the data and populate it
-	    const scrollData = {};
-	    scrollData.element = element;
-	    scrollData.className = scrollClass;
-	    scrollData.offset = scrollOffset;
-	    //Add the new object to the array of objects.
-	    scrollableData.push(scrollData);
-	  });
-	  // Call, the queue the resize event
-	  scrollResize();
-	  window.addEventListener('resize',scrollResize, false);
-	}
+		// Fires on resize
+		function scrollResize() {
+			// Re-calc and set the window size
+			windowHeight = window.innerHeight;
+			// Calculate and store the trigger point for each element.
+			scrollableData.forEach((index) => index.triggerPoint = getOffsetTop(index.element) + ( (windowHeight / 100) * index.offset ));
+			// Call, queue the scroll event
+			scrollScroll();
+			window.addEventListener('scroll',scrollScroll, false);
+		}
 
-	// Fires on resize
-	function scrollResize() {
-	  // Re-calc and set the window size
-	  windowHeight = window.innerHeight;
-	  // Calculate and store the trigger point for each element.
-	  scrollableData.forEach((index) => index.triggerPoint = getOffsetTop(index.element) + ( (windowHeight / 100) * index.offset ));
-	  // Call, queue the scroll event
-	  scrollScroll();
-	  window.addEventListener('scroll',scrollScroll, false);
-	}
-
-	// Fires on scroll
-	function scrollScroll() {
-	  // Calculate the relevant scroll position
-	  let windowBottom = window.scrollY + windowHeight;
-	  scrollableData.forEach((item,index) => {
-	    if (windowBottom >= item.triggerPoint) {
-	      item.element.classList.add(item.className);
-	      // Remove any triggered items from the array
-	      scrollableData.splice(index,1);
-	      // Un-queue scroll and resize events if there are no more items in the queue.
-	      if (!scrollableData.length) {
-	        window.removeEventListener('resize',scrollResize, false);
-	        window.removeEventListener('scroll',scrollScroll, false);
-	      }
-	    }
-	  });
-	}
-//Fire the script on page load 
-} window.addEventListener('load', () => scrollTriggr());
+		// Fires on scroll
+		function scrollScroll() {
+			// Calculate the relevant scroll position
+			let windowBottom = window.scrollY + windowHeight;
+			scrollableData.forEach((item,index) => {
+				if (windowBottom >= item.triggerPoint) {
+					item.element.classList.add(item.className);
+					// Remove any triggered items from the array
+					scrollableData.splice(index,1);
+					// Un-queue scroll and resize events if there are no more items in the queue.
+					if (!scrollableData.length) {
+						window.removeEventListener('resize', scrollResize, false);
+						window.removeEventListener('scroll', scrollScroll, false);
+					}
+				}
+			});
+		}
+	//Fire the script on page load 
+	} window.addEventListener('load', () => scrollTriggr());
 
 /*********************************
 * TableBreakr.js
@@ -183,65 +190,65 @@ function scrollTriggr() {
 	  & tr:first-of-type { display: none; }
 	  & td:before { content: attr(data-heading); display: block; font-weight: bold; }
 	}
-*********************************/
-//Table Breaker
-function tableBreakr(){
-	const tables = document.querySelectorAll('table[data-bt]');
-	//If there are responsive tables...
-	if (tables.length) {
-		tableBreakrInit()
-	}
-	// Amend Headings
-	function amendHeadings(table,headingText,index) {
-		table.querySelectorAll('td:nth-of-type('+index+')').forEach((element) => {
-			element.setAttribute('data-heading', headingText );
+	*********************************/
+	//Table Breaker
+	function tableBreakr(){
+		const tables = document.querySelectorAll('table[data-bt]');
+		//If there are responsive tables...
+		if (tables.length) {
+			tableBreakrInit()
+		}
+		// Amend Headings
+		function amendHeadings(table,headingText,index) {
+			table.querySelectorAll('td:nth-of-type('+index+')').forEach((element) => {
+				element.setAttribute('data-heading', headingText );
+			});
+		}
+		// Isolate Headings
+		function isolateHeadings(table,headings) {
+			headings.forEach((heading, index) => {
+				index++;
+				let headingText = heading.innerText.trim();
+				amendHeadings(table,headingText,index);
+			});
+		}
+		//For each responsive table...
+		function tableBreakrInit() {
+		tables.forEach((table) => {
+			let columnCount = table.querySelectorAll('tr')[0].childElementCount;
+			table.classList.add( columnCount + '-column' );
+			//Define the header row as either the <th> row, or the first <td> in each column
+			let headings = table.querySelectorAll('th') || table.querySelectorAll('tr:first-of-type td');
+			isolateHeadings(table,headings);
 		});
-	}
-	// Isolate Headings
-	function isolateHeadings(table,headings) {
-		headings.forEach((heading, index) => {
-			index++;
-			let headingText = heading.innerText.trim();
-			amendHeadings(table,headingText,index);
+		}
+		// Get the outer width of an element -- youmightnotneedjquery.com
+		function outerWidth(element) {
+			let width = element.offsetWidth;
+			let style = getComputedStyle(element);
+			width += parseInt(style.marginLeft) + parseInt(style.marginRight);
+			return width;
+		}
+		// Toggle the broken class
+		function breakTheTable() {
+			tables.forEach( (table) => {
+				table.classList.remove('broken');
+				if ( outerWidth(table) > table.parentNode.offsetWidth ) {
+					table.classList.add('broken');
+				}
+			});
+		// Call the resize event at least once to do the check on page load.
+		} breakTheTable();
+		// Resize Debouncer
+		let resizeTimer = 0;
+		window.addEventListener('resize', () => {
+			clearTimeout(resizeTimer);
+			resizeTimer = setTimeout(function() {
+				breakTheTable();
+			}, 250);
 		});
-	}
-	//For each responsive table...
-	function tableBreakrInit() {
-	tables.forEach((table) => {
-		let columnCount = table.querySelectorAll('tr')[0].childElementCount;
-		table.classList.add( columnCount + '-column' );
-		//Define the header row as either the <th> row, or the first <td> in each column
-		let headings = table.querySelectorAll('th') || table.querySelectorAll('tr:first-of-type td');
-		isolateHeadings(table,headings);
-	});
-	}
-	// Get the outer width of an element -- youmightnotneedjquery.com
-	function outerWidth(element) {
-		let width = element.offsetWidth;
-		let style = getComputedStyle(element);
-		width += parseInt(style.marginLeft) + parseInt(style.marginRight);
-		return width;
-	}
-	// Toggle the broken class
-	function breakTheTable() {
-		tables.forEach( (table) => {
-			table.classList.remove('broken');
-			if ( outerWidth(table) > table.parentNode.offsetWidth ) {
-				table.classList.add('broken');
-			}
-		});
-	// Call the resize event at least once to do the check on page load.
-	} breakTheTable();
-	// Resize Debouncer
-	let resizeTimer = 0;
-	window.addEventListener('resize', () => {
-		clearTimeout(resizeTimer);
-		resizeTimer = setTimeout(function() {
-			breakTheTable();
-		}, 250);
-	});
-// That's it, queue the script!
-} window.addEventListener('load', tableBreakr, false);
+	// That's it, queue the script!
+	} window.addEventListener('load', tableBreakr, false);
 
 /*********************************
 * Togglr.js
@@ -283,105 +290,109 @@ function tableBreakr(){
 	 
 	DEPENDENCIES:
 	Modernizr touch testing
-*********************************/
-function togglr() {
-  // Utility-wide items and containers
-  const toggleables = document.querySelectorAll('[data-ts],[data-ts-group]');
-  const toggleablesCount = toggleables.length;
-  const toggleableGroups = {};
-  const groupClassCache = [];
+	*********************************/
+	function togglr() {
+		// Utility-wide items and containers
+		const toggleables = document.querySelectorAll('[data-ts],[data-ts-group]');
+		const toggleablesCount = toggleables.length;
+		const toggleableGroups = {};
+		const groupClassCache = [];
 
-  // Togglr being called? Init!
-  if (toggleablesCount) {
-      toggleInit();
-  }
+		// Togglr being called? Init!
+		if (toggleablesCount) {
+			toggleInit();
+		}
 
-  // Convert string to boolean
-  function toBoolean(_string) {
-    return JSON.parse(_string);
-  }
+		// Convert string to boolean
+		function toBoolean(_string) {
+			return JSON.parse(_string);
+		}
 
-  // Create or Modify the Toggleable Groups
-  function addToToggleableGroups(_toggleElement,_toggleGroup) {
-    if (!(_toggleGroup in toggleableGroups)) {
-      toggleableGroups[_toggleGroup] = {};
-      toggleableGroups[_toggleGroup].elements = [];
-    }
-    toggleableGroups[_toggleGroup].elements.push(_toggleElement);
-  }
-
-  // Cache the toggled classes for grouping purposes
-  function groupToggleCaching(_element,_className) {
-    _element.classList.toggle(_className);
-    let elementCache = {};
-    elementCache.element = _element;
-    elementCache.className = _element.classList.value;
-    groupClassCache.push(elementCache);
-  }
-  
-  //The actual toggling
-  function toggleIt(_element,_state,_group,_targets,_className){
-    if ( _state === 'over' ) {
-      _targets.forEach( (target) => target.classList.add(_className) );
-      _element.classList.add(_className);
-    } else if ( _state === 'out' ) {
-      _targets.forEach( (target) => target.classList.remove(_className) );
-      _element.classList.remove(_className);
-    } else {
-      _targets.forEach( (target) => {
-        groupToggleCaching(target,_className);
-      });
-      groupToggleCaching(_element,_className);
-      if ( _group ) {
-        _group.elements.forEach( (element) => element.classList.remove(_className) );
-        groupClassCache.forEach( (index) => index.element.classList = index.className );            
-      }
-      groupClassCache.length = 0;
-    }
-  }
-
-    // Initalization
-	function toggleInit() {
-		for (let i=0; i<toggleablesCount; i++) {
-			//Get properties or set fallbacks
-			let toggleElement = toggleables[i];
-			let toggleWithHover = toggleElement.getAttribute('data-ts-hover') ? toBoolean(toggleElement.getAttribute('data-ts-hover')) : false;
-			let togglePropogation = toggleElement.getAttribute('data-ts-prop') ? toBoolean(toggleElement.getAttribute('data-ts-prop')) : true;
-			let toggleGroup = toggleElement.getAttribute('data-ts-group');
-			let toggleTargets;
-			function setToggleTargets() {
-				let targs = toggleElement.getAttribute('data-ts');
-				if (targs.length > 0) {
-					toggleTargets = document.querySelectorAll( targs );
-				} else {
-					toggleTargets = [];
-				}
-			}setToggleTargets();
-			let className = toggleElement.getAttribute('data-ts-class') ? toggleElement.getAttribute('data-ts-class') : 'open';
-			//Create/modify grouping if required
-			if ( toggleGroup ) {
-				addToToggleableGroups(toggleElement,toggleGroup);
-				toggleGroup = toggleableGroups[toggleGroup];
+		// Create or Modify the Toggleable Groups
+		function addToToggleableGroups(_toggleElement,_toggleGroup) {
+			if (!(_toggleGroup in toggleableGroups)) {
+				toggleableGroups[_toggleGroup] = {};
+				toggleableGroups[_toggleGroup].elements = [];
 			}
-			//Attach click/hover events as required
-			if ( toggleWithHover && !Modernizr.touchevents ) {
-				toggleElement.addEventListener("mouseenter", () => { toggleIt(toggleElement,'over',toggleGroup,toggleTargets,className); } );
-				toggleElement.addEventListener("mouseleave", () => { toggleIt(toggleElement,'out',toggleGroup,toggleTargets,className); } );
+			toggleableGroups[_toggleGroup].elements.push(_toggleElement);
+		}
+
+		// Cache the toggled classes for grouping purposes
+		function groupToggleCaching(_element,_className) {
+			_element.classList.toggle(_className);
+			let elementCache = {};
+			elementCache.element = _element;
+			elementCache.className = _element.classList.value;
+			groupClassCache.push(elementCache);
+		}
+	  
+		//The actual toggling
+		function toggleIt(_element,_state,_group,_targets,_className){
+			if ( _state === 'over' ) {
+				_targets.forEach( (target) => target.classList.add(_className) );
+				_element.classList.add(_className);
+			} else if ( _state === 'out' ) {
+				_targets.forEach( (target) => target.classList.remove(_className) );
+				_element.classList.remove(_className);
 			} else {
-				toggleElement.addEventListener("click", () => toggleIt(toggleElement,null,toggleGroup,toggleTargets,className) );
-			}
-			//Stops event propogation, if required
-			if (!togglePropogation) {
-				toggleElement.addEventListener("click", e => { e.stopPropagation(); } );
+				_targets.forEach( (target) => {
+					groupToggleCaching(target,_className);
+				});
+				groupToggleCaching(_element,_className);
+				if ( _group ) {
+					_group.elements.forEach( (element) => element.classList.remove(_className) );
+					groupClassCache.forEach( (index) => index.element.classList = index.className );            
+				}
+				groupClassCache.length = 0;
 			}
 		}
-	}
-} window.addEventListener('load', togglr);
+
+		// Attach the toggle targets to each toggle button
+		function setToggleTargets(_element) {
+			let targs = _element.getAttribute('data-ts');
+			if (targs.length > 0) {
+				return document.querySelectorAll( targs );
+			} else {
+				return [];
+			}
+		}
+
+	    // Initalization
+		function toggleInit() {
+			for (let i=0; i<toggleablesCount; i++) {
+				//Get properties or set fallbacks
+				let toggleElement = toggleables[i];
+				let toggleWithHover = toggleElement.getAttribute('data-ts-hover') ? toBoolean(toggleElement.getAttribute('data-ts-hover')) : false;
+				let togglePropogation = toggleElement.getAttribute('data-ts-prop') ? toBoolean(toggleElement.getAttribute('data-ts-prop')) : true;
+				let toggleGroup = toggleElement.getAttribute('data-ts-group');
+				let toggleTargets = setToggleTargets(toggleElement);
+				let className = toggleElement.getAttribute('data-ts-class') ? toggleElement.getAttribute('data-ts-class') : 'open';
+				//Create/modify grouping if required
+				if ( toggleGroup ) {
+					addToToggleableGroups(toggleElement,toggleGroup);
+					toggleGroup = toggleableGroups[toggleGroup];
+				}
+				//Attach click/hover events as required
+				// eslint-disable-next-line no-undef
+				if ( toggleWithHover && !Modernizr.touchevents ) {
+					toggleElement.addEventListener("mouseenter", () => { toggleIt(toggleElement,'over',toggleGroup,toggleTargets,className); } );
+					toggleElement.addEventListener("mouseleave", () => { toggleIt(toggleElement,'out',toggleGroup,toggleTargets,className); } );
+				} else {
+					toggleElement.addEventListener("click", () => toggleIt(toggleElement,null,toggleGroup,toggleTargets,className) );
+				}
+				//Stops event propogation, if required
+				if (!togglePropogation) {
+					toggleElement.addEventListener("click", e => { e.stopPropagation(); } );
+				}
+			}
+		}
+	} window.addEventListener('load', togglr);
 
 /*********************************
 * UserControlledElements.js
 **********************************
-	Allows a user to toggle an element from one state to another for a set amount of time. Designed specifically for CTAs.
+	Allows a user to toggle an element from one state to another for a set amount of time.
+	Designed for notification banners/popups.
 	The user's action is cached in localStorage.
 	 
 	PARAMETERS:
@@ -417,51 +428,53 @@ function togglr() {
 	 
 	DEPENDENCIES:
 	None
-*********************************/
-function userControlledElements(els) {
-    const elements = els || document.querySelectorAll('[data-uce]');
-    const fallbackClass = 'd-none';
-    
-    if (elements.length) {
-        uceInit(elements);
-    }
 
-    function uceInit() {
-        elements.forEach( element => registerUCE(element));
-    }
+	TODO:
+	Needs to be updated to detect visibility and hide, if appropriate.
+	*********************************/
+	function userControlledElements(els) {
+	    const elements = els || document.querySelectorAll('[data-uce]');
+	    const fallbackClass = 'hide';
+	    
+	    if (elements.length) {
+	        uceInit(elements);
+	    }
 
-    function registerUCE(element) {
-        const identifier = element.getAttribute('data-uce');
-        const reopenDelay = element.getAttribute('data-uce-reopen') * 86400000;
-        const currentTimestamp = new Date().getTime();
-        if ( !localStorage[identifier] || localStorage[identifier] == 'open' || localStorage[identifier] <= currentTimestamp) {
-            //Register element
-            localStorage[identifier] = 'open'; 
-            openUCE(element);
-        }
-    }
+	    function uceInit() {
+	        elements.forEach(element => registerUCE(element));
+	    }
 
-    function openUCE(element) {
-        element.getAttribute('data-uce-close-class') ? element.classList.remove( element.getAttribute('data-uce-close-class') ) : element.classList.remove(fallbackClass);
-        element.classList.remove(fallbackClass);
-        const closeTriggers = document.querySelectorAll( element.getAttribute('data-uce-close') );
-        closeTriggers.forEach( (closeTrigger) => {
-            closeTrigger.addEventListener( 'click',() => closeUCE(closeTrigger,element) );
-        });
-    }
+	    function registerUCE(element) {
+	        const identifier = element.getAttribute('data-uce');
+	        const currentTimestamp = new Date().getTime();
+	        if ( !localStorage[identifier] || localStorage[identifier] == 'open' || localStorage[identifier] <= currentTimestamp) {
+	            //Register element
+	            localStorage[identifier] = 'open'; 
+	            openUCE(element);
+	        }
+	    }
 
-    function closeUCE(trigger, target) {
-        const identifier = target.getAttribute('data-uce');
-        const currentTime = new Date().getTime();
-        const delay = target.getAttribute('data-uce-reopen') * 86400000;
-        const closedClass = target.getAttribute('data-uce-close-class') || fallbackClass;
-        target.classList.add(closedClass);
-        if ( target.hasAttribute('data-uce-callback') && window[ target.getAttribute('data-uce-callback') ] ) {
-            window[ target.getAttribute('data-uce-callback') ]();
-        }
-        localStorage[identifier] = currentTime + delay;
-    }
-} window.addEventListener('load', () => userControlledElements());
+	    function openUCE(element) {
+	        element.getAttribute('data-uce-close-class') ? element.classList.remove( element.getAttribute('data-uce-close-class') ) : element.classList.remove(fallbackClass);
+	        element.classList.remove(fallbackClass);
+	        const closeTriggers = document.querySelectorAll( element.getAttribute('data-uce-close') );
+	        closeTriggers.forEach( (closeTrigger) => {
+	            closeTrigger.addEventListener( 'click',() => closeUCE(closeTrigger,element) );
+	        });
+	    }
+
+	    function closeUCE(trigger, target) {
+	        const identifier = target.getAttribute('data-uce');
+	        const currentTime = new Date().getTime();
+	        const delay = target.getAttribute('data-uce-reopen') * 86400000;
+	        const closedClass = target.getAttribute('data-uce-close-class') || fallbackClass;
+	        target.classList.add(closedClass);
+	        if ( target.hasAttribute('data-uce-callback') && window[ target.getAttribute('data-uce-callback') ] ) {
+	            window[ target.getAttribute('data-uce-callback') ]();
+	        }
+	        localStorage[identifier] = currentTime + delay;
+	    }
+	} window.addEventListener('load', () => userControlledElements());
 
 /*********************************
 * ModalPopup.js
@@ -477,7 +490,7 @@ function userControlledElements(els) {
 	 
 	DEPENDENCIES:
 	None
-*********************************/
+	*********************************/
     function customPopup() {
         //Reusable Vars
         const body = document.body;
@@ -533,7 +546,8 @@ function userControlledElements(els) {
 
 
 //Smooth Scroll
-    //TO DO: -
+    //TO DO: Clean up. Get rid of jQuery
+    // Does the actual scrolling
     function smoothScroll(el) {
         el = $(el);
         var fixedHeight = 0;
@@ -546,39 +560,32 @@ function userControlledElements(els) {
         $('html,body').animate({
             scrollTop: el.offset().top - fixedHeight - 15 //The "15" is a typical gutter size and provides a little space from the top of the screen
         }, 1000);
-        return false;   
         fixedHeight = 0;
+        return false;   
     }
-
+    // Attaches smooth scroller, as required
     function queueSmoothScroll() {
-        var HashLinks = $('a[href*="#"]:not([href="#"])');
-        var JumpLinks = [];
-        if ( HashLinks.length > 0 ) {
-            HashLinks.each(function(){
-                if ( !$(this).parent().hasClass('accordion-navigation') ) {
-                    JumpLinks.push($(this));
-                }
+        let hashLinks = document.querySelectorAll('a[href*="#"]:not([href="#"])');
+        if (hashLinks.length) {
+            hashLinks.forEach( hashLink => {
+            	hashLink.addEventListener('click', () => {
+            		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	                    var target = $(this.hash);
+	                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	                    if (target.length) {
+	                        smoothScroll(target);
+	                    }
+	                }
+            	});
             }); 
-        } 
-        for (let i=0;i<JumpLinks.length;i++) {
-            var JumpLink = JumpLinks[i];
-            JumpLink.click(function() {
-                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                    if (target.length) {
-                        smoothScroll(target);
-                    }
-                }
-            });
         }
         //Auto-scroll when landing on a new page
-        var hash = window.location.hash.split('#')[1];
-        var target = $('#'+hash+',[name='+hash+']');
-        if (target.length > 0) {
-            smoothScroll(target[0]);
-        }
-    } //window.addEventListener('scroll',queueSmoothScroll);
+        // var hash = window.location.hash.split('#')[1];
+        // var target = $('#'+hash+',[name='+hash+']');
+        // if (target.length > 0) {
+        //     smoothScroll(target[0]);
+        // }
+    } window.addEventListener('scroll',queueSmoothScroll);
 
 
 // REFACTOR THIS STUFF

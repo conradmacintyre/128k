@@ -99,8 +99,28 @@
 
         <div class="title-wrap">
             <h1 class="main-title">
-                <span class="n64">Nintendo 64</span> Bundler
+                <span class="n64">Nintendo<sup>64</sup></span> Bundler
             </h1>
+        </div>
+
+        <div>
+            <a href="#scroll_to_here">Click to scroll</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3 id="scroll_to_here">Scroll successful!</h3>
         </div>
 
 		<section class="game-table" id="info">
@@ -125,7 +145,7 @@
                 <span id="itemNumber" class="item-callout__inner">0</span>
             </div>
             <div class="item-callout item-callout--total">
-                <a id="bundletotal" class="item-callout__inner popup-link" data-content="math-modal">0.00</a>
+                <a id="bundletotal" class="item-callout__inner">0.00</a>
             </div>
         </footer>
 

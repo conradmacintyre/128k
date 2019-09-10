@@ -2060,12 +2060,103 @@
 		"oAP": "/wheeloffortune/wheel-of-fortune.html",
 		"oF": 0
 		},
+	"/wishlist/games-list.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/wishlist/games-list.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/wishlist/games-list.min.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/wishlist/games-list.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/wishlist/games-list.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wishlist/games-list.min.js.map",
+		"oF": 0
+		},
+	"/wishlist/index.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wishlist/index-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wishlist/index.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wishlist/index.css.map",
+		"oF": 0
+		},
 	"/wishlist/index.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/wishlist/index.php",
+		"oF": 0
+		},
+	"/wishlist/index.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/wishlist/index.css",
+		"oF": 0,
+		"oS": 1,
+		"uL": 1
+		},
+	"/wishlist/wishlist.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/wishlist/wishlist.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/wishlist/wishlist.min.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/wishlist/wishlist.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/wishlist/wishlist.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wishlist/wishlist.min.js.map",
 		"oF": 0
 		}
 	},
