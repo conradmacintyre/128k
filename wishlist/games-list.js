@@ -1,5 +1,80 @@
 window.platforms = [ 'atari' , 'nes' , 'snes' , 'n64' , 'gc' , 'wii' , 'wiiu' , 'switch' , 'genesis' , 'ps1' , 'ps2' , 'ps3' , 'ps4'];
 
+window.atari = [
+	{
+		title: 'Donkey Kong',
+		boxArt: 'images/dk.jpg',
+		publisher: 'Atari',
+		releaseYear: 1988,
+		imageLink: 'http://classicgamesblog.com/wp-content/uploads/2012/07/Contra-NES-Complete-in-Box-Front.jpg',
+		ebayLink: 'ebay.ca',
+		checklistCart: false,
+		checklistBox: false,
+		checklistManual: false,
+		price: 30
+	},
+	{
+		title: 'Donkey Kong Junior',
+		boxArt: 'images/dkj.jpg',
+		publisher: 'Atari',
+		releaseYear: 1988,
+		imageLink: 'http://classicgamesblog.com/wp-content/uploads/2012/07/Contra-NES-Complete-in-Box-Front.jpg',
+		ebayLink: 'ebay.ca',
+		checklistCart: false,
+		checklistBox: false,
+		checklistManual: false,
+		price: 26
+	},
+	{
+		title: 'Galaga',
+		boxArt: 'images/galaga.jpg',
+		publisher: 'Atari',
+		releaseYear: 1986,
+		imageLink: 'http://classicgamesblog.com/wp-content/uploads/2012/07/Contra-NES-Complete-in-Box-Front.jpg',
+		ebayLink: 'ebay.ca',
+		checklistCart: true,
+		checklistBox: true,
+		checklistManual: true,
+		price: true
+	},
+	{
+		title: 'Mario Bros.',
+		boxArt: 'images/mb.jpg',
+		publisher: 'Atari',
+		releaseYear: 1988,
+		imageLink: 'http://classicgamesblog.com/wp-content/uploads/2012/07/Contra-NES-Complete-in-Box-Front.jpg',
+		ebayLink: 'ebay.ca',
+		checklistCart: false,
+		checklistBox: false,
+		checklistManual: false,
+		price: 45
+	},
+	{
+		title: 'Ms. Pac Man',
+		boxArt: 'images/mpm.jpg',
+		publisher: 'Atari',
+		releaseYear: 1986,
+		imageLink: 'http://classicgamesblog.com/wp-content/uploads/2012/07/Contra-NES-Complete-in-Box-Front.jpg',
+		ebayLink: 'ebay.ca',
+		checklistCart: false,
+		checklistBox: false,
+		checklistManual: false,
+		price: 16
+	},
+	{
+		title: 'Pole Position II',
+		boxArt: 'images/ppii.jpg',
+		publisher: 'Atari',
+		releaseYear: 1986,
+		imageLink: 'http://classicgamesblog.com/wp-content/uploads/2012/07/Contra-NES-Complete-in-Box-Front.jpg',
+		ebayLink: 'ebay.ca',
+		checklistCart: false,
+		checklistBox: false,
+		checklistManual: false,
+		price: 12
+	}
+];
+
 window.nes = [
 	{
 		title: 'Contra',
@@ -88,7 +163,7 @@ window.nes = [
 		checklistManual: true,
 		checklistFoam: true,
 		checklistSleeve: true,
-		price: '52'
+		price: true
 	}
 ];
 
@@ -105,7 +180,7 @@ window.snes = [
 		checklistManual: false,
 		checklistFoam: false,
 		checklistSleeve: false,
-		price: '101'
+		price: true
 	},
 	{
 		title: 'Killer Instinct',
@@ -120,7 +195,7 @@ window.snes = [
 		checklistManual: false,
 		checklistFoam: false,
 		checklistSleeve: true,
-		price: '146'
+		price: '46'
 	},
 	{
 		title: 'Mortal Kombat 3',
@@ -135,7 +210,7 @@ window.snes = [
 		checklistManual: false,
 		checklistFoam: false,
 		checklistSleeve: false,
-		price: '180'
+		price: true
 	},
 	{
 		title: 'Sim City',
@@ -150,7 +225,7 @@ window.snes = [
 		checklistManual: true,
 		checklistFoam: false,
 		checklistSleeve: true,
-		price: '149'
+		price: true
 	},
 	{
 		title: 'Super Mario Kart',
@@ -165,7 +240,7 @@ window.snes = [
 		checklistManual: false,
 		checklistFoam: false,
 		checklistSleeve: false,
-		price: '45'
+		price: '55'
 	},
 	{
 		title: 'Super Mario World',
@@ -180,6 +255,6 @@ window.snes = [
 		checklistManual: true,
 		checklistFoam: true,
 		checklistSleeve: true,
-		price: '52'
+		price: '300'
 	}
 ];

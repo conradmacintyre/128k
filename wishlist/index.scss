@@ -169,10 +169,14 @@
 		    font-size: 125%;
 		    top: 0;
 		    left: 0;
-		    background: $color-warning;
+		    background: $color-danger;
 		    padding: 2px 50px;
-		    transform: translate(-30%, 40%) rotate(-45deg);
+		    transform: translate(-30%, 55%) rotate(-45deg);
 		    box-shadow: 0px 2px 5px 1px rgba($shade-dark, 0.5);
+		    &.own {
+		    	background: $color-success;
+		    	color: $shade-dark;
+		    }
 		}
 		a.image-link, a.ebay-link {
 		    display: inline-block;

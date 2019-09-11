@@ -2090,12 +2090,45 @@
 		"oAP": "/wishlist/games-list.min.js.map",
 		"oF": 0
 		},
+	"/wishlist/images/dk.jpg": {
+		"ft": 16384,
+		"iS": 65058,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wishlist/images/dk.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wishlist/images/dkc.jpg": {
 		"ft": 16384,
 		"iS": 114356,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wishlist/images/dkc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wishlist/images/dkj.jpg": {
+		"ft": 16384,
+		"iS": 1519455,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wishlist/images/dkj.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wishlist/images/galaga.jpg": {
+		"ft": 16384,
+		"iS": 211422,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wishlist/images/galaga.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2112,12 +2145,45 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/wishlist/images/mb.jpg": {
+		"ft": 16384,
+		"iS": 127340,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wishlist/images/mb.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/wishlist/images/mk3.jpg": {
 		"ft": 16384,
 		"iS": 220871,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/wishlist/images/mk3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wishlist/images/mpm.jpg": {
+		"ft": 16384,
+		"iS": 222904,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wishlist/images/mpm.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wishlist/images/ppii.jpg": {
+		"ft": 16384,
+		"iS": 179687,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wishlist/images/ppii.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

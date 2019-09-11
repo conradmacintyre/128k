@@ -9,6 +9,14 @@ function amLookingFor( _item, _value ) {
 	}
 }
 
+function outputPrice( _item ) {
+	if ( _item == true ) {
+		return `<div class="price own">OWN</div>`;
+	} else {
+		return `<div class="price">$${_item}</div>`;
+	}
+}
+
 // Builds the tables
 function buildWishlistTable(_platform) {
 	window[_platform].forEach( game => {
@@ -22,13 +30,14 @@ function buildWishlistTable(_platform) {
 						<span class="title">${game.title}</span>
 						<span class="publisher">${game.publisher}</span>
 						<span class="release-year">${game.releaseYear}</span>
-					</div>
-					<div class="price">$${game.price}</div>
-				</div>
+					</div>`
+					+outputPrice( game.price )
+				+`</div>
 				<!--a href="${game.imageLink}" class="image-link">Image</a-->
 				<!--a href="${game.ebayLink}" class="ebay-link">eBay</a-->
 				<div class="checklist">`
-					+amLookingFor( 'Cart', game.checklistCart )
+					
+					+amLookingFor( 'Card', game.checklistCart )
 					+amLookingFor( 'Manual', game.checklistManual )
 					+amLookingFor( 'Box', game.checklistBox )
 					+amLookingFor( 'Foam', game.checklistFoam )
