@@ -795,21 +795,22 @@ section {
   display: flex;
   flex-wrap: wrap;
   font-size: 90%;
+  margin-bottom: 15px;
 }
 
-.cards .card.nes-card, .cards .card.atari-card, .cards .card.genesis-card {
+.cards .card.atari-card, .cards .card.nes-card, .cards .card.gc-card, .cards .card.wii-card, .cards .card.wiiu-card, .cards .card.switch-card, .cards .card.ps1-card, .cards .card.ps2-card, .cards .card.ps3-card, .cards .card.ps4-card, .cards .card.genesis-card {
   display: block;
   grid-column-end: span 6;
 }
 
 @media (min-width: 700px) {
-  .cards .card.nes-card, .cards .card.atari-card, .cards .card.genesis-card {
+  .cards .card.atari-card, .cards .card.nes-card, .cards .card.gc-card, .cards .card.wii-card, .cards .card.wiiu-card, .cards .card.switch-card, .cards .card.ps1-card, .cards .card.ps2-card, .cards .card.ps3-card, .cards .card.ps4-card, .cards .card.genesis-card {
     grid-column-end: span 3;
   }
 }
 
 @media (min-width: 1100px) {
-  .cards .card.nes-card, .cards .card.atari-card, .cards .card.genesis-card {
+  .cards .card.atari-card, .cards .card.nes-card, .cards .card.gc-card, .cards .card.wii-card, .cards .card.wiiu-card, .cards .card.switch-card, .cards .card.ps1-card, .cards .card.ps2-card, .cards .card.ps3-card, .cards .card.ps4-card, .cards .card.genesis-card {
     grid-column-end: span 2;
   }
 }

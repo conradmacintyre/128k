@@ -106,8 +106,17 @@
 		    display: flex;
 		    flex-wrap: wrap;
 		    font-size: 90%;
-		    &.nes-card,
+		    margin-bottom: 15px;
 		    &.atari-card,
+		    &.nes-card,
+		    &.gc-card,
+		    &.wii-card,
+		    &.wiiu-card,
+		    &.switch-card,
+		    &.ps1-card,
+		    &.ps2-card,
+		    &.ps3-card,
+		    &.ps4-card,
 		    &.genesis-card {
 		    	@include column(sm 6, md 3, lg 2);
 		    }

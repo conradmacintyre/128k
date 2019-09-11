@@ -37,7 +37,8 @@ function buildWishlistTable(_platform) {
 				<!--a href="${game.ebayLink}" class="ebay-link">eBay</a-->
 				<div class="checklist">`
 					
-					+amLookingFor( 'Card', game.checklistCart )
+					+amLookingFor( 'Cart', game.checklistCart )
+					+amLookingFor( 'Disc', game.checklistDisc )
 					+amLookingFor( 'Manual', game.checklistManual )
 					+amLookingFor( 'Box', game.checklistBox )
 					+amLookingFor( 'Foam', game.checklistFoam )
