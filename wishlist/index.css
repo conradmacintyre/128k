@@ -459,6 +459,8 @@ section {
   flex-wrap: wrap;
   margin-top: 33px;
   margin-bottom: 33px;
+  -webkit-box-align: start;
+          align-items: flex-start;
 }
 
 @media (min-width: 700px) {
@@ -788,80 +790,184 @@ section {
   }
 }
 
-.wishlist-cards .card {
+.cards .card {
   display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
+  font-size: 90%;
+}
+
+.cards .card.nes-card, .cards .card.atari-card, .cards .card.genesis-card {
   display: block;
-  grid-column-end: span 12;
+  grid-column-end: span 6;
 }
 
 @media (min-width: 700px) {
-  .wishlist-cards .card {
+  .cards .card.nes-card, .cards .card.atari-card, .cards .card.genesis-card {
+    grid-column-end: span 3;
+  }
+}
+
+@media (min-width: 1100px) {
+  .cards .card.nes-card, .cards .card.atari-card, .cards .card.genesis-card {
+    grid-column-end: span 2;
+  }
+}
+
+.cards .card.snes-card, .cards .card.n64-card {
+  display: block;
+  grid-column-end: span 6;
+}
+
+@media (min-width: 700px) {
+  .cards .card.snes-card, .cards .card.n64-card {
     grid-column-end: span 4;
   }
 }
 
 @media (min-width: 1100px) {
-  .wishlist-cards .card {
+  .cards .card.snes-card, .cards .card.n64-card {
     grid-column-end: span 3;
   }
 }
 
-.wishlist-cards .info img {
+.cards .info {
+  position: relative;
+  overflow: hidden;
+}
+
+.cards .info img {
   width: 100%;
 }
 
-.wishlist-cards .specs {
+.cards .specs {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(50%, black));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 50%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 50%);
+  color: #EEE;
+  padding: 10px;
 }
 
-.wishlist-cards .title {
+.cards .title {
   font-weight: bold;
 }
 
-.wishlist-cards .title:before {
+.cards .title:before {
   content: 'Title: ';
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 90%;
+  font-size: 80%;
 }
 
-.wishlist-cards .publisher {
+.cards .publisher {
   font-weight: bold;
 }
 
-.wishlist-cards .publisher:before {
+.cards .publisher:before {
   content: 'Publisher: ';
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 90%;
+  font-size: 80%;
 }
 
-.wishlist-cards .release-year {
+.cards .release-year {
   font-weight: bold;
 }
 
-.wishlist-cards .release-year:before {
+.cards .release-year:before {
   content: 'Release Year: ';
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 90%;
+  font-size: 80%;
 }
 
-.wishlist-cards .platform {
+.cards .platform {
   font-weight: bold;
 }
 
-.wishlist-cards .platform:before {
+.cards .platform:before {
   content: 'Platform: ';
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 90%;
+  font-size: 80%;
+}
+
+.cards .price {
+  position: absolute;
+  color: #EEE;
+  font-weight: bold;
+  font-size: 125%;
+  top: 0;
+  left: 0;
+  background: #ff9900;
+  padding: 2px 50px;
+  -webkit-transform: translate(-30%, 40%) rotate(-45deg);
+          transform: translate(-30%, 40%) rotate(-45deg);
+  box-shadow: 0px 2px 5px 1px rgba(17, 17, 17, 0.5);
+}
+
+.cards a.image-link, .cards a.ebay-link {
+  display: inline-block;
+  width: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#777), to(#BBB));
+  background: -webkit-linear-gradient(top, #777, #BBB);
+  background: linear-gradient(to bottom, #777, #BBB);
+  text-align: center;
+  font-size: 70%;
+  text-transform: uppercase;
+  line-height: 20px;
+  border: 1px solid #333;
+  color: #333;
+  text-shadow: 1px 1px 0px #BBB;
+}
+
+.cards .checklist {
+  background: #BBB;
+  padding: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: 100%;
+}
+
+.cards .checklist > span {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.cards .checklist > span:before {
+  content: '';
+  display: block;
+  border: 2px solid #111;
+  background-color: #EEE;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.cards .checklist > span.have:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 11px;
+  height: 11px;
+  background: #2ECC40;
 }
 
 .projects .text-section {

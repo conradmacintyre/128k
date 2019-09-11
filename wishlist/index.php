@@ -32,9 +32,19 @@ Footer -->
 			</div>
 		</div>
 
-		<section class="wishlist-cards" id="wishlist-cards">
-			<!-- Populated with JS -->
-		</section>
+		<section class="cards nes-cards" id="nes-cards"></section>
+		<section class="cards atari-cards" id="atari-cards"></section>
+		<section class="cards genesis-cards" id="genesis-cards"></section>
+		<section class="cards snes-cards" id="snes-cards"></section>
+		<section class="cards ps1-cards" id="ps1-cards"></section>
+		<section class="cards n64-cards" id="n64-cards"></section>
+		<section class="cards ps2-cards" id="ps2-cards"></section>
+		<section class="cards gc-cards" id="gc-cards"></section>
+		<section class="cards ps3-cards" id="ps3-cards"></section>
+		<section class="cards wii-cards" id="wii-cards"></section>
+		<section class="cards ps4-cards" id="ps4-cards"></section>
+		<section class="cards wiiu-cards" id="wiiu-cards"></section>
+		<section class="cards switch-cards" id="switch-cards"></section>
 
 		<!-- Back to top -->
 		<a href="jacascript:void(0);" class="backtotop"></a>

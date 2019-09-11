@@ -2090,6 +2090,72 @@
 		"oAP": "/wishlist/games-list.min.js.map",
 		"oF": 0
 		},
+	"/wishlist/images/dkc.jpg": {
+		"ft": 16384,
+		"iS": 114356,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wishlist/images/dkc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wishlist/images/ki.png": {
+		"ft": 32768,
+		"iS": 5108547,
+		"oA": 0,
+		"oAP": "/wishlist/images/ki.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/wishlist/images/mk3.jpg": {
+		"ft": 16384,
+		"iS": 220871,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wishlist/images/mk3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wishlist/images/sc.jpg": {
+		"ft": 16384,
+		"iS": 199338,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wishlist/images/sc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wishlist/images/smk.jpg": {
+		"ft": 16384,
+		"iS": 106745,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wishlist/images/smk.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/wishlist/images/smw.jpg": {
+		"ft": 16384,
+		"iS": 139308,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/wishlist/images/smw.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/wishlist/index.css": {
 		"aP": 1,
 		"bl": 0,

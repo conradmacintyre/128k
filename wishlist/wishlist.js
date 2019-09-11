@@ -1,20 +1,20 @@
 // Returns different content based on input
 function amLookingFor( _item, _value ) {
-	if ( _value == true ) {
+	if ( _value == false ) {
 		return `<span class="${_item.toLowerCase()} need">${_item}</span>`;
-	} else if ( _value == false ) {
+	} else if ( _value == true ) {
 		return `<span class="${_item.toLowerCase()} have">${_item}</span>`;
 	} else if ( _value == null ) {
 		return ``;
 	}
 }
 
-// Constructs wishlist Table
-function buildWishlistTable() {
-	window.games.forEach( game => {
+// Builds the tables
+function buildWishlistTable(_platform) {
+	window[_platform].forEach( game => {
 		let newCard = document.createElement('div'); 
 		newCard.setAttribute('id', game.title.toLowerCase());
-		newCard.setAttribute('class', 'card');
+		newCard.setAttribute('class', _platform + '-card card');
 		let html = `
 		 		<div class="info" data-bg-img="${game.boxArt}">
 		 			<img src="${game.boxArt}">
@@ -22,12 +22,11 @@ function buildWishlistTable() {
 						<span class="title">${game.title}</span>
 						<span class="publisher">${game.publisher}</span>
 						<span class="release-year">${game.releaseYear}</span>
-						<span class="platform">${game.platform}</span>
-						<span class="image-link"><a href="${game.imageLink}">View the Complete-in-box contents of ${game.title}</a></span>
-						<span class="ebay-link"><a href="${game.ebayLink}">Find ${game.title} on eBay</a></span>
 					</div>
-					<div class="price">${game.price}</div>
+					<div class="price">$${game.price}</div>
 				</div>
+				<!--a href="${game.imageLink}" class="image-link">Image</a-->
+				<!--a href="${game.ebayLink}" class="ebay-link">eBay</a-->
 				<div class="checklist">`
 					+amLookingFor( 'Cart', game.checklistCart )
 					+amLookingFor( 'Manual', game.checklistManual )
@@ -41,6 +40,21 @@ function buildWishlistTable() {
 		 	</tr>
 		`;
 		newCard.innerHTML = html;
-		document.getElementById('wishlist-cards').appendChild(newCard);
+		document.getElementById( _platform + '-cards' ).appendChild(newCard);
 	});
-} buildWishlistTable();
+}
+
+// Loop through the platforms
+function platformLooper() {
+	window.platforms.forEach( platform => {
+		if ( window[platform] ) {
+			buildWishlistTable( platform );
+		}
+	});
+} platformLooper();
+
+
+
+
+
+

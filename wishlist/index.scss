@@ -13,6 +13,14 @@
 	@import '../_scss/_router';
 
 // Functions/Mixins
+	@mixin spec {
+		font-weight: bold;
+	}
+	@mixin spec-title {
+		font-weight: normal;
+		text-transform: uppercase;
+		font-size: 80%;
+	}
 
 
 //**************************
@@ -23,6 +31,7 @@
 	section {
 		@include row;
 		@include spacer;
+		align-items: flex-start;
 	}
 
 // Header - Universal
@@ -92,13 +101,24 @@
 	}
 
 // Wishlist
-	.wishlist-cards {
+	.cards {
 		.card {
 		    display: flex;
 		    flex-wrap: wrap;
-		    @include column(sm 12, md 4, lg 3);
+		    font-size: 90%;
+		    &.nes-card,
+		    &.atari-card,
+		    &.genesis-card {
+		    	@include column(sm 6, md 3, lg 2);
+		    }
+		    &.snes-card,
+		    &.n64-card {
+		    	@include column(sm 6, md 4, lg 3);
+		    }
 		}
 		.info {
+			position: relative;
+			overflow: hidden;
 		    img {
 		    	width: 100%;
 		    }
@@ -106,41 +126,96 @@
 		.specs {
 		    display: flex;
 		    flex-direction: column;
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    width: 100%;
+		    background: linear-gradient( to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 50% );
+		    color: $shade-lite;
+		    padding: 10px;
 		}
 		.title {
-			font-weight: bold;
+			@include spec;
 			&:before {
 				content: 'Title: ';
-				font-weight: normal;
-				text-transform: uppercase;
-				font-size: 90%;
+				@include spec-title;
 			}
 		}
 		.publisher {
-			font-weight: bold;
+			@include spec;
 			&:before {
 				content: 'Publisher: ';
-				font-weight: normal;
-				text-transform: uppercase;
-				font-size: 90%;
+				@include spec-title;
 			}
 		}
 		.release-year {
-			font-weight: bold;
+			@include spec;
 			&:before {
 				content: 'Release Year: ';
-				font-weight: normal;
-				text-transform: uppercase;
-				font-size: 90%;
+				@include spec-title;
 			}
 		}
 		.platform {
-			font-weight: bold;
+			@include spec;
 			&:before {
 				content: 'Platform: ';
-				font-weight: normal;
-				text-transform: uppercase;
-				font-size: 90%;
+				@include spec-title;
+			}
+		}
+		.price {
+			position: absolute;
+		    color: $shade-lite;
+		    font-weight: bold;
+		    font-size: 125%;
+		    top: 0;
+		    left: 0;
+		    background: $color-warning;
+		    padding: 2px 50px;
+		    transform: translate(-30%, 40%) rotate(-45deg);
+		    box-shadow: 0px 2px 5px 1px rgba($shade-dark, 0.5);
+		}
+		a.image-link, a.ebay-link {
+		    display: inline-block;
+		    width: 50%;
+		    background: linear-gradient(to bottom, $shade-medium, $shade-medium-lite);
+		    text-align: center;
+		    font-size: 70%;
+		    text-transform: uppercase;
+		    line-height: 20px;
+		    border: 1px solid $shade-medium-dark;
+		    color: $shade-medium-dark;
+		    text-shadow: 1px 1px 0px $shade-medium-lite;
+		}
+		.checklist {
+		    background: $shade-medium-lite;
+		    padding: 20px;
+		    display: flex;
+		    flex-direction: column;
+		    width: 100%;
+		    > span {
+			    position: relative;
+			    display: flex;
+			    margin-bottom: 5px;
+			    &:before {
+				    content: '';
+				    display: block;
+				    border: 2px solid $shade-dark;
+				    background-color: $shade-lite;
+				    width: 15px;
+				    height: 15px;
+				    display: inline-block;
+				    margin-right: 5px;
+				}
+				&.have:after {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 4px;
+					left: 4px;
+					width: 11px;
+					height: 11px;
+					background: $color-success;
+				}
 			}
 		}
 	}
