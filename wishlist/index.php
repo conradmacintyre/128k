@@ -17,10 +17,19 @@ Footer -->
 			<div class="header-nav-wrapper">
 				<div class="header-nav-trigger" data-ts=".header-nav">MENU</div>
 				<nav class="header-nav" data-nav>
-					<a href="#about-me">About Me</a>
-					<a href="#projects">My Projects</a>
-					<a href="#design-thoughts">Thoughts on Design</a>
-					<a href="#contact-me">Contact Me</a>
+					<a href="#nes-cards">NES</a>
+					<a href="#snes-cards">SNES</a>
+					<a href="#n64-cards">N64</a>
+					<a href="#ngc-cards">GCN</a>
+					<a href="#wii-cards">Wii</a>
+					<a href="#wiiu-cards">Wii U</a>
+					<a href="#nsw-cards">Switch</a>
+					<a href="#atari-cards">7800</a>
+					<a href="#gen-cards">Genesis</a>
+					<a href="#ps1-cards">PS1</a>
+					<a href="#ps2-cards">PS2</a>
+					<a href="#ps3-cards">PS3</a>
+					<a href="#ps4-cards">PS4</a>
 				</nav>
 			</div>
 		</header>
@@ -34,17 +43,17 @@ Footer -->
 
 		<section class="cards nes-cards" id="nes-cards"></section>
 		<section class="cards atari-cards" id="atari-cards"></section>
-		<section class="cards genesis-cards" id="genesis-cards"></section>
+		<section class="cards gen-cards" id="gen-cards"></section>
 		<section class="cards snes-cards" id="snes-cards"></section>
 		<section class="cards ps1-cards" id="ps1-cards"></section>
 		<section class="cards n64-cards" id="n64-cards"></section>
 		<section class="cards ps2-cards" id="ps2-cards"></section>
-		<section class="cards gc-cards" id="gc-cards"></section>
+		<section class="cards ngc-cards" id="ngc-cards"></section>
 		<section class="cards ps3-cards" id="ps3-cards"></section>
 		<section class="cards wii-cards" id="wii-cards"></section>
 		<section class="cards ps4-cards" id="ps4-cards"></section>
 		<section class="cards wiiu-cards" id="wiiu-cards"></section>
-		<section class="cards switch-cards" id="switch-cards"></section>
+		<section class="cards nsw-cards" id="nsw-cards"></section>
 
 		<!-- Back to top -->
 		<a href="jacascript:void(0);" class="backtotop"></a>

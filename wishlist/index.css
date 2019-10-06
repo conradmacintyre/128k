@@ -790,6 +790,175 @@ section {
   }
 }
 
+.cards.nes-cards:before {
+  content: '';
+  background-image: url(images/nes.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
+.cards.atari-cards:before {
+  content: '';
+  background-image: url(images/atari.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
+.cards.snes-cards:before {
+  content: '';
+  background-image: url(images/snes.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
+.cards.n64-cards:before {
+  content: '';
+  background-image: url(images/n64.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
+.cards.ngc-cards:before {
+  content: '';
+  background-image: url(images/ngc.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
+.cards.wii-cards:before {
+  content: '';
+  background-image: url(images/wii.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
+.cards.wiiu-cards:before {
+  content: '';
+  background-image: url(images/wiiu.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
+.cards.nsw-cards:before {
+  content: '';
+  background-image: url(images/nsw.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
+.cards.ps1-cards:before {
+  content: '';
+  background-image: url(images/ps1.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
+.cards.ps2-cards:before {
+  content: '';
+  background-image: url(images/ps2.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
+.cards.ps3-cards:before {
+  content: '';
+  background-image: url(images/ps3.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
+.cards.ps4-cards:before {
+  content: '';
+  background-image: url(images/ps4.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
+.cards.gen-cards:before {
+  content: '';
+  background-image: url(images/gen.png);
+  background-position: bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  grid-column-end: span 12;
+  margin-bottom: 15px;
+  height: calc(100vw * 0.3);
+  max-height: 100px;
+}
+
 .cards .card {
   display: -webkit-box;
   display: flex;
@@ -798,19 +967,19 @@ section {
   margin-bottom: 15px;
 }
 
-.cards .card.atari-card, .cards .card.nes-card, .cards .card.gc-card, .cards .card.wii-card, .cards .card.wiiu-card, .cards .card.switch-card, .cards .card.ps1-card, .cards .card.ps2-card, .cards .card.ps3-card, .cards .card.ps4-card, .cards .card.genesis-card {
+.cards .card.atari-card, .cards .card.nes-card, .cards .card.ngc-card, .cards .card.wii-card, .cards .card.wiiu-card, .cards .card.nsw-card, .cards .card.ps1-card, .cards .card.ps2-card, .cards .card.ps3-card, .cards .card.ps4-card, .cards .card.gen-card {
   display: block;
   grid-column-end: span 6;
 }
 
 @media (min-width: 700px) {
-  .cards .card.atari-card, .cards .card.nes-card, .cards .card.gc-card, .cards .card.wii-card, .cards .card.wiiu-card, .cards .card.switch-card, .cards .card.ps1-card, .cards .card.ps2-card, .cards .card.ps3-card, .cards .card.ps4-card, .cards .card.genesis-card {
+  .cards .card.atari-card, .cards .card.nes-card, .cards .card.ngc-card, .cards .card.wii-card, .cards .card.wiiu-card, .cards .card.nsw-card, .cards .card.ps1-card, .cards .card.ps2-card, .cards .card.ps3-card, .cards .card.ps4-card, .cards .card.gen-card {
     grid-column-end: span 3;
   }
 }
 
 @media (min-width: 1100px) {
-  .cards .card.atari-card, .cards .card.nes-card, .cards .card.gc-card, .cards .card.wii-card, .cards .card.wiiu-card, .cards .card.switch-card, .cards .card.ps1-card, .cards .card.ps2-card, .cards .card.ps3-card, .cards .card.ps4-card, .cards .card.genesis-card {
+  .cards .card.atari-card, .cards .card.nes-card, .cards .card.ngc-card, .cards .card.wii-card, .cards .card.wiiu-card, .cards .card.nsw-card, .cards .card.ps1-card, .cards .card.ps2-card, .cards .card.ps3-card, .cards .card.ps4-card, .cards .card.gen-card {
     grid-column-end: span 2;
   }
 }
@@ -835,18 +1004,49 @@ section {
 .cards .info {
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
-.cards .info img {
-  width: 100%;
+.cards .info.snes, .cards .info.n64 {
+  padding-bottom: 71%;
+}
+
+.cards .info.ps3 {
+  padding-bottom: 116%;
+}
+
+.cards .info.ps4 {
+  padding-bottom: 126%;
+}
+
+.cards .info.atari {
+  padding-bottom: 134%;
+}
+
+.cards .info.nes, .cards .info.gen {
+  padding-bottom: 140%;
+}
+
+.cards .info.ps2, .cards .info.ngc, .cards .info.wii, .cards .info.wiiu {
+  padding-bottom: 142%;
+}
+
+.cards .info.ps1 {
+  padding-bottom: 146%;
+}
+
+.cards .info.nsw {
+  padding-bottom: 165%;
 }
 
 .cards .specs {
   display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -860,21 +1060,31 @@ section {
 
 .cards .title {
   font-weight: bold;
+  padding-right: 5px;
+  width: calc(100% - 25px);
 }
 
 .cards .title:before {
   content: 'Title: ';
+  content: none;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 80%;
 }
 
+.cards .image-popup {
+  cursor: pointer;
+  width: 25px;
+}
+
 .cards .publisher {
   font-weight: bold;
+  padding-right: 5px;
 }
 
 .cards .publisher:before {
   content: 'Publisher: ';
+  content: none;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 80%;
@@ -882,10 +1092,12 @@ section {
 
 .cards .release-year {
   font-weight: bold;
+  padding-right: 5px;
 }
 
 .cards .release-year:before {
   content: 'Release Year: ';
+  content: none;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 80%;
@@ -893,10 +1105,12 @@ section {
 
 .cards .platform {
   font-weight: bold;
+  padding-right: 5px;
 }
 
 .cards .platform:before {
   content: 'Platform: ';
+  content: none;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 80%;
@@ -918,22 +1132,13 @@ section {
 
 .cards .price.own {
   background: #2ECC40;
-  color: #111;
 }
 
-.cards a.image-link, .cards a.ebay-link {
-  display: inline-block;
-  width: 50%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#777), to(#BBB));
-  background: -webkit-linear-gradient(top, #777, #BBB);
-  background: linear-gradient(to bottom, #777, #BBB);
-  text-align: center;
-  font-size: 70%;
-  text-transform: uppercase;
-  line-height: 20px;
-  border: 1px solid #333;
-  color: #333;
-  text-shadow: 1px 1px 0px #BBB;
+.cards .price.incomplete {
+  background: #ff9900;
+  font-size: 80%;
+  line-height: 191%;
+  top: 8px;
 }
 
 .cards .checklist {

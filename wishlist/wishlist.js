@@ -9,11 +9,34 @@ function amLookingFor( _item, _value ) {
 	}
 }
 
-function outputPrice( _item ) {
-	if ( _item == true ) {
+function outputStatus( _game ) {
+	let checks = [ _game.checklistCart, _game.checklistDisc, _game.checklistManual, _game.checklistBox, _game.checklistMap, _game.checklistFoam, _game.checklistSleeve, _game.checklistPoster, _game.checklistRegcard, _game.checklistInsert ];
+	let status = null;
+	function statusUpdate( _state ) {
+		if ( _state == true && ( status == true || status == null ) ) {
+			status = true;
+		} else if ( _state == true && ( status == false || status == 'incomplete' ) ) {
+			status = 'incomplete';
+		}  else if ( _state == false && ( status == false || status == null ) ) {
+			status = false;
+		}  else if ( _state == false && ( status == true || status == 'incomplete' ) ) {
+			status = 'incomplete';
+		} 
+	}
+	checks.forEach( _item => {
+		if ( _item == true ) {
+			statusUpdate(true);
+		} else if ( _item == false ) {
+			statusUpdate(false);
+		}
+	});
+
+	if ( status == true ) {
 		return `<div class="price own">OWN</div>`;
+	} else if ( status == false) {
+		return `<div class="price">$${_game.price}</div>`;
 	} else {
-		return `<div class="price">$${_item}</div>`;
+		return `<div class="price incomplete">INCOMPLETE</div>`;
 	}
 }
 
@@ -24,23 +47,27 @@ function buildWishlistTable(_platform) {
 		newCard.setAttribute('id', game.title.toLowerCase());
 		newCard.setAttribute('class', _platform + '-card card');
 		let html = `
-		 		<div class="info" data-bg-img="${game.boxArt}">
-		 			<img src="${game.boxArt}">
+		 		<div class="info ${_platform}" data-bgimg="${game.boxArt}">
 					<div class="specs">
 						<span class="title">${game.title}</span>
-						<span class="publisher">${game.publisher}</span>
-						<span class="release-year">${game.releaseYear}</span>
+						<a class="popup-link image-popup" data-content="${game.title.replace(/\s+/g, '')}-${game.platform}-modal">
+							<img src="images/image.png">
+							<div id="${game.title.replace(/\s+/g, '')}-${game.platform}-modal" class="popup-content">
+								<img src="${game.boxArt}">
+							</div>
+						</a>
 					</div>`
-					+outputPrice( game.price )
+					+outputStatus( game )
 				+`</div>
 				<!--a href="${game.imageLink}" class="image-link">Image</a-->
 				<!--a href="${game.ebayLink}" class="ebay-link">eBay</a-->
 				<div class="checklist">`
-					
+					// This should be a loop
 					+amLookingFor( 'Cart', game.checklistCart )
 					+amLookingFor( 'Disc', game.checklistDisc )
 					+amLookingFor( 'Manual', game.checklistManual )
 					+amLookingFor( 'Box', game.checklistBox )
+					+amLookingFor( 'Map', game.checklistMap )
 					+amLookingFor( 'Foam', game.checklistFoam )
 					+amLookingFor( 'Sleeve', game.checklistSleeve )
 					+amLookingFor( 'Poster', game.checklistPoster )

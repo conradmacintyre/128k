@@ -1,4 +1,4 @@
-window.platforms = [ 'atari' , 'nes' , 'snes' , 'n64' , 'gc' , 'wii' , 'wiiu' , 'switch' , 'genesis' , 'ps1' , 'ps2' , 'ps3' , 'ps4'];
+window.platforms = [ 'atari' , 'nes' , 'snes' , 'n64' , 'ngc' , 'wii' , 'wiiu' , 'nsw' , 'gen' , 'ps1' , 'ps2' , 'ps3' , 'ps4'];
 
 window.atari = [
 	{
@@ -34,7 +34,7 @@ window.atari = [
 		ebayLink: 'ebay.ca',
 		checklistCart: true,
 		checklistBox: true,
-		checklistManual: true,
+		checklistManual: false,
 		price: true
 	},
 	{
@@ -75,7 +75,7 @@ window.atari = [
 	}
 ];
 
-window.genesis = [
+window.gen = [
 	{
 		title: 'The Ren & Stimpy Show: Stimpy\'s Invention',
 		boxArt: 'images/si.jpg',
@@ -103,7 +103,7 @@ window.nes = [
 		checklistManual: false,
 		checklistFoam: false,
 		checklistSleeve: false,
-		price: '101'
+		price: 101
 	},
 	{
 		title: 'Darkwing Duck',
@@ -118,7 +118,7 @@ window.nes = [
 		checklistManual: false,
 		checklistFoam: false,
 		checklistSleeve: true,
-		price: '146'
+		price: 146
 	},
 	{
 		title: 'Duck Tales',
@@ -133,7 +133,7 @@ window.nes = [
 		checklistManual: false,
 		checklistFoam: false,
 		checklistSleeve: false,
-		price: '80'
+		price: 80
 	},
 	{
 		title: 'Super Mario Bros/Duck Hunt',
@@ -148,7 +148,7 @@ window.nes = [
 		checklistManual: true,
 		checklistFoam: false,
 		checklistSleeve: true,
-		price: '50'
+		price: 50
 	},
 	{
 		title: 'Super Mario Bros 2',
@@ -163,7 +163,7 @@ window.nes = [
 		checklistManual: false,
 		checklistFoam: false,
 		checklistSleeve: false,
-		price: '45'
+		price: 45
 	},
 	{
 		title: 'Super Mario Bros 3',
@@ -193,7 +193,6 @@ window.snes = [
 		checklistCart: true,
 		checklistBox: true,
 		checklistManual: true,
-		checklistFoam: null,
 		checklistSleeve: true,
 		price: true
 	},
@@ -205,12 +204,12 @@ window.snes = [
 		platform: 'NES',
 		imageLink: 'http://classicgamesblog.com/wp-content/uploads/2012/07/Contra-NES-Complete-in-Box-Front.jpg',
 		ebayLink: 'https://www.ebay.ca/sch/i.html?_from=R40&_trksid=m570.l1313&_sacat=0&rt=nc&LH_PrefLoc=1&_trksid=p2045573.m1684&_nkw=darkwing+duck+nes+cib',
-		checklistCart: false,
-		checklistBox: false,
-		checklistManual: false,
-		checklistFoam: null,
-		checklistSleeve: false,
-		price: '46'
+		checklistCart: true,
+		checklistBox: true,
+		checklistManual: true,
+		checklistPoster: true,
+		checklistSleeve: true,
+		price: 46
 	},
 	{
 		title: 'Mortal Kombat 3',
@@ -255,7 +254,7 @@ window.snes = [
 		checklistManual: false,
 		checklistFoam: null,
 		checklistSleeve: false,
-		price: '55'
+		price: 55
 	},
 	{
 		title: 'Super Mario World',
@@ -270,7 +269,7 @@ window.snes = [
 		checklistManual: false,
 		checklistFoam: null,
 		checklistSleeve: false,
-		price: '300'
+		price: 300
 	}
 ];
 
@@ -297,10 +296,11 @@ window.n64 = [
 		imageLink: 'images/mk64.jpg',
 		ebayLink: 'ebay.ca',
 		checklistCart: true,
-		checklistBox: false,
-		checklistManual: false,
-		checklistFoam: null,
-		checklistSleeve: null,
+		checklistBox: true,
+		checklistManual: true,
+		checklistRegCard: true,
+		checklistSleeve: true,
+		checklistPoster: true,
 		price: 76
 	},
 	{
@@ -347,7 +347,7 @@ window.n64 = [
 	}
 ];
 
-window.gc = [
+window.ngc = [
 	{
 		title: 'Super Mario Sunshine',
 		boxArt: 'images/sms.jpg',
@@ -403,9 +403,9 @@ window.gc = [
 		releaseYear: 2005,
 		imageLink: 'images/re4.jpg',
 		ebayLink: 'ebay.ca',
-		checklistDisc: false,
-		checklistBox: false,
-		checklistManual: false,
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
 		price: 15
 	},
 	{
@@ -548,7 +548,7 @@ window.wiiu = [
 	}
 ];
 
-window['switch'] = [
+window.nsw = [
 	{
 		title: 'Super Mario Maker 2',
 		boxArt: 'images/smm2.jpg',
@@ -657,9 +657,9 @@ window.ps1 = [
 		releaseYear: 1997,
 		imageLink: 'images/re-dc.jpg',
 		ebayLink: 'ebay.ca',
-		checklistDisc: false,
-		checklistBox: false,
-		checklistManual: false,
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
 		price: 66
 	},
 	{
@@ -760,4 +760,495 @@ window.ps1 = [
 		price: 13
 	}
 ];
+
+window.ps2 = [
+	{
+		title: 'Bully',
+		boxArt: 'images/bully.jpg',
+		publisher: 'Rockstar',
+		releaseYear: 0,
+		imageLink: 'images/bully.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
+		checklistMap: false,
+		price: true
+	},
+	{
+		title: 'Hitman: Blood Moneny',
+		boxArt: 'images/hmbm.jpg',
+		publisher: 'IO Interactive',
+		releaseYear: 2006,
+		imageLink: 'images/hmbm.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
+		price: true
+	},
+	{
+		title: 'The Getaway',
+		boxArt: 'images/tg.jpg',
+		publisher: 'Sony',
+		releaseYear: 0,
+		imageLink: 'images/tg.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		checklistManual: false,
+		price: 8
+	},
+	{
+		title: 'The Getaway: Black Monday',
+		boxArt: 'images/tgbm.jpg',
+		publisher: 'Sony',
+		releaseYear: 0,
+		imageLink: 'images/tgbm.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		checklistManual: false,
+		price: 8
+	},
+	{
+		title: 'Grand Theft Auto III',
+		boxArt: 'images/gtaiii.jpg',
+		publisher: 'Rockstar',
+		releaseYear: 0,
+		imageLink: 'images/gtaiii.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		checklistManual: false,
+		checklistMap: false,
+		price: 7
+	},
+	{
+		title: 'Grand Theft Auto: Vice City',
+		boxArt: 'images/gtavc.jpg',
+		publisher: 'Rockstar',
+		releaseYear: 0,
+		imageLink: 'images/gtavc.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
+		checklistMap: true,
+		price: true
+	},
+	{
+		title: 'Grand Theft Auto: San Andreas',
+		boxArt: 'images/gtasa.png',
+		publisher: 'Rockstar',
+		releaseYear: 0,
+		imageLink: 'images/gtasa.png',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
+		checklistMap: true,
+		price: true
+	},
+	{
+		title: 'Grand Theft Auto: Liberty City Stories',
+		boxArt: 'images/gtalcs.jpg',
+		publisher: 'Rockstar',
+		releaseYear: 0,
+		imageLink: 'images/gtalcs.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		checklistManual: false,
+		checklistMap: false,
+		price: 12
+	},
+	{
+		title: 'Grand Theft Auto: Vice City Stories',
+		boxArt: 'images/gtavcs.jpg',
+		publisher: 'Rockstar',
+		releaseYear: 0,
+		imageLink: 'images/gtavcs.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		checklistManual: false,
+		checklistMap: false,
+		price: 27
+	},
+	{
+		title: 'Midnight Club 3: Dub Edition (Remix)',
+		boxArt: 'images/mc3der.jpg',
+		publisher: 'Rockstar',
+		releaseYear: 0,
+		imageLink: 'images/mc3der.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		checklistManual: false,
+		price: 17
+	},
+	{
+		title: 'Resident Evil: Code Veronica X',
+		boxArt: 'images/recvx.jpg',
+		publisher: 'Capcom',
+		releaseYear: 0,
+		imageLink: 'images/recvx.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		checklistManual: false,
+		price: 12
+	},
+	{
+		title: 'Twisted Metal: Black',
+		boxArt: 'images/tmb.jpg',
+		publisher: 'Sony',
+		releaseYear: 0,
+		imageLink: 'images/tmb.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
+		price: true
+	},
+	{
+		title: 'Smackdown: Here Comes The Pain',
+		boxArt: 'images/sdhctp.jpg',
+		publisher: 'THQ',
+		releaseYear: 0,
+		imageLink: 'images/sdhctp.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: false,
+		price: 25
+	},
+	{
+		title: 'Smackdown vs Raw 2007',
+		boxArt: 'images/svr2007.jpg',
+		publisher: 'THQ',
+		releaseYear: 0,
+		imageLink: 'images/svr2007.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: false,
+		price: 8
+	}
+]
+
+window.ps3 = [
+	{
+		title: 'Driver: San Francisco',
+		boxArt: 'images/dsf.jpg',
+		publisher: 'Atari',
+		releaseYear: 0,
+		imageLink: 'images/dsf.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		checklistManual: false,
+		price: 15
+	},
+	{
+		title: 'The Godfather: Don\'s Edition',
+		boxArt: 'images/tgde.jpg',
+		publisher: 'Atari',
+		releaseYear: 0,
+		imageLink: 'images/tgde.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
+		price: true
+	},
+	{
+		title: 'Grand Theft Auto: San Andreas',
+		boxArt: 'images/gtasahd.jpg',
+		publisher: 'Rockstar',
+		releaseYear: 0,
+		imageLink: 'images/gtasahd.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
+		checklistMap: true,
+		price: true
+	},
+	{
+		title: 'Grand Theft Auto IV',
+		boxArt: 'images/gtaiv.jpg',
+		publisher: 'Rockstar',
+		releaseYear: 0,
+		imageLink: 'images/gtaiv.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		checklistManual: false,
+		checklistMap: false,
+		price: 8
+	},
+	{
+		title: 'Grand Theft Auto: Episodes From Liberty City',
+		boxArt: 'images/gtaeflc.jpg',
+		publisher: 'Rockstar',
+		releaseYear: 0,
+		imageLink: 'images/gtaeflc.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
+		checklistMap: true,
+		price: true
+	},
+	{
+		title: 'Red Dead Redemption',
+		boxArt: 'images/rdr.jpg',
+		publisher: 'Rockstar',
+		releaseYear: 0,
+		imageLink: 'images/rdr.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
+		checklistMap: true,
+		price: true
+	},
+	{
+		title: 'WWE Smackdown vs Raw 2008',
+		boxArt: 'images/svr2008.jpg',
+		publisher: 'THQ',
+		releaseYear: 0,
+		imageLink: 'images/svr2008.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
+		price: true
+	}
+]
+
+window.ps4 = [
+	{
+		title: 'Batman: Return To Arkham',
+		boxArt: 'images/brta.jpg',
+		publisher: '',
+		releaseYear: 0,
+		imageLink: 'images/brta.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		price: true
+	},
+	{
+		title: 'God of War',
+		boxArt: 'images/gow.jpg',
+		publisher: 'Sony',
+		releaseYear: 0,
+		imageLink: 'images/gow.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		price: 24
+	},
+	{
+		title: 'Hitman',
+		boxArt: 'images/hm.jpg',
+		publisher: 'Square Enix',
+		releaseYear: 0,
+		imageLink: 'images/hm.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		price: true
+	},
+	{
+		title: 'Hitman 2',
+		boxArt: 'images/hm2.jpg',
+		publisher: 'Square Enix',
+		releaseYear: 0,
+		imageLink: 'images/hm2.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		price: 32
+	},
+	{
+		title: 'Horizon: Zero Dawn (Complete Edition)',
+		boxArt: 'images/hzd.jpg',
+		publisher: 'Sony',
+		releaseYear: 0,
+		imageLink: 'images/hzd.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		price: true
+	},
+	{
+		title: 'The Last of Us',
+		boxArt: 'images/tlou.jpg',
+		publisher: 'Sony',
+		releaseYear: 0,
+		imageLink: 'images/tlou.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		price: true
+	},
+	{
+		title: 'The Last of Us: Part II',
+		boxArt: 'images/tlou2.jpg',
+		publisher: 'Sony',
+		releaseYear: 2020,
+		imageLink: 'images/tlou2.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		price: 80
+	},
+	{
+		title: 'Resident Evil: Origins Collection',
+		boxArt: 'images/reoc.png',
+		publisher: 'Capcom',
+		releaseYear: 0,
+		imageLink: 'images/reoc.png',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		price: true
+	},
+	{
+		title: 'Resident Evil 2',
+		boxArt: 'images/re2r.jpg',
+		publisher: 'Capcom',
+		releaseYear: 2019,
+		imageLink: 'images/re2r.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		price: true
+	},
+	{
+		title: 'Resident Evil 4',
+		boxArt: 'images/re4hd.jpg',
+		publisher: 'Capcom',
+		releaseYear: 0,
+		imageLink: 'images/re4hd.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		price: 10
+	},
+	{
+		title: 'Spider-Man',
+		boxArt: 'images/sm.jpg',
+		publisher: 'Sony',
+		releaseYear: 2019,
+		imageLink: 'images/sm.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		price: 35
+	},
+	{
+		title: 'Tomb Raider (Definitive Edition)',
+		boxArt: 'images/tr.jpg',
+		publisher: 'Square Enix',
+		releaseYear: 0,
+		imageLink: 'images/tr.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		price: true
+	},
+	{
+		title: 'Rise of the Tomb Raider',
+		boxArt: 'images/tr2.jpg',
+		publisher: 'Square Enix',
+		releaseYear: 0,
+		imageLink: 'images/tr2.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		price: true
+	},
+	{
+		title: 'Shadow of the Tomb Raider',
+		boxArt: 'images/tr3.jpg',
+		publisher: 'Square Enix',
+		releaseYear: 0,
+		imageLink: 'images/tr3.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		price: true
+	},
+	{
+		title: 'Uncharted: The Nathan Drake Collection',
+		boxArt: 'images/ucndc.jpg',
+		publisher: 'Sony',
+		releaseYear: 0,
+		imageLink: 'images/ucndc.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: false,
+		checklistBox: false,
+		price: 13
+	},
+	{
+		title: 'Uncharted 4: A Thief\'s End',
+		boxArt: 'images/uc4.jpg',
+		publisher: 'Sony',
+		releaseYear: 0,
+		imageLink: 'images/uc4.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		price: true
+	},
+	{
+		title: 'Uncharted: The Lost Legacy',
+		boxArt: 'images/uctll.jpg',
+		publisher: 'Sony',
+		releaseYear: 0,
+		imageLink: 'images/uctll.jpg',
+		ebayLink: 'ebay.ca',
+		checklistDisc: true,
+		checklistBox: true,
+		price: true
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
