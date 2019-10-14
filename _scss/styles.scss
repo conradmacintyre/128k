@@ -76,6 +76,15 @@
 
 .billboard {
 	@include billboard;
+	&-slide {
+		@media (hover:hover) {
+			&:before {
+				content: 'YO DIGGITY DAWG!';
+				color: red;
+				font-size: 20rem;
+			}
+		}
+	}
 }
 
 

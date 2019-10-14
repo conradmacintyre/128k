@@ -168,6 +168,41 @@ Footer -->
 				Let's do that together.</p>
 			</div>
 		</section>
+		<section id="contact-me" class="contact-me">
+			<h2>Contact</h2>
+		
+			<form class="contact" name="contact" method="post">
+				<label for="form-name">Name:</label>
+				<input required type='text' name='name' id='form-name' value='' placeholder="Name">
+				<label for="form-email">Email:</label>
+				<input required type='email' name='email' id='form-email' value='' placeholder="Email">
+				<label for="form-text">What do you want to do?</label>
+				<textarea required name='text' id='form-text' placeholder="What do you want to do?"></textarea>
+				<button type="submit" name='submit' id='form-submit' value="Submit">Submit</button>
+			</form>
+			
+			<div class="message-container"></div>
+			
+			<h2>Connect</h2>
+			
+			<div id="social-icons">
+				<a class="noroll" href="email" user="conrad" domain="128k.ca">
+					<span class="icon-email"></span>
+				</a>
+				<a class="noroll" href="http://twitter.com/conradmacintyre">
+					<span class="icon-twitter"></span>
+				</a>
+				<a class="noroll" href="http://ca.linkedin.com/in/conradmacintyre/">
+					<span class="icon-linkedin"></span>
+				</a>
+				<a class="noroll" href="http://github.com/conradmacintyre">
+					<span class="icon-github"></span>
+				</A>
+			</div>
+		</section>
+		<footer>
+			<p>&copy; 2014<?php if ( date("Y") > 2014 ) { echo "-".date("Y"); } ?>, <a href="http://conradmacintyre.com">Conrad MacIntyre</a>. <a href="email" user="conrad" domain="128k.ca"></a></p>
+		</footer>
 		<!-- Back to top -->
 		<a href="jacascript:void(0);" class="backtotop"></a>
 		<!-- Popup container -->
@@ -179,6 +214,6 @@ Footer -->
 		</div>		
 		<!-- Call Javascript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script src="js/library.min.js"></script>
+		<script src="_js/library.min.js"></script>
 	</body>
 </html>

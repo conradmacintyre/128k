@@ -1,6 +1,6 @@
 @function text($txmn, $txmx) {
-		@return calc( #{$txmn}px + ( #{$txmx} - #{$txmn} ) * ( ( 100vw - 320px ) / ( 1600 - 320 ) ) );
-	}
+	@return calc( #{$txmn}px + ( #{$txmx} - #{$txmn} ) * ( ( 100vw - 320px ) / ( 1600 - 320 ) ) );
+}
 
 /*******************************************
 * VARIABLES
@@ -28,5 +28,5 @@
 * INCLUDE RELEVANT FILES
 ********************************************/
 
-	@include base;
+	// @include base;
 
