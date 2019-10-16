@@ -274,36 +274,6 @@ p a:active {
   display: none;
 }
 
-.responsive-widescreen {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  height: 0;
-}
-
-.responsive-widescreen iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.responsive-fullscreen {
-  position: relative;
-  padding-bottom: 75%;
-  /* 4:3 */
-  height: 0;
-}
-
-.responsive-fullscreen iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .form-field {
   position: relative;
   margin-bottom: 25px;
@@ -663,6 +633,22 @@ section {
   }
 }
 
+@media (min-width: 700px) {
+  .billboard {
+    margin-left: -10px;
+    width: calc(100% + 20px);
+    max-width: calc(100% + 20px);
+  }
+}
+
+@media (min-width: 1100px) {
+  .billboard {
+    margin-left: -15px;
+    width: calc(100% + 30px);
+    max-width: calc(100% + 30px);
+  }
+}
+
 .billboard-slide {
   background-size: cover;
   background-position: center;
@@ -717,39 +703,6 @@ section {
   }
 }
 
-.billboard-slide.top {
-  -webkit-box-pack: start;
-          justify-content: flex-start;
-}
-
-.billboard-slide.middle {
-  -webkit-box-pack: center;
-          justify-content: center;
-}
-
-.billboard-slide.bottom {
-  -webkit-box-pack: end;
-          justify-content: flex-end;
-}
-
-.billboard-slide.left {
-  -webkit-box-align: start;
-          align-items: flex-start;
-  text-align: left;
-}
-
-.billboard-slide.center {
-  -webkit-box-align: end;
-          align-items: flex-end;
-  text-align: right;
-}
-
-.billboard-slide.right {
-  -webkit-box-align: end;
-          align-items: flex-end;
-  text-align: right;
-}
-
 .billboard-slide.active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -766,6 +719,9 @@ section {
 }
 
 .billboard-slide > * {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1rem;
   max-width: 100%;
 }
 
@@ -783,23 +739,16 @@ section {
 
 .billboard-slide h1, .billboard-slide h2, .billboard-slide h3, .billboard-slide h4, .billboard-slide h5, .billboard-slide h6 {
   color: inherit;
-  margin-bottom: 0;
 }
 
-@media (min-width: 700px) {
-  .billboard {
-    margin-left: -10px;
-    width: calc(100% + 20px);
-    max-width: calc(100% + 20px);
-  }
-}
-
-@media (min-width: 1100px) {
-  .billboard {
-    margin-left: -15px;
-    width: calc(100% + 30px);
-    max-width: calc(100% + 30px);
-  }
+.billboard-slide:before {
+  content: '';
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .about-me .text-section {
@@ -984,39 +933,6 @@ section {
   }
 }
 
-.projects .project-billboard-slide.top {
-  -webkit-box-pack: start;
-          justify-content: flex-start;
-}
-
-.projects .project-billboard-slide.middle {
-  -webkit-box-pack: center;
-          justify-content: center;
-}
-
-.projects .project-billboard-slide.bottom {
-  -webkit-box-pack: end;
-          justify-content: flex-end;
-}
-
-.projects .project-billboard-slide.left {
-  -webkit-box-align: start;
-          align-items: flex-start;
-  text-align: left;
-}
-
-.projects .project-billboard-slide.center {
-  -webkit-box-align: end;
-          align-items: flex-end;
-  text-align: right;
-}
-
-.projects .project-billboard-slide.right {
-  -webkit-box-align: end;
-          align-items: flex-end;
-  text-align: right;
-}
-
 .projects .project-billboard-slide.active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -1033,6 +949,9 @@ section {
 }
 
 .projects .project-billboard-slide > * {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1rem;
   max-width: 80%;
 }
 
@@ -1050,7 +969,16 @@ section {
 
 .projects .project-billboard-slide h1, .projects .project-billboard-slide h2, .projects .project-billboard-slide h3, .projects .project-billboard-slide h4, .projects .project-billboard-slide h5, .projects .project-billboard-slide h6 {
   color: inherit;
-  margin-bottom: 0;
+}
+
+.projects .project-billboard-slide:before {
+  content: '';
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .projects .project-billboard p {

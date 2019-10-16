@@ -768,6 +768,8 @@ section {
 }
 
 .billboard-slide > * {
+  position: relative;
+  z-index: 2;
   max-width: 100%;
 }
 
@@ -1396,6 +1398,8 @@ section {
 }
 
 .projects .project-billboard-slide > * {
+  position: relative;
+  z-index: 2;
   max-width: 80%;
 }
 

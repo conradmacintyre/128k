@@ -1,6 +1,6 @@
 // Basics
 $reset: true;
-$prototype: true;
+$prototype: false;
 
 // Colours
 $color-primary: #001f3f !default; // Navy
@@ -112,6 +112,13 @@ $button-padding: 15px 25px !default;
 $button-font-weight: bold !default;
 $button-text-transform: uppercase !default;
 
+// Billboards
+$billboard-height: 400 500 600 !default;
+$billboard-content-width: 100% 50% 33% !default;
+$billboard-valign: middle !default;
+$billboard-halign: center !default;
+$billboard-text-color: $shade-lite !default;
+$billboard-background-color: transparent !default;
 
 
 

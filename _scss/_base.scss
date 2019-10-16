@@ -143,6 +143,39 @@
 		.button {
 			@include button;
 		}
+	
+	//*******************************************
+	// BILLBOARDS
+	//*******************************************
+		@if ($prototype == true) {
+			.billboard {
+				@include billboard;
+				&-slide {
+					@include slide;
+					&.top {
+						justify-content: flex-start; 
+					}
+					&.middle {
+						justify-content: center;
+					}
+					&.bottom {
+						justify-content: flex-end;
+					}
+					&.left {
+						align-items: flex-start;
+						text-align: left;
+					}
+					&.center {
+						align-items: flex-end;
+						text-align: right;
+					}
+					&.right {
+						align-items: flex-end;
+						text-align: right;
+					}
+				}
+			}
+		}
 
 	//*******************************************
 	// POPUPS (Convert to mixin)
@@ -223,23 +256,6 @@
 	//*******************************************
 	// Embedded (iframe) Videos
 	//*******************************************
-		@mixin responsive-iframe($type) {
-			position: relative;
-			@if ($type == wide) {
-				padding-bottom: 56.25%; /* 16:9 */
-			}
-			@if ($type == full) {
-				padding-bottom: 75%; /* 4:3 */
-			}
-			height: 0;
-			iframe {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-			}
-		}
 		@if ($prototype == true) {
 			.responsive-widescreen {
 				@include responsive-iframe(wide);
