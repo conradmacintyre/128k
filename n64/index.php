@@ -5,6 +5,11 @@
 		<title>128k.ca</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="n64.css">
+
+        <link rel="apple-touch-icon" href="app-icon.png">
+        <link rel="apple-touch-startup-image" href="splash.png">
+        <meta name="apple-mobile-web-app-title" content="N64 Bundler">
+        <meta name="apple-mobile-web-app-capable" content="yes">
 	</head>
 	<body>
         <header class="header">
@@ -101,26 +106,6 @@
             <h1 class="main-title">
                 <span class="n64">Nintendo<sup>64</sup></span> Bundler
             </h1>
-        </div>
-
-        <div>
-            <a href="#scroll_to_here">Click to scroll</a>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h3 id="scroll_to_here">Scroll successful!</h3>
         </div>
 
 		<section class="game-table" id="info">

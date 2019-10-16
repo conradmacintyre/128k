@@ -2487,6 +2487,7 @@
 	});
 	//Toggle only bundled items
 	function toggleBundle(){
+		console.log("hey kids!");
 		clearLiveSearch();
 		var $this_p = $('#toggleBundled');
 		if ( $this_p.hasClass('filtered') ) {
@@ -2685,7 +2686,9 @@
 				liveSearch();
 				countItems();
 				calcTotal();
-				toggleBundle();
+				if ( $('#toggleBundled').hasClass('open') ) {
+					toggleBundle();
+				}
 			});
 			
 			//Toggle Bundle-Management Menu

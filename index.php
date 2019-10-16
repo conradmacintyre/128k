@@ -25,7 +25,7 @@ Footer -->
 			</div>
 		</header>
 		<div class="billboard">
-			<div class="billboard-slide active" data-bgimg="http://res.cloudinary.com/simpleview/image/upload/v1486505969/clients/vancouverbc/Aerial_Sunset_Vancouver_d3_copy_1bb86ed0-1edc-4cda-841d-0b033ca0bb72.jpg">
+			<div class="billboard-slide active" data-bgimg="_images/main-header.jpg">
 				<h1>128k.ca</h1>
 				<p>Hi, my name is Conrad. I make things. Sometimes they're good.</p>
 				<a href="#contact-me" class="button">Reach Out</a>
@@ -60,32 +60,32 @@ Footer -->
 					<div>
 						<div class="project-specifics">
 							<h3>Buck 'N' Pat Bingo</h3>
-							<img src="images/bingo.jpg" alt="">
+							<img src="_images/bingo.jpg" alt="">
 							<p>If you watch the Blue Jays much, you'll quickly hear some of the broadcaster's favourite phrases. This is an attempt to make those common sayings a little more fun. So tune into the Jays and <a href="#">play along</a>!</p>
 						</div>
 						<div class="project-specifics">
 							<h3>Blackjack</h3>
-							<img src="images/blackjack.jpg" alt="">
+							<img src="_images/blackjack.jpg" alt="">
 							<p>This was a student project I built as an assignment while I was at BCIT. It stands as my favourite thing I built while I was there. I still play it on a regular basis. Wanna <a href="#">play a hand</a>?</p>
 						</div>
 						<div class="project-specifics">
 							<h3>Brand Wars (Pre-Alpha)</h3>
-							<img src="images/brand-wars.jpg" alt="">
+							<img src="_images/brand-wars.jpg" alt="">
 							<p>When WWE Smackdown! vs RAW 2006 was released the "GM Mode" blew my mind. It was like franchise, but for pro-wrestling. Ever since it was removed in 2009, I stopped buying WWE games annually, and typically pick up used copies every couple years. I want to build my own version. That's what this work-in-progress is. Want to play a rough pre-alpha build of the booking/match engine? <a href="#">Give 'er a go</a>!</p>
 						</div>
 						<div class="project-specifics">
 							<h3>Family Feud (Beta)</h3>
-							<img src="images/family-feud.jpg" alt="">
+							<img src="_images/family-feud.jpg" alt="">
 							<p>As a youth pastor I needed to make some games that could be played by a fairly large group in a fairly small space. Game shows seemed like a great option. So I threw this together. Currently they have no documentation, but I'll work on that. In the meantime, feel free to <a href="#">poke around</a>.</p>
 						</div>
 						<div class="project-specifics">
 							<h3>Jeopardy (Beta)</h3>
-							<img src="images/jeopardy.jpg" alt="">
+							<img src="_images/jeopardy.jpg" alt="">
 							<p>Same as above. <a href="#">Have a look</a>.</p>
 						</div>
 						<div class="project-specifics">
 							<h3>Wheel of Fortune (Beta)</h3>
-							<img src="images/wheel-of-fortune.jpg" alt="">
+							<img src="_images/wheel-of-fortune.jpg" alt="">
 							<p>Same as above. <a href="#">Have a look</a>.</p>
 						</div>
 					</div>
@@ -103,17 +103,17 @@ Footer -->
 					<div>
 						<div class="project-specifics">
 							<h3>It (1990)</h3>
-							<img src="images/bingo.jpg" alt="">
+							<img src="_images/bingo.jpg" alt="">
 							<p>My refined take on the evil force that feeds on the fear of a small town in Maine. <a href="#">You'll float too</a>!</p>
 						</div>
 						<div class="project-specifics">
 							<h3>The Stand (1994)</h3>
-							<img src="images/bingo.jpg" alt="">
+							<img src="_images/bingo.jpg" alt="">
 							<p>I turned a 6-hour, 4-part miniseries into a single-sitting 3-hours-and-21-minute film. <a href="#">Take your stand</a>!</p>
 						</div>
 						<div class="project-specifics">
 							<h3>The Shining (1997)</h3>
-							<img src="images/bingo.jpg" alt="">
+							<img src="_images/bingo.jpg" alt="">
 							<p>I removed over half of the 4:30 runtime of the original mini. And I think this streamlined update makes this miniseries much more compelling. <a href="#">Shine on</a>!</p>
 						</div>
 					</div>
@@ -131,7 +131,7 @@ Footer -->
 					<div>
 						<div class="project-specifics">
 							<h3>N64 Bundlr</h3>
-							<img src="images/bingo.jpg" alt="">
+							<img src="_images/bingo.jpg" alt="">
 							<p>Wanna buy or sell some old N64 games and not sure what they're worth? <a href="#">Find out</a>!</p>
 						</div>
 					</div>
@@ -149,7 +149,7 @@ Footer -->
 					<div>
 						<div class="project-specifics">
 							<h3>My YouTube Channel</h3>
-							<img src="images/bingo.jpg" alt="">
+							<img src="_images/bingo.jpg" alt="">
 							<p>This is just where my content happens to be, you can check out the stuff I've published here. I'll add more items as I have time and inclination. <a href="#">Like, comment, and subscribe</a>!</p>
 						</div>
 					</div>
@@ -179,6 +179,6 @@ Footer -->
 		</div>		
 		<!-- Call Javascript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-		<script src="js/library.min.js"></script>
+		<script src="_js/library.min.js"></script>
 	</body>
 </html>

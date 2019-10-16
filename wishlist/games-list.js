@@ -1,5 +1,6 @@
 window.platforms = [ 'atari' , 'nes' , 'snes' , 'n64' , 'ngc' , 'wii' , 'wiiu' , 'nsw' , 'gen' , 'ps1' , 'ps2' , 'ps3' , 'ps4'];
 
+// Atari Consoles
 window.atari = [
 	{
 		title: 'Donkey Kong',
@@ -75,6 +76,7 @@ window.atari = [
 	}
 ];
 
+// Sega Consoles
 window.gen = [
 	{
 		title: 'The Ren & Stimpy Show: Stimpy\'s Invention',
@@ -90,6 +92,7 @@ window.gen = [
 	}
 ];
 
+// Nintendo Consoles
 window.nes = [
 	{
 		title: 'Contra',
@@ -575,6 +578,7 @@ window.nsw = [
 	}
 ];
 
+// Sony Consoles
 window.ps1 = [
 	{
 		title: 'Descrution Derby (Long Box)',

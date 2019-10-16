@@ -544,48 +544,44 @@
         }
     } window.addEventListener('load',customPopup);
 
-
-//Smooth Scroll
-    //TO DO: Clean up. Get rid of jQuery
-    // Does the actual scrolling
+/*********************************
+* SmoothScroll.js
+**********************************
+	* I got this from the fine people here:
+	* https://perishablepress.com/vanilla-javascript-scroll-anchor/
+	**********************************/
     function smoothScroll(el) {
-        el = $(el);
-        var fixedHeight = 0;
-        var fixedEls = $('.FixedElementStack');
-        if (fixedEls.length > 0) {
-            fixedEls.each(function(){
-                fixedHeight += $(this).outerHeight();
-            });
-        }
-        $('html,body').animate({
-            scrollTop: el.offset().top - fixedHeight - 15 //The "15" is a typical gutter size and provides a little space from the top of the screen
-        }, 1000);
-        fixedHeight = 0;
-        return false;   
-    }
-    // Attaches smooth scroller, as required
-    function queueSmoothScroll() {
-        let hashLinks = document.querySelectorAll('a[href*="#"]:not([href="#"])');
-        if (hashLinks.length) {
-            hashLinks.forEach( hashLink => {
-            	hashLink.addEventListener('click', () => {
-            		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-	                    var target = $(this.hash);
-	                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	                    if (target.length) {
-	                        smoothScroll(target);
-	                    }
-	                }
-            	});
-            }); 
-        }
-        //Auto-scroll when landing on a new page
-        // var hash = window.location.hash.split('#')[1];
-        // var target = $('#'+hash+',[name='+hash+']');
-        // if (target.length > 0) {
-        //     smoothScroll(target[0]);
-        // }
-    } window.addEventListener('scroll',queueSmoothScroll);
+        // Vanilla JavaScript Scroll to Anchor
+		// @ https://perishablepress.com/vanilla-javascript-scroll-anchor/
+			var links = document.getElementsByTagName('a');
+			for (var i = 0; i < links.length; i++) {
+				var link = links[i];
+				if ((link.href && link.href.indexOf('#') != -1) && ((link.pathname == location.pathname) || ('/' + link.pathname == location.pathname)) && (link.search == location.search)) {
+					link.onclick = scrollAnchors;
+				}
+			}
+
+		function scrollAnchors(e, respond = null) {
+			const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+			e.preventDefault();
+			var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
+			const targetAnchor = document.querySelector(targetID);
+			if (!targetAnchor) return;
+			const originalTop = distanceToTop(targetAnchor);
+			window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
+			const checkIfDone = setInterval(function() {
+				const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
+				if (distanceToTop(targetAnchor) === 0 || atBottom) {
+					targetAnchor.tabIndex = '-1';
+					targetAnchor.focus();
+					window.history.pushState('', '', targetID);
+					clearInterval(checkIfDone);
+				}
+			}, 100);
+		}
+    } window.addEventListener('load',smoothScroll);
+
+
 
 
 // REFACTOR THIS STUFF

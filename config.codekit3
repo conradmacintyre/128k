@@ -72,6 +72,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/_images/main-header.jpg": {
+		"ft": 16384,
+		"iS": 4883111,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/_images/main-header.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/_images/wheel-of-fortune.jpg": {
 		"ft": 16384,
 		"iS": 25062,
@@ -1858,6 +1869,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/n64/app-icon.png": {
+		"ft": 32768,
+		"iS": 5830,
+		"oA": 0,
+		"oAP": "/n64/app-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/n64/favicon.png": {
 		"ft": 32768,
 		"iS": 1203,
@@ -1878,17 +1900,6 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"/n64/header-iceblue.jpg": {
-		"ft": 16384,
-		"iS": 87500,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/n64/header-iceblue.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
 		"q": 100
 		},
 	"/n64/index.php": {
@@ -1967,6 +1978,17 @@
 		"oAP": "/n64/n64logo.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"/n64/splash.png": {
+		"ft": 32768,
+		"iS": 56136,
+		"oA": 0,
+		"oAP": "/n64/splash.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/n64/tablesorter.js": {
 		"bF": 4,
@@ -2716,14 +2738,6 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
-		},
-	"/wishlist/images/raw/Bully_Cover.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wishlist/images/raw/Bully_Cover.webp",
-		"oF": 0
 		},
 	"/wishlist/images/rdr.jpg": {
 		"ft": 16384,

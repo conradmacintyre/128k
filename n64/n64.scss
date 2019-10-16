@@ -75,7 +75,14 @@ sup {
 // Header - Universal
 .header {
     @include row($wrap:false);
-    @include full-width;
+    @each $bp, $value in $breakpoints {
+        @include bp( $bp ) {
+            @if ( map-get( $grid-gutters, $bp ) ) {
+                margin-left: map-get( $grid-gutters, $bp ) * -1;
+            }
+        }
+    }
+    max-width: 100vw;
     z-index: 1;
     padding: 0 $grid-gutters-default;
     display: flex;
@@ -153,7 +160,8 @@ sup {
 // Game Table
 section.game-table {
     @include row;
-    margin: 25px 0 150px;
+    padding-top: 25px;
+    padding-bottom: 140px;
     table {
         @include column(sm 12, md 8);
         @include shift(md 2);
