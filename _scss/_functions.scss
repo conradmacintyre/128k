@@ -50,7 +50,7 @@
 	}
 
 //**************************************************************
-// Function_Name
+// Column Calculator
 //**************************************************************
 	// Function_description
 	//
@@ -426,8 +426,29 @@
 		}
 	}
 
+//*******************************************
+// Embedded (iframe) Videos
+//*******************************************
+	@mixin responsive-iframe($type) {
+		position: relative;
+		@if ($type == wide) {
+			padding-bottom: 56.25%; /* 16:9 */
+		}
+		@if ($type == full) {
+			padding-bottom: 75%; /* 4:3 */
+		}
+		height: 0;
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
 //***************************************************************
-// Billboard
+// Billboard & BillboardSlide
 //***************************************************************
 	// Outputs grid-constrained containers, here
 	// defined as "columns" for ease of conception.
@@ -453,7 +474,7 @@
 	// @param {String} $header-color - Any valid CSS value for
 	// 		'color'.
 	//**********************************************************
-	@mixin billboard($valign:middle, $halign:center, $content-width:100 50 33, $height:400 500 600, $text-color:$shade-lite, $header-color:inherit) {
+	@mixin billboard($height:$billboard-height) {
 		@include row;
 		position: relative;
 		overflow: hidden;
@@ -472,98 +493,100 @@
 			height: 0;
 			padding-bottom: $height;
 		}
-		&-slide {
-			background-size: cover;
-			background-position: center;
-			@include column;
-			display: flex;
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			color: $text-color;
-			flex-direction: column;
-			@include gutters($h:true);
-			@if ($valign == top) {
-				justify-content: flex-start;
-			} @else if ($valign == bottom) {
-				justify-content: flex-end;	
-			} @else if ($valign == middle or center or centre) {
-				justify-content: center;
-			} @else {
-				@warn '#{$valign} is an invalid vertical alignment, please use top, middle, or bottom';
-			}
-			@if ($halign == left) {
-				align-items: flex-start;
-				text-align: left;
-			} @else if ($halign == right) {
-				align-items: flex-end;
-				text-align: right;	
-			} @else if ($halign == middle or center or centre) {
-				align-items: center;
-				text-align: center;
-			} @else {
-				@warn '#{$halign} is an invalid horizontal alignment, please use left, center, or right';
-			}
-			&.top {
-				justify-content: flex-start; 
-			}
-			&.middle {
-				justify-content: center;
-			}
-			&.bottom {
-				justify-content: flex-end;
-			}
-			&.left {
-				align-items: flex-start;
-				text-align: left;
-			}
-			&.center {
-				align-items: flex-end;
-				text-align: right;
-			}
-			&.right {
-				align-items: flex-end;
-				text-align: right;
-			}
-			transition: transform 0.6s linear;
-			transform: translateX(-100%);
-			&.active {
-				transform: translateX(0%);
-			}
-			&.active ~ & {
-				transform: translateX(100%);
-			}
-			&:only-child {
-				transform: translateX(0%);
-			}
-			> * {
-				@if (type_of($content-width) == list) {
-					@each $bp, $value in $breakpoints {
-						@include bp($bp) {
-							$relative-width: nth( $content-width, index( ($breakpoints), ($bp $value) ) );
-							@if (type_of($relative-width) == number) {
-								@if ($relative-width <= $grid-column-count) {
-									max-width: col-calc($relative-width);
-								} @else if ( unit( $relative-width ) == '%' ) {
-									max-width: $relative-width;
-								} @else {
-									max-width: percentage($relative-width / 100);
-								}
-							} @else {
+	}
+	@mixin slide(
+		$valign:$billboard-valign, 
+		$halign:$billboard-halign, 
+		$content-width:$billboard-content-width, 
+		$text-color:$billboard-text-color,
+		$bg-color:$billboard-background-color
+	) {
+		background-size: cover;
+		background-position: center;
+		@include column;
+		display: flex;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		color: $text-color;
+		flex-direction: column;
+		@include gutters($h:true);
+		@if ($valign == top) {
+			justify-content: flex-start;
+		} @else if ($valign == bottom) {
+			justify-content: flex-end;	
+		} @else if ($valign == middle or center or centre) {
+			justify-content: center;
+		} @else {
+			@warn '#{$valign} is an invalid vertical alignment, please use top, middle, or bottom';
+		}
+		@if ($halign == left) {
+			align-items: flex-start;
+			text-align: left;
+		} @else if ($halign == right) {
+			align-items: flex-end;
+			text-align: right;	
+		} @else if ($halign == middle or center or centre) {
+			align-items: center;
+			text-align: center;
+		} @else {
+			@warn '#{$halign} is an invalid horizontal alignment, please use left, center, or right';
+		}
+		transition: transform 0.6s linear;
+		transform: translateX(-100%);
+		&.active {
+			transform: translateX(0%);
+		}
+		&.active ~ & {
+			transform: translateX(100%);
+		}
+		&:only-child {
+			transform: translateX(0%);
+		}
+		> * {
+			position: relative;
+			z-index: 2;
+			margin-bottom: $p-margin-bottom;
+			// Set max-width
+			@if (type_of($content-width) == list) {
+				@each $bp, $value in $breakpoints {
+					@include bp($bp) {
+						$relative-width: nth( $content-width, index( ($breakpoints), ($bp $value) ) );
+						@if (type_of($relative-width) == number) {
+							@if ($relative-width <= $grid-column-count) {
+								max-width: col-calc($relative-width);
+							} @else if ( unit( $relative-width ) == '%' ) {
 								max-width: $relative-width;
+							} @else {
+								max-width: percentage($relative-width / 100);
 							}
+						} @else {
+							max-width: $relative-width;
 						}
 					}
-				} @else {
-					max-width: $content-width;
 				}
+			} @else {
+				max-width: $content-width;
 			}
-			h1, h2, h3, h4, h5, h6 {
-				color: $header-color;
-				margin-bottom: 0;
-			}
+		}
+		// Headings
+		h1, h2, h3, h4, h5, h6 {
+			color: inherit;
+		}
+		// Background Layer
+		&:before {
+			content: '';
+			background-color: $bg-color;
+			position: absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+		}
+		@media (hover:hover) {
+			
 		}
 	}
 
