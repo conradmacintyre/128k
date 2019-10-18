@@ -8,8 +8,6 @@
 	//**********************************************************
 	@function funcName($input) {}
 
-	
-
 //**************************************************************
 // Explode String
 //**************************************************************
@@ -578,7 +576,7 @@
 		// Background Layer
 		&:before {
 			content: '';
-			background-color: $bg-color;
+			background: $bg-color;
 			position: absolute;
 			top:0;
 			left:0;

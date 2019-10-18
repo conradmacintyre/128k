@@ -303,7 +303,10 @@
 			@include gutters($type: margin, $h:true, $v:false)
 			// @include full-width;
 			&-billboard {
-				@include billboard($content-width: 80 60 50);
+				@include billboard;
+				&-slide {
+					@include slide($content-width: 80% 60% 50%);
+				}
 				p {
 					padding: 10px;
 					background-color: rgba(0,0,0,0.75);

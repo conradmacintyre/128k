@@ -31,16 +31,18 @@ Footer -->
 				<a href="#contact-me" class="button">Reach Out</a>
 			</div>
 		</div>
-		<section class="about-me" id="about-me">
-			<div class="text-section">
-				<h2 class="about-me_title">About Me</h2>
-				<p>As I attempt to write up an "about me" that is even remotely usful or interesting, I find myself struggling. Is this a personal site? An online resume? Man, who knows. Hopefully by the time you're done reading this, you'll have a better idea about who I am.</p>
-				<p>I have political opinions. I don't feel compelled to share them publically.</p> 
-				<p>I love my family. All my choices are filtered through the lens of what I feel is best for my children. They are easily the greatest thing I have ever helped to create. But let's by honest; my wife did all the hard parts.</p>
-				<p>I like TV more than movies. But I am a sucker for franchises and LOVE reboots. I adored Rocky 6, am looking forward to Bill & Ted 3 more than is reasonable, and would go opening night to see Gramlins 3.</p>
-				<p>Best dramatic show of the 60s is The Fugitive, 70s is The Rockford Files, 80s is MacGyver (maybe Quantum Leap), 90s is Law & Order (maybe X-Files), 00s is 24 (maybe LOST). Has there been a good show this decade?</p>
-				<p>I used to be a pastor, now I'm a web developer, perhaps in the future I'll be something different again. My vocation doesn't define who I am. It's just something I do. And, honestly, my work falls well below being a dad and teaching my sons how to be good men in terms of definition and fulfillment.</p>
-				<p>If you want to reach out or do something together, I'm always excited to work on something great. <a href="#contact-me">Let's do it!</a></p>
+		<section class="about-me" id="about-me" data-bgimg="_images/conrad.jpg">
+			<div class="about-me-inner">
+				<div class="text-section">
+					<h2 class="about-me_title">About Me</h2>
+					<p>As I attempt to write up an "about me" that is even remotely usful or interesting, I find myself struggling. Is this a personal site? An online resume? Man, who knows. Hopefully by the time you're done reading this, you'll have a better idea about who I am.</p>
+					<p>I have political opinions. I don't feel compelled to share them publically.</p> 
+					<p>I love my family. All my choices are filtered through the lens of what I feel is best for my children. They are easily the greatest thing I have ever helped to create. But let's by honest; my wife did all the hard parts.</p>
+					<p>I like TV more than movies. But I am a sucker for franchises and love reboots that come in the form of sequels. I adored Rocky 6, am looking forward to Bill & Ted 3 more than is reasonable, and would go opening night to see Gremlins 3.</p>
+					<p>Best dramatic show of the 60s is The Fugitive, 70s is The Rockford Files, 80s is MacGyver (maybe Quantum Leap), 90s is Law & Order (maybe X-Files), 00s is 24 (maybe LOST). Has there been a good show this decade?</p>
+					<p>I used to be a pastor, now I'm a web developer, perhaps in the future I'll be something different again. My vocation doesn't define who I am. It's just something I do. And, honestly, my work falls well below being a dad and teaching my sons how to be good men in terms of definition and fulfillment.</p>
+					<p>If you want to reach out or do something together, I'm always excited to work on something great. <a href="#contact-me">Let's do it!</a></p>
+				</div>
 			</div>
 		</section>
 		<section class="projects" id="projects">

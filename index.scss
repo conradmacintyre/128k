@@ -87,28 +87,76 @@
 		@include billboard;
 		@include full-width;
 		&-slide {
-			@include slide;
+			@include slide($bg-color:rgba(0,0,0,0.75));
+			@media (hover:hover) {
+				h1 {
+					font-size: calc(#{$h1-font-size} * 2);
+					transform: translateY(25%);
+					transition: all 0.5s ease;
+				}
+				p, a{
+					transform: scale(0);
+					transition: transform 0.5s ease;
+				}
+				&:before {
+					opacity: 0.25;
+					transition: opacity 0.5s ease;
+				}
+				&:hover {
+					h1 {
+						font-size: $h1-font-size;
+						transform: translateY(0);
+					}
+					p, a{
+						transform: scale(1);
+					}
+					&:before {
+						opacity: 1;
+					}
+				}
+			}
 		}
 	}
 
 // About
 	.about-me {
+		@include full-width;
+		background-size: cover;
+		background-position: right center;
+		overflow: hidden;
+		&-inner {
+			@include column;
+			@include row;
+		}
 		.text-section {
+			@include spacer($type:padding);
 			@include column(sm 12, md 10, lg 8);
-			@include shift(md 1, lg 2);
+			position: relative;
+			z-index: 2;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -20%;
+				right: -20%;
+				bottom: 0;
+				background: linear-gradient( to right, rgba($shade-lite,0) 0%, rgba($shade-lite,0.85) 15%, rgba($shade-lite,0.85) 85%, rgba($shade-lite,0) 100% );
+				z-index: -1;
+			}
 		}
 	}
 
 // Projects
 	.projects {
+		@include full-width;
 		.text-section {
 			@include column(sm 12, md 10, lg 8);
 			@include shift(md 1, lg 2);
 		}
 		.project {
 			@include column(sm 12, md 6);
-			@include gutters($type: margin, $h:true, $v:false)
-			// @include full-width;
+			@include gutters($type: margin, $h:false, $v:false);
+			@include full-width;
 			&-billboard {
 				@include billboard;
 				&-slide {
@@ -121,7 +169,7 @@
 			}
 			&-info {
 				// @include full-width;
-				@include gutters($h:true);
+				@include gutters;
 				background: $shade-dark;
 				color: $shade-lite;
 				height: 0;
