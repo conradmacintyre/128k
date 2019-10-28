@@ -32,11 +32,11 @@ function outputStatus( _game ) {
 	});
 
 	if ( status == true ) {
-		return `<div class="price own">OWN</div>`;
+		return `<div class="price own">$${_game.price}</div>`;
 	} else if ( status == false) {
 		return `<div class="price">$${_game.price}</div>`;
 	} else {
-		return `<div class="price incomplete">INCOMPLETE</div>`;
+		return `<div class="price incomplete">$${_game.price}</div>`;
 	}
 }
 

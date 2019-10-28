@@ -115,6 +115,9 @@
 	.billboard {
 		@include billboard;
 		@include full-width;
+		&-slide {
+			@include slide($bg-color:rgba($shade-dark,0.5));
+		}
 	}
 
 // Wishlist
@@ -253,9 +256,9 @@
 		    &.incomplete {
 		    	background: $color-warning;
 		    	// color: $shade-lite;
-		    	font-size: 80%;
-			    line-height: 191%;
-			    top: 8px;
+		    	// font-size: 80%;
+			    // line-height: 191%;
+			    // top: 8px;
 		    }
 		}
 		.checklist {

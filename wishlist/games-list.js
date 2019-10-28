@@ -36,7 +36,7 @@ window.atari = [
 		checklistCart: true,
 		checklistBox: true,
 		checklistManual: false,
-		price: true
+		price: 20
 	},
 	{
 		title: 'Mario Bros.',
@@ -106,7 +106,7 @@ window.nes = [
 		checklistManual: false,
 		checklistFoam: false,
 		checklistSleeve: false,
-		price: 101
+		price: 98
 	},
 	{
 		title: 'Darkwing Duck',
@@ -121,7 +121,7 @@ window.nes = [
 		checklistManual: false,
 		checklistFoam: false,
 		checklistSleeve: true,
-		price: 146
+		price: 170
 	},
 	{
 		title: 'Duck Tales',
@@ -136,7 +136,7 @@ window.nes = [
 		checklistManual: false,
 		checklistFoam: false,
 		checklistSleeve: false,
-		price: 80
+		price: 70
 	},
 	{
 		title: 'Super Mario Bros/Duck Hunt',
@@ -181,7 +181,7 @@ window.nes = [
 		checklistManual: true,
 		checklistFoam: true,
 		checklistSleeve: true,
-		price: true
+		price: 42
 	}
 ];
 
@@ -197,7 +197,7 @@ window.snes = [
 		checklistBox: true,
 		checklistManual: true,
 		checklistSleeve: true,
-		price: true
+		price: 47
 	},
 	{
 		title: 'Killer Instinct',
@@ -212,7 +212,7 @@ window.snes = [
 		checklistManual: true,
 		checklistPoster: true,
 		checklistSleeve: true,
-		price: 46
+		price: 50
 	},
 	{
 		title: 'Mortal Kombat 3',
@@ -227,7 +227,7 @@ window.snes = [
 		checklistManual: true,
 		checklistFoam: null,
 		checklistSleeve: true,
-		price: true
+		price: 40
 	},
 	{
 		title: 'SimCity',
@@ -242,7 +242,7 @@ window.snes = [
 		checklistManual: true,
 		checklistFoam: null,
 		checklistSleeve: true,
-		price: true
+		price: 26
 	},
 	{
 		title: 'Super Mario Kart',
@@ -257,7 +257,7 @@ window.snes = [
 		checklistManual: false,
 		checklistFoam: null,
 		checklistSleeve: false,
-		price: 55
+		price: 63
 	},
 	{
 		title: 'Super Mario World',
@@ -289,7 +289,7 @@ window.n64 = [
 		checklistManual: false,
 		checklistFoam: null,
 		checklistSleeve: null,
-		price: 80
+		price: 83
 	},
 	{
 		title: 'Mario Kart 64',
@@ -304,7 +304,7 @@ window.n64 = [
 		checklistRegCard: true,
 		checklistSleeve: true,
 		checklistPoster: true,
-		price: 76
+		price: 91
 	},
 	{
 		title: 'Mario Tennis',
@@ -318,7 +318,7 @@ window.n64 = [
 		checklistManual: false,
 		checklistFoam: null,
 		checklistSleeve: null,
-		price: 40
+		price: 43
 	},
 	{
 		title: 'WWF No Mercy',
@@ -332,7 +332,7 @@ window.n64 = [
 		checklistManual: true,
 		checklistFoam: null,
 		checklistSleeve: null,
-		price: true
+		price: 38
 	},
 	{
 		title: 'WWF Wrestlemania 2000',
@@ -361,7 +361,7 @@ window.ngc = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 56
 	},
 	{
 		title: 'Mario Kart: Double Dash',
@@ -373,7 +373,7 @@ window.ngc = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 47
 	},
 	{
 		title: 'Resident Evil',
@@ -385,7 +385,7 @@ window.ngc = [
 		checklistDisc: false,
 		checklistBox: false,
 		checklistManual: false,
-		price: 17
+		price: 15
 	},
 	{
 		title: 'Resident Evil 0',
@@ -409,7 +409,7 @@ window.ngc = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: 15
+		price: 16
 	},
 	{
 		title: 'WWE Day of Reckoning',
@@ -421,7 +421,7 @@ window.ngc = [
 		checklistDisc: false,
 		checklistBox: false,
 		checklistManual: false,
-		price: 14
+		price: 15
 	},
 	{
 		title: 'WWE Day of Reckoning 2',
@@ -433,7 +433,7 @@ window.ngc = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 19
 	}
 ];
 
@@ -448,7 +448,7 @@ window.wii = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 15
 	},
 	{
 		title: 'New Super Mario Bros. Wii',
@@ -460,7 +460,7 @@ window.wii = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 17
 	},
 	{
 		title: 'Super Mario Galaxy',
@@ -472,7 +472,7 @@ window.wii = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 15
 	},
 	{
 		title: 'Super Mario Galaxy 2',
@@ -484,7 +484,7 @@ window.wii = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 19
 	}
 ];
 
@@ -511,7 +511,7 @@ window.wiiu = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 20
 	},
 	{
 		title: 'Mario Party 10',
@@ -523,7 +523,7 @@ window.wiiu = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 26
 	},
 	{
 		title: 'Mario Tennis Ultra Smash',
@@ -535,7 +535,7 @@ window.wiiu = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 15
 	},
 	{
 		title: 'Super Mario Maker',
@@ -547,7 +547,7 @@ window.wiiu = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 19
 	}
 ];
 
@@ -562,7 +562,7 @@ window.nsw = [
 		checklistDisc: false,
 		checklistBox: false,
 		checklistManual: false,
-		price: 57
+		price: 53
 	},
 	{
 		title: 'Super Mario Odyssey',
@@ -574,7 +574,7 @@ window.nsw = [
 		checklistDisc: false,
 		checklistBox: false,
 		checklistManual: false,
-		price: 49
+		price: 52
 	}
 ];
 
@@ -603,7 +603,7 @@ window.ps1 = [
 		checklistDisc: false,
 		checklistBox: false,
 		checklistManual: false,
-		price: 12
+		price: 13
 	},
 	{
 		title: 'Dino Crisis',
@@ -615,7 +615,7 @@ window.ps1 = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 33
 	},
 	{
 		title: 'Driver',
@@ -627,7 +627,7 @@ window.ps1 = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 10
 	},
 	{
 		title: 'Driver 2',
@@ -639,7 +639,7 @@ window.ps1 = [
 		checklistDisc: false,
 		checklistBox: false,
 		checklistManual: false,
-		price: 11
+		price: 10
 	},
 	{
 		title: 'Resident Evil (Long Box)',
@@ -652,7 +652,7 @@ window.ps1 = [
 		checklistBox: false,
 		checklistFoam: false,
 		checklistManual: false,
-		price: 71
+		price: 67
 	},
 	{
 		title: 'Resident Evil Director\'s Cut (2-Disc)',
@@ -676,7 +676,7 @@ window.ps1 = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: false,
-		price: 28
+		price: 31
 	},
 	{
 		title: 'Resident Evil 3: Nemesis',
@@ -688,7 +688,7 @@ window.ps1 = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 31
 	},
 	{
 		title: 'Twisted Metal (Long Box)',
@@ -701,7 +701,7 @@ window.ps1 = [
 		checklistBox: true,
 		checklistFoam: true,
 		checklistManual: true,
-		price: true
+		price: 33
 	},
 	{
 		title: 'Twisted Metal 2',
@@ -713,7 +713,7 @@ window.ps1 = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 22
 	},
 	{
 		title: 'Twisted Metal 3',
@@ -725,7 +725,7 @@ window.ps1 = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 14
 	},
 	{
 		title: 'WWF Attitude',
@@ -749,7 +749,7 @@ window.ps1 = [
 		checklistDisc: false,
 		checklistBox: false,
 		checklistManual: false,
-		price: 16
+		price: 13
 	},
 	{
 		title: 'WWF Smackdown! 2: Know Your Role',
@@ -777,7 +777,7 @@ window.ps2 = [
 		checklistBox: true,
 		checklistManual: true,
 		checklistMap: false,
-		price: true
+		price: 13
 	},
 	{
 		title: 'Hitman: Blood Moneny',
@@ -789,7 +789,7 @@ window.ps2 = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 7
 	},
 	{
 		title: 'The Getaway',
@@ -839,7 +839,7 @@ window.ps2 = [
 		checklistBox: true,
 		checklistManual: true,
 		checklistMap: true,
-		price: true
+		price: 7
 	},
 	{
 		title: 'Grand Theft Auto: San Andreas',
@@ -852,7 +852,7 @@ window.ps2 = [
 		checklistBox: true,
 		checklistManual: true,
 		checklistMap: true,
-		price: true
+		price: 10
 	},
 	{
 		title: 'Grand Theft Auto: Liberty City Stories',
@@ -878,7 +878,7 @@ window.ps2 = [
 		checklistBox: false,
 		checklistManual: false,
 		checklistMap: false,
-		price: 27
+		price: 20
 	},
 	{
 		title: 'Midnight Club 3: Dub Edition (Remix)',
@@ -914,7 +914,7 @@ window.ps2 = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 10
 	},
 	{
 		title: 'Smackdown: Here Comes The Pain',
@@ -953,7 +953,7 @@ window.ps3 = [
 		checklistDisc: false,
 		checklistBox: false,
 		checklistManual: false,
-		price: 15
+		price: 25
 	},
 	{
 		title: 'The Godfather: Don\'s Edition',
@@ -965,7 +965,7 @@ window.ps3 = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 36
 	},
 	{
 		title: 'Grand Theft Auto: San Andreas',
@@ -978,7 +978,7 @@ window.ps3 = [
 		checklistBox: true,
 		checklistManual: true,
 		checklistMap: true,
-		price: true
+		price: 14
 	},
 	{
 		title: 'Grand Theft Auto IV',
@@ -991,7 +991,7 @@ window.ps3 = [
 		checklistBox: false,
 		checklistManual: false,
 		checklistMap: false,
-		price: 8
+		price: 7
 	},
 	{
 		title: 'Grand Theft Auto: Episodes From Liberty City',
@@ -1004,7 +1004,7 @@ window.ps3 = [
 		checklistBox: true,
 		checklistManual: true,
 		checklistMap: true,
-		price: true
+		price: 9
 	},
 	{
 		title: 'Red Dead Redemption',
@@ -1017,7 +1017,7 @@ window.ps3 = [
 		checklistBox: true,
 		checklistManual: true,
 		checklistMap: true,
-		price: true
+		price: 11
 	},
 	{
 		title: 'WWE Smackdown vs Raw 2008',
@@ -1029,7 +1029,7 @@ window.ps3 = [
 		checklistDisc: true,
 		checklistBox: true,
 		checklistManual: true,
-		price: true
+		price: 14
 	}
 ]
 
@@ -1043,7 +1043,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: true,
 		checklistBox: true,
-		price: true
+		price: 18
 	},
 	{
 		title: 'God of War',
@@ -1054,7 +1054,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: false,
 		checklistBox: false,
-		price: 24
+		price: 21
 	},
 	{
 		title: 'Hitman',
@@ -1065,7 +1065,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: true,
 		checklistBox: true,
-		price: true
+		price: 18
 	},
 	{
 		title: 'Hitman 2',
@@ -1076,7 +1076,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: true,
 		checklistBox: true,
-		price: 32
+		price: 26
 	},
 	{
 		title: 'Horizon: Zero Dawn (Complete Edition)',
@@ -1087,7 +1087,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: true,
 		checklistBox: true,
-		price: true
+		price: 15
 	},
 	{
 		title: 'The Last of Us',
@@ -1098,7 +1098,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: true,
 		checklistBox: true,
-		price: true
+		price: 13
 	},
 	{
 		title: 'The Last of Us: Part II',
@@ -1120,7 +1120,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: true,
 		checklistBox: true,
-		price: true
+		price: 22
 	},
 	{
 		title: 'Resident Evil 2',
@@ -1131,7 +1131,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: true,
 		checklistBox: true,
-		price: true
+		price: 35
 	},
 	{
 		title: 'Resident Evil 4',
@@ -1142,7 +1142,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: false,
 		checklistBox: false,
-		price: 10
+		price: 17
 	},
 	{
 		title: 'Spider-Man',
@@ -1164,7 +1164,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: true,
 		checklistBox: true,
-		price: true
+		price: 13
 	},
 	{
 		title: 'Rise of the Tomb Raider',
@@ -1175,7 +1175,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: true,
 		checklistBox: true,
-		price: true
+		price: 15
 	},
 	{
 		title: 'Shadow of the Tomb Raider',
@@ -1186,7 +1186,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: true,
 		checklistBox: true,
-		price: true
+		price: 20
 	},
 	{
 		title: 'Uncharted: The Nathan Drake Collection',
@@ -1208,7 +1208,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: true,
 		checklistBox: true,
-		price: true
+		price: 11
 	},
 	{
 		title: 'Uncharted: The Lost Legacy',
@@ -1219,7 +1219,7 @@ window.ps4 = [
 		ebayLink: 'ebay.ca',
 		checklistDisc: true,
 		checklistBox: true,
-		price: true
+		price: 17
 	}
 ]
 
