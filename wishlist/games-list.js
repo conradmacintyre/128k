@@ -587,10 +587,10 @@ window.ps1 = [
 		releaseYear: 1995,
 		imageLink: 'images/dd-lb.jpg',
 		ebayLink: 'ebay.ca',
-		checklistDisc: false,
-		checklistBox: false,
-		checklistFoam: false,
-		checklistManual: false,
+		checklistDisc: true,
+		checklistBox: true,
+		checklistFoam: true,
+		checklistManual: true,
 		price: 20
 	},
 	{
@@ -600,9 +600,9 @@ window.ps1 = [
 		releaseYear: 1996,
 		imageLink: 'images/dd2.jpg',
 		ebayLink: 'ebay.ca',
-		checklistDisc: false,
-		checklistBox: false,
-		checklistManual: false,
+		checklistDisc: true,
+		checklistBox: true,
+		checklistManual: true,
 		price: 13
 	},
 	{

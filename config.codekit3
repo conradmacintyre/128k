@@ -7,7 +7,7 @@
 		"uuidString": "59A53396-497F-465C-8AD4-206C73527568"
 		}
 	],
-"creatorBuild": "31934",
+"creatorBuild": "31491",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -15,6 +15,54 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/.gitignore",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Info.plist": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Info.plist",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/MacOS/droplet": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/MacOS/droplet",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/PkgInfo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/PkgInfo",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Resources/droplet.icns": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Resources/droplet.icns",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Resources/droplet.rsrc": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Resources/droplet.rsrc",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Resources/Scripts/main.scpt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Resources/Scripts/main.scpt",
 		"oF": 0
 		},
 	"/_images/bingo.jpg": {
@@ -3828,7 +3876,6 @@
 			"flagValue": -1
 			}
 		},
-	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 8193,
@@ -3930,10 +3977,6 @@
 			"optionString": "'all'"
 			},
 		"default-case": {
-			"active": 0,
-			"optionString": ""
-			},
-		"default-param-last": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -4283,10 +4326,6 @@
 			},
 		"no-implied-eval": {
 			"active": 0,
-			"optionString": ""
-			},
-		"no-import-assign": {
-			"active": 1,
 			"optionString": ""
 			},
 		"no-inline-comments": {
@@ -4712,10 +4751,6 @@
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
-			},
-		"prefer-regex-literals": {
-			"active": 0,
-			"optionString": ""
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -5325,6 +5360,7 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
+		"ieCompatibility": 0,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -5464,9 +5500,6 @@
 	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"rollupExternals": "",
-	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
-	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
