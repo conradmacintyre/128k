@@ -1,0 +1,221 @@
+// RESET
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// Funcs 
+/// Remove the unit of a length
+@function strip-unit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+    @return $number;
+}
+// Responsive Text
+@mixin text ($txmn:16, $txmx:26, $vpmn:320, $vpmx:1600) {
+    $txmn : strip-unit($txmn);
+    $txmx : strip-unit($txmx);
+    $vpmn : strip-unit($vpmn);
+    $vpmx : strip-unit($vpmx);
+    font-size: calc(#{$txmn}px + (#{$txmx} - #{$txmn}) * ((100vw - #{$vpmn}px) / (#{$vpmx} - #{$vpmn})));
+}
+
+// Real SASS
+
+$jays-blue: #012c64;
+$jays-lite: #1e76c3;
+$jays-red: #ed462f;
+$jays-white: #fff;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    padding: 5px;
+    background-color: $jays-lite;
+    font-family: San Francisco, Calibri, Helvetica, Verdana, sans-serif;
+    @include text(11,25);
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    width: 100vw;
+    height: 100vh;
+}
+.bingo-card {
+    border: 2px solid $jays-white;
+    margin: 0px;
+    padding: 1px;
+    background-color: $jays-lite;
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.bingo-square {
+    border: 2px solid $jays-lite;
+    background: $jays-white;
+    width: 20%;
+    height: 20%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $jays-blue;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        background-color: $jays-lite;
+        color: $jays-white;
+    }
+    &.checked {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            background-image: linear-gradient(45deg, transparent 40%, $jays-red 40%, $jays-red 60%, transparent 40%),
+            linear-gradient(-45deg, transparent 40%, $jays-red 40%, $jays-red 60%, transparent 40%);
+        }
+    }
+}
+
+#bingo,
+#blackout {
+    @include text(50,200);
+    color: $jays-red;
+    background-color: $jays-white;
+    border: 2px solid $jays-lite;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    &.animate {
+        animation: pop 3s 1;
+    }
+}
+  
+@keyframes pop {
+    0% {
+        transform: translate(-50%,-50%) scale(0);
+    }
+    10% {
+        transform: translate(-50%,-50%) scale(1);
+    }
+    20% {
+        transform: translate(-50%,-50%) scale(.9); 
+    }
+    30% {
+        transform: translate(-50%,-50%) scale(1); 
+    }
+    40% {
+        transform: translate(-50%,-50%) scale(.9); 
+    }
+    50% {
+        transform: translate(-50%,-50%) scale(1);
+    }
+    60% {
+        transform: translate(-50%,-50%) scale(.9); 
+    }
+    70% {
+        transform: translate(-50%,-50%) scale(1);
+    }
+    80% {
+        transform: translate(-50%,-50%) scale(.9); 
+    }
+    90% {
+        transform: translate(-50%,-50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%,-50%) scale(0);
+    }
+}
+
+@media all and (orientation:portrait) {
+    body {
+        flex-direction: column;
+    }
+    .mobile-header {
+        flex-grow: 1;
+        background-image: url(header_mobile.png);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .right-area {
+        display: none;
+    }
+    .bingo-card {
+        width: calc(100vw - 10px);
+        height: calc(100vw - 10px);
+    }
+}
+@media all and (orientation:landscape) {
+    body {
+    }
+    .left-area {
+        flex-grow: 1;
+        background-image: url(desktop_left.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .right-area {
+        flex-grow: 1;
+        background-image: url(desktop_right.png);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .bingo-card {
+        width: calc(100vh - 10px);
+        height: calc(100vh - 10px);
+    }
+}
