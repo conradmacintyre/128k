@@ -30,7 +30,17 @@ const slots = [
     'Dave says nonsense word(s)',
     'Dave mentions hate of Boom-Boom',
     'Clutch Daddy',
-    'DGR Guarantee'
+    'DGR Guarantee',
+    'Bad Jackson',
+    'Excited skewer',
+    'One more shot at the title',
+    'Dang-flabbit!',
+    'They can\'t take our first clear',
+    'Momma\'s nectar',
+    'Cheese Hat',
+    'Gouda',
+    'Hot garbage',
+    'Dave laughs at this own demise'
 ];
 const winCombos = [
     [1,2,3,4,5],
