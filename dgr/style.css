@@ -274,4 +274,44 @@ body {
     height: calc(100vh - 10px);
   }
 }
+
+h3 {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+h3, p {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  margin-left: 20px;
+}
+
+.popup-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.popup-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: left;
+  padding: 15px;
+  max-height: 80%;
+  max-width: 80%;
+  overflow: scroll;
+}
 /*# sourceMappingURL=style.css.map */
