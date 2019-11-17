@@ -4,7 +4,7 @@ const slots = [
     'It\'s a beautiful city',
     'Progress City',
     'Gaining the lore',
-    'I\'m learning!',
+    'Learning!',
     'Why do I talk?',
     'When I speak, I die',
     'Gird up!',
@@ -18,7 +18,7 @@ const slots = [
     'Dave lowers the green screen',
     'Dave mentions another streamer',
     'Holy rip!',
-    'Mario embarks on a New Jersey',
+    'New Jersey / Trolled',
     'He who waits, dies',
     'It\'s not a troll level unless...',
     'Dave breaks out in song',
@@ -34,14 +34,14 @@ const slots = [
     'Excited skewer',
     'One more shot at the title',
     'Dang-flabbit!',
-    'They can\'t take our first clear',
+    '...take our first clear',
     'Momma\'s nectar',
     'Dave wears a cheese hat',
     'Gouda / Cheddar / Cheese',
-    'Hot garbage',
     'Dave laughs at this own demise',
     '...look like an idiot...',
-    'Ya boy'
+    'Ya boy / Makin\' plays',
+    'Gamer / gaming'
 ];
 const winCombos = [
     [1,2,3,4,5],

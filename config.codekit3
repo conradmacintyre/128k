@@ -759,6 +759,17 @@
 		"oAP": "/dgr/index.htm",
 		"oF": 0
 		},
+	"/dgr/qblock.png": {
+		"ft": 32768,
+		"iS": 3307,
+		"oA": 0,
+		"oAP": "/dgr/qblock.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/dgr/scripts.js": {
 		"bF": 4,
 		"ft": 64,
