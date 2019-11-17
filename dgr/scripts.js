@@ -37,7 +37,7 @@ const slots = [
     'They can\'t take our first clear',
     'Momma\'s nectar',
     'Dave wears a cheese hat',
-    'Gouda',
+    'Gouda / Cheddar / Cheese',
     'Hot garbage',
     'Dave laughs at this own demise',
     '...look like an idiot...',

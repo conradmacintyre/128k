@@ -56,61 +56,86 @@ table {
     @return $number;
 }
 // Responsive Text
-@mixin text ($txmn:16, $txmx:26, $vpmn:320, $vpmx:1600) {
+@function text ($txmn:16, $txmx:26, $vpmn:320, $vpmx:1600) {
     $txmn : strip-unit($txmn);
     $txmx : strip-unit($txmx);
     $vpmn : strip-unit($vpmn);
     $vpmx : strip-unit($vpmx);
-    font-size: calc(#{$txmn}px + (#{$txmx} - #{$txmn}) * ((100vw - #{$vpmn}px) / (#{$vpmx} - #{$vpmn})));
+    @return calc(#{$txmn}px + (#{$txmx} - #{$txmn}) * ((100vw - #{$vpmn}px) / (#{$vpmx} - #{$vpmn})));
 }
 
 // Real SASS
 
-$jays-blue: #012c64;
-$jays-lite: #1e76c3;
-$jays-red: #ed462f;
-$jays-white: #fff;
+$color-main: #58b9ff;
+$color-alt: #4278ff;
+$color-red: #ed462f;
+$color-white: #fff;
+$color-black: #303030;
 
 * {
     box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: text(15,25);
+}
+h1 {
+    font-size: 200%;
+}
+h2 {
+    font-size: 150%;
+}
+p {
+    margin-bottom: text(10,15);
+}
+ul {
+    list-style: disc;
+}
+li {
+    margin-left: 20px;
 }
 
 body {
     text-align: center;
     padding: 5px;
-    background-color: $jays-lite;
+    background-color: $color-black;
     font-family: San Francisco, Calibri, Helvetica, Verdana, sans-serif;
-    @include text(11,25);
+    font-size: text(11,25);
+    line-height: 1.2;
     display: flex;
     align-items: stretch;
     justify-content: stretch;
     width: 100vw;
     height: 100vh;
 }
+.hide {
+    display: none;
+}
 .bingo-card {
-    border: 2px solid $jays-white;
+    border: 2px solid $color-alt;
     margin: 0px;
     padding: 1px;
-    background-color: $jays-lite;
+    background-color: $color-alt;
     display: inline-flex;
     flex-wrap: wrap;
     position: relative;
 }
 .bingo-square {
-    border: 2px solid $jays-lite;
-    background: $jays-white;
+    border: 2px solid $color-alt;
+    background: $color-white;
     width: 20%;
     height: 20%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: $jays-blue;
+    color: $color-black;
     padding: 5px;
     cursor: pointer;
     position: relative;
+    line-height: 1;
     &:hover {
-        background-color: $jays-lite;
-        color: $jays-white;
+        background-color: $color-main;
+        color: $color-white;
     }
     &.checked {
         &:after {
@@ -120,18 +145,18 @@ body {
             left: 10px;
             right: 10px;
             bottom: 10px;
-            background-image: linear-gradient(45deg, transparent 40%, $jays-red 40%, $jays-red 60%, transparent 40%),
-            linear-gradient(-45deg, transparent 40%, $jays-red 40%, $jays-red 60%, transparent 40%);
+            background-image: linear-gradient(45deg, transparent 40%, $color-red 40%, $color-red 60%, transparent 40%),
+            linear-gradient(-45deg, transparent 40%, $color-red 40%, $color-red 60%, transparent 40%);
         }
     }
 }
 
 #bingo,
 #blackout {
-    @include text(50,200);
-    color: $jays-red;
-    background-color: $jays-white;
-    border: 2px solid $jays-lite;
+    font-size: text(50,200);
+    color: $color-red;
+    background-color: $color-white;
+    border: 2px solid $color-alt;
     padding: 10px;
     position: absolute;
     top: 50%;
@@ -220,20 +245,12 @@ body {
     }
 }
 
+// Updates
+.menu-popup:not(.popup-open) {
+    display: none;
+}
+
 // Popups
-h3 {
-    font-size: 150%;
-    font-weight: bold;
-}
-h3, p {
-    margin-bottom: 10px;
-}
-ul {
-    list-style: disc;
-}
-li {
-    margin-left: 20px;
-}
 .popup-bg {
     position: absolute;
     top: 0;
@@ -241,16 +258,42 @@ li {
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,0.75);
+    z-index: 1;
 }
 .popup-container {
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
-    background: $jays-white;
-    transform: translate(-50%,-50%);
+    background: $color-white;
+    transform: translateX(-50%);
     text-align: left;
     padding: 15px;
     max-height: 80%;
+    width: 80%;
     max-width: 80%;
+    z-index: 2;
     overflow: scroll;
+    border-radius: 5px;
 }
+.popup-close {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    border: 5px solid $color-main;
+    background-image: linear-gradient(to bottom, $color-alt 20%, $color-black 20%, $color-black 80%, $color-alt 80%);
+    color: $color-white;
+    border-radius: 0 5px 0 5px;
+    font-weight: bold;
+    font-size: text(14px,20px);
+    line-height: 2;
+    z-index: 3;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+

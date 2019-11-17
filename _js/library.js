@@ -433,6 +433,7 @@
 	Needs to be updated to detect visibility and hide, if appropriate.
 	*********************************/
 	function userControlledElements(els) {
+		console.log('run');
 	    const elements = els || document.querySelectorAll('[data-uce]');
 	    const fallbackClass = 'hide';
 	    
@@ -464,6 +465,7 @@
 	    }
 
 	    function closeUCE(trigger, target) {
+	    	console.log('close triggered');
 	        const identifier = target.getAttribute('data-uce');
 	        const currentTime = new Date().getTime();
 	        const delay = target.getAttribute('data-uce-reopen') * 86400000;
