@@ -17,6 +17,54 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
+	"/128k.ca droplet.app/Contents/Info.plist": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Info.plist",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/MacOS/droplet": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/MacOS/droplet",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/PkgInfo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/PkgInfo",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Resources/droplet.icns": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Resources/droplet.icns",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Resources/droplet.rsrc": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Resources/droplet.rsrc",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Resources/Scripts/main.scpt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Resources/Scripts/main.scpt",
+		"oF": 0
+		},
 	"/_images/bingo.jpg": {
 		"ft": 16384,
 		"iS": 26920,
