@@ -210,7 +210,7 @@ body {
     .mobile-header {
         flex-grow: 1;
         background-image: url(header_mobile.png);
-        background-position: bottom center;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -245,9 +245,97 @@ body {
     }
 }
 
+// Menu
+.menu {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-image: url(qblock.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 $color-white;
+    transition: all 0.5s ease;
+    &:hover {
+        box-shadow: 0 0 4px 0 $color-white;
+        transform: scale(1.2);
+    }
+}
+
+// Button
+//**************************************************************
+// Button Maker
+//**************************************************************
+    // Makes Buttons
+    //
+    // @param {Number} $number - Number to remove unit from
+    // @return {Number} - Unitless number
+    //**********************************************************
+    @mixin button( $bg-color:$color-main, $color:auto, $shade-shift:lighten, $shift-color:auto, $type:solid, $size:normal ) {
+        display: inline-flex;
+        align-items: center;
+        border: 2px solid $bg-color;
+        @if ( $type == hollow ) {
+            background-image: linear-gradient(130deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.25) 50%);
+        } @else if ( $shade-shift == lighten ) {
+            background-image: linear-gradient(130deg, $bg-color 50%, lighten($bg-color, 20%) 50%);
+        } @else if ( $shade-shift == darken ) {
+            background-image: linear-gradient(130deg, $bg-color 50%, darken($bg-color, 20%) 50%);
+        } @else {
+            background-image: linear-gradient(130deg, $bg-color 50%, $shade-shift 50%);
+        }
+        border-radius: 3px;
+        @if ( $size == normal ) {
+            padding: 15px 25px;
+            font-size: inherit;
+        } @else if ( $size == small ) {
+            padding: 5px 10px;
+            font-size: 90%;
+        } @else {
+            
+        }
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        @if ( $type == hollow ) {
+            color: $bg-color;
+        } @else if ( $color == auto ) {
+            color: contrast($bg-color);
+        } @else {
+            color: $color;
+        }
+        background-size: 250%;
+        background-position: 0% center;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        &:hover,
+        &:active {
+            background-position: 100% center;
+            @if ( $type != hollow ) {
+                @if ( $shift-color == auto and $shade-shift == lighten ) {
+                    color: contrast(lighten($bg-color, 20%));
+                } @else if ( $shift-color == auto and $shade-shift == darken ) {
+                    color: contrast(darken($bg-color, 20%));
+                } @else if ( $shift-color == auto and $shade-shift != lighten or darken ) {
+                    color: contrast($shade-shift);
+                } @else {
+                    color: $shift-color;
+                }
+            }
+        }
+    }
+.button {
+    @include button;
+}
+
 // Updates
-.menu-popup:not(.popup-open) {
+#popup-bg {
     display: none;
+    .popup-open & {
+        display: block;
+    }
 }
 
 // Popups
@@ -267,7 +355,7 @@ body {
     background: $color-white;
     transform: translateX(-50%);
     text-align: left;
-    padding: 15px;
+    padding: text(15,30);
     max-height: 80%;
     width: 80%;
     max-width: 80%;
@@ -280,14 +368,19 @@ body {
     top: 10%;
     right: 10%;
     border: 5px solid $color-main;
-    background-image: linear-gradient(to bottom, $color-alt 20%, $color-black 20%, $color-black 80%, $color-alt 80%);
+    background: $color-black;
     color: $color-white;
     border-radius: 0 5px 0 5px;
     font-weight: bold;
     font-size: text(14px,20px);
-    line-height: 2;
     z-index: 3;
     cursor: pointer;
+    letter-spacing: 1px;
+    padding: 1px 5px;
+    &:hover {
+        border-color: $color-red;
+        color: $color-red;
+    }
 }
 
 

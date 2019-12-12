@@ -270,7 +270,7 @@ body {
     -webkit-box-flex: 1;
             flex-grow: 1;
     background-image: url(header_mobile.png);
-    background-position: bottom center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -306,8 +306,59 @@ body {
   }
 }
 
-.menu-popup:not(.popup-open) {
+.menu {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-image: url(qblock.png);
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.menu:hover {
+  box-shadow: 0 0 4px 0 #fff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.button {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+          align-items: center;
+  border: 2px solid #58b9ff;
+  background-image: linear-gradient(130deg, #58b9ff 50%, #bee4ff 50%);
+  border-radius: 3px;
+  padding: 15px 25px;
+  font-size: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: contrast(#58b9ff);
+  background-size: 250%;
+  background-position: 0% center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.button:hover, .button:active {
+  background-position: 100% center;
+  color: contrast(#bee4ff);
+}
+
+#popup-bg {
   display: none;
+}
+
+.popup-open #popup-bg {
+  display: block;
 }
 
 .popup-bg {
@@ -328,7 +379,7 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   text-align: left;
-  padding: 15px;
+  padding: calc(15px + (30 - 15) * ((100vw - 320px) / (1600 - 320)));
   max-height: 80%;
   width: 80%;
   max-width: 80%;
@@ -342,14 +393,19 @@ body {
   top: 10%;
   right: 10%;
   border: 5px solid #58b9ff;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #4278ff), color-stop(20%, #303030), color-stop(80%, #303030), color-stop(80%, #4278ff));
-  background-image: linear-gradient(to bottom, #4278ff 20%, #303030 20%, #303030 80%, #4278ff 80%);
+  background: #303030;
   color: #fff;
   border-radius: 0 5px 0 5px;
   font-weight: bold;
   font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1600 - 320)));
-  line-height: 2;
   z-index: 3;
   cursor: pointer;
+  letter-spacing: 1px;
+  padding: 1px 5px;
+}
+
+.popup-close:hover {
+  border-color: #ed462f;
+  color: #ed462f;
 }
 /*# sourceMappingURL=style.css.map */
