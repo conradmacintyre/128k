@@ -44,7 +44,8 @@ const slots = [
     'Dave laughs at this own demise',
     '...look like an idiot...',
     'Ya boy / Makin\' plays',
-    'Gamer / gaming'
+    'Gamer / gaming',
+    'Fire (it) up!'
 ];
 const winCombos = [
     [1,2,3,4,5],
