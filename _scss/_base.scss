@@ -60,6 +60,11 @@
 			line-height: $p-line-height;
 			@include gutters;
 		}
+		blockquote {
+			border-left: 5px solid $shade-dark;
+			padding: 5px 0px 5px 10px;
+			margin-bottom: $p-margin-bottom;
+		}
 		p {
 			margin-bottom: $p-margin-bottom;
 		}

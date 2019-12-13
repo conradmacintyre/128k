@@ -82,6 +82,12 @@ body {
   }
 }
 
+blockquote {
+  border-left: 5px solid #111;
+  padding: 5px 0px 5px 10px;
+  margin-bottom: 1rem;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -166,7 +172,6 @@ p a:active {
   -webkit-box-align: center;
           align-items: center;
   border: 2px solid #011DA9;
-  background-image: -webkit-linear-gradient(320deg, #011DA9 50%, #123afe 50%);
   background-image: linear-gradient(130deg, #011DA9 50%, #123afe 50%);
   border-radius: 3px;
   padding: 15px 25px;
@@ -378,7 +383,6 @@ textarea:focus {
   -webkit-box-align: center;
           align-items: center;
   border: 2px solid #011DA9;
-  background-image: -webkit-linear-gradient(320deg, #011DA9 50%, #123afe 50%);
   background-image: linear-gradient(130deg, #011DA9 50%, #123afe 50%);
   border-radius: 3px;
   padding: 5px 10px;
@@ -406,7 +410,6 @@ button,
   -webkit-box-align: center;
           align-items: center;
   border: 2px solid #011DA9;
-  background-image: -webkit-linear-gradient(320deg, #011DA9 50%, #123afe 50%);
   background-image: linear-gradient(130deg, #011DA9 50%, #123afe 50%);
   border-radius: 3px;
   padding: 15px 25px;
@@ -583,7 +586,7 @@ sup {
   margin-right: auto;
   margin-left: -5px;
   width: calc(100% + 10px);
-  max-width: calc(100% + 10px);
+  max-width: 100vw;
   background-image: url(header-ice.jpg);
   background-size: cover;
   background-position: center;
@@ -606,7 +609,7 @@ sup {
   .title-wrap {
     margin-left: -10px;
     width: calc(100% + 20px);
-    max-width: calc(100% + 20px);
+    max-width: 100vw;
   }
 }
 
@@ -614,12 +617,11 @@ sup {
   .title-wrap {
     margin-left: -15px;
     width: calc(100% + 30px);
-    max-width: calc(100% + 30px);
+    max-width: 100vw;
   }
 }
 
 .main-title {
-  display: block;
   grid-column-end: span 12;
   padding-top: 33px;
   padding-bottom: 33px;
@@ -669,9 +671,7 @@ section.game-table {
 }
 
 section.game-table table {
-  display: block;
   grid-column-end: span 12;
-  display: block;
   display: table;
 }
 
@@ -916,7 +916,6 @@ section.game-table td.gameLooseValue:before {
   -webkit-box-align: center;
           align-items: center;
   border: 2px solid var(--color);
-  background-image: -webkit-linear-gradient(320deg, var(--color) 50%, #011DA9 50%);
   background-image: linear-gradient(130deg, var(--color) 50%, #011DA9 50%);
   border-radius: 3px;
   padding: 5px 10px;
@@ -959,7 +958,6 @@ section.game-table td.gameLooseValue:before {
   -webkit-box-align: center;
           align-items: center;
   border: 2px solid var(--color);
-  background-image: -webkit-linear-gradient(320deg, var(--color) 50%, #011DA9 50%);
   background-image: linear-gradient(130deg, var(--color) 50%, #011DA9 50%);
   border-radius: 3px;
   padding: 5px 10px;
@@ -990,7 +988,6 @@ section.game-table td.gameLooseValue:before {
   -webkit-box-align: center;
           align-items: center;
   border: 2px solid #C20D02;
-  background-image: -webkit-linear-gradient(320deg, #C20D02 50%, #5d0601 50%);
   background-image: linear-gradient(130deg, #C20D02 50%, #5d0601 50%);
   border-radius: 3px;
   padding: 5px 10px;
@@ -1020,7 +1017,6 @@ section.game-table td.gameLooseValue:before {
   -webkit-box-align: center;
           align-items: center;
   border: 2px solid #C20D02;
-  background-image: -webkit-linear-gradient(320deg, #C20D02 50%, #5d0601 50%);
   background-image: linear-gradient(130deg, #C20D02 50%, #5d0601 50%);
   border-radius: 3px;
   padding: 5px 10px;
@@ -1189,7 +1185,6 @@ section.game-table td.gameLooseValue:before {
   -webkit-box-align: center;
           align-items: center;
   border: 2px solid #C20D02;
-  background-image: -webkit-linear-gradient(320deg, #C20D02 50%, #fd392d 50%);
   background-image: linear-gradient(130deg, #C20D02 50%, #fd392d 50%);
   border-radius: 3px;
   padding: 5px 10px;
