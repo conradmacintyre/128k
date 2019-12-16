@@ -219,7 +219,7 @@ p a:active {
   opacity: 1;
   -webkit-transform: scaleY(1);
           transform: scaleY(1);
-  z-index: 2;
+  z-index: 10;
 }
 
 .popup-wrap {
@@ -261,7 +261,7 @@ p a:active {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  z-index: 1;
+  z-index: 10;
 }
 
 .popup-close:before {
@@ -558,30 +558,6 @@ section {
 @media (min-width: 1100px) {
   .slant-tile {
     grid-column-gap: 30px;
-  }
-}
-
-@media (min-width: 700px) {
-  .slant-tile {
-    grid-column-end: span 10;
-  }
-}
-
-@media (min-width: 1100px) {
-  .slant-tile {
-    grid-column-end: span 8;
-  }
-}
-
-@media (min-width: 700px) {
-  .slant-tile {
-    grid-column-start: 2;
-  }
-}
-
-@media (min-width: 1100px) {
-  .slant-tile {
-    grid-column-start: 3;
   }
 }
 
@@ -1048,6 +1024,25 @@ section {
   text-align: center;
 }
 
+.clients .client a {
+  display: block;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.clients .client a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.clients .client span {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
 .clients .logo {
   display: block;
   width: 100%;
@@ -1438,6 +1433,7 @@ section {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  z-index: 1;
 }
 
 .backtotop:before {

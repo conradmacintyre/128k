@@ -50,6 +50,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/_images/calvin-meme.jpg": {
+		"ft": 16384,
+		"iS": 94393,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/_images/calvin-meme.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/_images/conrad.jpg": {
 		"ft": 16384,
 		"iS": 239045,
@@ -78,8 +89,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-bernardin.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -94,26 +105,26 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/_images/logo-bodymods.png": {
+		"ft": 32768,
+		"iS": 76647,
+		"oA": 0,
+		"oAP": "/_images/logo-bodymods.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/_images/logo-caseware.png": {
 		"ft": 32768,
 		"iS": 73519,
 		"oA": 0,
 		"oAP": "/_images/logo-caseware.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
-		"q": 100
-		},
-	"/_images/logo-fitnesstown.jpg": {
-		"ft": 16384,
-		"iS": 17851,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/_images/logo-fitnesstown.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
 		"q": 100
 		},
 	"/_images/logo-fitnesstown.png": {
@@ -122,8 +133,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-fitnesstown.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -133,8 +144,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-idealever.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -155,8 +166,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-mtseymour.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -166,8 +177,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-plasticbank.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -177,8 +188,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-siddickens.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -201,7 +212,7 @@
 		"oAP": "/_images/project-blackjack.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/_images/project-bpbingo.jpg": {
@@ -212,7 +223,7 @@
 		"oAP": "/_images/project-bpbingo.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/_images/project-brandwars.jpg": {
@@ -223,7 +234,7 @@
 		"oAP": "/_images/project-brandwars.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/_images/project-dgrbingo.jpg": {
@@ -234,7 +245,7 @@
 		"oAP": "/_images/project-dgrbingo.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/_images/project-familyfeud.jpg": {
@@ -245,7 +256,7 @@
 		"oAP": "/_images/project-familyfeud.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/_images/project-it.jpg": {
@@ -256,7 +267,7 @@
 		"oAP": "/_images/project-it.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/_images/project-jeopardy.jpg": {
@@ -267,7 +278,7 @@
 		"oAP": "/_images/project-jeopardy.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/_images/project-n64.jpg": {
@@ -289,7 +300,7 @@
 		"oAP": "/_images/project-shining.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/_images/project-stand.jpg": {
@@ -300,7 +311,7 @@
 		"oAP": "/_images/project-stand.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/_images/project-wheel.jpg": {
@@ -311,18 +322,18 @@
 		"oAP": "/_images/project-wheel.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
-	"/_images/project-youtube.png": {
-		"ft": 32768,
-		"iS": 34289,
+	"/_images/project-youtube.jpg": {
+		"ft": 16384,
+		"iS": 6493,
+		"jF": 0,
 		"oA": 0,
-		"oAP": "/_images/project-youtube.png",
+		"oAP": "/_images/project-youtube.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"/_images/social-email.png": {
@@ -379,6 +390,36 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"/_js/index.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/_js/index.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/_js/index.min.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/_js/index.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/_js/index.min.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_js/index.min.js.map",
+		"oF": 0
 		},
 	"/_js/library.js": {
 		"bF": 4,
@@ -694,25 +735,25 @@
 		"oAP": "/blackjack/Working Files/playing-cards.pxm",
 		"oF": 0
 		},
-	"/brand-wars/css/styles.css": {
+	"/brandwars/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/brand-wars/css/styles-min.css",
+		"oAP": "/brandwars/css/styles-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"/brand-wars/css/styles.css.map": {
+	"/brandwars/css/styles.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/brand-wars/css/styles.css.map",
+		"oAP": "/brandwars/css/styles.css.map",
 		"oF": 0
 		},
-	"/brand-wars/css/styles.scss": {
+	"/brandwars/css/styles.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -720,202 +761,202 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
-		"oAP": "/brand-wars/css/styles.css",
+		"oAP": "/brandwars/css/styles.css",
 		"oF": 0,
 		"oS": 1,
 		"uL": 1
 		},
-	"/brand-wars/functions.js": {
+	"/brandwars/functions.js": {
 		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/brand-wars/functions.min.js",
+		"oAP": "/brandwars/functions.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/brand-wars/img/BretHart.png": {
+	"/brandwars/img/BretHart.png": {
 		"ft": 32768,
 		"iS": 52571,
 		"oA": 0,
-		"oAP": "/brand-wars/img/BretHart.png",
+		"oAP": "/brandwars/img/BretHart.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/brand-wars/img/HulkHogan.png": {
+	"/brandwars/img/HulkHogan.png": {
 		"ft": 32768,
 		"iS": 75178,
 		"oA": 0,
-		"oAP": "/brand-wars/img/HulkHogan.png",
+		"oAP": "/brandwars/img/HulkHogan.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/brand-wars/img/JeffHardy.png": {
+	"/brandwars/img/JeffHardy.png": {
 		"ft": 32768,
 		"iS": 61976,
 		"oA": 0,
-		"oAP": "/brand-wars/img/JeffHardy.png",
+		"oAP": "/brandwars/img/JeffHardy.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/brand-wars/img/JohnCena.png": {
+	"/brandwars/img/JohnCena.png": {
 		"ft": 32768,
 		"iS": 73019,
 		"oA": 0,
-		"oAP": "/brand-wars/img/JohnCena.png",
+		"oAP": "/brandwars/img/JohnCena.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/brand-wars/img/KurtAngle.png": {
+	"/brandwars/img/KurtAngle.png": {
 		"ft": 32768,
 		"iS": 73000,
 		"oA": 0,
-		"oAP": "/brand-wars/img/KurtAngle.png",
+		"oAP": "/brandwars/img/KurtAngle.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/brand-wars/img/RandyOrton.png": {
+	"/brandwars/img/RandyOrton.png": {
 		"ft": 32768,
 		"iS": 67744,
 		"oA": 0,
-		"oAP": "/brand-wars/img/RandyOrton.png",
+		"oAP": "/brandwars/img/RandyOrton.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/brand-wars/img/RonSimmons.png": {
+	"/brandwars/img/RonSimmons.png": {
 		"ft": 32768,
 		"iS": 63017,
 		"oA": 0,
-		"oAP": "/brand-wars/img/RonSimmons.png",
+		"oAP": "/brandwars/img/RonSimmons.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/brand-wars/img/StoneCold.png": {
+	"/brandwars/img/StoneCold.png": {
 		"ft": 32768,
 		"iS": 70995,
 		"oA": 0,
-		"oAP": "/brand-wars/img/StoneCold.png",
+		"oAP": "/brandwars/img/StoneCold.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/brand-wars/img/TheRock.png": {
+	"/brandwars/img/TheRock.png": {
 		"ft": 32768,
 		"iS": 58114,
 		"oA": 0,
-		"oAP": "/brand-wars/img/TheRock.png",
+		"oAP": "/brandwars/img/TheRock.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/brand-wars/img/TripleH.png": {
+	"/brandwars/img/TripleH.png": {
 		"ft": 32768,
 		"iS": 74547,
 		"oA": 0,
-		"oAP": "/brand-wars/img/TripleH.png",
+		"oAP": "/brandwars/img/TripleH.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/brand-wars/img/UltimateWarrior.png": {
+	"/brandwars/img/UltimateWarrior.png": {
 		"ft": 32768,
 		"iS": 75638,
 		"oA": 0,
-		"oAP": "/brand-wars/img/UltimateWarrior.png",
+		"oAP": "/brandwars/img/UltimateWarrior.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/brand-wars/img/Undertaker.png": {
+	"/brandwars/img/Undertaker.png": {
 		"ft": 32768,
 		"iS": 91486,
 		"oA": 0,
-		"oAP": "/brand-wars/img/Undertaker.png",
+		"oAP": "/brandwars/img/Undertaker.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/brand-wars/index.htm": {
+	"/brandwars/index.htm": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/brand-wars/index.htm",
+		"oAP": "/brandwars/index.htm",
 		"oF": 0
 		},
-	"/brand-wars/js/functions.js": {
+	"/brandwars/js/functions.js": {
 		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/brand-wars/js/functions.min.js",
+		"oAP": "/brandwars/js/functions.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/brand-wars/js/min/functions-min.js": {
+	"/brandwars/js/min/functions-min.js": {
 		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/brand-wars/js/min/functions-min.min.js",
+		"oAP": "/brandwars/js/min/functions-min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/brand-wars/js/min/roster-min.js": {
+	"/brandwars/js/min/roster-min.js": {
 		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/brand-wars/js/min/roster-min.min.js",
+		"oAP": "/brandwars/js/min/roster-min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
 		},
-	"/brand-wars/js/roster.js": {
+	"/brandwars/js/roster.js": {
 		"bF": 4,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/brand-wars/js/roster.min.js",
+		"oAP": "/brandwars/js/roster.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -2451,6 +2492,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/n64/zurchxk-webfont.woff2",
+		"oF": 0
+		},
+	"/validator.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/validator.php",
 		"oF": 0
 		},
 	"/wheeloffortune/jquery.js": {

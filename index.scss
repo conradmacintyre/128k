@@ -53,8 +53,8 @@
 	}
 	.slant-tile {
 		@include row;
-		@include column(sm 12, md 10, lg 8);
-		@include shift(md 1, lg 2);
+		@include column; //(sm 12, md 10, lg 8);
+		// @include shift(md 1, lg 2);
 		padding: 5px;
 		background-size: cover;
 		.internal {
@@ -258,6 +258,18 @@
 			padding: 15px;
 			font-size: 80%;
 			text-align: center;
+			a {
+				display: block;
+				transition: transform 0.5s ease;
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+			span {
+			    text-transform: uppercase;
+			    font-weight: bold;
+			    padding-top: 10px;
+			}
 		}
 		.logo {
 			display: block;
@@ -426,6 +438,7 @@
 
 // Back To Top
 	.backtotop {
+		// display: none;
 		position: fixed;
 	    bottom: 15px;
 	    left: 15px;
@@ -438,6 +451,7 @@
 	    box-shadow: 0 3px 5px rgba($shade-dark,0.5);
 	    transform: translateX(-200%);
 	    transition: transform 0.5s ease;
+	    z-index: 1;
 	    &:before {
 		    content: "\21d0";
 		    transform: rotate(90deg);
