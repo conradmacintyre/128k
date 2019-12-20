@@ -479,6 +479,7 @@ section {
   flex-wrap: wrap;
   margin-top: 33px;
   margin-bottom: 33px;
+  outline: none;
 }
 
 @media (min-width: 700px) {
@@ -1399,6 +1400,11 @@ section {
 .contact-me button:hover, .contact-me button:active {
   background-position: 100% center;
   color: #111;
+}
+
+.contact-me button[disabled] {
+  opacity: 0.75;
+  pointer-events: none;
 }
 
 .connect .social-icons {

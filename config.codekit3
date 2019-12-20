@@ -1389,7 +1389,7 @@
 		},
 	"/fanedits/images/it/rotator-anderson.jpg": {
 		"ft": 16384,
-		"iS": 196608,
+		"iS": 649458,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/fanedits/images/it/rotator-anderson.jpg",
@@ -1400,7 +1400,7 @@
 		},
 	"/fanedits/images/it/rotator-brandis.jpg": {
 		"ft": 16384,
-		"iS": 196608,
+		"iS": 530714,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/fanedits/images/it/rotator-brandis.jpg",
@@ -1444,7 +1444,7 @@
 		},
 	"/fanedits/images/it/rotator-faraizl.jpg": {
 		"ft": 16384,
-		"iS": 315392,
+		"iS": 568378,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/fanedits/images/it/rotator-faraizl.jpg",
@@ -2502,6 +2502,14 @@
 		"oAP": "/validator.php",
 		"oF": 0
 		},
+	"/wheeloffortune/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wheeloffortune/index.html",
+		"oF": 0
+		},
 	"/wheeloffortune/jquery.js": {
 		"bF": 4,
 		"ft": 64,
@@ -2512,14 +2520,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
-		},
-	"/wheeloffortune/wheel-of-fortune.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/wheeloffortune/wheel-of-fortune.html",
-		"oF": 0
 		},
 	"/wishlist/games-list.js": {
 		"bF": 4,

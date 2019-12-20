@@ -6,7 +6,7 @@ class ajaxValidate {
 	
 	//Store the email/output message & set default to no errors
 	$message = "";
-	$successMessage = "<p>Success!</p>";
+	$successMessage = "Message sent!";
 	$errorMessage = "";
 	$error = false;	
 	

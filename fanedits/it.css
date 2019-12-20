@@ -813,6 +813,95 @@ button:hover, button:active,
   }
 }
 
+.billboard-slide {
+  background-size: cover;
+  background-position: center;
+  grid-column-end: span 12;
+  display: -webkit-box;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #EEE;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  --bp: sm;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  text-align: right;
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+@media (min-width: 700px) {
+  .billboard-slide {
+    --bp: md;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .billboard-slide {
+    --bp: lg;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.billboard-slide.active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.billboard-slide.active ~ .billboard-slide {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.billboard-slide:only-child {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.billboard-slide > * {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.billboard-slide h1, .billboard-slide h2, .billboard-slide h3, .billboard-slide h4, .billboard-slide h5, .billboard-slide h6 {
+  color: inherit;
+}
+
+.billboard-slide:before {
+  content: '';
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .banners {
   display: grid;
   grid-template-columns: repeat(12, 1fr);

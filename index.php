@@ -18,10 +18,10 @@ Footer -->
 			<div class="header-nav-wrapper">
 				<div class="header-nav-trigger" data-ts=".header-nav">MENU</div>
 				<nav class="header-nav" data-nav>
-					<a href="#about-me">About Me</a>
-					<a href="#projects">My Projects</a>
-					<a href="#design-thoughts">Thoughts on Design</a>
-					<a href="#contact-me">Contact Me</a>
+					<a href="#blog">Blog</a>
+					<a href="#about">About</a>
+					<a href="#projects">Projects</a>
+					<a href="#contact">Contact Me</a>
 				</nav>
 			</div>
 		</header>
@@ -32,7 +32,7 @@ Footer -->
 			</div>
 		</div>
 		
-		<section class="intro">
+		<section class="intro" id="intro">
 			<div class="text-section">
 				<h1>Creativity. Endeavored.</h1>
 				<p>I am a creative professional with years of experience in public speaking, event planning, graphic design, web design, web development, and video editing.</p>
@@ -41,7 +41,7 @@ Footer -->
 			</div>
 		</section>
 
-		<section class="blog">
+		<section class="blog" id="blog">
 			<div class="text-section">
 				<h2>Latest from the blog</h2>
 			</div>
@@ -56,7 +56,7 @@ Footer -->
 			</div>
 		</section>
 
-		<section class="design-thoughts" id="design-thoughts">
+		<section class="design-thoughts" id="design">
 			<div class="text-section">
 				<h2 class="about-me_title">Design philosophy</h2>
 				<img src="_images/ipod-mini.jpg" alt="" class="float:left">
@@ -70,7 +70,7 @@ Footer -->
 			</div>
 		</section>
 
-		<section class="about-me" id="about-me">
+		<section class="about-me" id="about">
 			<div class="text-section">
 				<h2>About me</h2>
 			</div>
@@ -102,7 +102,7 @@ Footer -->
 			</div>
 		</div>
 
-		<section class="clients">
+		<section class="clients" id="projects">
 			<div class="text-section">
 				<h2>Professional projects</h2>
 			</div>
@@ -167,7 +167,7 @@ Footer -->
 			</div>
 		</section>
 
-		<section class="projects" id="projects">
+		<section class="projects">
 			<div class="text-section">
 				<h2>Personal projects</h2>
 				<p>Below are some projects, or project categories, that I've worked on. Use the filtering options to only show the stuff you're interested in.</p>
@@ -190,7 +190,7 @@ Footer -->
 					<span class="image"></span>
 					<p class="description">This was a student project I built as an assignment while I was at BCIT. It stands as my favourite thing I built while I was there. I still play it on a regular basis. Wanna play a hand?</p>
 				</a>
-				<a href="/brand-wars" class="project-card tag-game" data-bgimg="_images/project-brandwars.jpg">
+				<a href="/brandwars" class="project-card tag-game" data-bgimg="_images/project-brandwars.jpg">
 					<h3 class="title">Brand Wars (Pre-Alpha)</h3>
 					<span class="image"></span>
 					<p class="description">When WWE Smackdown! vs RAW 2006 was released the "GM Mode" blew my mind. It was like franchise, but for pro-wrestling. Ever since it was removed in 2009, I have longed for its retun. I want to build my own version. That's what this work-in-progress is. Want to play a rough pre-alpha build of the match engine?</p>
@@ -200,7 +200,7 @@ Footer -->
 					<span class="image"></span>
 					<p class="description">When my son started randomly saying Dave's oft-repeated phrases, I knew this would be a great bingo game. I have been watching DGR "competitively" ever since. </p>
 				</a>
-				<a href="/family-feud" class="project-card tag-game" data-bgimg="_images/project-familyfeud.jpg">
+				<a href="/familyfeud" class="project-card tag-game" data-bgimg="_images/project-familyfeud.jpg">
 					<h3 class="title">Family Feud (Beta)</h3>
 					<span class="image"></span>
 					<p class="description">As a youth pastor I needed to make some games that could be played by a fairly large group in a fairly small space. Game shows seemed like a great option. So I threw this together. Currently they have no documentation, but I'll work on that. In the meantime, feel free to poke around.</p>
@@ -249,8 +249,8 @@ Footer -->
 			</div>
 		</section>		
 
-		<div class="wrapper contact-me-wrapper">
-			<section id="contact-me" class="contact-me">
+		<div class="wrapper contact-me-wrapper" id="contact">
+			<section class="contact-me">
 				<div class="text-section">
 					<h2>Contact me</h2>
 					<p>Don't hesitate to reach out if you've got a creative idea and need help realizing your vision.</p>
@@ -268,7 +268,7 @@ Footer -->
 					</div>
 				</form>
 				
-				<div class="message-container"></div>
+				<div class="message-container text-section"></div>
 			</section>
 		</div>
 
@@ -301,7 +301,7 @@ Footer -->
 		</footer>
 
 		<!-- Back to top -->
-		<a href="jacascript:void(0);" class="backtotop"></a>
+		<a href="jacascript:void(0);" class="backtotop"> </a>
 
 		<!-- Popup container -->
 		<div id="popup-bg" class="popup-bg">

@@ -46,6 +46,7 @@
 	section {
 		@include row;
 		@include spacer;
+		outline: none;
 	}
 	.text-section {
 		@include column(sm 12, md 10, lg 8);
@@ -417,6 +418,10 @@
 		}
 		button {
 			@include button( $bg-color:$shade-lite, $shade-shift:darken);
+			&[disabled] {
+				opacity: 0.75;
+				pointer-events: none;
+			}
 		}
 	}
 

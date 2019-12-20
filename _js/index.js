@@ -27,7 +27,7 @@ function submitForm() {
 			data: $('form.contact').serialize(),
 			success: function(data) {
 				if (data.length <= 15) {
-					$('#form-submit').html(data);
+					$('#form-submit').html(data).attr('disabled','disabled');
 					$('.message-container').html("");
 				} else {
 					$('.message-container').html(data);
