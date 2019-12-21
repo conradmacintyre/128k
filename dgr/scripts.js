@@ -3,7 +3,7 @@ const slots = [
     'Checkpoint City',
     'It\'s a beautiful city',
     'Progress City',
-    'Gaining the lore',
+    'Lore',
     'Learning!',
     'Why do I talk?',
     'When I speak, I die',
@@ -12,7 +12,7 @@ const slots = [
     'Fill thine horn (with oil)!',
     'NOOOO!',
     'YEESS!',
-    'Big dumb!',
+    'Big dumb / brain!',
     'Smack! Dat! Axe!',
     'Dave leaves the frame',
     'Dave lowers the green screen',
@@ -25,18 +25,20 @@ const slots = [
     // 'Not like this!',
     'Well endowed', //firebar(s)!',
     'YOLO Bolo',
-    'Right is always right',
+    // 'Right is always right',
     'Rapscallion',
     'Dave says nonsense word(s)',
     'Dave hollers random noises', //
     'Dave makes a face', //
+    'Zoom in on Dave\'s face',
     // 'Dave mentions hate of Boom-Boom',
     'Boom-Boom',
-    'Clutch Daddy',
+    'P/Clutch Daddy',
     'DGR Guarantee',
-    'Excited skewer',
+    // 'Excited skewer',
     'One more shot at the title',
     // 'Dang-flabbit!',
+    'Wait... what?',
     '...take our first clear',
     'Momma\'s nectar',
     'Dave wears a cheese hat',
@@ -44,7 +46,9 @@ const slots = [
     'Dave laughs at this own demise',
     '...look like an idiot...',
     'Ya boy / Makin\' plays',
-    'Gamer / gaming'
+    'Gamer / gaming',
+    'Fire (it) up!',
+    'Take care'
 ];
 const winCombos = [
     [1,2,3,4,5],

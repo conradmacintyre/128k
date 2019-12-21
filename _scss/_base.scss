@@ -60,6 +60,11 @@
 			line-height: $p-line-height;
 			@include gutters;
 		}
+		blockquote {
+			border-left: 5px solid $shade-dark;
+			padding: 5px 0px 5px 10px;
+			margin-bottom: $p-margin-bottom;
+		}
 		p {
 			margin-bottom: $p-margin-bottom;
 		}
@@ -203,7 +208,7 @@
 					pointer-events: auto;
 					opacity: 1;
 					transform: scaleY(1);
-					z-index: 2;
+					z-index: 10;
 				}
 			}
 			&-wrap {
@@ -238,7 +243,7 @@
 				border-radius: 50%;
 				font-size: 30px;
 				transition: transform 0.3s ease;
-				z-index: 1;
+				z-index: 10;
 				&:before {
 					content: '\00d7';
 					position: relative;

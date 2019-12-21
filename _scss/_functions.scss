@@ -366,7 +366,7 @@
 	// "sm 12, md 6, lg 3". 
 	//**********************************************************
 	@mixin column($cols...) {
-		display: block;
+		// display: block;
 		@if ( length( $cols ) > 0 ) {
 			@each $col in $cols {
 				@if ( length( $col ) == 2 ) {
@@ -403,7 +403,7 @@
 	// "sm 12, md 6, lg 3". 
 	//**********************************************************
 	@mixin shift($cols...) {
-		display: block;
+		// display: block;
 		@if ( length( $cols ) > 0 ) {
 			@each $col in $cols {
 				@if ( length( $col ) == 2 ) {
@@ -792,13 +792,17 @@
 	// 
 	// @return {Number} - Unitless number
 	//**********************************************************
-	@mixin full-width() {
+	@mixin full-width($grid-contrained:true) {
 		@each $bp, $value in $breakpoints {
 			@include bp( $bp ) {
 				@if ( map-get( $grid-gutters, $bp ) ) {
 					margin-left: map-get( $grid-gutters, $bp ) * -1;
-					width: calc(100% + #{map-get( $grid-gutters, $bp ) * 2});
-					max-width: calc(100% + #{map-get( $grid-gutters, $bp ) * 2});
+					@if ($grid-contrained == true) {
+						width: calc(100% + #{map-get( $grid-gutters, $bp ) * 2});
+					} @else {
+						width: 100%;
+					}
+					max-width: 100vw;
 				}
 			}
 		}
