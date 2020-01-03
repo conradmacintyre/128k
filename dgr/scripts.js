@@ -1,55 +1,77 @@
-const slots = [
+const commonPhrases = [
     'Let\'s Go!',
     'Checkpoint City',
     'It\'s a beautiful city',
+    'NOOOO!',
+    'YEESS!',
+    'Dave says nonsense word(s)',
+    'Dave hollers random noises',
+    'Take care',
+    'Hello my friends!',
+    'Smack! Dat! Axe!',
+    'Dave laughs at this own demise',
+    'Zoom in on Dave\'s face',
+    'Dave makes a face',
+    'Fire (it) up!'
+];
+const uncommonPhrases = [
+    'Gird up!',
     'Progress City',
     'Lore',
     'Learning!',
-    'Why do I talk?',
     'When I speak, I die',
-    'Gird up!',
-    'Gird thy loins!',
-    'Fill thine horn (with oil)!',
-    'NOOOO!',
-    'YEESS!',
     'Big dumb / brain!',
-    'Smack! Dat! Axe!',
-    'Dave leaves the frame',
-    'Dave lowers the green screen',
     'Dave mentions another streamer',
-    'Holy rip!',
+    'Dave breaks out in song',
     'New Jersey / Trolled',
     'He who waits, dies',
     'It\'s not a troll level unless...',
-    'Dave breaks out in song',
-    // 'Not like this!',
-    'Well endowed', //firebar(s)!',
-    'YOLO Bolo',
-    // 'Right is always right',
-    'Rapscallion',
-    'Dave says nonsense word(s)',
-    'Dave hollers random noises', //
-    'Dave makes a face', //
-    'Zoom in on Dave\'s face',
-    // 'Dave mentions hate of Boom-Boom',
+    'Well endowed',
+    '*Food-coloured* Pipe',
+    'Dave mentions his college days',
     'Boom-Boom',
     'P/Clutch Daddy',
     'DGR Guarantee',
-    // 'Excited skewer',
-    'One more shot at the title',
-    // 'Dang-flabbit!',
     'Wait... what?',
-    '...take our first clear',
-    'Momma\'s nectar',
-    'Dave wears a cheese hat',
     'Gouda / Cheddar / Cheese',
-    'Dave laughs at this own demise',
     '...look like an idiot...',
     'Ya boy / Makin\' plays',
-    'Gamer / gaming',
-    'Fire (it) up!',
-    'Take care'
+    'Gamer / gaming'
 ];
+const rarePhrases = [
+    '...take our first clear',
+    'Why do I talk?',
+    'Gird thy loins!',
+    'Fill thine horn (with oil)!',
+    'Hot garbage',
+    'Dave leaves the frame',
+    'Dave lowers the green screen',
+    'Holy rip!',
+    'YOLO Bolo',
+    'Rapscallion',
+    'One more shot at the title',
+    'Momma\'s nectar',
+    'Dave wears a cheese hat'
+];
+
+let slots = [];
+
+console.log(slots[2]);
+
+(function slotFiller() {
+    let phrases = [...commonPhrases];
+    phrases.push(rarePhrases[Math.floor(Math.random() * rarePhrases.length)]);
+    while (phrases.length < 25) {
+        let uncommonPhrase = Math.floor(Math.random() * uncommonPhrases.length);
+        console.log(uncommonPhrase, uncommonPhrases.length);
+        phrases.push(uncommonPhrases[uncommonPhrase]);
+        uncommonPhrases.splice(uncommonPhrase,1);
+    }
+    slots = [...phrases];
+})();
+
+console.log(slots[2]);
+
 const winCombos = [
     [1,2,3,4,5],
     [6,7,8,9,10],
@@ -121,3 +143,4 @@ function initBingo() {
         });
     });
 } document.addEventListener( 'load', initBingo() );
+/**/

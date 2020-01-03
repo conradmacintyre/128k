@@ -89,7 +89,7 @@
 [
 	"Name something you associate with the original Star Trek",
 	"Captain Kirk|30",
-	" LP Space|27",
+	"Space|27",
 	"Spock|20",
 	"USS Enterprise|13",
 	"Kahn|10",

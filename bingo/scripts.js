@@ -48,6 +48,7 @@ let bingoCalled = false;
 let blackoutCalled = false;
 
 function doBingo() {
+    console.log('dobingo called');
     if ( !bingoCalled ) {
         bingoCalled = true;
         document.getElementById('bingo').classList.add('animate');
@@ -55,6 +56,7 @@ function doBingo() {
 }
 
 function doBlackout() {
+    console.log('dobblackout called');
     if ( !blackoutCalled ) {
         blackoutCalled = true;
         document.getElementById('blackout').classList.add('animate');
@@ -66,15 +68,17 @@ function winYet() {
     winCombos.forEach( (combo) => {
         let bingo = true;
         combo.forEach( (square) => {
-            if ( bingo != true && !squares[square-1].classList.contains('checked') ) {
-                // null
+            if ( squares[square-1].classList.contains('checked') ) {
+                // do nothing
             } else {
                 bingo = false;
                 blackout = false;
             }
         });
+        console.log(bingo);
         bingo ? doBingo() : null;
     });
+    console.log(blackout);
     blackout ? doBlackout() : null;
 }
 
@@ -92,7 +96,7 @@ function initBingo() {
             slots.splice(phrase, 1);
         }
         el.addEventListener( 'click', () => {
-            classToggle(this);
+            classToggle(el);
         });
     });
 } document.addEventListener( 'load', initBingo() );

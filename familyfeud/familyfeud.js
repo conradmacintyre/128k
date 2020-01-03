@@ -1,9 +1,10 @@
 function familyFeud() {
+	console.log('TEST');
 			
-	var puzzle = document.getElementById('puzzle');
+	var $puzzle = $('#puzzle');
 	var errors = 0;
     var points = 0;
-    var total = document.getElementById('total');
+    var $total = $('#total');
 	        
 	function updateTotal(num) {
         window.console && console.log(num);
@@ -12,7 +13,7 @@ function familyFeud() {
     }
     
     function puzzleLoader(num) {
-        var num -= 1;
+        num -= 1;
         var $answers = $puzzle.find('.answer');
         var puzzle = puzzles[num];
         
@@ -35,7 +36,7 @@ function familyFeud() {
     }
     
     function revealAnswer(num) {
-        $puzzle.find('.answer').each(function(){
+       	$puzzle.find('.answer').each(function(){
 	        var $this = $(this);
 	    	if ( $this.find('.char').text() == num ) {
 		    	$this.find('.number').addClass('open');
@@ -56,11 +57,12 @@ function familyFeud() {
         }, 2000 );
     }
 	
-	$(this).keypress(function(e) {
+	$(window).keypress(function(e) {
+		console.log(e, "TEST2");
 	    if (e.which !== 0) {
 	        
 	        var character = String.fromCharCode(e.which);
-	        
+	        // Load puzzles
 			if ( character == '!' ) {
 				puzzleLoader(1);
 			} else if ( character == '@' ) {
@@ -79,6 +81,7 @@ function familyFeud() {
 				puzzleLoader(8);
 			} else if ( character == '(' ) {
 				puzzleLoader(9);
+			// Reveal Answers
 			} else if ( character == '1' ) {
 				revealAnswer(1);
 			} else if ( character == '2' ) {
@@ -95,6 +98,7 @@ function familyFeud() {
 				revealAnswer(7);
 			} else if ( character == '8' ) {
 				revealAnswer(8);
+			// Fire error
 			} else if ( character == 'x' ) {
 				fireError();
 			}

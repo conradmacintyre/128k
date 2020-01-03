@@ -384,15 +384,15 @@ function StartFight(Wrestlers,MatchType){
 		}
 		//Output winner
 		document.getElementById('WinnerName').innerHTML 
-			= '<p>'
+			= '<p><b class="winner">'
 			+ Winner.Name
-			+ ' def. ' 
+			+ '</b> def. <b class="loser">' 
 			+ Loser.Name 
-			+ ' via '
+			+ '</b> via <b class="method">'
 			+ VictoryType(MatchType)
-			+ ', with ' 
+			+ '</b>, with <b class="viewers">' 
 			+ Comma(RealViewers(Viewers)) 
-			+ ' viewers.'
+			+ ' viewers</b>.'
 			+ '</p>'
 			+ document.getElementById('WinnerName').innerHTML
 		;

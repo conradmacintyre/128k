@@ -100,7 +100,7 @@ function SuperstarSelector(Roster) {
 		    + 			'<p class="Name">'
 		    + 				Wrestler.Name
 		    + 			'</p>'
-		    + 			'<p class="Overall">'
+		    + 			'<p class="Overall" title="Overall">'
 		    + 				'<b>O</b><br>' + Overall(ShortName)
 		    + 			'</p>'
 		    + 			'<p class="Morale">'
@@ -162,7 +162,7 @@ function StartFight(Wrestlers){
 	        if (Wrestler.Morale <= 9.5){
 	        	Wrestler.Morale += 0.25;
 	        }
-	        if (Wrestler.Fatigue < 9.75){
+	        if (Wrestler.Fatigue <= 9.75){
 				Wrestler.Fatigue += 0.25;
 			}
 			//Check each participating superstar for injury

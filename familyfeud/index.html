@@ -5,150 +5,26 @@
 	<title>Family Feud</title>
 	<meta name="description" content="description_here">
 	<meta name="author" content="Conrad">
+	<link rel="stylesheet" href="index.css?v=0.1">
 	<style>
-		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
-		
-		body {
-			background: black;
-		}
-		
-		section.puzzle {
-		    border: 1px solid black;
-		    position: relative;
-		    margin-top: 130px;
-			border-top: 3px solid yellow
-		}
-		
-		.question {
-		    font-family: Helvetica Neue;
-		    text-transform: uppercase;
-		    text-align: center;
-		    color: lightblue;
-		    background: black;
-		    padding: 20px;
-		    font-size: 30px;
-		}
-		
-		.total {
-			position: absolute;
-			top: 0;
-			background: black;
-			font-family: Menlo;
-			color: yellow;
-			font-size: 60px;
-			left: 50%;
-			transform: translate(-50%, -100%);
-			text-align: center;
-			line-height: 80px;
-			padding: 30px 100px 0;
-			border-top-left-radius: 50%;
-			border: 3px solid yellow;
-			border-bottom: 0;
-			border-top-right-radius: 50%;
-		}
-		
-		.answer {
-		    display: block;
-		    position: relative;
-		    border: 2px solid black;
-		    background: black;
-		    color: white;
-		    font-family: Helvetica Neue;
-		    text-transform: uppercase;
-		    font-weight: bold;
-		    font-size: 20px;
-		    text-align: center;
-		    height: 80px;
-		    line-height: 80px;
-		    overflow: hidden;
-		}
-		.answers1 {
-		    float: left;
-		    width: 50%;
-		}
-		.answers2 {
-		    float: right;
-		    width: 50%;
-		}
-		.number {
-			background-image: linear-gradient(lightblue, blue);
-			position: relative;
-			height: 80px;
-			z-index: 3;
-		}
-		.number.open {
-			transition: transform .5s linear;
-			transform: translateY(100%);
-		}
-		.char {
-			content: '';
-			width: 100px;
-			height: 70px;
-			display: block;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%,-53%);
-			border-radius: 50%;
-			background: black;
-			border: 2px solid yellow;
-			position: absolute;
-			line-height: 64px;
-			font-size: 50px;
-		}
-		.nonum .char {
-			opacity: 0;
-		}
-		.text {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 80%;
-			height: 100%;
-			z-index: 2;
-			font-size: 60px;
-			border: 1px solid blue;
-		}
-		.value {
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 20%;
-			height: 100%;
-			z-index: 2;
-			background-image: linear-gradient(blue,darkblue);
-			font-size: 50px;
-			line-height: 70px;
-		}
-		.errors {
-			transition: opacity .5s ease;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: 542px;
-			height: 200px;
-			transform: translate(-50%, -50%);
-			z-index: 4;
-		}
-		.errors.hide {
-			opacity: 0;
-		}
-		.error {
-			width: 150px;
-			height: 200px;
-			border: 20px solid red;
-			background-image: 
-				linear-gradient(55deg, transparent calc(50% - 10px), red calc(50% - 10px), red calc(50% + 10px), transparent calc(50% + 10px)), 
-				linear-gradient(-55deg, transparent calc(50% - 10px), red calc(50% - 10px), red calc(50% + 10px), transparent calc(50% + 10px))
-			;
-			display: inline-block;
-			margin: 0 15px;
-		}
-		.error.hide {
-			display: none;
-		}
+
 	</style>
 </head>
 <body>
+	<a class="info popup-link" data-content="game-info">?</a>
+	<div class="popup-content" id="game-info">
+		<div>
+			<p>Hey, this game requires a host who knows the answers, so no solo play.</p>
+			<p>Press the shift key plus a number to load a puzzle (so 1 is !, 2 is @, 3 is #, etc)</p>
+			<p>Press the number keys to reveal specific answers.</p>
+			<p>Press the x key to show an x on the screen.</p>
+		</div>
+	</div>
+	<div class="popup-bg" id="popup-bg">
+        <div class="popup-close" id="popup-close">X</div>
+        <div class="popup-container" id="popup-container">
+        </div>
+    </div>
 	<section class="puzzle" id="puzzle">
 		<div class="question"></div>
 		<div class="total" id="total">00</div>
@@ -217,6 +93,14 @@
 	<div class="errors hide">
 		<div class="error error1 hide"></div><div class="error error2 hide"></div><div class="error error3 hide"></div>
 	</div>
+
+	<div class="popup-bg" id="popup-bg">
+        <div class="popup-close" id="popup-close">X</div>
+        <div class="popup-container" id="popup-container">
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT~! -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script>
 		puzzles = [
@@ -239,8 +123,8 @@
 				"Shop|13",
 				"Go to Bank|11",
 				"Talk on Phone|8",
-				"",
-				""
+				"|0",
+				"|0"
 			],
 			[
 				"Name the most annoying thing other drivers do on the road",
@@ -250,8 +134,8 @@
 				"Tailgating|12",
 				"Talk on cell phone|10",
 				"Speed|4",
-				"",
-				""
+				"|0",
+				"|0"
 			],
 			[
 				"Name something that's filtered",
@@ -261,8 +145,8 @@
 				"Gasonline|5",
 				"Vacuum|4",
 				"Pool|4",
-				"",
-				""
+				"|0",
+				"|0"
 			],
 			[
 				"Name something associated with Zorro",
@@ -270,10 +154,10 @@
 				"\"Z\"|30",
 				"Mask|13",
 				"Cape|8",
-				"",
-				"",
-				"",
-				""
+				"|0",
+				"|0",
+				"|0",
+				"|0"
 			],
 			[
 				"Name an occupation bad drivers should avoid",
@@ -295,7 +179,7 @@
 				"Vacation|3",
 				"Car Rental|2",
 				"Cruise|2",
-				""
+				"|0"
 			],
 			[
 				"Name a phrase that starts with \"Happy\"",
@@ -305,8 +189,8 @@
 				"Days|11",
 				"Meal|10",
 				"Go Lucky|9",
-				"",
-				""
+				"|0",
+				"|0"
 			],
 			[
 				"Name a type of business people call and expect to be put on hold",

@@ -1,0 +1,273 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+section.puzzle {
+  border: 1px solid black;
+  position: relative;
+  margin-top: 130px;
+  border-top: 3px solid yellow;
+}
+
+.question {
+  font-family: Helvetica Neue;
+  text-transform: uppercase;
+  text-align: center;
+  color: lightblue;
+  background: black;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.total {
+  position: absolute;
+  top: 0;
+  background: black;
+  font-family: Menlo;
+  color: yellow;
+  font-size: 60px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  text-align: center;
+  line-height: 80px;
+  padding: 30px 100px 0;
+  border-top-left-radius: 50%;
+  border: 3px solid yellow;
+  border-bottom: 0;
+  border-top-right-radius: 50%;
+}
+
+.answer {
+  display: block;
+  position: relative;
+  border: 2px solid black;
+  background: black;
+  color: white;
+  font-family: Helvetica Neue;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+}
+
+.answers1 {
+  float: left;
+  width: 50%;
+}
+
+.answers2 {
+  float: right;
+  width: 50%;
+}
+
+.number {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(lightblue), to(blue));
+  background-image: linear-gradient(lightblue, blue);
+  position: relative;
+  height: 80px;
+  z-index: 3;
+}
+
+.number.open {
+  -webkit-transition: -webkit-transform .5s linear;
+  transition: -webkit-transform .5s linear;
+  transition: transform .5s linear;
+  transition: transform .5s linear, -webkit-transform .5s linear;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.char {
+  content: '';
+  width: 100px;
+  height: 70px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -53%);
+          transform: translate(-50%, -53%);
+  border-radius: 50%;
+  background: black;
+  border: 2px solid yellow;
+  position: absolute;
+  line-height: 64px;
+  font-size: 50px;
+}
+
+.nonum .char {
+  opacity: 0;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  z-index: 2;
+  font-size: 60px;
+  border: 1px solid blue;
+}
+
+.value {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(darkblue));
+  background-image: linear-gradient(blue, darkblue);
+  font-size: 50px;
+  line-height: 70px;
+}
+
+.errors {
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 542px;
+  height: 200px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.errors.hide {
+  opacity: 0;
+}
+
+.error {
+  width: 150px;
+  height: 200px;
+  border: 20px solid red;
+  background-image: linear-gradient(55deg, transparent calc(50% - 10px), red calc(50% - 10px), red calc(50% + 10px), transparent calc(50% + 10px)), linear-gradient(-55deg, transparent calc(50% - 10px), red calc(50% - 10px), red calc(50% + 10px), transparent calc(50% + 10px));
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.error.hide {
+  display: none;
+}
+
+/*Popups*/
+.info.popup-link {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: yellow;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  font-size: 150%;
+  width: 35px;
+  height: 35px;
+  font-family: sans-serif;
+}
+
+#popup-bg {
+  display: none;
+}
+
+.popup-open #popup-bg {
+  display: block;
+}
+
+.popup-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+}
+
+.popup-container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  background: white;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: left;
+  padding: 25px;
+  max-height: 80%;
+  width: 80%;
+  max-width: 80%;
+  z-index: 2;
+  overflow: scroll;
+  border-radius: 5px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  border: 5px solid white;
+  background: black;
+  color: white;
+  border-radius: 0 5px 0 5px;
+  font-weight: bold;
+  font-size: 120%;
+  z-index: 3;
+  cursor: pointer;
+  letter-spacing: 1px;
+  padding: 1px 5px;
+}
+
+.popup-close:hover {
+  border-color: red;
+  color: red;
+}
+/*# sourceMappingURL=index.css.map */
