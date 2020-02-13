@@ -13,7 +13,7 @@ Footer -->
 		<link rel="stylesheet" type="text/css" href="index.css?v=1.0">
 	</head>
 	<body>
-		<header class="header" data-st="standalone" data-st-offset="175">
+		<header class="header" data-st="standalone" data-st-offset="175" data-st-toggle="true">
 			<a class="header-logo" href="/index.php">128k.ca</a>
 			<div class="header-nav-wrapper">
 				<div class="header-nav-trigger" data-ts=".header-nav">MENU</div>
@@ -41,7 +41,7 @@ Footer -->
 			</div>
 		</section>
 
-		<section class="blog" id="blog">
+		<section class="blog animate-in" data-st id="blog">
 			<div class="text-section">
 				<h2>Latest from the blog</h2>
 			</div>
@@ -56,7 +56,7 @@ Footer -->
 			</div>
 		</section>
 
-		<section class="design-thoughts" id="design">
+		<section class="design-thoughts animate-in" data-st  id="design">
 			<div class="text-section">
 				<h2 class="about-me_title">Design philosophy</h2>
 				<img src="_images/ipod-mini.jpg" alt="" class="float:left">
@@ -70,7 +70,7 @@ Footer -->
 			</div>
 		</section>
 
-		<section class="about-me" id="about">
+		<section class="about-me animate-in" data-st id="about">
 			<div class="text-section">
 				<h2>About me</h2>
 			</div>
@@ -96,13 +96,13 @@ Footer -->
 			</div>
 		</section>
 
-		<div class="billboard">
+		<div class="billboard animate-in" data-st >
 			<div class="billboard-slide active" data-bgimg="_images/billboard-conrad.jpg">
 				<h1>Ok, but what have you actually done?</h1>
 			</div>
 		</div>
 
-		<section class="clients" id="projects">
+		<section class="clients animate-in" data-st  id="projects">
 			<div class="text-section">
 				<h2>Professional projects</h2>
 			</div>
@@ -167,7 +167,7 @@ Footer -->
 			</div>
 		</section>
 
-		<section class="projects">
+		<section class="projects animate-in" data-st >
 			<div class="text-section">
 				<h2>Personal projects</h2>
 				<p>Below are some projects, or project categories, that I've worked on. Use the filtering options to only show the stuff you're interested in.</p>
@@ -249,7 +249,7 @@ Footer -->
 			</div>
 		</section>		
 
-		<div class="wrapper contact-me-wrapper" id="contact">
+		<div class="wrapper contact-me-wrapper animate-in" data-st  id="contact">
 			<section class="contact-me">
 				<div class="text-section">
 					<h2>Contact me</h2>

@@ -2641,7 +2641,7 @@
 	$(document).ready(function(){
 		//Set CAD exchange
 		$.get( 
-			"http://data.fixer.io/api/latest?access_key=c171f44c489d8926104d2f3a7b8172d3&symbols=USD,CAD",
+			"https://data.fixer.io/api/latest?access_key=c171f44c489d8926104d2f3a7b8172d3&symbols=USD,CAD",
 			function( data ){
 				if (typeof data !== 'object') {
 					data = JSON.parse(data);
