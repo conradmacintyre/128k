@@ -106,7 +106,13 @@
 	@required: false
 	@description: Add this to the triggered element. Determines how far onto the page an element should be before it is triggered.
 	@value: Interger -- A percentage from the BOTTOM of the screen
-	@default: 10
+	@default: 25
+
+	@param: data-st-toggle=""
+	@required: false
+	@description: Allows triggered elements to be toggled between two states, rather than just changed once
+	@value: Boolean
+	@default: false
 	 
 	DEPENDENCIES:
 	None
@@ -140,12 +146,14 @@
 			scrollables.forEach((element) => {
 				//Get properties or set fallbacks
 				let scrollClass = element.getAttribute('data-st') ? element.getAttribute('data-st') : 'on-screen';
-				let scrollOffset = element.getAttribute('data-st-offset') ? parseInt(element.getAttribute('data-st-offset')) : 20;
+				let scrollOffset = element.getAttribute('data-st-offset') ? parseInt(element.getAttribute('data-st-offset')) : 25;
+				let scrollToggle = element.getAttribute('data-st-toggle') ? element.getAttribute('data-st-toggle') : false;
 				//Create an ojbect for the data and populate it
 				const scrollData = {};
 				scrollData.element = element;
 				scrollData.className = scrollClass;
 				scrollData.offset = scrollOffset;
+				scrollData.toggle = scrollToggle;
 				//Add the new object to the array of objects.
 				scrollableData.push(scrollData);
 			});
@@ -172,13 +180,17 @@
 			scrollableData.forEach((item,index) => {
 				if (windowBottom >= item.triggerPoint) {
 					item.element.classList.add(item.className);
-					// Remove any triggered items from the array
-					scrollableData.splice(index,1);
+					// Remove any used-up triggered items from the array
+					if (!item.toggle) {
+						scrollableData.splice(index,1);
+					}
 					// Un-queue scroll and resize events if there are no more items in the queue.
 					if (!scrollableData.length) {
 						window.removeEventListener('resize', scrollResize, false);
 						window.removeEventListener('scroll', scrollScroll, false);
 					}
+				} else if (windowBottom < item.triggerPoint) {
+					item.element.classList.remove(item.className);
 				}
 			});
 		}
@@ -193,7 +205,7 @@
 	Re-calling scrollTriggr() will re-init this utility.
 	 
 	PARAMETERS:
-	@param: data-bt
+	@param: data-tb
 	@required: true
 	@description: Add this to the top-level <table> element. Accepts no parameters
 	@value: none
@@ -211,7 +223,7 @@
 	*********************************/
 	//Table Breaker
 	function tableBreakr(){
-		const tables = document.querySelectorAll('table[data-bt]');
+		const tables = document.querySelectorAll('table[data-tb]');
 		//If there are responsive tables...
 		if (tables.length) {
 			tableBreakrInit()
@@ -278,9 +290,9 @@
 	PARAMETERS:
 	@param: data-ts=""
 	@required: true
-	@description: Add this to the trigger. The value should be any valid CSS selector to target the elements you want to toggle
+	@description: Add this to the trigger. The value should be any valid CSS selector to target the elements you want to toggle. Even with nothing defined, this will still toggle the class on the trigger element.
 	@value: String -- Any valid CSS selector
-	@default: none
+	@default: none 
 
 	@param: data-ts-class=""
 	@required: false
@@ -448,7 +460,8 @@
 	None
 
 	TODO:
-	Needs to be updated to detect visibility and hide, if appropriate.
+	- Needs to be updated to detect visibility and hide, if appropriate.
+	- Inline documentation should be updated here.
 	*********************************/
 	function userControlledElements(els) {
 
@@ -510,6 +523,13 @@
 	 
 	DEPENDENCIES:
 	None
+
+	BASIC SASS:
+	table.broken {
+		&, & tbody, & tr, & td { display: block; }
+		& tr:first-of-type { display: none; }
+		& td:before { content: attr(data-heading); display: block; font-weight: bold; }
+	}
 	*********************************/
     function customPopup() {
         //Reusable Vars

@@ -89,8 +89,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-bernardin.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -102,7 +102,7 @@
 		"oAP": "/_images/logo-bodymods.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/_images/logo-bodymods.png": {
@@ -111,8 +111,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-bodymods.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -122,8 +122,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-caseware.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -133,8 +133,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-fitnesstown.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -144,8 +144,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-idealever.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -155,8 +155,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-metrokids.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -166,8 +166,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-mtseymour.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -177,8 +177,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-plasticbank.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -188,8 +188,8 @@
 		"oA": 0,
 		"oAP": "/_images/logo-siddickens.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -212,7 +212,7 @@
 		"oAP": "/_images/project-blackjack.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/_images/project-bpbingo.jpg": {
@@ -223,7 +223,7 @@
 		"oAP": "/_images/project-bpbingo.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/_images/project-brandwars.jpg": {
@@ -234,7 +234,7 @@
 		"oAP": "/_images/project-brandwars.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/_images/project-dgrbingo.jpg": {
@@ -245,7 +245,7 @@
 		"oAP": "/_images/project-dgrbingo.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/_images/project-familyfeud.jpg": {
@@ -256,7 +256,7 @@
 		"oAP": "/_images/project-familyfeud.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/_images/project-it.jpg": {
@@ -267,7 +267,7 @@
 		"oAP": "/_images/project-it.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/_images/project-jeopardy.jpg": {
@@ -278,7 +278,7 @@
 		"oAP": "/_images/project-jeopardy.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/_images/project-n64.jpg": {
@@ -300,7 +300,7 @@
 		"oAP": "/_images/project-shining.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/_images/project-stand.jpg": {
@@ -311,7 +311,7 @@
 		"oAP": "/_images/project-stand.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/_images/project-wheel.jpg": {
@@ -322,7 +322,7 @@
 		"oAP": "/_images/project-wheel.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/_images/project-youtube.jpg": {
@@ -392,26 +392,26 @@
 		"q": 100
 		},
 	"/_js/index.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/_js/index.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/_js/index.min.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/_js/index.min.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/_js/index.min.js.map": {
 		"cB": 0,
@@ -422,26 +422,26 @@
 		"oF": 0
 		},
 	"/_js/library.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/_js/library.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/_js/library.min.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/_js/library.min.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/_js/library.min.js.map": {
 		"cB": 0,
@@ -452,7 +452,7 @@
 		"oF": 0
 		},
 	"/_scss/_base.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -461,11 +461,11 @@
 		"oA": 1,
 		"oAP": "/_scss/_base.css",
 		"oF": 0,
-		"oS": 1,
+		"oS": 3,
 		"uL": 1
 		},
 	"/_scss/_functions.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -474,7 +474,7 @@
 		"oA": 1,
 		"oAP": "/_scss/_functions.css",
 		"oF": 0,
-		"oS": 1,
+		"oS": 3,
 		"uL": 1
 		},
 	"/_scss/_router.scss": {
@@ -760,7 +760,7 @@
 		"oF": 0
 		},
 	"/brandwars/css/styles.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -769,19 +769,19 @@
 		"oA": 0,
 		"oAP": "/brandwars/css/styles.css",
 		"oF": 0,
-		"oS": 1,
+		"oS": 3,
 		"uL": 1
 		},
 	"/brandwars/functions.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/brandwars/functions.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/brandwars/functions.min.js": {
 		"bF": 4,
@@ -943,15 +943,15 @@
 		"oF": 0
 		},
 	"/brandwars/js/functions.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/brandwars/js/functions.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/brandwars/js/functions.min.js": {
 		"bF": 4,
@@ -973,37 +973,37 @@
 		"oF": 0
 		},
 	"/brandwars/js/min/functions-min.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/brandwars/js/min/functions-min.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/brandwars/js/min/roster-min.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/brandwars/js/min/roster-min.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/brandwars/js/roster.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/brandwars/js/roster.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/brandwars/js/roster.min.js": {
 		"bF": 4,
@@ -1096,26 +1096,26 @@
 		"q": 100
 		},
 	"/dgr/scripts.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/dgr/scripts.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/dgr/scripts.min.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/dgr/scripts.min.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/dgr/scripts.min.js.map": {
 		"cB": 0,
@@ -1253,7 +1253,7 @@
 		"uL": 1
 		},
 	"/fanedits/_fanedit.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -1262,7 +1262,7 @@
 		"oA": 1,
 		"oAP": "/fanedits/_fanedit.css",
 		"oF": 0,
-		"oS": 1,
+		"oS": 3,
 		"uL": 1
 		},
 	"/fanedits/fanedit.js": {
@@ -2134,7 +2134,7 @@
 		"oF": 0
 		},
 	"/index.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -2143,7 +2143,7 @@
 		"oA": 0,
 		"oAP": "/index.css",
 		"oF": 0,
-		"oS": 1,
+		"oS": 3,
 		"uL": 1
 		},
 	"/jeopardy/css/styles.css": {
@@ -2419,26 +2419,26 @@
 		"oF": 0
 		},
 	"/n64/n64.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/n64/n64.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/n64/n64.min.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/n64/n64.min.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/n64/n64.min.js.map": {
 		"cB": 0,
@@ -3053,7 +3053,7 @@
 	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 8193,
+	"esLintEnvironmentsMask": 1,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -3321,7 +3321,7 @@
 			},
 		"new-parens": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "'always'"
 			},
 		"newline-per-chained-call": {
 			"active": 0,
@@ -3373,10 +3373,10 @@
 			},
 		"no-confusing-arrow": {
 			"active": 0,
-			"optionString": "{'allowParens': false}"
+			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
-			"active": 0,
+			"active": 1,
 			"optionString": "{'allow': ['warn', 'error']}"
 			},
 		"no-const-assign": {
@@ -3733,7 +3733,7 @@
 			},
 		"no-tabs": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "{allowIndentationTabs: false}"
 			},
 		"no-template-curly-in-string": {
 			"active": 0,
@@ -4005,7 +4005,7 @@
 			},
 		"sort-keys": {
 			"active": 0,
-			"optionString": "'asc', {'caseSensitive': true, 'natural': false}"
+			"optionString": "'asc', {'caseSensitive': true, 'natural': false, 'minKeys': 2}"
 			},
 		"sort-vars": {
 			"active": 0,
@@ -4093,7 +4093,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://localhost:8888",
+	"externalServerAddress": "https://localhost:443/128k.ca",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -4511,11 +4511,11 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"bundleFormat": 4,
-		"createSourceMap": 1,
+		"bundleFormat": 0,
+		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"syntaxCheckerStyle": 3,
-		"transpilerStyle": 1
+		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {
 		"autoOutputAction": 1,
@@ -4618,8 +4618,8 @@
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
-		"outputStyle": 1,
-		"shouldRunAutoprefixer": 1,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
@@ -4660,7 +4660,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"pluginMask": 3758088159
+		"pluginMask": 52780316221407
 		},
 	"languageDefaultsTS": {
 		"autoOutputAction": 0,
