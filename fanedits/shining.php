@@ -24,16 +24,16 @@
 			<span class="author">Stephen King's</span> <span class="title">The Shining</span> <span class="subtitle">The Cinematic Cut</span>
 		</h1>
 		<div class="billboard" data-billboard="5">
-			<div class="billboard-slide bottom right active" data-bgimg="images/shining/rotator-weber.jpg">
+			<div class="billboard-slide bottom right active" data-ci="images/shining/rotator-weber.jpg">
 				<h1>Steven Weber</h1>
 			</div>
-			<div class="billboard-slide bottom left" data-bgimg="images/shining/rotator-demornay.jpg">
+			<div class="billboard-slide bottom left" data-ci="images/shining/rotator-demornay.jpg">
 				<h1>Rebecca De Mornay</h1>
 			</div>
-			<div class="billboard-slide bottom right" data-bgimg="images/shining/rotator-mead.jpg">
+			<div class="billboard-slide bottom right" data-ci="images/shining/rotator-mead.jpg">
 				<h1>Courtland Mead</h1>
 			</div>
-			<div class="billboard-slide bottom right" data-bgimg="images/shining/rotator-vanpeebles.jpg">
+			<div class="billboard-slide bottom right" data-ci="images/shining/rotator-vanpeebles.jpg">
 				<h1>Melvin Van Peebles</h1>
 			</div>
 		</div>

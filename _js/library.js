@@ -1,4 +1,34 @@
-// General & Helper Funcitons
+/*********************************
+* Page Prep Functions
+**********************************/
+
+//Auto-Convert Images with CloudImg.io
+	// TODO: Add lazy loading
+ 	function cloudImage () {
+ 		let imageRefs = document.querySelectorAll('[data-ci]');
+ 		let cloudUrl = 'https://aditlfvqko.cloudimg.io/v7/';
+ 		let rootUrl = window.location.hostname.indexOf('localhost') ? 'https://128k.ca/' + location.pathname.substring(0, location.pathname.lastIndexOf("/")+1) : window.location.href.substring(0, window.location.href.lastIndexOf("/")+1);
+ 		imageRefs.forEach( imageRef => {
+ 			let sizeType = imageRef.dataset.ciType ? imageRef.dataset.ciType : 'width';
+ 			let sizeValue = function () {
+ 				if (sizeType === 'width') {
+ 					return imageRef.clientWidth > 0 ? imageRef.clientWidth : '';
+ 				} else {
+ 					return imageRef.clientHeight > 0 ? imageRef.clientHeight : '';
+ 				}
+ 			}
+ 			if (imageRef.tagName === 'IMG') {
+ 				imageRef.src = cloudUrl + rootUrl + imageRef.dataset.ci + '?' + sizeType + '=' + sizeValue();
+ 			} else {
+ 				imageRef.style.backgroundImage = 'url(' + cloudUrl + rootUrl + imageRef.dataset.ci + '?' + sizeType + '=' + sizeValue() + ')';
+ 			}
+ 		});
+ 	} window.addEventListener('load', () => cloudImage());
+
+
+/*********************************
+* Page Interactive Functions
+**********************************/
 
 // Cycle Active Item
 	// TODO: Document this thing.
@@ -18,8 +48,6 @@
 		}
 		setInterval(() => cycle( array ), interval);
 	}
-
-//Specific Library Functions
 
 // Nav State Switcher
 	// TODO: Document this thing
@@ -59,16 +87,6 @@
 			cycleActiveItem(slides,interval);
 		});
 	} window.addEventListener('load', () => billboard());
-
-// Convert Background Image
-	// TODO: Document & Rationale
-	function convertBgImage () {
-		const domNodes = document.querySelectorAll('[data-bgimg]');
-		domNodes.forEach( node => {
-			let bgImg = node.getAttribute('data-bgimg');
-			node.style.backgroundImage = 'url('+bgImg+')';
-		});
-	} window.addEventListener('load', () => convertBgImage());
 
 /*********************************
 * ScrollTriggr.js

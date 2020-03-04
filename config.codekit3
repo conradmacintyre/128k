@@ -735,6 +735,12 @@
 		"oAP": "/blackjack/Working Files/playing-cards.pxm",
 		"oF": 0
 		},
+	"/blog": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/blog",
+		"oF": 0
+		},
 	"/brandwars/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -4683,7 +4689,7 @@
 	"rollupExternals": "",
 	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
 	"rollupTreeshakingEnabled": 1,
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules, /blog",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
 	"tsAllowSyntheticDefaultImports": 0,

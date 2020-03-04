@@ -24,49 +24,49 @@
 			<span class="author">Stephen King's</span> <span class="title">It</span> <span class="subtitle">The Cinematic Cut</span>
 		</h1>
 		<div class="billboard" data-billboard="4">
-			<div class="billboard-slide bottom left active" data-bgimg="images/it/rotator-curry.jpg">
+			<div class="billboard-slide bottom left active" data-ci="images/it/rotator-curry.jpg">
 				<h1>Tim Curry</h1>
 			</div>
-			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-brandis.jpg">
+			<div class="billboard-slide bottom right" data-ci="images/it/rotator-brandis.jpg">
 				<h1>Jonathan Brandis</h1>
 			</div>
-			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-ritter.jpg">
+			<div class="billboard-slide bottom right" data-ci="images/it/rotator-ritter.jpg">
 				<h1>John Ritter</h1>
 			</div>
-			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-perkins.jpg">
+			<div class="billboard-slide bottom right" data-ci="images/it/rotator-perkins.jpg">
 				<h1>Emily Perkins</h1>
 			</div>
-			<div class="billboard-slide top right" data-bgimg="images/it/rotator-anderson.jpg">
+			<div class="billboard-slide top right" data-ci="images/it/rotator-anderson.jpg">
 				<h1>Harry Anderson</h1>
 			</div>
-			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-christopher.jpg">
+			<div class="billboard-slide bottom right" data-ci="images/it/rotator-christopher.jpg">
 				<h1>Dennis Christopher</h1>
 			</div>
-			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-crane.jpg">
+			<div class="billboard-slide bottom right" data-ci="images/it/rotator-crane.jpg">
 				<h1>Brandon Crane</h1>
 			</div>
-			<div class="billboard-slide top left" data-bgimg="images/it/rotator-faraizl.jpg">
+			<div class="billboard-slide top left" data-ci="images/it/rotator-faraizl.jpg">
 				<h1>Adam Faraizl</h1>
 			</div>
-			<div class="billboard-slide top right" data-bgimg="images/it/rotator-green.jpg">
+			<div class="billboard-slide top right" data-ci="images/it/rotator-green.jpg">
 				<h1>Seth Green</h1>
 			</div>
-			<div class="billboard-slide bottom left" data-bgimg="images/it/rotator-hiller.jpg">
+			<div class="billboard-slide bottom left" data-ci="images/it/rotator-hiller.jpg">
 				<h1>Ben Hiller</h1>
 			</div>
-			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-masur.jpg">
+			<div class="billboard-slide bottom right" data-ci="images/it/rotator-masur.jpg">
 				<h1>Richard Masur</h1>
 			</div>
-			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-otoole.jpg">
+			<div class="billboard-slide bottom right" data-ci="images/it/rotator-otoole.jpg">
 				<h1>Annette O'Toole</h1>
 			</div>
-			<div class="billboard-slide bottom left" data-bgimg="images/it/rotator-reid.jpg">
+			<div class="billboard-slide bottom left" data-ci="images/it/rotator-reid.jpg">
 				<h1>Tim Reid</h1>
 			</div>
-			<div class="billboard-slide top left" data-bgimg="images/it/rotator-taylor.jpg">
+			<div class="billboard-slide top left" data-ci="images/it/rotator-taylor.jpg">
 				<h1>Marlon Taylor</h1>
 			</div>
-			<div class="billboard-slide bottom right" data-bgimg="images/it/rotator-thomas.jpg">
+			<div class="billboard-slide bottom right" data-ci="images/it/rotator-thomas.jpg">
 				<h1>Richard Thomas</h1>
 			</div>
 		</div>

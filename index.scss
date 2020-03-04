@@ -220,6 +220,7 @@
 	.billboard {
 		@include billboard(75vh);
 		@include full-width;
+		background-color: $shade-medium-lite;
 		&-slide {
 			@include slide;
 		}
@@ -248,7 +249,8 @@
 // Clients
 	.clients {
 		&-inner {
-			@include column;
+			@include column(sm 12, md 10, lg 8);
+			@include shift(md 1, lg 2);
 			text-align: center;
 			display: flex;
 			flex-wrap: wrap;

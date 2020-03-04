@@ -1,76 +1,68 @@
 const commonPhrases = [
-    'Let\'s Go!',
     'Checkpoint City',
-    'It\'s a beautiful city',
-    'NOOOO!',
-    'YEESS!',
-    'Dave says nonsense word(s)',
     'Dave hollers random noises',
-    'Take care',
-    'Hello my friends!',
-    'Smack! Dat! Axe!',
     'Dave laughs at this own demise',
-    'Zoom in on Dave\'s face',
     'Dave makes a face',
-    'Fire (it) up!'
+    'Dave says nonsense word(s)',
+    'Fire (it) up!',
+    'Hello my friends!',
+    'It\'s a beautiful city',
+    'Let\'s Go!',
+    'NOOOO!',
+    'Smack! Dat! Axe!',
+    'Take care',
+    'YEESS!',
+    'Zoom in on Dave\'s face'
 ];
+
 const uncommonPhrases = [
-    'Gird up!',
-    'Progress City',
-    'Lore',
-    'Learning!',
-    'When I speak, I die',
+    '...look like an idiot...',
     'Big dumb / brain!',
+    'Boom-Boom',
+    'Cheese / Gouda / Cheddar',
     'Dave mentions another streamer',
+    'Dave mentions his college days',
     'Dave breaks out in song',
-    'New Jersey / Trolled',
+    'DGR Guarantee',
+    '*Food-coloured* Pipe',
+    'Gamer / gaming',
+    'Gird up!',
     'He who waits, dies',
     'It\'s not a troll level unless...',
-    'Well endowed',
-    '*Food-coloured* Pipe',
-    'Dave mentions his college days',
-    'Boom-Boom',
+    'Learning!',
+    'Lore',
+    'New Jersey / Trolled',
     'P/Clutch Daddy',
-    'DGR Guarantee',
+    'Progress City',
     'Wait... what?',
-    'Gouda / Cheddar / Cheese',
-    '...look like an idiot...',
-    'Ya boy / Makin\' plays',
-    'Gamer / gaming'
+    'Well endowed',
+    'When I speak, I die',
+    'Ya boy / Makin\' plays'
 ];
+
 const rarePhrases = [
     '...take our first clear',
-    'Why do I talk?',
-    'Gird thy loins!',
-    'Fill thine horn (with oil)!',
-    'Hot garbage',
     'Dave leaves the frame',
     'Dave lowers the green screen',
+    'Dave wears a cheese hat',
+    'Fill thine horn (with oil)!',
+    'Gird thy loins!',
     'Holy rip!',
-    'YOLO Bolo',
-    'Rapscallion',
+    'Hot garbage',
     'One more shot at the title',
-    'Momma\'s nectar',
-    'Dave wears a cheese hat'
+    'Rapscallion',
+    'Why do I talk?',
+    'YOLO Bolo'
 ];
 
-let slots = [];
-
-console.log(slots[2]);
-
-(function slotFiller() {
-    let phrases = [...commonPhrases];
-    phrases.push(rarePhrases[Math.floor(Math.random() * rarePhrases.length)]);
-    while (phrases.length < 25) {
-        let uncommonPhrase = Math.floor(Math.random() * uncommonPhrases.length);
-        console.log(uncommonPhrase, uncommonPhrases.length);
-        phrases.push(uncommonPhrases[uncommonPhrase]);
-        uncommonPhrases.splice(uncommonPhrase,1);
-    }
-    slots = [...phrases];
-})();
-
-console.log(slots[2]);
+// Bingo Slots Array-Maker
+let slots = [...commonPhrases];
+slots.push(rarePhrases[Math.floor(Math.random() * rarePhrases.length)]);
+while (slots.length < 25) {
+    let phraseNumber = Math.floor(Math.random() * uncommonPhrases.length);
+    slots.push(uncommonPhrases[phraseNumber]);
+    uncommonPhrases.splice(phraseNumber,1);
+}
 
 const winCombos = [
     [1,2,3,4,5],
@@ -86,12 +78,14 @@ const winCombos = [
     [1,7,13,19,25],
     [5,9,13,17,21]
 ];
+
 let squares = [...document.getElementsByClassName('bingo-square')];
+
 let bingoCalled = false;
+
 let blackoutCalled = false;
 
 function doBingo() {
-    console.log('dobingo called');
     if ( !bingoCalled ) {
         bingoCalled = true;
         document.getElementById('bingo').classList.add('animate');
@@ -99,7 +93,6 @@ function doBingo() {
 }
 
 function doBlackout() {
-    console.log('dobblackout called');
     if ( !blackoutCalled ) {
         blackoutCalled = true;
         document.getElementById('blackout').classList.add('animate');
@@ -118,10 +111,8 @@ function winYet() {
                 blackout = false;
             }
         });
-        console.log(bingo);
         bingo ? doBingo() : null;
     });
-    console.log(blackout);
     blackout ? doBlackout() : null;
 }
 
@@ -130,7 +121,6 @@ function classToggle(_el) {
     winYet();
 }
 
-// Init
 function initBingo() {
     squares.forEach( (el) => {
         if ( !el.classList.contains('free-space') ) {
@@ -143,4 +133,3 @@ function initBingo() {
         });
     });
 } document.addEventListener( 'load', initBingo() );
-/**/
