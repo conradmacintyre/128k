@@ -83,7 +83,7 @@
 			<a class=" banner banner-poster popup-link" data-content="poster-modal">
 				<h2>VIEW THE POSTER</h2>
 				<div id="poster-modal" class="popup-content">
-					<img src="images/it/poster.jpg" alt="Movie Poster for IT: THE CINEMATIC CUT">
+					<img data-ci="images/it/poster.jpg" alt="Movie Poster for IT: THE CINEMATIC CUT">
 				</div>
 			</a>
 			<a class="banner banner-amazon" href="https://www.amazon.com/Stephen-Kings-Blu-ray-Tommy-Wallace/dp/B01L3TCBMQ/ref=sr_1_6?keywords=it+1990&qid=1559142129&s=gateway&sr=8-6" target="_blank">
@@ -287,11 +287,11 @@
 				<div class="compare__item">
 					<div class="compare__slider">
 						<div class="compare__image compare__image--toc">
-							<img src="images/it/compare-mike-toc.jpg">
+							<img data-ci="images/it/compare-mike-toc.jpg">
 						</div>
 						<div class="compare__resize">
 							<div class="compare__image compare__image--tcc">
-								<img src="images/it/compare-mike-tcc.jpg">
+								<img data-ci="images/it/compare-mike-tcc.jpg">
 							</div>
 							<div class="compare__handle"></div>
 						</div>
@@ -302,11 +302,11 @@
 				<div class="compare__item">
 					<div class="compare__slider">
 						<div class="compare__image compare__image--toc">
-							<img src="images/it/compare-georgie-toc.jpg">
+							<img data-ci="images/it/compare-georgie-toc.jpg">
 						</div>
 						<div class="compare__resize">
 							<div class="compare__image compare__image--tcc">
-								<img src="images/it/compare-georgie-tcc.jpg">
+								<img data-ci="images/it/compare-georgie-tcc.jpg">
 							</div>
 							<div class="compare__handle"></div>
 						</div>
@@ -317,11 +317,11 @@
 				<div class="compare__item">
 					<div class="compare__slider">
 						<div class="compare__image compare__image--toc">
-							<img src="images/it/compare-plate-toc.jpg">
+							<img data-ci="images/it/compare-plate-toc.jpg">
 						</div>
 						<div class="compare__resize">
 							<div class="compare__image compare__image--tcc">
-								<img src="images/it/compare-plate-tcc.jpg">
+								<img data-ci="images/it/compare-plate-tcc.jpg">
 							</div>
 							<div class="compare__handle"></div>
 						</div>
@@ -332,11 +332,11 @@
 				<div class="compare__item">
 					<div class="compare__slider">
 						<div class="compare__image compare__image--toc">
-							<img src="images/it/compare-deadlights-toc.jpg">
+							<img data-ci="images/it/compare-deadlights-toc.jpg">
 						</div>
 						<div class="compare__resize">
 							<div class="compare__image compare__image--tcc">
-								<img src="images/it/compare-deadlights-tcc.jpg">
+								<img data-ci="images/it/compare-deadlights-tcc.jpg">
 							</div>
 							<div class="compare__handle"></div>
 						</div>
@@ -347,11 +347,11 @@
 				<div class="compare__item">
 					<div class="compare__slider">
 						<div class="compare__image compare__image--toc">
-							<img src="images/it/compare-cave-toc.jpg">
+							<img data-ci="images/it/compare-cave-toc.jpg">
 						</div>
 						<div class="compare__resize">
 							<div class="compare__image compare__image--tcc">
-								<img src="images/it/compare-cave-tcc.jpg">
+								<img data-ci="images/it/compare-cave-tcc.jpg">
 							</div>
 							<div class="compare__handle"></div>
 						</div>
@@ -362,11 +362,11 @@
 				<div class="compare__item">
 					<div class="compare__slider">
 						<div class="compare__image compare__image--toc">
-							<img src="images/it/compare-credits-toc.jpg">
+							<img data-ci="images/it/compare-credits-toc.jpg">
 						</div>
 						<div class="compare__resize">
 							<div class="compare__image compare__image--tcc">
-								<img src="images/it/compare-credits-tcc.jpg">
+								<img data-ci="images/it/compare-credits-tcc.jpg">
 							</div>
 							<div class="compare__handle"></div>
 						</div>

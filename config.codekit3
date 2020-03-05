@@ -57,9 +57,9 @@
 		"oA": 0,
 		"oAP": "/_images/calvin-meme.jpg",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"oIPL": 1,
+		"opt": 1,
+		"q": 80
 		},
 	"/_images/conrad.jpg": {
 		"ft": 16384,
