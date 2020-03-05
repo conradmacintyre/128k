@@ -56,7 +56,6 @@
 
 --- Playstation 1 ---
 - Silent Hill
-- WWF Smackdown
 - WWF Smackdown 2
 
 --- Playstation 2 ---
@@ -83,14 +82,13 @@
 
 # GUITAR/MUSIC
 - D'Adddario NYXL Electric Guitar Strings, 10-46 (always need these)
-- Electro-Harmonix Attack Decay Guitar Pedal
-- TC Electronic Nova Delay Pedal
+- TC Electronic Nova Delay (guitar pedal)
+- Wampler Terraform (guitar pedal)
 
 
 # MOVIES (Blu-Ray)
 - 12 Angry Men (1957)
 - Con-Air
-- E.T.
 - Edge of Tomorrow
 - Expendables, The (1-3)
 - Forrest Gump
@@ -102,7 +100,6 @@
 - Over The Top
 - Psycho (1 & 2)
 - Rambo (1-5)
-- Rock, The
 - Terminator (1 & 2)
 - Vertigo
 
@@ -117,7 +114,7 @@ Amazon Gift Card
 - Family Ties (Complete)
 - Fugitive, The (Complete)
 - Get Smart (Complete)
-- Hawaii Five-0 [1969] (Seasons 2-12)
+- Hawaii Five-0 [1969] (Seasons 3-12)
 - Law & Order (Seasons 2-4, 6-13, 15-20)
 - Rockford Files, The (Complete)
 - Taxi (Complete)
