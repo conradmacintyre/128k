@@ -3,9 +3,10 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Marked in the browser</title>
+	<link rel="stylesheet" type="text/css" href="index.css?v=1.0">
 </head>
 <body>
-	<div id="content"></div>
+	<div id="content" class="content"></div>
 	<script src="../_js/marked.min.js"></script>
 	<script>
 	  	//***********************
@@ -16,10 +17,8 @@
 		    request.open("GET", fileToLoad, false);
 		    request.send(null);
 		    let returnValue = request.responseText;
-
 		    return returnValue;
 		}
-
 	    //***********************
 	  	// Field Populator
 	  	//***********************

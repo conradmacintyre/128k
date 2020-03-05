@@ -17,6 +17,54 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
+	"/128k.ca droplet.app/Contents/Info.plist": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Info.plist",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/MacOS/droplet": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/MacOS/droplet",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/PkgInfo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/PkgInfo",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Resources/droplet.icns": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Resources/droplet.icns",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Resources/droplet.rsrc": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Resources/droplet.rsrc",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Resources/Scripts/main.scpt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Resources/Scripts/main.scpt",
+		"oF": 0
+		},
 	"/_images/billboard-code.jpg": {
 		"ft": 16384,
 		"iS": 586273,
@@ -57,9 +105,9 @@
 		"oA": 0,
 		"oAP": "/_images/calvin-meme.jpg",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"q": 80
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"/_images/conrad.jpg": {
 		"ft": 16384,
@@ -85,7 +133,7 @@
 		},
 	"/_images/logo-bernardin.png": {
 		"ft": 32768,
-		"iS": 13446,
+		"iS": 4547,
 		"oA": 0,
 		"oAP": "/_images/logo-bernardin.png",
 		"oF": 0,
@@ -96,7 +144,7 @@
 		},
 	"/_images/logo-bodymods.jpg": {
 		"ft": 16384,
-		"iS": 19812,
+		"iS": 14410,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/logo-bodymods.jpg",
@@ -107,7 +155,7 @@
 		},
 	"/_images/logo-bodymods.png": {
 		"ft": 32768,
-		"iS": 76647,
+		"iS": 10666,
 		"oA": 0,
 		"oAP": "/_images/logo-bodymods.png",
 		"oF": 0,
@@ -118,7 +166,7 @@
 		},
 	"/_images/logo-caseware.png": {
 		"ft": 32768,
-		"iS": 73519,
+		"iS": 3162,
 		"oA": 0,
 		"oAP": "/_images/logo-caseware.png",
 		"oF": 0,
@@ -129,7 +177,7 @@
 		},
 	"/_images/logo-fitnesstown.png": {
 		"ft": 32768,
-		"iS": 49895,
+		"iS": 6982,
 		"oA": 0,
 		"oAP": "/_images/logo-fitnesstown.png",
 		"oF": 0,
@@ -140,7 +188,7 @@
 		},
 	"/_images/logo-idealever.png": {
 		"ft": 32768,
-		"iS": 3551,
+		"iS": 2322,
 		"oA": 0,
 		"oAP": "/_images/logo-idealever.png",
 		"oF": 0,
@@ -151,7 +199,7 @@
 		},
 	"/_images/logo-metrokids.png": {
 		"ft": 32768,
-		"iS": 80919,
+		"iS": 3624,
 		"oA": 0,
 		"oAP": "/_images/logo-metrokids.png",
 		"oF": 0,
@@ -162,7 +210,7 @@
 		},
 	"/_images/logo-mtseymour.png": {
 		"ft": 32768,
-		"iS": 98460,
+		"iS": 2584,
 		"oA": 0,
 		"oAP": "/_images/logo-mtseymour.png",
 		"oF": 0,
@@ -173,7 +221,7 @@
 		},
 	"/_images/logo-plasticbank.png": {
 		"ft": 32768,
-		"iS": 47725,
+		"iS": 8714,
 		"oA": 0,
 		"oAP": "/_images/logo-plasticbank.png",
 		"oF": 0,
@@ -184,7 +232,7 @@
 		},
 	"/_images/logo-siddickens.png": {
 		"ft": 32768,
-		"iS": 69343,
+		"iS": 8368,
 		"oA": 0,
 		"oAP": "/_images/logo-siddickens.png",
 		"oF": 0,
@@ -206,7 +254,7 @@
 		},
 	"/_images/project-blackjack.jpg": {
 		"ft": 16384,
-		"iS": 112325,
+		"iS": 48832,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-blackjack.jpg",
@@ -217,7 +265,7 @@
 		},
 	"/_images/project-bpbingo.jpg": {
 		"ft": 16384,
-		"iS": 147388,
+		"iS": 57059,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-bpbingo.jpg",
@@ -228,7 +276,7 @@
 		},
 	"/_images/project-brandwars.jpg": {
 		"ft": 16384,
-		"iS": 141794,
+		"iS": 46510,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-brandwars.jpg",
@@ -239,7 +287,7 @@
 		},
 	"/_images/project-dgrbingo.jpg": {
 		"ft": 16384,
-		"iS": 177973,
+		"iS": 53568,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-dgrbingo.jpg",
@@ -250,7 +298,7 @@
 		},
 	"/_images/project-familyfeud.jpg": {
 		"ft": 16384,
-		"iS": 143557,
+		"iS": 69082,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-familyfeud.jpg",
@@ -261,7 +309,7 @@
 		},
 	"/_images/project-it.jpg": {
 		"ft": 16384,
-		"iS": 97368,
+		"iS": 49368,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-it.jpg",
@@ -272,7 +320,7 @@
 		},
 	"/_images/project-jeopardy.jpg": {
 		"ft": 16384,
-		"iS": 102634,
+		"iS": 66893,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-jeopardy.jpg",
@@ -294,7 +342,7 @@
 		},
 	"/_images/project-shining.jpg": {
 		"ft": 16384,
-		"iS": 76261,
+		"iS": 15370,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-shining.jpg",
@@ -305,7 +353,7 @@
 		},
 	"/_images/project-stand.jpg": {
 		"ft": 16384,
-		"iS": 179299,
+		"iS": 22489,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-stand.jpg",
@@ -316,7 +364,7 @@
 		},
 	"/_images/project-wheel.jpg": {
 		"ft": 16384,
-		"iS": 123277,
+		"iS": 56670,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-wheel.jpg",
@@ -757,10 +805,5696 @@
 		"oAP": "/blackjack/Working Files/playing-cards.pxm",
 		"oF": 0
 		},
-	"/blog": {
-		"ft": 65536,
+	"/blog/.htaccess": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/.htaccess",
+		"oF": 0
+		},
+	"/blog/bl-content/databases/categories.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/databases/categories.php",
+		"oF": 0
+		},
+	"/blog/bl-content/databases/pages.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/databases/pages.php",
+		"oF": 0
+		},
+	"/blog/bl-content/databases/plugins/about/db.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/databases/plugins/about/db.php",
+		"oF": 0
+		},
+	"/blog/bl-content/databases/plugins/canonical/db.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/databases/plugins/canonical/db.php",
+		"oF": 0
+		},
+	"/blog/bl-content/databases/plugins/robots/db.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/databases/plugins/robots/db.php",
+		"oF": 0
+		},
+	"/blog/bl-content/databases/plugins/simple-stats/db.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/databases/plugins/simple-stats/db.php",
+		"oF": 0
+		},
+	"/blog/bl-content/databases/plugins/tinymce/db.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/databases/plugins/tinymce/db.php",
+		"oF": 0
+		},
+	"/blog/bl-content/databases/security.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/databases/security.php",
+		"oF": 0
+		},
+	"/blog/bl-content/databases/site.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/databases/site.php",
+		"oF": 0
+		},
+	"/blog/bl-content/databases/syslog.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/databases/syslog.php",
+		"oF": 0
+		},
+	"/blog/bl-content/databases/tags.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/databases/tags.php",
+		"oF": 0
+		},
+	"/blog/bl-content/databases/users.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/databases/users.php",
+		"oF": 0
+		},
+	"/blog/bl-content/pages/about/index.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/pages/about/index.txt",
+		"oF": 0
+		},
+	"/blog/bl-content/pages/create-your-own-content/index.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/pages/create-your-own-content/index.txt",
+		"oF": 0
+		},
+	"/blog/bl-content/pages/follow-bludit/index.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/pages/follow-bludit/index.txt",
+		"oF": 0
+		},
+	"/blog/bl-content/pages/set-up-your-new-site/index.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/pages/set-up-your-new-site/index.txt",
+		"oF": 0
+		},
+	"/blog/bl-content/workspaces/simple-stats/2020-01-05.log": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/workspaces/simple-stats/2020-01-05.log",
+		"oF": 0
+		},
+	"/blog/bl-kernel/abstract/dbjson.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/abstract/dbjson.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/abstract/dblist.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/abstract/dblist.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/abstract/plugin.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/abstract/plugin.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/about.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/about.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/categories.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/categories.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/configure-plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/configure-plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/content.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/dashboard.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/dashboard.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/developers.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/developers.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/edit-category.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/edit-category.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/edit-content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/edit-content.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/edit-user.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/edit-user.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/install-plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/install-plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/install-theme.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/install-theme.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/login.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/logout.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/logout.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/new-category.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/new-category.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/new-content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/new-content.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/new-user.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/new-user.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/plugins-position.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/plugins-position.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/plugins.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/plugins.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/settings.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/settings.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/themes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/themes.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/uninstall-plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/uninstall-plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/user-password.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/user-password.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/controllers/users.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/controllers/users.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/themes/booty/css/bludit.bootstrap.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/themes/booty/css/bludit.bootstrap-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-kernel/admin/themes/booty/css/bludit.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/themes/booty/css/bludit-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-kernel/admin/themes/booty/html/alert.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/themes/booty/html/alert.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/themes/booty/html/media.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/themes/booty/html/media.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/themes/booty/html/navbar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/themes/booty/html/navbar.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/themes/booty/html/sidebar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/themes/booty/html/sidebar.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/themes/booty/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/themes/booty/index.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/themes/booty/init.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/themes/booty/init.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/themes/booty/login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/themes/booty/login.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/about.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/about.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/blocks.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/blocks.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/categories.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/categories.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/configure-plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/configure-plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/content.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/dashboard.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/dashboard.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/developers.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/developers.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/edit-category.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/edit-category.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/edit-content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/edit-content.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/edit-user.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/edit-user.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/login.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/new-category.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/new-category.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/new-content.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/new-content.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/new-user.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/new-user.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/plugins-position.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/plugins-position.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/plugins.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/plugins.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/settings.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/settings.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/themes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/themes.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/user-password.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/user-password.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/admin/views/users.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/admin/views/users.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/ajax/clippy.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/ajax/clippy.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/ajax/content-get-list.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/ajax/content-get-list.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/ajax/delete-image.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/ajax/delete-image.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/ajax/generate-slug.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/ajax/generate-slug.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/ajax/get-published.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/ajax/get-published.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/ajax/list-images.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/ajax/list-images.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/ajax/logo-remove.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/ajax/logo-remove.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/ajax/logo-upload.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/ajax/logo-upload.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/ajax/profile-picture-upload.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/ajax/profile-picture-upload.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/ajax/save-as-draft.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/ajax/save-as-draft.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/ajax/upload-images.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/ajax/upload-images.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/boot/admin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/boot/admin.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/boot/init.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/boot/init.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/boot/rules/60.plugins.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/boot/rules/60.plugins.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/boot/rules/60.router.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/boot/rules/60.router.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/boot/rules/69.pages.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/boot/rules/69.pages.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/boot/rules/99.header.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/boot/rules/99.header.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/boot/rules/99.paginator.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/boot/rules/99.paginator.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/boot/rules/99.security.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/boot/rules/99.security.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/boot/rules/99.themes.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/boot/rules/99.themes.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/boot/site.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/boot/site.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/boot/variables.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/boot/variables.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/categories.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/categories.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/category.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/category.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/css/bootstrap.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/css/bootstrap.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-kernel/css/jquery.datetimepicker.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/css/jquery.datetimepicker.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-kernel/css/line-awesome/css/line-awesome-font-awesome.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/css/line-awesome/css/line-awesome-font-awesome.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-kernel/css/line-awesome/fonts/line-awesome.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/css/line-awesome/fonts/line-awesome.eot",
+		"oF": 0
+		},
+	"/blog/bl-kernel/css/line-awesome/fonts/line-awesome.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-kernel/css/line-awesome/fonts/line-awesome.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-kernel/css/line-awesome/fonts/line-awesome.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/css/line-awesome/fonts/line-awesome.ttf",
+		"oF": 0
+		},
+	"/blog/bl-kernel/css/line-awesome/fonts/line-awesome.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/css/line-awesome/fonts/line-awesome.woff",
+		"oF": 0
+		},
+	"/blog/bl-kernel/css/line-awesome/fonts/line-awesome.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/css/line-awesome/fonts/line-awesome.woff2",
+		"oF": 0
+		},
+	"/blog/bl-kernel/css/select2-bootstrap4.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/css/select2-bootstrap4.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-kernel/css/select2.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/css/select2.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-kernel/functions.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/functions.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/alert.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/alert.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/cookie.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/cookie.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/date.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/date.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/dom.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/dom.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/email.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/email.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/filesystem.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/filesystem.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/image.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/image.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/log.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/log.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/paginator.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/paginator.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/redirect.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/redirect.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/sanitize.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/sanitize.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/session.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/session.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/tcp.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/tcp.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/text.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/text.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/theme.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/theme.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/helpers/valid.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/helpers/valid.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/img/default.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-kernel/img/default.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-kernel/img/favicon.png": {
+		"ft": 32768,
+		"iS": 1025,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/img/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/blog/bl-kernel/img/logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-kernel/img/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-kernel/js/bludit-ajax.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/js/bludit-ajax.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/js/bootstrap.bundle.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/js/bootstrap.bundle.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-kernel/js/functions.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/js/functions.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-kernel/js/jquery.datetimepicker.full.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/js/jquery.datetimepicker.full.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-kernel/js/jquery.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/js/jquery.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-kernel/js/jquery.sortable.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/js/jquery.sortable.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-kernel/js/jstz.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/js/jstz.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-kernel/js/select2.full.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/js/select2.full.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-kernel/js/variables.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/js/variables.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/language.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/language.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/login.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/login.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/pages.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/pages.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/pagex.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/pagex.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/parsedown.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/parsedown.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/security.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/security.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/site.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/site.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/syslog.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/syslog.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/tag.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/tag.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/tags.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/tags.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/url.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/url.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/user.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/user.class.php",
+		"oF": 0
+		},
+	"/blog/bl-kernel/users.class.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-kernel/users.class.php",
+		"oF": 0
+		},
+	"/blog/bl-languages/ar_MA.json": {
+		"ft": 524288,
 		"oA": 1,
-		"oAP": "/build/blog",
+		"oAP": "/blog/bl-languages/ar_MA-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/bg_BG.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/bg_BG-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/cs_CZ.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/cs_CZ-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/de_AT.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/de_AT-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/fi_FI.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/fi_FI-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/gr.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/gr-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/he_IL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/he_IL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/hu_HU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/hu_HU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/it_IT.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/it_IT-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/ms_MY.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/ms_MY-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/pl_PL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/pl_PL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/pt_BR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/pt_BR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/pt_PT.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/pt_PT-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/ro_RO.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/ro_RO-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/sv_SE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/sv_SE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/uk_UA.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/uk_UA-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/vi_VN.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/vi_VN-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/zh_CN.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/zh_CN-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-languages/zh_TW.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-languages/zh_TW-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/bg_BG.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/bg_BG-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/languages/uk_UA.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/languages/uk_UA-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/about/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/about/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/about/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/api/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/api/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/api/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/api/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/api/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/api/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/api/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/api/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/api/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/api/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/api/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/api/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/api/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/api/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/api/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/api/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/api/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/api/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/api/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/api/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/api/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/api/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/api/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/api/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/api/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/api/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/backup/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/backup/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/backup/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/backup/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/backup/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/backup/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/backup/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/backup/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/backup/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/backup/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/backup/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/backup/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/backup/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/backup/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/backup/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/backup/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/backup/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/backup/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/backup/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/backup/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/backup/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/backup/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/backup/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/backup/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/backup/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/backup/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/bl-languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/about/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/about/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/api/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/api/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/backup/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/backup/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/canonical/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/canonical/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/categories/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/categories/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/disqus/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/disqus/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/easymde/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/easymde/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/hit-counter/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/hit-counter/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/html-code/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/html-code/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/links/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/links/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/maintenance-mode/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/maintenance-mode/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/navigation/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/navigation/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/opengraph/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/opengraph/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/remote-content/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/remote-content/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/robots/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/robots/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/rss/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/rss/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/search/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/search/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/simple-stats/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/simple-stats/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/sitemap/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/sitemap/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/static-pages/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/static-pages/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/tags/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/tags/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/tinymce/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/tinymce/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/twitter-cards/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/twitter-cards/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/bl-plugins/version/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/bl-plugins/version/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/canonical/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/canonical/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/canonical/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/canonical/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/canonical/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/canonical/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/canonical/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/canonical/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/canonical/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/canonical/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/canonical/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/canonical/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/canonical/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/canonical/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/canonical/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/canonical/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/canonical/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/canonical/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/canonical/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/canonical/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/canonical/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/canonical/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/categories/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/languages/uk_UA.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/languages/uk_UA-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/categories/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/categories/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/categories/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/custom-fields-parser/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/custom-fields-parser/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/custom-fields-parser/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/custom-fields-parser/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/custom-fields-parser/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/custom-fields-parser/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/disqus/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/languages/pl_PL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/pl_PL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/languages/uk_UA.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/languages/uk_UA-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/disqus/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/disqus/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/disqus/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/easymde/css/bludit.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/easymde/css/bludit-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/easymde/css/easymde.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/easymde/css/easymde.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/easymde/js/easymde.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/easymde/js/easymde.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/easymde/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/easymde/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/easymde/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/easymde/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/easymde/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/easymde/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/easymde/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/easymde/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/easymde/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/easymde/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/easymde/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/easymde/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/easymde/languages/it_IT.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/easymde/languages/it_IT-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/easymde/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/easymde/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/easymde/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/easymde/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/easymde/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/easymde/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/easymde/languages/tr.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/easymde/languages/tr-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/easymde/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/easymde/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/easymde/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/easymde/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/hit-counter/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/hit-counter/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/hit-counter/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/hit-counter/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/hit-counter/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/hit-counter/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/hit-counter/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/hit-counter/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/hit-counter/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/hit-counter/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/hit-counter/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/hit-counter/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/hit-counter/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/hit-counter/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/hit-counter/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/hit-counter/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/hit-counter/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/hit-counter/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/hit-counter/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/hit-counter/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/hit-counter/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/hit-counter/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/html-code/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/html-code/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/html-code/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/html-code/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/html-code/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/html-code/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/html-code/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/html-code/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/html-code/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/html-code/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/html-code/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/html-code/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/html-code/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/html-code/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/html-code/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/html-code/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/html-code/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/html-code/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/html-code/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/html-code/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/html-code/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/html-code/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/html-code/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/html-code/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/html-code/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/html-code/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/links/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/links/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/links/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/links/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/links/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/links/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/links/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/links/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/links/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/links/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/links/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/links/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/links/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/links/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/links/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/links/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/links/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/links/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/links/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/links/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/links/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/links/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/links/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/links/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/links/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/links/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/bg_BG.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/bg_BG-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/pl_PL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/pl_PL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/uk_UA.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/uk_UA-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/languages/zh_TW.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/languages/zh_TW-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/maintenance-mode/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/maintenance-mode/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/maintenance-mode/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/navigation/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/navigation/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/navigation/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/navigation/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/navigation/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/navigation/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/navigation/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/navigation/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/navigation/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/navigation/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/navigation/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/navigation/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/navigation/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/navigation/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/navigation/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/navigation/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/navigation/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/navigation/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/navigation/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/navigation/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/navigation/languages/tr.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/navigation/languages/tr-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/navigation/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/navigation/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/navigation/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/navigation/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/opengraph/languages/bg_BG.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/bg_BG-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/pl_PL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/pl_PL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/tr.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/tr-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/uk_UA.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/uk_UA-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/languages/zh_TW.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/languages/zh_TW-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/opengraph/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/opengraph/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/opengraph/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/remote-content/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/remote-content/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/remote-content/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/remote-content/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/remote-content/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/remote-content/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/remote-content/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/remote-content/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/remote-content/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/remote-content/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/remote-content/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/remote-content/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/remote-content/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/remote-content/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/remote-content/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/remote-content/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/remote-content/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/remote-content/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/remote-content/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/remote-content/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/remote-content/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/remote-content/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/robots/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/robots/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/robots/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/robots/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/robots/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/robots/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/robots/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/robots/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/robots/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/robots/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/robots/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/robots/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/robots/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/robots/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/robots/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/robots/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/robots/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/robots/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/robots/languages/tr.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/robots/languages/tr-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/robots/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/robots/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/robots/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/robots/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/rss/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/rss/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/rss/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/rss/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/rss/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/rss/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/rss/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/rss/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/rss/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/rss/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/rss/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/rss/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/rss/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/rss/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/rss/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/rss/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/rss/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/rss/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/rss/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/rss/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/rss/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/rss/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/rss/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/rss/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/rss/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/rss/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/search/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/search/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/search/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/search/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/search/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/search/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/search/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/search/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/search/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/search/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/search/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/search/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/search/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/search/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/search/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/search/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/search/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/search/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/search/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/search/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/search/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/search/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/search/vendors/fuzz.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/search/vendors/fuzz.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/simple-stats/css/chartist.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/simple-stats/css/chartist.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/simple-stats/css/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/simple-stats/css/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/simple-stats/js/chartist.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/simple-stats/js/chartist.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/simple-stats/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/simple-stats/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/simple-stats/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/simple-stats/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/simple-stats/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/simple-stats/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/simple-stats/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/simple-stats/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/simple-stats/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/simple-stats/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/simple-stats/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/simple-stats/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/simple-stats/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/simple-stats/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/simple-stats/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/simple-stats/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/simple-stats/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/simple-stats/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/simple-stats/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/simple-stats/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/simple-stats/languages/tr.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/simple-stats/languages/tr-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/simple-stats/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/simple-stats/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/simple-stats/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/simple-stats/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/sitemap/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/languages/tr.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/languages/tr-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/languages/uk_UA.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/languages/uk_UA-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/sitemap/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/sitemap/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/sitemap/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/static-pages/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/static-pages/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/static-pages/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/static-pages/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/static-pages/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/static-pages/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/static-pages/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/static-pages/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/static-pages/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/static-pages/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/static-pages/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/static-pages/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/static-pages/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/static-pages/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/static-pages/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/static-pages/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/static-pages/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/static-pages/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/static-pages/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/static-pages/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/static-pages/languages/tr.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/static-pages/languages/tr-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/static-pages/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/static-pages/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/static-pages/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/static-pages/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/tags/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tags/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tags/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tags/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tags/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tags/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tags/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tags/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tags/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tags/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tags/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tags/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tags/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tags/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tags/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tags/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tags/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tags/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tags/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tags/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tags/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tags/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tags/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tags/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tags/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tags/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/tinymce/css/tinymce_content.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/css/tinymce_content-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/css/tinymce_toolbar.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/css/tinymce_toolbar-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tinymce/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tinymce/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tinymce/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tinymce/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tinymce/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tinymce/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tinymce/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tinymce/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tinymce/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tinymce/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tinymce/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tinymce/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tinymce/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tinymce/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tinymce/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tinymce/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tinymce/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tinymce/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tinymce/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tinymce/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tinymce/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tinymce/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/tinymce/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/tinymce/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/jquery.tinymce.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/jquery.tinymce.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/de.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/de.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/es.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/es.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/fa.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/fa.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/fr.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/fr.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/hu.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/hu.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/ja.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/ja.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/nl.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/nl.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/pl.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/pl.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/pt.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/pt.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/ro.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/ro.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/ru.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/ru.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/tr.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/tr.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/uk.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/uk.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/langs/zh.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/langs/zh.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/advlist/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/advlist/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/anchor/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/anchor/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/autolink/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/autolink/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/autoresize/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/autoresize/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/autosave/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/autosave/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/bbcode/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/bbcode/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/charmap/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/charmap/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/code/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/code/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/codesample/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/codesample/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/colorpicker/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/colorpicker/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/contextmenu/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/contextmenu/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/directionality/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/directionality/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/fullpage/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/fullpage/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/fullscreen/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/fullscreen/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/help/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/help/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/hr/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/hr/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/image/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/image/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/imagetools/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/imagetools/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/importcss/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/importcss/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/insertdatetime/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/insertdatetime/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/legacyoutput/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/legacyoutput/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/link/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/link/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/lists/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/lists/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/media/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/media/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/nonbreaking/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/nonbreaking/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/noneditable/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/noneditable/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/pagebreak/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/pagebreak/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/paste/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/paste/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/preview/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/preview/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/print/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/print/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/quickbars/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/quickbars/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/save/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/save/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/searchreplace/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/searchreplace/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/spellchecker/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/spellchecker/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/tabfocus/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/tabfocus/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/table/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/table/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/template/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/template/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/textcolor/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/textcolor/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/textpattern/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/textpattern/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/toc/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/toc/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/visualblocks/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/visualblocks/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/visualchars/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/visualchars/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/plugins/wordcount/plugin.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/plugins/wordcount/plugin.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/content/dark/content.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/content/dark/content.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/content/default/content.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/content/default/content.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/content/document/content.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/content/document/content.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/content/writer/content.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/content/writer/content.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide-dark/content.inline.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide-dark/content.inline.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide-dark/content.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide-dark/content.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide-dark/content.mobile.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide-dark/content.mobile.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide-dark/fonts/tinymce-mobile.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide-dark/fonts/tinymce-mobile.woff",
+		"oF": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide-dark/skin.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide-dark/skin.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide-dark/skin.mobile.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide-dark/skin.mobile.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/content.inline.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/content.inline.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/content.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/content.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/content.mobile.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/content.mobile.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/fonts/tinymce-mobile.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/fonts/tinymce-mobile.woff",
+		"oF": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/skin.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/skin.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/skin.mobile.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/skin.mobile.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/tinymce-mobile.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/skins/ui/oxide/tinymce-mobile.woff",
+		"oF": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/themes/mobile/theme.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/themes/mobile/theme.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/themes/silver/theme.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/themes/silver/theme.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/tinymce/tinymce/tinymce.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/tinymce/tinymce/tinymce.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/twitter-cards/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/twitter-cards/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/twitter-cards/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/twitter-cards/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/twitter-cards/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/twitter-cards/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/twitter-cards/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/twitter-cards/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/twitter-cards/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/twitter-cards/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/twitter-cards/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/twitter-cards/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/twitter-cards/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/twitter-cards/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/twitter-cards/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/twitter-cards/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/twitter-cards/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/twitter-cards/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/twitter-cards/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/twitter-cards/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/twitter-cards/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/twitter-cards/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/twitter-cards/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/twitter-cards/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/twitter-cards/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/twitter-cards/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-plugins/version/js/version.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/version/js/version.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/blog/bl-plugins/version/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/version/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/version/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/version/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/version/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/version/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/version/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/version/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/version/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/version/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/version/languages/fr_FR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/version/languages/fr_FR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/version/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/version/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/version/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/version/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/version/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/version/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/version/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/version/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/version/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/version/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/version/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-plugins/version/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-plugins/version/plugin.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-plugins/version/plugin.php",
+		"oF": 0
+		},
+	"/blog/bl-themes/alternative/css/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/alternative/css/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-themes/alternative/img/codepen.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/alternative/img/codepen.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/alternative/img/facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/alternative/img/facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/alternative/img/favicon.png": {
+		"ft": 32768,
+		"iS": 1025,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/alternative/img/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/blog/bl-themes/alternative/img/github.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/alternative/img/github.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/alternative/img/gitlab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/alternative/img/gitlab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/alternative/img/instagram.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/alternative/img/instagram.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/alternative/img/linkedin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/alternative/img/linkedin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/alternative/img/mastodon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/alternative/img/mastodon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/alternative/img/rss.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/alternative/img/rss.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/alternative/img/twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/alternative/img/twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/alternative/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/alternative/index.php",
+		"oF": 0
+		},
+	"/blog/bl-themes/alternative/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/alternative/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/alternative/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/alternative/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/alternative/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/alternative/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/alternative/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/alternative/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/alternative/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/alternative/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/alternative/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/alternative/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/alternative/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/alternative/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/alternative/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/alternative/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/alternative/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/alternative/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/alternative/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/alternative/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/alternative/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/alternative/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/alternative/php/footer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/alternative/php/footer.php",
+		"oF": 0
+		},
+	"/blog/bl-themes/alternative/php/home.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/alternative/php/home.php",
+		"oF": 0
+		},
+	"/blog/bl-themes/alternative/php/navbar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/alternative/php/navbar.php",
+		"oF": 0
+		},
+	"/blog/bl-themes/alternative/php/page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/alternative/php/page.php",
+		"oF": 0
+		},
+	"/blog/bl-themes/blogx/css/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/blogx/css/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/blog/bl-themes/blogx/img/codepen.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/blogx/img/codepen.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/blogx/img/facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/blogx/img/facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/blogx/img/favicon.png": {
+		"ft": 32768,
+		"iS": 1025,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/blogx/img/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/blog/bl-themes/blogx/img/github.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/blogx/img/github.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/blogx/img/gitlab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/blogx/img/gitlab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/blogx/img/googleplus.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/blogx/img/googleplus.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/blogx/img/instagram.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/blogx/img/instagram.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/blogx/img/linkedin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/blogx/img/linkedin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/blogx/img/mastodon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/blogx/img/mastodon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/blogx/img/rss.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/blogx/img/rss.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/blogx/img/twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/blog/bl-themes/blogx/img/twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/blog/bl-themes/blogx/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/blogx/index.php",
+		"oF": 0
+		},
+	"/blog/bl-themes/blogx/languages/de_CH.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/blogx/languages/de_CH-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/blogx/languages/de_DE.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/blogx/languages/de_DE-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/blogx/languages/en.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/blogx/languages/en-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/blogx/languages/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/blogx/languages/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/blogx/languages/fa_IR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/blogx/languages/fa_IR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/blogx/languages/it.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/blogx/languages/it-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/blogx/languages/ja_JP.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/blogx/languages/ja_JP-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/blogx/languages/nl_NL.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/blogx/languages/nl_NL-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/blogx/languages/ru_RU.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/blogx/languages/ru_RU-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/blogx/languages/tr_TR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/blogx/languages/tr_TR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/blogx/metadata.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/blog/bl-themes/blogx/metadata-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"/blog/bl-themes/blogx/php/footer.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/blogx/php/footer.php",
+		"oF": 0
+		},
+	"/blog/bl-themes/blogx/php/head.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/blogx/php/head.php",
+		"oF": 0
+		},
+	"/blog/bl-themes/blogx/php/home.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/blogx/php/home.php",
+		"oF": 0
+		},
+	"/blog/bl-themes/blogx/php/navbar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/blogx/php/navbar.php",
+		"oF": 0
+		},
+	"/blog/bl-themes/blogx/php/page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/blogx/php/page.php",
+		"oF": 0
+		},
+	"/blog/bl-themes/blogx/php/sidebar.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-themes/blogx/php/sidebar.php",
+		"oF": 0
+		},
+	"/blog/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/index.php",
+		"oF": 0
+		},
+	"/blog/install.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/install.php",
+		"oF": 0
+		},
+	"/blog/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/LICENSE",
 		"oF": 0
 		},
 	"/brandwars/css/styles.css": {
@@ -806,15 +6540,15 @@
 		"tS": 0
 		},
 	"/brandwars/functions.min.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/brandwars/functions.min.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/brandwars/functions.min.js.map": {
 		"cB": 0,
@@ -976,15 +6710,15 @@
 		"tS": 0
 		},
 	"/brandwars/js/functions.min.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/brandwars/js/functions.min.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/brandwars/js/functions.min.js.map": {
 		"cB": 0,
@@ -1028,15 +6762,15 @@
 		"tS": 0
 		},
 	"/brandwars/js/roster.min.js": {
-		"bF": 4,
+		"bF": 0,
 		"ft": 64,
-		"ma": 1,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/brandwars/js/roster.min.min.js",
 		"oF": 0,
 		"sC": 3,
-		"tS": 1
+		"tS": 0
 		},
 	"/brandwars/js/roster.min.js.map": {
 		"cB": 0,
@@ -1262,7 +6996,7 @@
 		"oF": 0
 		},
 	"/familyfeud/index.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -1271,7 +7005,7 @@
 		"oA": 0,
 		"oAP": "/familyfeud/index.css",
 		"oF": 0,
-		"oS": 1,
+		"oS": 3,
 		"uL": 1
 		},
 	"/fanedits/_fanedit.scss": {
@@ -2618,12 +8352,22 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/wishlist.txt": {
+	"/wishlist/index.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/wishlist/index-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/wishlist/index.css.map": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/wishlist.txt",
+		"oAP": "/wishlist/index.css.map",
 		"oF": 0
 		},
 	"/wishlist/index.php": {
@@ -2633,6 +8377,19 @@
 		"oA": 0,
 		"oAP": "/wishlist/index.php",
 		"oF": 0
+		},
+	"/wishlist/index.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/wishlist/index.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		},
 	"/wishlist/wishlist.txt": {
 		"cB": 0,
@@ -4727,7 +10484,7 @@
 	"rollupExternals": "",
 	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
 	"rollupTreeshakingEnabled": 1,
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules, /blog",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
 	"tsAllowSyntheticDefaultImports": 0,

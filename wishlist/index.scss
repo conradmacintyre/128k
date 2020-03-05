@@ -1,0 +1,32 @@
+$link-color: blue;
+
+@import '../_scss/_router';
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 25px;
+}
+
+ol, ul {
+	list-style: circle;
+    padding-inline-start: 25px;
+}
+
+li {
+	margin-bottom: 5px;
+
+}
+
+hr {
+	margin: 25px 0;
+	border: 1px solid rgb(200,50,50);
+}
+
+body {
+	@include row();
+}
+
+.content {
+	@include column(sm 12, md 10, lg 8);
+	@include shift(md 1, lg 2);
+	@include spacer;
+}
