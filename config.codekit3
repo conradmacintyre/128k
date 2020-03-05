@@ -451,6 +451,28 @@
 		"oAP": "/_js/library.min.js.map",
 		"oF": 0
 		},
+	"/_js/marked.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/_js/marked.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/_js/marked.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/_js/marked.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/_scss/_base.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2603,6 +2625,22 @@
 		"oA": 0,
 		"oAP": "/wishlist.txt",
 		"oF": 0
+		},
+	"/wishlist/index.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wishlist/index.php",
+		"oF": 0
+		},
+	"/wishlist/wishlist.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/wishlist/wishlist.txt",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -4093,7 +4131,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "https://localhost:443/128k.ca",
+	"externalServerAddress": "https://localhost/128k.ca",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

@@ -10,12 +10,8 @@
 - Ms. Pac-Man
 
 --- SEGA GENESIS ---
-- Castle of Illusion
-- Earthworm Jim
-- Sonic the Hedgehog
-- Sonic the Hedgehog 3
-- Sonic vs Knuckles
-- World of Illusion
+- 8Bitdo 2.4GHz Wireless controller with receiver
+- Mortal Kombat
 
 --- NES ---
 - Contra
