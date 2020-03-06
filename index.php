@@ -1,24 +1,20 @@
-<!-- Header
-Billboard
-About Me
-My Projects
-Contact Form
-Footer -->
+<!DOCTYPE html>
 
-<html>
+<html lang="en-ca">
 	<head>
 		<title>128k.ca | Creativity. Endeavored.</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="A creative professional for hire with experience in web development, video editing, and print.">
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="index.css?v=1.0">
 	</head>
 	<body>
-		<header class="header" data-st="standalone" data-st-offset="175" data-st-toggle="true">
+		<header class="header" id="header" data-st="standalone" data-st-offset="175" data-st-toggle="true">
 			<a class="header-logo" href="/index.php">128k.ca</a>
 			<div class="header-nav-wrapper">
 				<div class="header-nav-trigger" data-ts=".header-nav">MENU</div>
 				<nav class="header-nav" data-nav>
-					<a href="#blog">Blog</a>
+					<!--a href="#blog">Blog</a-->
 					<a href="#about">About</a>
 					<a href="#projects">Projects</a>
 					<a href="#contact">Contact Me</a>
@@ -37,11 +33,11 @@ Footer -->
 				<h1>Creativity. Endeavored.</h1>
 				<p>I am a creative professional with years of experience in public speaking, event planning, graphic design, web design, web development, and video editing.</p>
 				<p>I am available to help you with your own creative endeavour. Need a wordpress site? I can do that. Need a video project edited? I can do that, too. Whatever you need, I can help you do it. I've worked with both companies and individuals to achieve their goals and realize their visions.</p>
-				<p>If you want to get something done, don't hesitate to <a href="#contact-me">reach out</a>!</p>
+				<p>If you want to get something done, don't hesitate to <a href="#contact">reach out</a>!</p>
 			</div>
 		</section>
 
-		<section class="blog animate-in" data-st id="blog">
+		<!--section class="blog animate-in" data-st id="blog">
 			<div class="text-section">
 				<h2>Latest from the blog</h2>
 			</div>
@@ -54,7 +50,7 @@ Footer -->
 					</div>
 				</div>
 			</div>
-		</section>
+		</section-->
 
 		<section class="design-thoughts animate-in" data-st  id="design">
 			<div class="text-section">
@@ -66,7 +62,7 @@ Footer -->
 				<blockquote>Design is not just what it looks like and feels like. Design is how it works.</blockquote>
 				<p>I believe this philosophy should permeate every aspect of what we do. Especially as a web designer.</p>
 				<p>I always want to do something great. Something of value. Something that I'm proud to put my name on. 
-				<a href="#contact-me">Let's do that together</a>.</p>
+				<a href="#contact">Let's do that together</a>.</p>
 			</div>
 		</section>
 
@@ -90,7 +86,7 @@ Footer -->
 						<p>If you want to reach out or do something together, I'm always excited to work on something great.</p>
 					</div>
 					<div class="link">
-						<a href="#contact-me" class="button">Let's do it!</a>
+						<a href="#contact" class="button">Let's do it!</a>
 					</div>
 				</div>
 			</div>
@@ -174,10 +170,10 @@ Footer -->
 			</div>
 			<div class="project-filter">
 				<span class="filter-title">FILTER:</span>
-				<a class="button" data-ts=".tag-game">Games</a>
-				<a class="button" data-ts=".tag-video">Video</a>
-				<a class="button" data-ts=".tag-development">Development</a>
-				<a class="button" data-ts=".tag-other">Other</a>
+				<button class="button" data-ts=".tag-game">Games</button>
+				<button class="button" data-ts=".tag-video">Video</button>
+				<button class="button" data-ts=".tag-development">Development</button>
+				<button class="button" data-ts=".tag-other">Other</button>
 			</div>
 			<div class="project-cards">
 				<a href="/bingo" class="project-card tag-game" data-ci="_images/project-bpbingo.jpg" data-ci-type="height">
@@ -249,8 +245,8 @@ Footer -->
 			</div>
 		</section>		
 
-		<div class="wrapper contact-me-wrapper animate-in" data-st  id="contact">
-			<section class="contact-me">
+		<div class="wrapper contact-wrapper animate-in" data-st  id="contact">
+			<section class="contact">
 				<div class="text-section">
 					<h2>Contact me</h2>
 					<p>Don't hesitate to reach out if you've got a creative idea and need help realizing your vision.</p>
@@ -279,29 +275,29 @@ Footer -->
 			
 			<div class="social-icons">
 				<a href="email" user="conrad" domain="128k.ca">
-					<img data-ci="_images/social-email.png" alt="">
+					<img data-ci="_images/social-email.png" alt="Email Conrad">
 				</a>
 				<a href="https://twitter.com/conradmacintyre">
-					<img data-ci="_images/social-twitter.png" alt="">
+					<img data-ci="_images/social-twitter.png" alt="View Conrad's Twitter Profile">
 				</a>
 				<a href="https://ca.linkedin.com/in/conradmacintyre/">
-					<img data-ci="_images/social-linkedin.png" alt="">
+					<img data-ci="_images/social-linkedin.png" alt="View Conrad's Linkedin Profile">
 				</a>
 				<a href="https://github.com/conradmacintyre">
-					<img data-ci="_images/social-github.png" alt="">
+					<img data-ci="_images/social-github.png" alt="View Conrad's GitHub Profile">
 				</A>
 				<a href="https://www.youtube.com/user/conradmacintyre">
-					<img data-ci="_images/social-youtube.png" alt="">
+					<img data-ci="_images/social-youtube.png" alt="View Conrad's YouTube Channel">
 				</a>
 			</div>
 		</section>
 
 		<footer>
-			<p>&copy; 2014<?php if ( date("Y") > 2014 ) { echo "-".date("Y"); } ?>, <a href="http://conradmacintyre.com">Conrad MacIntyre</a>. <a href="email" user="conrad" domain="128k.ca"></a></p>
+			<p>&copy; 2014<?php if ( date("Y") > 2014 ) { echo "-".date("Y"); } ?>, <a href="email" user="conrad" domain="128k.ca">Conrad MacIntyre</a>.</p>
 		</footer>
 
 		<!-- Back to top -->
-		<a href="jacascript:void(0);" class="backtotop"> </a>
+		<a href="#header" class="backtotop">▲</a>
 
 		<!-- Popup container -->
 		<div id="popup-bg" class="popup-bg">
@@ -312,7 +308,7 @@ Footer -->
 		</div>
 
 		<!-- Call Javascript -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script>
 			
 		</script>

@@ -162,6 +162,7 @@ a {
 }
 
 p a:hover,
+p a:focus,
 p a:active {
   text-decoration: underline;
 }
@@ -208,10 +209,8 @@ p a:active {
   opacity: 0;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
-  -webkit-transition: opacity 0.25s ease, -webkit-transform 0.25s ease;
-  transition: opacity 0.25s ease, -webkit-transform 0.25s ease;
-  transition: opacity 0.25s ease, transform 0.25s ease;
-  transition: opacity 0.25s ease, transform 0.25s ease, -webkit-transform 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .popup-open .popup-bg {
@@ -229,15 +228,15 @@ p a:active {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 80vw;
+  max-height: 75vh;
 }
 
 .popup-container {
   padding: 30px;
   overflow: auto;
-  max-width: 90vw;
-  max-height: 90vh;
+  max-width: 80vw;
+  max-height: 75vh;
 }
 
 .popup-close {
@@ -273,6 +272,11 @@ p a:active {
 .popup-close:hover {
   -webkit-transform: translate(40%, -40%) rotate(90deg);
           transform: translate(40%, -40%) rotate(90deg);
+}
+
+.popup-close:hover:before {
+  left: 0px;
+  top: -1px;
 }
 
 .popup-content {

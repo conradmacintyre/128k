@@ -2375,6 +2375,7 @@
 					"https://ae.pricecharting.com/api/product?t="+pcAuthToken+"&id="+pcid,
 					//data
 					function(data) {
+						console.log("HEY");
 						console.log(data);
 						//Set localStorage entry for each game
 						localStorage.setItem( pcid , JSON.stringify( data ) );
@@ -2641,8 +2642,9 @@
 	$(document).ready(function(){
 		//Set CAD exchange
 		$.get( 
-			"https://data.fixer.io/api/latest?access_key=c171f44c489d8926104d2f3a7b8172d3&symbols=USD,CAD",
+			"http://data.fixer.io/api/latest?access_key=c171f44c489d8926104d2f3a7b8172d3&symbols=USD,CAD",
 			function( data ){
+				console.log(data);
 				if (typeof data !== 'object') {
 					data = JSON.parse(data);
 				}

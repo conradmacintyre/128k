@@ -446,31 +446,17 @@
 	}
 
 //***************************************************************
-// Billboard & BillboardSlide
+// Billboard & Billboard Slide
 //***************************************************************
 	// Outputs grid-constrained containers, here
 	// defined as "columns" for ease of conception.
 	//
-	// @param {Keyword} $valign - Takes keyword for vertical 
-	// 		alignment. Accepts 'top', 'middle', and 'bottom'.
-	// @param {Keyword} $halign - Takes keyword for horizontal
-	// 		alignment. Accepts 'left', 'center', and 'right'.
-	// @param {Number(s)} $content-width - Any single numerical
-	// 		value or list of numerical values. You can use 
-	// 		column counts, percentages (with or without a unit), 
-	// 		or any arbitrary value. A list of values will be
-	// 		applied to subsequent breakpoints in order from 
-	// 		smallest to biggest.
-	// @param {Number(s)} $height - Any single numerical value 
-	// 		or list of numerical values. You can use pixel
-	//		heights (with or without a unit), or any 
-	// 		arbitrary value WITH a unit. A list of values will
-	// 		be applied to subsequent breakpoints in order from 
-	// 		smallest to biggest.
-	// @param {String} $text-color - Any valid CSS value for
-	// 		'color'. 
-	// @param {String} $header-color - Any valid CSS value for
-	// 		'color'.
+	// @param {Keyword} $valign - Takes keyword for vertical alignment. Accepts 'top', 'middle', and 'bottom'.
+	// @param {Keyword} $halign - Takes keyword for horizontal alignment. Accepts 'left', 'center', and 'right'.
+	// @param {Number(s)} $content-width - Any single numerical value or list of numerical values. You can use column counts, percentages (with or without a unit), or any arbitrary value. A list of values will be applied to subsequent breakpoints in order from smallest to biggest.
+	// @param {Number(s)} $height - Any single numerical value or list of numerical values. You can use pixel heights (with or without a unit), or any arbitrary value WITH a unit. A list of values will be applied to subsequent breakpoints in order from smallest to biggest.
+	// @param {String} $text-color - Any valid CSS value for 'color'. 
+	// @param {String} $header-color - Any valid CSS value for 'color'.
 	//**********************************************************
 	@mixin billboard($height:$billboard-height) {
 		@include row;
@@ -585,6 +571,94 @@
 		}
 		@media (hover:hover) {
 			
+		}
+	}
+
+//*******************************************
+// Popups
+//*******************************************
+	// TODO: Make the close button customizable
+	//***************************************
+	@mixin popup(
+		$open-class:map-get($popup,open-class),
+		$bg-class:map-get($popup,bg-class),
+		$body-class:map-get($popup,body-class),
+		$wrap-class:map-get($popup,wrap-class),
+		$container-class:map-get($popup,container-class),
+		$close-class:map-get($popup,close-class),
+		$content-class:map-get($popup,content-class)
+	) {
+		&-#{$open-class} {
+			overflow: hidden;
+		}
+		&-#{$bg-class} {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba($shade-dark,0.5);
+			overflow: hidden;
+			pointer-events: none;
+			// Paint-friendly transforms
+			opacity: 0;
+			transform: scaleY(0);
+			transition: all 0.25s ease;
+			.#{$body-class} & {
+				pointer-events: auto;
+				opacity: 1;
+				transform: scaleY(1);
+				z-index: 10;
+			}
+		}
+		&-#{$wrap-class} {
+			background: $shade-lite;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			max-width: 80vw;
+			max-height: 75vh;
+		}
+		&-#{$container-class} {
+			padding: 30px;
+			overflow: auto;
+			max-width: 80vw;
+			max-height: 75vh;
+		}
+		&-#{$close-class} {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: block;
+			width: 30px; 
+			height: 30px;
+			transform: translate(40%, -40%);
+			background: $color-danger;
+			cursor: pointer;
+			text-align: center;
+			line-height: 23px;
+			color: white;
+			border: 3px solid $shade-lite;
+			border-radius: 50%;
+			font-size: 30px;
+			transition: transform 0.3s ease;
+			z-index: 10;
+			&:before {
+				content: '\00d7';
+				position: relative;
+				top: -2px;
+			}
+			&:hover {
+				transform: translate(40%, -40%) rotate(90deg);
+				&:before {
+					left: 0px;
+					top: -1px;
+				}
+			}
+		}
+		&-#{$content-class} {
+			display: none;
 		}
 	}
 

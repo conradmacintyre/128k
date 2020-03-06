@@ -137,9 +137,20 @@
 			color: $link-color;
 			text-decoration: none;
 			p &:hover,
+			p &:focus,
 			p &:active {
 				text-decoration: underline;
 			}
+		}
+
+	//*******************************************
+	// LISTS
+	//*******************************************
+		ul, ol {
+
+		}
+		li {
+
 		}
 
 	//*******************************************
@@ -186,76 +197,7 @@
 	// POPUPS (Convert to mixin)
 	//*******************************************
 		.popup {
-			&-open {
-				overflow: hidden;
-			}
-			&-bg {
-				position: fixed;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background: rgba($shade-dark,0.5);
-				overflow: hidden;
-				pointer-events: none;
-				opacity: 0;
-				transform: scaleY(0);
-				transition: 
-					opacity 0.25s ease,
-					transform 0.25s ease;
-				;
-				.popup-open & {
-					pointer-events: auto;
-					opacity: 1;
-					transform: scaleY(1);
-					z-index: 10;
-				}
-			}
-			&-wrap {
-				background: $shade-lite;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%,-50%);
-				max-width: 90vw;
-				max-height: 90vh;
-			}
-			&-container {
-				padding: 30px;
-				overflow: auto;
-				max-width: 90vw;
-				max-height: 90vh;
-			}
-			&-close {
-				position: absolute;
-				top: 0;
-				right: 0;
-				display: block;
-				width: 30px; 
-				height: 30px;
-				transform: translate(40%, -40%);
-				background: $color-danger;
-				cursor: pointer;
-				text-align: center;
-				line-height: 23px;
-				color: white;
-				border: 3px solid $shade-lite;
-				border-radius: 50%;
-				font-size: 30px;
-				transition: transform 0.3s ease;
-				z-index: 10;
-				&:before {
-					content: '\00d7';
-					position: relative;
-					top: -2px;
-				}
-				&:hover {
-					transform: translate(40%, -40%) rotate(90deg);
-				}
-			}
-			&-content {
-				display: none;
-			}
+			@include popup();
 		}
 
 	//*******************************************

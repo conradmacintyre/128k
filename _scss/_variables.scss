@@ -120,6 +120,17 @@ $billboard-halign: center !default;
 $billboard-text-color: $shade-lite !default;
 $billboard-background-color: transparent !default;
 
+// Popups
+$popup: (
+	open-class:'open',
+	bg-class:'bg',
+	body-class:'popup-open',
+	wrap-class:'wrap',
+	container-class:'container',
+	close-class:'close',
+	content-class:'content'
+) !default;
+
 
 
 
