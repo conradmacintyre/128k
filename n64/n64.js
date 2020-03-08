@@ -2331,6 +2331,7 @@
 
 //Populates the newly-built table with 
 	function populateGameTable( _data , _pcid ){
+		console.log(_data, _pcid);
 		if ( _data === null ) {
 			resetData(); //Clear local storage
 			return; //Break out of func?
@@ -2375,14 +2376,22 @@
 					"https://ae.pricecharting.com/api/product?t="+pcAuthToken+"&id="+pcid,
 					//data
 					function(data) {
-						console.log("HEY");
-						console.log(data);
+						console.log('Success');
 						//Set localStorage entry for each game
 						localStorage.setItem( pcid , JSON.stringify( data ) );
 						//Convert the data into user-accessible info
 						populateGameTable( data , pcid );
 					}
-				);
+				).fail(function() {
+					console.log('Failure');
+					var placeholderData = {
+						"id" : pcid,
+						"loose-price" : 999,
+						"product-name" : "error"
+					}
+					//Convert the data into user-accessible info
+					populateGameTable( placeholderData , pcid );
+				});
 			//Otherwise grab it from local
 			} else {
 				//Convert the data into user-accessible info

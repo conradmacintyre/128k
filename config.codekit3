@@ -901,6 +901,14 @@
 		"oAP": "/blog/bl-content/workspaces/simple-stats/2020-01-05.log",
 		"oF": 0
 		},
+	"/blog/bl-content/workspaces/simple-stats/2020-03-06.log": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/workspaces/simple-stats/2020-03-06.log",
+		"oF": 0
+		},
 	"/blog/bl-kernel/abstract/dbjson.class.php": {
 		"cB": 0,
 		"ft": 8192,

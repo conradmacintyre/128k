@@ -214,7 +214,7 @@
 				<a href="/n64" class="project-card tag-development" data-ci="_images/project-n64.jpg" data-ci-type="height">
 					<h3 class="title">N64 Bundlr</h3>
 					<span class="image"></span>
-					<p class="description">This for pricing loose N64 carts in Canadian dollars. When I built this, pricecharting.com didn't offer Canadian-dollar prices. They do now, but sometimes this is still faster.</p>
+					<p class="description">This was for pricing loose N64 carts in Canadian dollars. When I built this, pricecharting.com didn't offer Canadian-dollar prices. They do now, so I stopped paying for the API. Feel free to peruse the code and test the functionality. I set every game to $9.99EUR.</p>
 				</a>
 				<a href="/fanedits/shining.php" class="project-card tag-video" data-ci="_images/project-shining.jpg" data-ci-type="height">
 					<h3 class="title">The Shining (1997)</h3>
