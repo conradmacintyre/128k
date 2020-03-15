@@ -639,36 +639,6 @@
         }
 
 
-//Back To Top
-    function backToTop() {
-    	// console.log("BTT");
-        var backToTopButton = $('.BackToTop, .backtotop');
-        
-        function showBackToTop(){
-        	// console.log("test??");
-            if ( $(window).scrollTop() > 500 ) {
-                backToTopButton.addClass('visible');
-            } else {
-                backToTopButton.removeClass('visible');
-            }
-        }
-
-        if (backToTopButton) {
-        	// console.log("WHAT??");
-        	showBackToTop();
-            window.addEventListener('scroll', showBackToTop, false );
-
-            backToTopButton.click(function(){
-                $('html,body').animate({
-                    scrollTop: 0
-                }, 1000);
-            });
-
-        }
-
-    } window.addEventListener('load', () => backToTop() );
-
-
     // Browse Field Prettifier
     var inputs = document.querySelectorAll( 'input[type=\'file\']' );
 	Array.prototype.forEach.call( inputs, function( input ) {

@@ -25,6 +25,98 @@ body {
 	@include row();
 }
 
+// Header - Universal
+	.header {
+		@include row($wrap:false);
+		@include full-width();
+		z-index: 3;
+		padding: 0 $grid-gutters-default;
+		display: flex;
+		align-items: center;
+		position: fixed;
+		top: 0;
+		background-color: rgba($shade-lite, 0);
+	    backdrop-filter: blur(0px);
+	    text-shadow: -1px 1px 2px rgba($shade-dark, 0.5);
+		transition: background-color 0.5s ease, backdrop-filter 0.5s ease, text-shadow 0.5s ease;
+		&.standalone {
+			background-color: rgba($shade-lite, 0.9);
+	    	backdrop-filter: blur(5px);
+	    	text-shadow: -1px 1px 2px rgba($shade-dark, 0);
+	    }
+		&-logo {
+			font-size: $h3-font-size;
+			font-weight: bold;
+			position: relative;
+			top: -40px;
+			transition: top 0.5s ease;
+			.standalone & {
+				top: 0;
+			}
+		}
+		&-nav-wrapper {
+			flex-grow: 1;
+			position: relative;
+		}
+		&-nav {
+			display: flex;
+			justify-content: flex-end;
+			flex-wrap: wrap;
+			.mobile & {
+				flex-direction: column;
+				position: absolute;
+				top: 100%;
+				right: -7.5px;
+				background: transparent;
+				backdrop-filter: blur(0px);
+				align-items: flex-end;
+				transform-origin: top;
+    			transform: scale(1, 0);
+    			transition: transform 0.5s ease, background 0.5s ease, backdrop-filter 0.5s ease;
+    			.standalone & {
+					background-color: rgba($shade-lite, 0.9);
+	    			backdrop-filter: blur(5px);
+				}
+    			&.open {
+    				transform: scale(1, 1);
+    			}
+			}
+			a {
+				display: inline-block;
+				color: $shade-lite;
+				font-size: 120%;
+				text-decoration: none;
+				padding: 15px 7.5px;
+				font-size: 80%;
+				text-transform: uppercase;
+				transition: color 0.5s ease, padding 0.5s ease;
+				.standalone & {
+					color: $color-primary;
+				}
+				.mobile & {
+					padding: 7.5px 7.5px;
+					.standalone & {
+						padding: 7.5px 15px;
+					}
+				}
+			}
+			&-trigger {
+				display: none;
+				.mobile & {
+					display: flex;
+					justify-content: flex-end;
+					padding: 15px 7.5px;
+					color: $shade-lite;
+					transition: color 0.5s ease;
+					cursor: pointer;
+					.standalone & {
+						color: $color-primary;
+					}
+				}
+			}
+		}
+	}
+
 .content {
 	@include column(sm 12, md 10, lg 8);
 	@include shift(md 1, lg 2);
