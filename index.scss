@@ -313,7 +313,7 @@
 			.filter-title {
 				font-weight: bold;
 			}
-			a {
+			button {
 				@include button( $bg-color:$color-success, $shade-shift:darken, $size:small);
 				margin: 15px;
 				&.open {
@@ -383,7 +383,7 @@
 	}
 
 // Contact
-	.contact-me {
+	.contact {
 		padding: 50px 0;
 		form.contact {
 			@include column(sm 12, md 10, lg 8);
@@ -466,17 +466,12 @@
 	    color: $color-primary;
 	    background: $shade-lite;
 	    border-radius: 4px;
-	    padding: 0 8px 0 4px;
+	    padding: 0 4px;
 	    font-size: 25px;
 	    box-shadow: 0 3px 5px rgba($shade-dark,0.5);
 	    transform: translateX(-200%);
 	    transition: transform 0.5s ease;
 	    z-index: 1;
-	    &:before {
-		    content: "\21d0";
-		    transform: rotate(90deg);
-		    display: block;
-		}
 		&.visible {
 			transform: translateX(0);
 		}
@@ -486,7 +481,7 @@
 	footer {
 		@include full-width;
 		background: $shade-dark;
-		color: $shade-medium;
+		color: $shade-medium-lite;
 		border: 1px transparent solid;
 		padding: 25px;
 		text-align: center;

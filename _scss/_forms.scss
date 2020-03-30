@@ -1,0 +1,91 @@
+//*******************************************
+	// FORMS (convert to mixin)
+	//*******************************************
+		.form-field {
+			position: relative;
+			margin-bottom: 25px;
+		}
+		.help-trigger {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: block;
+			width: 25px;
+			height: 25px;
+			border: 2px solid $color-warning;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 20px;
+			font-size: 90%;
+			color: $color-warning;
+			cursor: pointer;
+			&:hover,
+			&.open {
+				background-color: $shade-medium-dark;
+			}
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}	
+		[type='text'], 
+		[type='password'], 
+		[type='date'], 
+		[type='datetime'], 
+		[type='datetime-local'], 
+		[type='month'], 
+		[type='week'], 
+		[type='email'], 
+		[type='number'], 
+		[type='search'], 
+		[type='tel'],
+		[type='time'], 
+		[type='url'], 
+		[type='color'], 
+		textarea {
+		    display: block;
+		    margin: 0 0 1.25rem;
+		    padding: 0.7rem;
+		    border: 1px solid $shade-medium;
+		    border-radius: 5px;
+		    background-color: #fefefe;
+		    box-shadow: inset 0 1px 2px rgba($color-primary,0.1);
+		    font-family: inherit;
+		    font-size: inherit;
+		    font-weight: normal;
+		    color: #0a0a0a;
+		    transition: box-shadow 0.5s,border-color 0.25s ease-in-out;
+		    appearance: none;
+		    &:focus {
+		    	outline: none;
+			    border: 1px solid $color-primary;
+			    background-color: #fefefe;
+			    box-shadow: 0 0 5px $color-primary;
+			    transition: box-shadow 0.5s ease-in-out, border-color 0.25s ease-in-out;
+		    }
+		}
+		[type='color'] {
+			width: 2.4375rem;
+			height: 2.4375rem;
+			padding: 0.1rem 0.2rem;
+		}
+		[type='file'] {
+			width: 0.1px;
+			height: 0.1px;
+			opacity: 0;
+			overflow: hidden;
+			position: absolute;
+			z-index: -1;
+			+ .file-placeholder {
+				@include button($size:small);
+
+			}
+			&:focus + .file-placeholder ,
+			& + .file-placeholder:hover {
+			    // background-color: red;
+			}
+		}
+		button,
+		[type='submit'] {
+			@include button;
+		}

@@ -602,7 +602,7 @@
 			}
 
 		function scrollAnchors(e, respond = null) {
-			const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
+			const distanceToTop = el => Math.floor(el.getBoundingClientRect().top - 100);
 			e.preventDefault();
 			var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
 			const targetAnchor = document.querySelector(targetID);

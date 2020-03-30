@@ -2331,6 +2331,7 @@
 
 //Populates the newly-built table with 
 	function populateGameTable( _data , _pcid ){
+		console.log(_data, _pcid);
 		if ( _data === null ) {
 			resetData(); //Clear local storage
 			return; //Break out of func?
@@ -2375,13 +2376,22 @@
 					"https://ae.pricecharting.com/api/product?t="+pcAuthToken+"&id="+pcid,
 					//data
 					function(data) {
-						console.log(data);
+						console.log('Success');
 						//Set localStorage entry for each game
 						localStorage.setItem( pcid , JSON.stringify( data ) );
 						//Convert the data into user-accessible info
 						populateGameTable( data , pcid );
 					}
-				);
+				).fail(function() {
+					console.log('Failure');
+					var placeholderData = {
+						"id" : pcid,
+						"loose-price" : 999,
+						"product-name" : "error"
+					}
+					//Convert the data into user-accessible info
+					populateGameTable( placeholderData , pcid );
+				});
 			//Otherwise grab it from local
 			} else {
 				//Convert the data into user-accessible info
@@ -2641,8 +2651,9 @@
 	$(document).ready(function(){
 		//Set CAD exchange
 		$.get( 
-			"https://data.fixer.io/api/latest?access_key=c171f44c489d8926104d2f3a7b8172d3&symbols=USD,CAD",
+			"http://data.fixer.io/api/latest?access_key=c171f44c489d8926104d2f3a7b8172d3&symbols=USD,CAD",
 			function( data ){
+				console.log(data);
 				if (typeof data !== 'object') {
 					data = JSON.parse(data);
 				}

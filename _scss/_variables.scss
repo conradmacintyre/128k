@@ -3,8 +3,8 @@ $reset: true;
 $prototype: false;
 
 // Colours
-$color-primary: #001f3f !default; // Navy
-$color-secondary: #3D9970 !default; // Olive
+$color-primary: #1133aa !default; // Navy
+$color-secondary: #aa3311 !default; // Olive
 $color-tertiary: #B10DC9 !default; // Purple
 $color-success: #2ECC40 !default;
 $color-warning: #ff9900 !default;
@@ -119,6 +119,17 @@ $billboard-valign: middle !default;
 $billboard-halign: center !default;
 $billboard-text-color: $shade-lite !default;
 $billboard-background-color: transparent !default;
+
+// Popups
+$popup: (
+	open-class:'open',
+	bg-class:'bg',
+	body-class:'popup-open',
+	wrap-class:'wrap',
+	container-class:'container',
+	close-class:'close',
+	content-class:'content'
+) !default;
 
 
 
