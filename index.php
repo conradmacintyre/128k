@@ -224,7 +224,7 @@
 				<a href="/fanedits/stand.php" class="project-card tag-video" data-ci="_images/project-stand.jpg" data-ci-type="height">
 					<h3 class="title">The Stand (1994)</h3>
 					<span class="image"></span>
-					<p class="description">I turned a 6-hour, 4-part miniseries into a single-sitting 3-hours-and-21-minute film. <b>IF YOU OWN A LEGAL COPY</b>, take your stand!</p>
+					<p class="description">I turned a 6-hour and 40-minute, 4-part miniseries into a single-sitting 3 hour film. <b>IF YOU OWN A LEGAL COPY</b>, take your stand!</p>
 				</a>
 				<a href="/wheeloffortune" class="project-card tag-game" data-ci="_images/project-wheel.jpg" data-ci-type="height">
 					<h3 class="title">Wheel of Fortune (Beta)</h3>
