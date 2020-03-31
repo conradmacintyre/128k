@@ -1,0 +1,20 @@
+$color-primary:	rgba(200,0,0,0.9); // Ice
+
+// Shades
+$shade-dark: #111;
+
+$shade-lite: #EEE;
+
+
+$slide-position: (
+	v: bottom, 
+	h: center
+);
+
+
+
+@import 'fanedit';
+
+.billboard-slide {
+	text-shadow: 0 0 10px rgba(200,0,0,0.9);
+}
