@@ -52,6 +52,7 @@
 			font-size: add-unit($p-font-size);
 		}
 		body {
+			background-color: $body-bg;
 			font-family: $p-font;
 			font-size: 100%;
 			font-weight: $p-font-weight;

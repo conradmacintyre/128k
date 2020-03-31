@@ -17,54 +17,6 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
-	"/128k.ca droplet.app/Contents/Info.plist": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/128k.ca droplet.app/Contents/Info.plist",
-		"oF": 0
-		},
-	"/128k.ca droplet.app/Contents/MacOS/droplet": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/128k.ca droplet.app/Contents/MacOS/droplet",
-		"oF": 0
-		},
-	"/128k.ca droplet.app/Contents/PkgInfo": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/128k.ca droplet.app/Contents/PkgInfo",
-		"oF": 0
-		},
-	"/128k.ca droplet.app/Contents/Resources/droplet.icns": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/128k.ca droplet.app/Contents/Resources/droplet.icns",
-		"oF": 0
-		},
-	"/128k.ca droplet.app/Contents/Resources/droplet.rsrc": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/128k.ca droplet.app/Contents/Resources/droplet.rsrc",
-		"oF": 0
-		},
-	"/128k.ca droplet.app/Contents/Resources/Scripts/main.scpt": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/128k.ca droplet.app/Contents/Resources/Scripts/main.scpt",
-		"oF": 0
-		},
 	"/_images/billboard-code.jpg": {
 		"ft": 16384,
 		"iS": 586273,
@@ -133,7 +85,7 @@
 		},
 	"/_images/logo-bernardin.png": {
 		"ft": 32768,
-		"iS": 4547,
+		"iS": 13446,
 		"oA": 0,
 		"oAP": "/_images/logo-bernardin.png",
 		"oF": 0,
@@ -144,7 +96,7 @@
 		},
 	"/_images/logo-bodymods.jpg": {
 		"ft": 16384,
-		"iS": 14410,
+		"iS": 19812,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/logo-bodymods.jpg",
@@ -155,7 +107,7 @@
 		},
 	"/_images/logo-bodymods.png": {
 		"ft": 32768,
-		"iS": 10666,
+		"iS": 76647,
 		"oA": 0,
 		"oAP": "/_images/logo-bodymods.png",
 		"oF": 0,
@@ -166,7 +118,7 @@
 		},
 	"/_images/logo-caseware.png": {
 		"ft": 32768,
-		"iS": 3162,
+		"iS": 73519,
 		"oA": 0,
 		"oAP": "/_images/logo-caseware.png",
 		"oF": 0,
@@ -177,7 +129,7 @@
 		},
 	"/_images/logo-fitnesstown.png": {
 		"ft": 32768,
-		"iS": 6982,
+		"iS": 49895,
 		"oA": 0,
 		"oAP": "/_images/logo-fitnesstown.png",
 		"oF": 0,
@@ -188,7 +140,7 @@
 		},
 	"/_images/logo-idealever.png": {
 		"ft": 32768,
-		"iS": 2322,
+		"iS": 3551,
 		"oA": 0,
 		"oAP": "/_images/logo-idealever.png",
 		"oF": 0,
@@ -199,7 +151,7 @@
 		},
 	"/_images/logo-metrokids.png": {
 		"ft": 32768,
-		"iS": 3624,
+		"iS": 80919,
 		"oA": 0,
 		"oAP": "/_images/logo-metrokids.png",
 		"oF": 0,
@@ -210,7 +162,7 @@
 		},
 	"/_images/logo-mtseymour.png": {
 		"ft": 32768,
-		"iS": 2584,
+		"iS": 98460,
 		"oA": 0,
 		"oAP": "/_images/logo-mtseymour.png",
 		"oF": 0,
@@ -221,7 +173,7 @@
 		},
 	"/_images/logo-plasticbank.png": {
 		"ft": 32768,
-		"iS": 8714,
+		"iS": 47725,
 		"oA": 0,
 		"oAP": "/_images/logo-plasticbank.png",
 		"oF": 0,
@@ -232,7 +184,7 @@
 		},
 	"/_images/logo-siddickens.png": {
 		"ft": 32768,
-		"iS": 8368,
+		"iS": 69343,
 		"oA": 0,
 		"oAP": "/_images/logo-siddickens.png",
 		"oF": 0,
@@ -254,7 +206,7 @@
 		},
 	"/_images/project-blackjack.jpg": {
 		"ft": 16384,
-		"iS": 48832,
+		"iS": 112325,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-blackjack.jpg",
@@ -265,7 +217,7 @@
 		},
 	"/_images/project-bpbingo.jpg": {
 		"ft": 16384,
-		"iS": 57059,
+		"iS": 147388,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-bpbingo.jpg",
@@ -276,7 +228,7 @@
 		},
 	"/_images/project-brandwars.jpg": {
 		"ft": 16384,
-		"iS": 46510,
+		"iS": 141794,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-brandwars.jpg",
@@ -287,7 +239,7 @@
 		},
 	"/_images/project-dgrbingo.jpg": {
 		"ft": 16384,
-		"iS": 53568,
+		"iS": 177973,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-dgrbingo.jpg",
@@ -298,7 +250,7 @@
 		},
 	"/_images/project-familyfeud.jpg": {
 		"ft": 16384,
-		"iS": 69082,
+		"iS": 143557,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-familyfeud.jpg",
@@ -309,7 +261,7 @@
 		},
 	"/_images/project-it.jpg": {
 		"ft": 16384,
-		"iS": 49368,
+		"iS": 97368,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-it.jpg",
@@ -320,7 +272,7 @@
 		},
 	"/_images/project-jeopardy.jpg": {
 		"ft": 16384,
-		"iS": 66893,
+		"iS": 102634,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-jeopardy.jpg",
@@ -342,7 +294,7 @@
 		},
 	"/_images/project-shining.jpg": {
 		"ft": 16384,
-		"iS": 15370,
+		"iS": 76261,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-shining.jpg",
@@ -353,7 +305,7 @@
 		},
 	"/_images/project-stand.jpg": {
 		"ft": 16384,
-		"iS": 22489,
+		"iS": 179299,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-stand.jpg",
@@ -364,7 +316,7 @@
 		},
 	"/_images/project-wheel.jpg": {
 		"ft": 16384,
-		"iS": 56670,
+		"iS": 123277,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-wheel.jpg",
@@ -574,7 +526,7 @@
 		"uL": 1
 		},
 	"/_scss/_router.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -583,11 +535,11 @@
 		"oA": 1,
 		"oAP": "/_scss/_router.css",
 		"oF": 0,
-		"oS": 1,
+		"oS": 3,
 		"uL": 1
 		},
 	"/_scss/_variables.scss": {
-		"aP": 1,
+		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -596,7 +548,7 @@
 		"oA": 1,
 		"oAP": "/_scss/_variables.css",
 		"oF": 0,
-		"oS": 1,
+		"oS": 3,
 		"uL": 1
 		},
 	"/bingo/desktop_left.png": {
@@ -973,6 +925,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/blog/bl-content/workspaces/simple-stats/2020-01-05.log",
+		"oF": 0
+		},
+	"/blog/bl-content/workspaces/simple-stats/2020-03-06.log": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/workspaces/simple-stats/2020-03-06.log",
 		"oF": 0
 		},
 	"/blog/bl-kernel/abstract/dbjson.class.php": {
@@ -7737,12 +7697,265 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/fanedits/images/stand/compare-composite-tcc.jpg": {
+		"ft": 16384,
+		"iS": 205801,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-composite-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-composite-toc.jpg": {
+		"ft": 16384,
+		"iS": 706236,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-composite-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-credit-tcc.jpg": {
+		"ft": 16384,
+		"iS": 178793,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-credit-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-credit-toc.jpg": {
+		"ft": 16384,
+		"iS": 590297,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-credit-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-dreams-tcc.jpg": {
+		"ft": 16384,
+		"iS": 204968,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-dreams-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-dreams-toc.jpg": {
+		"ft": 16384,
+		"iS": 498700,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-dreams-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-grade-tcc.jpg": {
+		"ft": 16384,
+		"iS": 288806,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-grade-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-grade-toc.jpg": {
+		"ft": 16384,
+		"iS": 802370,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-grade-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-title-tcc.jpg": {
+		"ft": 16384,
+		"iS": 245458,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-title-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-title-toc.jpg": {
+		"ft": 16384,
+		"iS": 674684,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-title-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/fanedits/images/stand/poster.jpg": {
 		"ft": 16384,
 		"iS": 607201,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/fanedits/images/stand/poster.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-dee.jpg": {
+		"ft": 16384,
+		"iS": 216813,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-dee.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-fagerbakke.jpg": {
+		"ft": 16384,
+		"iS": 196012,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-fagerbakke.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-ferrer.jpg": {
+		"ft": 16384,
+		"iS": 222957,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-ferrer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-frewer.jpg": {
+		"ft": 16384,
+		"iS": 163286,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-frewer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-lowe.jpg": {
+		"ft": 16384,
+		"iS": 181554,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-lowe.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-nemic.jpg": {
+		"ft": 16384,
+		"iS": 317249,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-nemic.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-ringwald.jpg": {
+		"ft": 16384,
+		"iS": 167037,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-ringwald.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-sangiacomo.jpg": {
+		"ft": 16384,
+		"iS": 270249,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-sangiacomo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-sheridan.jpg": {
+		"ft": 16384,
+		"iS": 221960,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-sheridan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-sinise.jpg": {
+		"ft": 16384,
+		"iS": 219119,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-sinise.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-storke.jpg": {
+		"ft": 16384,
+		"iS": 161842,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-storke.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-vannorden.jpg": {
+		"ft": 16384,
+		"iS": 184175,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-vannorden.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-walston.jpg": {
+		"ft": 16384,
+		"iS": 263243,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-walston.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -7879,6 +8092,45 @@
 		"oAP": "/fanedits/shining.css",
 		"oF": 0,
 		"oS": 1,
+		"uL": 1
+		},
+	"/fanedits/stand.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/fanedits/stand-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/fanedits/stand.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fanedits/stand.css.map",
+		"oF": 0
+		},
+	"/fanedits/stand.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fanedits/stand.php",
+		"oF": 0
+		},
+	"/fanedits/stand.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/fanedits/stand.css",
+		"oF": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/favicon.ico": {

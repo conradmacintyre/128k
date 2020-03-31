@@ -9,6 +9,10 @@
 		md: 66px,
 		lg: 100px
 	) !default;
+	$slide-position: (
+		v: bottom, 
+		h: right
+	) !default;
 
 	@import '../_scss/_router';
 
@@ -199,7 +203,7 @@
 		@include full-width;
 		text-transform: uppercase;
 		&-slide {
-			@include slide(bottom, right);
+			@include slide(map-get($slide-position, v),map-get($slide-position, h));
 		}
 	}
 
