@@ -6,11 +6,19 @@
 ## GAMING
 Games should be complete with their original box and manual. Hardware items don't need to have boxes. Consoles should come with their matching controller, if possible. :)
 
+### Atari 2600 
+- Defender
+- Galaxian
+- Pole Position
+- Pac-Man
+- Space Invaders
+
 ### Atari 7800 
 - Donkey Kong
 - Donkey Kong Junior
 - Mario Bros
 - Ms. Pac-Man
+- Any other game
 
 ### Sega Genesis
 - Castle of Illusion
@@ -19,13 +27,24 @@ Games should be complete with their original box and manual. Hardware items don'
 - Sonic the Hedgehog 3
 - Sonic vs Knuckles
 - World of Illusion
+- X-Men 2: Clone Wars
 
 ### NES 
+- [8bitdo NES Mod Kit](https://shop.8bitdo.com/products/mod-kit-for-nes-controller)
+- [8bitdo Retro Receiver](https://shop.8bitdo.com/products/retro-receiver-for-nes)
 - Contra
 - Darkwing Duck
 - Ducktales
+- Excitebike
+- Legend of Zelda, The
+- Mega-Man 1-6
+- Pro Wrestling
+- Teenage Mutant Ninja Turtles
 
 ### Super NES
+- [8bitdo SNES Mod Kit](https://shop.8bitdo.com/products/mod-kit-for-snes-controller)
+- Legend of Zelda: A Link to the Past, The
+- Mickey's Magical Quest
 - StarFox
 - Super Mario Kart
 - Super Mario World
@@ -46,21 +65,25 @@ Games should be complete with their original box and manual. Hardware items don'
 - Controller - Mario Kart (Black & Grey)
 - Controller - Millennium 2000 (Silver)
 - Controller - Nintendo Power 100 (Gold) 
-- Mario Tennis
 - WWF Wrestlemania 2000
 
 ### GameCube 
+- Eternal Darkness
 - Luigi's Mansion
 - Resident Evil 0
 - Resident Evil
+- Spider-Man 2
+- WWE Day of Reckoning
 
 ### Wii
 - Wii Remote - Blue (Motion Plus)
 - Wii Remote - Bowser (Motion Plus)
-- Wii Remote - Red (Motion Plus)
 - Wii Remote - Toad (Motion Plus)
 - Wii Remote - Yoshi (Motion Plus)
 - Wii Remote - Zelda (Motion Plus)
+
+### Wii U 
+- Mario Party 10
 
 ### Nintendo Switch
 - Console (any variant)
@@ -68,8 +91,12 @@ Games should be complete with their original box and manual. Hardware items don'
 - Super Mario Odyssey
 
 ### Playstation 1
+- [8Bitdo PS1 Mod Kit](https://shop.8bitdo.com/products/mod-kit-for-original-playstation-controller)
 - Silent Hill
+- Triple Play 2000
+- WWF Attitude
 - WWF Smackdown 2
+- Any Long-Box Game
 
 ### Playstation 2
 - Getaway, The
@@ -79,6 +106,8 @@ Games should be complete with their original box and manual. Hardware items don'
 - GTA III (comes with a map)
 - GTA: Liberty City Stories (comes with a map)
 - GTA: Vice City Stories (comes with a map)
+- Max Payne
+- Max Payne 2: The Fall of Max Payne
 - Midnight Club 3: Dub Edition Remix
 - Resident Evil: Code Veronica
 
@@ -91,23 +120,18 @@ Games should be complete with their original box and manual. Hardware items don'
 - Resident Evil 4
 - Resident Evil 5
 - Resident Evil 6
-- Spider-Man
 - Uncharted: The Nathan Drake Collection
 
 ***
 
 ## GUITAR/MUSIC
 - D'Adddario NYXL Electric Guitar Strings, 10-46 (always need these)
-- [Fender Deluxe Strat](https://www.long-mcquade.com/74018/Guitars/Electric-Guitars/Fender-Musical-Instruments/Deluxe-Stratocaster--Maple-Neck--Sapphire-Blue-Transparent.htm)
-- [Gibson Les Paul Tribute](https://www.long-mcquade.com/136572/Guitars/Electric-Guitars/Gibson/Les-Paul-Tribute---Satin-Tobacco-Burst.htm'/
-)
 - TC Electronic Nova Delay (guitar pedal)
 - Wampler Terraform (guitar pedal)
 
 ***
 
-## MOVIES
-Blu-Ray, please. :)
+## MOVIES (Blu-Ray)
 - 12 Angry Men (1957)
 - Con-Air
 - Edge of Tomorrow
