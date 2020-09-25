@@ -6,8 +6,8 @@
 	// TODO: Add lazy loading
  	function cloudImage () {
  		let imageRefs = document.querySelectorAll('[data-ci]');
- 		let cloudUrl = 'https://aditlfvqko.cloudimg.io/v7/';
- 		let rootUrl = window.location.hostname.indexOf('localhost') ? 'https://128k.ca/' + location.pathname.substring(0, location.pathname.lastIndexOf("/")+1) : window.location.href.substring(0, window.location.href.lastIndexOf("/")+1);
+ 		let cloudUrl = '';//https://aditlfvqko.cloudimg.io/v7/';
+ 		let rootUrl = ''; //window.location.hostname.indexOf('localhost') ? 'https://128k.ca/' + location.pathname.substring(0, location.pathname.lastIndexOf("/")+1) : window.location.href.substring(0, window.location.href.lastIndexOf("/")+1);
  		imageRefs.forEach( imageRef => {
  			let sizeType = imageRef.dataset.ciType ? imageRef.dataset.ciType : 'width';
  			let sizeValue = function () {

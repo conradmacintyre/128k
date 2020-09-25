@@ -221,16 +221,10 @@
 					<span class="image"></span>
 					<p class="description">I removed over half of the 4:30 runtime of the original mini. And I think this streamlined update makes this miniseries much more compelling. <b>IF YOU OWN A LEGAL COPY</b>, then shine on, you crazy diamond!</p>
 				</a>
-				<a class="project-card tag-video popup-link" data-ci="_images/project-stand.jpg" data-ci-type="height" data-content="stand">
-					<span id="stand" class="popup-content">
-						<div class="stand-not-ready">
-							<h1>Sorry,</h1>
-							<p>The Stand is not yet completed. Since I have purchased the BluRay version, I have started to re-do the edit and it is coming along wonderfully. Once it is ready, I will make it available online.</p>
-						</div>
-					</span>
+				<a href="/fanedits/stand.php" class="project-card tag-video" data-ci="_images/project-stand.jpg" data-ci-type="height">
 					<h3 class="title">The Stand (1994)</h3>
 					<span class="image"></span>
-					<p class="description">I turned a 6-hour, 4-part miniseries into a single-sitting 3-hours-and-21-minute film. <b>IF YOU OWN A LEGAL COPY</b>, take your stand!</p>
+					<p class="description">I turned a 6-hour and 40-minute, 4-part miniseries into a single-sitting 3 hour film. <b>IF YOU OWN A LEGAL COPY</b>, take your stand!</p>
 				</a>
 				<a href="/wheeloffortune" class="project-card tag-game" data-ci="_images/project-wheel.jpg" data-ci-type="height">
 					<h3 class="title">Wheel of Fortune (Beta)</h3>

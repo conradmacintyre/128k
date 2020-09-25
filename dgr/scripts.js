@@ -1,71 +1,74 @@
 const commonPhrases = [
     'Baby!',
     'Checkpoint City',
-    'Dave hollers random noises',
+    'Dave dies right after CP',
+    'Dave makes random noises',
     'Dave laughs at this own demise',
     'Dave makes a face',
+    'Dave says a non-swear',
     'Fire (it) up!',
     'Hello my friends!',
     'It\'s a beautiful city',
+    'Ohhhhhh',
     'Let\'s Go!',
     'NOOOO!',
     'Smack! Dat! Axe!',
     'Take care',
     'YEESS!',
-    'Zoom in on Dave\'s face'
+    'Zoom in on Dave(\'s face)'
 ];
 
 const uncommonPhrases = [
-    '...look like an idiot...',
     'And then I spoke',
     'Big dumb / brain!',
     'Boom-Boom',
     'Cheese / Gouda / Cheddar',
+    'Clench / Clenched / Clencher',
     'Dave breaks out in song',
-    'Dave mentions another streamer',
     'Dave mentions his college days',    
     'Dave says nonsense word(s)',
     'Dave wears a hat',
     'DGR Guarantee',
-    'Every hole is a chance for glory',
+    'Fifty-fifty / 50%',
     '*Food-coloured* Pipe',
     'Gamer / gaming',
-    'Gird',
     'It\' Christmas',
+    'Hot ding-dong',
+    'I (don\'t) understand',
     'Learning!',
-    'Lore',
-    'New Jersey',
     'P/Clutch Daddy',
     'Progress City',
-    'The Troll Song',
     'The pioneers...',
+    'Uncle DGR',
     'Wait... what?',
-    'Ya boy / Makin\' plays'
 ];
 
 const rarePhrases = [
-    '...take our first clear',
-    'Ball(s) to the face',
     'Dave leaves the frame',
     'Dave lowers the green screen',
+    'Dave mentions another streamer',
+    'Every hole is a chance for glory',
     'Fill thine horn (with oil)!',
-    'He who waits, dies',
+    'Gird',
     'Holy rip!',
     'Hot garbage',
-    'It\'s not a troll level unless...',
+    'Lore',
+    'Look like an idiot',
+    'New Jersey',
+    'No level left uncleared',
     'One more shot at the title',
     'Rapscallion',
-    'Sailor\'s delight',
     'Well endowed',
     'When I speak, I die',
     'Why do I talk?',
+    'Ya boy / Makin\' plays',
     'YOLO Bolo'
 ];
 
 // Bingo Slots Array-Maker
 let slots = [...commonPhrases];
 slots.push(rarePhrases[Math.floor(Math.random() * rarePhrases.length)]);
-while (slots.length < 25) {
+while (slots.length < 24) {
     let phraseNumber = Math.floor(Math.random() * uncommonPhrases.length);
     slots.push(uncommonPhrases[phraseNumber]);
     uncommonPhrases.splice(phraseNumber,1);

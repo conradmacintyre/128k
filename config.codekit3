@@ -975,6 +975,14 @@
 		"oAP": "/blog/bl-content/workspaces/simple-stats/2020-01-05.log",
 		"oF": 0
 		},
+	"/blog/bl-content/workspaces/simple-stats/2020-03-06.log": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/blog/bl-content/workspaces/simple-stats/2020-03-06.log",
+		"oF": 0
+		},
 	"/blog/bl-kernel/abstract/dbjson.class.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -7737,12 +7745,265 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/fanedits/images/stand/compare-composite-tcc.jpg": {
+		"ft": 16384,
+		"iS": 205801,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-composite-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-composite-toc.jpg": {
+		"ft": 16384,
+		"iS": 706236,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-composite-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-credit-tcc.jpg": {
+		"ft": 16384,
+		"iS": 178793,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-credit-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-credit-toc.jpg": {
+		"ft": 16384,
+		"iS": 590297,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-credit-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-dreams-tcc.jpg": {
+		"ft": 16384,
+		"iS": 204968,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-dreams-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-dreams-toc.jpg": {
+		"ft": 16384,
+		"iS": 498700,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-dreams-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-grade-tcc.jpg": {
+		"ft": 16384,
+		"iS": 288806,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-grade-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-grade-toc.jpg": {
+		"ft": 16384,
+		"iS": 802370,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-grade-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-title-tcc.jpg": {
+		"ft": 16384,
+		"iS": 245458,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-title-tcc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/compare-title-toc.jpg": {
+		"ft": 16384,
+		"iS": 674684,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/compare-title-toc.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/fanedits/images/stand/poster.jpg": {
 		"ft": 16384,
 		"iS": 607201,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/fanedits/images/stand/poster.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-dee.jpg": {
+		"ft": 16384,
+		"iS": 216813,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-dee.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-fagerbakke.jpg": {
+		"ft": 16384,
+		"iS": 196012,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-fagerbakke.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-ferrer.jpg": {
+		"ft": 16384,
+		"iS": 222957,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-ferrer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-frewer.jpg": {
+		"ft": 16384,
+		"iS": 163286,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-frewer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-lowe.jpg": {
+		"ft": 16384,
+		"iS": 181554,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-lowe.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-nemic.jpg": {
+		"ft": 16384,
+		"iS": 317249,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-nemic.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-ringwald.jpg": {
+		"ft": 16384,
+		"iS": 167037,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-ringwald.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-sangiacomo.jpg": {
+		"ft": 16384,
+		"iS": 270249,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-sangiacomo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-sheridan.jpg": {
+		"ft": 16384,
+		"iS": 221960,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-sheridan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-sinise.jpg": {
+		"ft": 16384,
+		"iS": 219119,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-sinise.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-storke.jpg": {
+		"ft": 16384,
+		"iS": 161842,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-storke.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-vannorden.jpg": {
+		"ft": 16384,
+		"iS": 184175,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-vannorden.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/fanedits/images/stand/rotator-walston.jpg": {
+		"ft": 16384,
+		"iS": 263243,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/fanedits/images/stand/rotator-walston.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -7879,6 +8140,45 @@
 		"oAP": "/fanedits/shining.css",
 		"oF": 0,
 		"oS": 1,
+		"sct": 1
+		},
+	"/fanedits/stand.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/fanedits/stand-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/fanedits/stand.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fanedits/stand.css.map",
+		"oF": 0
+		},
+	"/fanedits/stand.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fanedits/stand.php",
+		"oF": 0
+		},
+	"/fanedits/stand.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/fanedits/stand.css",
+		"oF": 0,
+		"oS": 3,
 		"sct": 1
 		},
 	"/favicon.ico": {
@@ -8140,6 +8440,14 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"/lyrics/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/lyrics/index.html",
+		"oF": 0
 		},
 	"/n64/app-icon.png": {
 		"ft": 32768,
