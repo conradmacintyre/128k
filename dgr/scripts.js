@@ -2,6 +2,7 @@ const commonPhrases = [
     'Baby!',
     'Checkpoint City',
     'Dave dies right after CP',
+    'Dave gets softlocked',
     'Dave makes random noises',
     'Dave laughs at this own demise',
     'Dave makes a face',
@@ -19,7 +20,6 @@ const commonPhrases = [
 ];
 
 const uncommonPhrases = [
-    'And then I spoke',
     'Big dumb / brain!',
     'Boom-Boom',
     'Cheese / Gouda / Cheddar',
@@ -29,33 +29,31 @@ const uncommonPhrases = [
     'Dave says nonsense word(s)',
     'Dave wears a hat',
     'DGR Guarantee',
-    'Fifty-fifty / 50%',
     '*Food-coloured* Pipe',
     'Gamer / gaming',
-    'It\' Christmas',
+    'It\'s Christmas!',
     'Hot ding-dong',
     'I (don\'t) understand',
-    'Learning!',
     'P/Clutch Daddy',
     'Progress City',
     'The pioneers...',
     'Uncle DGR',
-    'Wait... what?',
+    'Wait... what?'
 ];
 
 const rarePhrases = [
+    'And then I spoke',
     'Dave leaves the frame',
     'Dave lowers the green screen',
     'Dave mentions another streamer',
     'Every hole is a chance for glory',
     'Fill thine horn (with oil)!',
+    'Fifty-fifty / 50%',
     'Gird',
     'Holy rip!',
     'Hot garbage',
+    'Learning!',
     'Lore',
-    'Look like an idiot',
-    'New Jersey',
-    'No level left uncleared',
     'One more shot at the title',
     'Rapscallion',
     'Well endowed',
@@ -65,9 +63,32 @@ const rarePhrases = [
     'YOLO Bolo'
 ];
 
+// Scheduled Phrase
+let date = new Date();
+let day = date.getDay();
+let schedPhrase = '';
+switch (day) {
+    case 1:
+        // 0.00%
+        schedPhrase ='No level left uncleared'
+        break;
+    case 3:
+        // UNO MAS
+        schedPhrase ='Uno Mas'
+        break;
+    case 6:
+        // Trolled
+        schedPhrase ='Look like an idiot'
+        break;
+    default:
+    schedPhrase ='Awful pun or dad joke'
+}
+console.log(schedPhrase);
+
 // Bingo Slots Array-Maker
 let slots = [...commonPhrases];
 slots.push(rarePhrases[Math.floor(Math.random() * rarePhrases.length)]);
+slots.push(schedPhrase);
 while (slots.length < 24) {
     let phraseNumber = Math.floor(Math.random() * uncommonPhrases.length);
     slots.push(uncommonPhrases[phraseNumber]);
