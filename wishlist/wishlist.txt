@@ -31,7 +31,6 @@ Games should be complete with their original box and manual. Hardware items don'
 
 ### NES 
 - [8bitdo NES Mod Kit](https://shop.8bitdo.com/products/mod-kit-for-nes-controller)
-- Contra
 - Darkwing Duck
 - Ducktales
 - Excitebike
@@ -73,6 +72,9 @@ Games should be complete with their original box and manual. Hardware items don'
 - Controller - Millennium 2000 (Silver)
 - [Controller - Nintendo Power 100 (Gold)](https://www.ebay.ca/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=nintendo+64+nintendo+power+100&_sacat=0&LH_TitleDesc=0&_osacat=0&_odkw=nintendo+64+millennium+2000)
 - Legend of Zelda: Ocarina of Time, The
+- Mario Party 3
+- Paper Mario
+- Pokemon Stadium
 - WWF Wrestlemania 2000
 
 ### GameCube 
@@ -80,28 +82,23 @@ Games should be complete with their original box and manual. Hardware items don'
 - Luigi's Mansion
 - Resident Evil 0
 - Resident Evil
-- Spider-Man 2
 - Legend of Zelda: Twilight Princess, The
 - Legend of Zelda: Wind Waker, The
 - WWE Day of Reckoning
 
 ### Wii
-- Legend of Zelda: Skyward Sword, The
 - Wii Remote - Blue (Motion Plus)
 - Wii Remote - Bowser (Motion Plus)
 - Wii Remote - Toad (Motion Plus)
 - Wii Remote - Yoshi (Motion Plus)
-- Wii Remote - Zelda (Motion Plus)
 
 ### Wii U 
 - Legend of Zelda: Twilight Princess, The
-- Legend of Zelda: Wind Waker, The
-- Mario Party 10
 
 ### Nintendo Switch
 - Legend of Zelda: Link's Awakening, The
 - Luigi's Mansion 3
-- Super Mario Maker 2
+- Ghostbusters: The Video Game: Remastered
 
 ### Playstation 1
 - [8Bitdo PS1 Mod Kit](https://shop.8bitdo.com/products/mod-kit-for-original-playstation-controller)
@@ -109,20 +106,17 @@ Games should be complete with their original box and manual. Hardware items don'
 - Triple Play 2000
 - WWF Attitude
 - WWF Smackdown 2
-- Any Long-Box Game
+- Any Long-Box Game (Not Destruction Derby, Resident Evil, or Twisted Metal)
 
 ### Playstation 2
-- Getaway, The
-- Getaway: Black Monday, The
-- God of War
+- God of War (Black Label)
 - God of War 2
 - GTA III (w/ map)
 - GTA: Liberty City Stories (w/ map)
 - GTA: Vice City Stories (w/ map)
 - Max Payne
 - Max Payne 2: The Fall of Max Payne
-- Midnight Club 3: Dub Edition Remix
-- Resident Evil: Code Veronica
+- Resident Evil: Code Veronica (Black Label)
 
 ### Playstation 3
 - Driver: San Francisco
@@ -135,6 +129,9 @@ Games should be complete with their original box and manual. Hardware items don'
 
 ## GUITAR/MUSIC
 - D'Adddario NYXL Electric Guitar Strings, 10-46 (always need these)
+- Epiphone Firebird (Tobacco)
+- Fender Player Strat (Silver, Pau Ferro)
+- LTD EC-256FM (Cobalt Blue)
 - TC Electronic Nova Delay (guitar pedal)
 - Wampler Terraform (guitar pedal)
 
@@ -162,7 +159,7 @@ Amazon Gift Card
 
 ## TV SHOWS
 - Family Ties (Complete)
-- Law & Order (Seasons 4, 6-13, 15-20)
+- Law & Order (Seasons 4, 6-8, 10-13, 15-20)
 - Rockford Files, The (TV Movie Collection Vol 1 & 2)
 - Taxi (Complete)
 - X-Files (Seasons 10 & 11)

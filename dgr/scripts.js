@@ -2,9 +2,11 @@ const commonPhrases = [
     'Baby!',
     'Checkpoint City',
     'Dave dies right after CP',
-    'Dave hollers random noises',
+    'Dave gets softlocked',
+    'Dave makes random noises',
     'Dave laughs at this own demise',
     'Dave makes a face',
+    'Dave says a non-swear',
     'Fire (it) up!',
     'Hello my friends!',
     'It\'s a beautiful city',
@@ -18,7 +20,6 @@ const commonPhrases = [
 ];
 
 const uncommonPhrases = [
-    '...look like an idiot...',
     'Big dumb / brain!',
     'Boom-Boom',
     'Cheese / Gouda / Cheddar',
@@ -26,50 +27,68 @@ const uncommonPhrases = [
     'Dave breaks out in song',
     'Dave mentions his college days',    
     'Dave says nonsense word(s)',
+    'Dave wears a hat',
     'DGR Guarantee',
-    'Fifty-fifty / 50%',
     '*Food-coloured* Pipe',
-    'He who waits, dies',
+    'Gamer / gaming',
+    'It\'s Christmas!',
     'Hot ding-dong',
     'I (don\'t) understand',
-    'It\'s Christmas',
-    'Learning!',
     'P/Clutch Daddy',
     'Progress City',
     'The pioneers...',
     'Uncle DGR',
-    'Wait... what?',
-    'When I speak, I die',
-    'Ya boy / Makin\' plays'
+    'Wait... what?'
 ];
 
 const rarePhrases = [
-    '...take our first clear',
-    'Ball(s) to the face',
+    'And then I spoke',
     'Dave leaves the frame',
     'Dave lowers the green screen',
     'Dave mentions another streamer',
-    'Dave wears a hat',
     'Every hole is a chance for glory',
     'Fill thine horn (with oil)!',
-    'Gamer / gaming',
-    'Gird(ed)',
+    'Fifty-fifty / 50%',
+    'Gird',
     'Holy rip!',
     'Hot garbage',
-    'It\'s not a troll level unless...',
+    'Learning!',
     'Lore',
-    'New Jersey',
     'One more shot at the title',
     'Rapscallion',
-    'Sailor\'s delight',
     'Well endowed',
+    'When I speak, I die',
     'Why do I talk?',
+    'Ya boy / Makin\' plays',
     'YOLO Bolo'
 ];
+
+// Scheduled Phrase
+let date = new Date();
+let day = date.getDay();
+let schedPhrase = '';
+switch (day) {
+    case 1:
+        // 0.00%
+        schedPhrase ='No level left uncleared'
+        break;
+    case 3:
+        // UNO MAS
+        schedPhrase ='Uno Mas'
+        break;
+    case 6:
+        // Trolled
+        schedPhrase ='Look like an idiot'
+        break;
+    default:
+    schedPhrase ='Awful pun or dad joke'
+}
+console.log(schedPhrase);
 
 // Bingo Slots Array-Maker
 let slots = [...commonPhrases];
 slots.push(rarePhrases[Math.floor(Math.random() * rarePhrases.length)]);
+slots.push(schedPhrase);
 while (slots.length < 24) {
     let phraseNumber = Math.floor(Math.random() * uncommonPhrases.length);
     slots.push(uncommonPhrases[phraseNumber]);

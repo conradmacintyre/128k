@@ -17,6 +17,54 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
+	"/128k.ca droplet.app/Contents/Info.plist": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Info.plist",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/MacOS/droplet": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/MacOS/droplet",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/PkgInfo": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/PkgInfo",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Resources/droplet.icns": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Resources/droplet.icns",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Resources/droplet.rsrc": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Resources/droplet.rsrc",
+		"oF": 0
+		},
+	"/128k.ca droplet.app/Contents/Resources/Scripts/main.scpt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/128k.ca droplet.app/Contents/Resources/Scripts/main.scpt",
+		"oF": 0
+		},
 	"/_images/billboard-code.jpg": {
 		"ft": 16384,
 		"iS": 586273,
@@ -85,7 +133,7 @@
 		},
 	"/_images/logo-bernardin.png": {
 		"ft": 32768,
-		"iS": 13446,
+		"iS": 4547,
 		"oA": 0,
 		"oAP": "/_images/logo-bernardin.png",
 		"oF": 0,
@@ -96,7 +144,7 @@
 		},
 	"/_images/logo-bodymods.jpg": {
 		"ft": 16384,
-		"iS": 19812,
+		"iS": 14410,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/logo-bodymods.jpg",
@@ -107,7 +155,7 @@
 		},
 	"/_images/logo-bodymods.png": {
 		"ft": 32768,
-		"iS": 76647,
+		"iS": 10666,
 		"oA": 0,
 		"oAP": "/_images/logo-bodymods.png",
 		"oF": 0,
@@ -118,7 +166,7 @@
 		},
 	"/_images/logo-caseware.png": {
 		"ft": 32768,
-		"iS": 73519,
+		"iS": 3162,
 		"oA": 0,
 		"oAP": "/_images/logo-caseware.png",
 		"oF": 0,
@@ -129,7 +177,7 @@
 		},
 	"/_images/logo-fitnesstown.png": {
 		"ft": 32768,
-		"iS": 49895,
+		"iS": 6982,
 		"oA": 0,
 		"oAP": "/_images/logo-fitnesstown.png",
 		"oF": 0,
@@ -140,7 +188,7 @@
 		},
 	"/_images/logo-idealever.png": {
 		"ft": 32768,
-		"iS": 3551,
+		"iS": 2322,
 		"oA": 0,
 		"oAP": "/_images/logo-idealever.png",
 		"oF": 0,
@@ -151,7 +199,7 @@
 		},
 	"/_images/logo-metrokids.png": {
 		"ft": 32768,
-		"iS": 80919,
+		"iS": 3624,
 		"oA": 0,
 		"oAP": "/_images/logo-metrokids.png",
 		"oF": 0,
@@ -162,7 +210,7 @@
 		},
 	"/_images/logo-mtseymour.png": {
 		"ft": 32768,
-		"iS": 98460,
+		"iS": 2584,
 		"oA": 0,
 		"oAP": "/_images/logo-mtseymour.png",
 		"oF": 0,
@@ -173,7 +221,7 @@
 		},
 	"/_images/logo-plasticbank.png": {
 		"ft": 32768,
-		"iS": 47725,
+		"iS": 8714,
 		"oA": 0,
 		"oAP": "/_images/logo-plasticbank.png",
 		"oF": 0,
@@ -184,7 +232,7 @@
 		},
 	"/_images/logo-siddickens.png": {
 		"ft": 32768,
-		"iS": 69343,
+		"iS": 8368,
 		"oA": 0,
 		"oAP": "/_images/logo-siddickens.png",
 		"oF": 0,
@@ -206,7 +254,7 @@
 		},
 	"/_images/project-blackjack.jpg": {
 		"ft": 16384,
-		"iS": 112325,
+		"iS": 48832,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-blackjack.jpg",
@@ -217,7 +265,7 @@
 		},
 	"/_images/project-bpbingo.jpg": {
 		"ft": 16384,
-		"iS": 147388,
+		"iS": 57059,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-bpbingo.jpg",
@@ -228,7 +276,7 @@
 		},
 	"/_images/project-brandwars.jpg": {
 		"ft": 16384,
-		"iS": 141794,
+		"iS": 46510,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-brandwars.jpg",
@@ -239,7 +287,7 @@
 		},
 	"/_images/project-dgrbingo.jpg": {
 		"ft": 16384,
-		"iS": 177973,
+		"iS": 53568,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-dgrbingo.jpg",
@@ -250,7 +298,7 @@
 		},
 	"/_images/project-familyfeud.jpg": {
 		"ft": 16384,
-		"iS": 143557,
+		"iS": 69082,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-familyfeud.jpg",
@@ -261,7 +309,7 @@
 		},
 	"/_images/project-it.jpg": {
 		"ft": 16384,
-		"iS": 97368,
+		"iS": 49368,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-it.jpg",
@@ -272,7 +320,7 @@
 		},
 	"/_images/project-jeopardy.jpg": {
 		"ft": 16384,
-		"iS": 102634,
+		"iS": 66893,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-jeopardy.jpg",
@@ -294,7 +342,7 @@
 		},
 	"/_images/project-shining.jpg": {
 		"ft": 16384,
-		"iS": 76261,
+		"iS": 15370,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-shining.jpg",
@@ -305,7 +353,7 @@
 		},
 	"/_images/project-stand.jpg": {
 		"ft": 16384,
-		"iS": 179299,
+		"iS": 22489,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-stand.jpg",
@@ -316,7 +364,7 @@
 		},
 	"/_images/project-wheel.jpg": {
 		"ft": 16384,
-		"iS": 123277,
+		"iS": 56670,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/_images/project-wheel.jpg",
@@ -526,7 +574,7 @@
 		"sct": 1
 		},
 	"/_scss/_router.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -535,11 +583,11 @@
 		"oA": 1,
 		"oAP": "/_scss/_router.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"sct": 1
 		},
 	"/_scss/_variables.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
@@ -548,7 +596,7 @@
 		"oA": 1,
 		"oAP": "/_scss/_variables.css",
 		"oF": 0,
-		"oS": 3,
+		"oS": 1,
 		"sct": 1
 		},
 	"/bingo/desktop_left.png": {
@@ -8392,6 +8440,14 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"/lyrics/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/lyrics/index.html",
+		"oF": 0
 		},
 	"/n64/app-icon.png": {
 		"ft": 32768,
