@@ -5,483 +5,75 @@
 	<title>Wheel Of Fortune</title>
 	<meta name="description" content="description_here">
 	<meta name="author" content="Conrad">
-	<style>
-		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
-		 body {
-			background-color: black;
-		 }
-		 .puzzle {
-			display: none;
-			padding: 60px 0;
-			background-image: linear-gradient(lightblue 0px, black 400px);
-		 }
-		 .puzzle.selected {
-			display: block;
-		 }
-		 .row {
-			background-color: green;
-			display: table;
-			margin: 0 auto;
-			position: relative;
-			z-index: 1;
-		 }
-		 .row.r1 {
-			z-index: 2;
-			box-shadow:
-				10px -10px 00px 10px white,
-				-10px -10px 00px 10px white
-			;
-		 }
-		 .row.r2 {
-			box-shadow:
-				10px -10px 00px 10px white,
-				-10px -10px 00px 10px white
-			;
-		 }
-		 .row.r3 {
-			box-shadow:
-				10px 10px 00px 10px white,
-				-10px 10px 00px 10px white
-			;
-		 }
-		 .row.r4 {
-			z-index: 2;
-			box-shadow:
-				10px 10px 00px 10px white,
-				-10px 10px 00px 10px white
-			;
-		 }
-		 .letter {
-			width: 90px;
-			height: 100px;
-			border: 3px solid green;
-			box-shadow: inset 0 0 0 8px black;
-			display: table-cell;
-			text-align: center;
-			font-family: Helvetica;
-			font-weight: 600;
-			font-size: 70px;
-			line-height: 95px;
-			color: white;
-		 }
-		 .letter.selected {
-			 color: black;
-		 }
-		 .letter:not(:empty) {
-			 background-color: white;
-		 }
-		 .hint {
-			background-image: linear-gradient(lightblue, blue, blue, lightblue);
-			font-family: Gill Sans;
-			font-size: 40px;
-			color: white;
-			text-shadow:0px 0px 9px black;
-			text-align: center;
-			padding: 10px;
-		 }
-		 .used {
-			 text-align: justify;
-			 padding: 20px 20px 10px;
-			 background-color: black;
-		 }
-		 .used:after {
-			 content: '';
-			 display: inline-block;
-			 width: 100%;
-		 }
-		 .used span {
-			 opacity: 0;
-			 font-family: Gill Sans;
-			 font-size: 50px;
-			 color: white;
-		 }
-		 .used span.selected {
-			 opacity: 1;
-		 }
-	</style>
+	<link rel="stylesheet" type="text/css" href="wof.css?v=1.0">
 </head>
 <body>
-	<section class="puzzle p1 selected" data-hint="A SONG WITHOUT REPOSNIBILITY">
-		<div class="row r1">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4"></div>
-			<div class="letter l5">L</div>
-			<div class="letter l6">O</div>
-			<div class="letter l7">O</div>
-			<div class="letter l8">K</div>
-			<div class="letter l9"></div>
-			<div class="letter l10"></div>
-			<div class="letter l11"></div>
-			<div class="letter l12"></div>
+	<section class="puzzle" id="puzzle">
+		<div class="row r1" id="row1">
+			<div class="letter l0"  id="letter1"></div>
+			<div class="letter l1"  id="letter2"></div>
+			<div class="letter l2"  id="letter3"></div>
+			<div class="letter l3"  id="letter4"></div>
+			<div class="letter l4"  id="letter5"></div>
+			<div class="letter l5"  id="letter6"></div>
+			<div class="letter l6"  id="letter7"></div>
+			<div class="letter l7"  id="letter8"></div>
+			<div class="letter l8"  id="letter9"></div>
+			<div class="letter l9"  id="letter10"></div>
+			<div class="letter l10" id="letter11"></div>
+			<div class="letter l11" id="letter12"></div>
 		</div>
-		<div class="row r2">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4">W</div>
-			<div class="letter l5">H</div>
-			<div class="letter l6">A</div>
-			<div class="letter l7">T</div>
-			<div class="letter l8"></div>
-			<div class="letter l9">Y</div>
-			<div class="letter l10">O</div>
-			<div class="letter l11">U</div>
-			<div class="letter l12"></div>
-			<div class="letter l13"></div>
-			<div class="letter l14"></div>
+		<div class="row r2" id="row2">
+			<div class="letter l0"  id="letter13"></div>
+			<div class="letter l1"  id="letter14"></div>
+			<div class="letter l2"  id="letter15"></div>
+			<div class="letter l3"  id="letter16"></div>
+			<div class="letter l4"  id="letter17"></div>
+			<div class="letter l5"  id="letter18"></div>
+			<div class="letter l6"  id="letter19"></div>
+			<div class="letter l7"  id="letter20"></div>
+			<div class="letter l8"  id="letter21"></div>
+			<div class="letter l9"  id="letter22"></div>
+			<div class="letter l10" id="letter23"></div>
+			<div class="letter l11" id="letter24"></div>
+			<div class="letter l12" id="letter25"></div>
+			<div class="letter l13" id="letter26"></div>
 		</div>
-		<div class="row r3">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4"></div>
-			<div class="letter l5">M</div>
-			<div class="letter l6">A</div>
-			<div class="letter l7">D</div>
-			<div class="letter l8">E</div>
-			<div class="letter l9"></div>
-			<div class="letter l10">M</div>
-			<div class="letter l11">E</div>
-			<div class="letter l12"></div>
-			<div class="letter l13"></div>
-			<div class="letter l14"></div>
+		<div class="row r3" id="row3">
+			<div class="letter l0"  id="letter27"></div>
+			<div class="letter l1"  id="letter28"></div>
+			<div class="letter l2"  id="letter29"></div>
+			<div class="letter l3"  id="letter30"></div>
+			<div class="letter l4"  id="letter31"></div>
+			<div class="letter l5"  id="letter32"></div>
+			<div class="letter l6"  id="letter33"></div>
+			<div class="letter l7"  id="letter34"></div>
+			<div class="letter l8"  id="letter35"></div>
+			<div class="letter l9"  id="letter36"></div>
+			<div class="letter l10" id="letter37"></div>
+			<div class="letter l11" id="letter38"></div>
+			<div class="letter l12" id="letter39"></div>
+			<div class="letter l13" id="letter40"></div>
 		</div>
-		<div class="row r4">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4"></div>
-			<div class="letter l5"></div>
-			<div class="letter l6">D</div>
-			<div class="letter l7">O</div>
-			<div class="letter l8"></div>
-			<div class="letter l9"></div>
-			<div class="letter l10"></div>
-			<div class="letter l11"></div>
-			<div class="letter l12"></div>
-		</div>
-	</section>
-	<section class="puzzle p2" data-hint="SEQUELS UNITE!">
-		<div class="row r1">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4"></div>
-			<div class="letter l5"></div>
-			<div class="letter l6"></div>
-			<div class="letter l7"></div>
-			<div class="letter l8"></div>
-			<div class="letter l9"></div>
-			<div class="letter l10"></div>
-			<div class="letter l11"></div>
-			<div class="letter l12"></div>
-		</div>
-		<div class="row r2">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4">A</div>
-			<div class="letter l5">V</div>
-			<div class="letter l6">E</div>
-			<div class="letter l7">N</div>
-			<div class="letter l8">G</div>
-			<div class="letter l9">E</div>
-			<div class="letter l10">R</div>
-			<div class="letter l11">S</div>
-			<div class="letter l12"></div>
-			<div class="letter l13"></div>
-			<div class="letter l14"></div>
-		</div>
-		<div class="row r3">
-			<div class="letter l1"></div>
-			<div class="letter l2">I</div>
-			<div class="letter l3">N</div>
-			<div class="letter l4">F</div>
-			<div class="letter l5">I</div>
-			<div class="letter l6">N</div>
-			<div class="letter l7">I</div>
-			<div class="letter l8">T</div>
-			<div class="letter l9">Y</div>
-			<div class="letter l10"></div>
-			<div class="letter l11">W</div>
-			<div class="letter l12">A</div>
-			<div class="letter l13">R</div>
-			<div class="letter l14"></div>
-		</div>
-		<div class="row r4">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4"></div>
-			<div class="letter l5"></div>
-			<div class="letter l6"></div>
-			<div class="letter l7"></div>
-			<div class="letter l8"></div>
-			<div class="letter l9"></div>
-			<div class="letter l10"></div>
-			<div class="letter l11"></div>
-			<div class="letter l12"></div>
+		<div class="row r4" id="row4">
+			<div class="letter l0"  id="letter41"></div>
+			<div class="letter l1"  id="letter42"></div>
+			<div class="letter l2"  id="letter43"></div>
+			<div class="letter l3"  id="letter44"></div>
+			<div class="letter l4"  id="letter45"></div>
+			<div class="letter l5"  id="letter46"></div>
+			<div class="letter l6"  id="letter47"></div>
+			<div class="letter l7"  id="letter48"></div>
+			<div class="letter l8"  id="letter49"></div>
+			<div class="letter l9"  id="letter50"></div>
+			<div class="letter l10" id="letter51"></div>
+			<div class="letter l11" id="letter52"></div>
 		</div>
 	</section>
-	<section class="puzzle p3" data-hint="PROBABLY DEFINITELY NOT HOAXES">
-		<div class="row r1">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4"></div>
-			<div class="letter l5">T</div>
-			<div class="letter l6">H</div>
-			<div class="letter l7">E</div>
-			<div class="letter l8"></div>
-			<div class="letter l9"></div>
-			<div class="letter l10"></div>
-			<div class="letter l11"></div>
-			<div class="letter l12"></div>
-		</div>
-		<div class="row r2">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3">L</div>
-			<div class="letter l4">O</div>
-			<div class="letter l5">C</div>
-			<div class="letter l6">H</div>
-			<div class="letter l7"></div>
-			<div class="letter l8">N</div>
-			<div class="letter l9">E</div>
-			<div class="letter l10">S</div>
-			<div class="letter l11">S</div>
-			<div class="letter l12"></div>
-			<div class="letter l13"></div>
-			<div class="letter l14"></div>
-		</div>
-		<div class="row r3">
-			<div class="letter l1"></div>
-			<div class="letter l2">M</div>
-			<div class="letter l3">O</div>
-			<div class="letter l4">N</div>
-			<div class="letter l5">S</div>
-			<div class="letter l6">T</div>
-			<div class="letter l7">E</div>
-			<div class="letter l8">R</div>
-			<div class="letter l9"></div>
-			<div class="letter l10">A</div>
-			<div class="letter l11">N</div>
-			<div class="letter l12">D</div>
-			<div class="letter l13"></div>
-			<div class="letter l14"></div>
-		</div>
-		<div class="row r4">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4">O</div>
-			<div class="letter l5">G</div>
-			<div class="letter l6">O</div>
-			<div class="letter l7">P</div>
-			<div class="letter l8">O</div>
-			<div class="letter l9">G</div>
-			<div class="letter l10">O</div>
-			<div class="letter l11"></div>
-			<div class="letter l12"></div>
-			<div class="letter l12"></div>
-		</div>
-	</section>
-	<section class="puzzle p4" data-hint="CANADIAN CONFECTIONS">
-		<div class="row r1">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3">C</div>
-			<div class="letter l4">A</div>
-			<div class="letter l5">R</div>
-			<div class="letter l6">A</div>
-			<div class="letter l7">M</div>
-			<div class="letter l8">I</div>
-			<div class="letter l9">L</div>
-			<div class="letter l10">K</div>
-			<div class="letter l11"></div>
-			<div class="letter l12"></div>
-		</div>
-		<div class="row r2">
-			<div class="letter l1"></div>
-			<div class="letter l2">C</div>
-			<div class="letter l3">O</div>
-			<div class="letter l4">F</div>
-			<div class="letter l5">F</div>
-			<div class="letter l6">E</div>
-			<div class="letter l7">E</div>
-			<div class="letter l8"></div>
-			<div class="letter l9">C</div>
-			<div class="letter l10">R</div>
-			<div class="letter l11">I</div>
-			<div class="letter l12">S</div>
-			<div class="letter l13">P</div>
-			<div class="letter l14"></div>
-		</div>
-		<div class="row r3">
-			<div class="letter l1"></div>
-			<div class="letter l2">C</div>
-			<div class="letter l3">R</div>
-			<div class="letter l4">I</div>
-			<div class="letter l5">S</div>
-			<div class="letter l6">P</div>
-			<div class="letter l7">Y</div>
-			<div class="letter l8"></div>
-			<div class="letter l9">C</div>
-			<div class="letter l10">R</div>
-			<div class="letter l11">U</div>
-			<div class="letter l12">N</div>
-			<div class="letter l13">C</div>
-			<div class="letter l14">H</div>
-		</div>
-		<div class="row r4">
-			<div class="letter l1">A</div>
-			<div class="letter l2">N</div>
-			<div class="letter l3">D</div>
-			<div class="letter l4"></div>
-			<div class="letter l5">C</div>
-			<div class="letter l6">R</div>
-			<div class="letter l7">U</div>
-			<div class="letter l8">N</div>
-			<div class="letter l9">C</div>
-			<div class="letter l10">H</div>
-			<div class="letter l11">I</div>
-			<div class="letter l12">E</div>
-		</div>
-	</section>
-	<section class="puzzle p5" data-hint="SING ALONG">
-		<div class="row r1">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4">W</div>
-			<div class="letter l5">H</div>
-			<div class="letter l6">A</div>
-			<div class="letter l7">T</div>
-			<div class="letter l8"></div>
-			<div class="letter l9">A</div>
-			<div class="letter l10"></div>
-			<div class="letter l11"></div>
-			<div class="letter l12"></div>
-			<div class="letter l13"></div>
-			<div class="letter l14"></div>
-		</div>
-		<div class="row r2">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4">W</div>
-			<div class="letter l5">O</div>
-			<div class="letter l6">N</div>
-			<div class="letter l7">D</div>
-			<div class="letter l8">E</div>
-			<div class="letter l9">R</div>
-			<div class="letter l10">F</div>
-			<div class="letter l11">U</div>
-			<div class="letter l12">L</div>
-			<div class="letter l13"></div>
-			<div class="letter l14"></div>
-			<div class="letter l15"></div>
-		</div>
-		<div class="row r3">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4">N</div>
-			<div class="letter l5">A</div>
-			<div class="letter l6">M</div>
-			<div class="letter l7">E</div>
-			<div class="letter l8"></div>
-			<div class="letter l9">I</div>
-			<div class="letter l10">T</div>
-			<div class="letter l11"></div>
-			<div class="letter l12">I</div>
-			<div class="letter l13">S</div>
-			<div class="letter l14"></div>
-			<div class="letter l15"></div>
-		</div>
-		<div class="row r4">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4"></div>
-			<div class="letter l5"></div>
-			<div class="letter l6"></div>
-			<div class="letter l7"></div>
-			<div class="letter l8"></div>
-			<div class="letter l9"></div>
-			<div class="letter l10"></div>
-			<div class="letter l11"></div>
-			<div class="letter l12"></div>
-		</div>
-	</section>
-	<section class="puzzle p6" data-hint="LANDMARKS">
-		<div class="row r1">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4"></div>
-			<div class="letter l5"></div>
-			<div class="letter l6"></div>
-			<div class="letter l7"></div>
-			<div class="letter l8"></div>
-			<div class="letter l9"></div>
-			<div class="letter l10"></div>
-			<div class="letter l11"></div>
-			<div class="letter l12"></div>
-		</div>
-		<div class="row r2">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4"></div>
-			<div class="letter l5">A</div>
-			<div class="letter l6">R</div>
-			<div class="letter l7">C</div>
-			<div class="letter l8"></div>
-			<div class="letter l9">D</div>
-			<div class="letter l10">E</div>
-			<div class="letter l11"></div>
-			<div class="letter l12"></div>
-			<div class="letter l13"></div>
-			<div class="letter l14"></div>
-		</div>
-		<div class="row r3">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4">T</div>
-			<div class="letter l5">R</div>
-			<div class="letter l6">I</div>
-			<div class="letter l7">O</div>
-			<div class="letter l8">M</div>
-			<div class="letter l9">P</div>
-			<div class="letter l10">H</div>
-			<div class="letter l11">E</div>
-			<div class="letter l12"></div>
-			<div class="letter l13"></div>
-			<div class="letter l14"></div>
-		</div>
-		<div class="row r4">
-			<div class="letter l1"></div>
-			<div class="letter l2"></div>
-			<div class="letter l3"></div>
-			<div class="letter l4"></div>
-			<div class="letter l5"></div>
-			<div class="letter l6"></div>
-			<div class="letter l7"></div>
-			<div class="letter l8"></div>
-			<div class="letter l9"></div>
-			<div class="letter l10"></div>
-			<div class="letter l11"></div>
-			<div class="letter l12"></div>
-		</div>
-	</section>
-	<section class="hint">
+	<section class="hint" id="hint">
 		<!-- TEXT GOES HERE -->
 	</section>
-	<section class="used">
+	<section class="used" id="used">
 		<span>A</span>
 		<span>B</span>
 		<span>C</span>
@@ -509,83 +101,6 @@
 		<span>Y</span>
 		<span>Z</span>
 	</section>
-	<script>
-		puzzle_data = '';
-	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			//Global Variables
-			var $puzzle = '';
-			
-			$(this).keypress(function(e) {
-			    if (e.which !== 0) {
-			        
-			        var $character = String.fromCharCode(e.which);
-			        
-			        //This can be much, much better
-					if ( $character == '1' ) {
-						$('.puzzle').removeClass('selected');
-						$('.letter').removeClass('selected');
-						$('.used span').removeClass('selected');
-						$puzzle = $('.p1');
-						$puzzle.addClass('selected');
-						$('.hint').text( $puzzle.attr('data-hint') );
-					} else if ( $character == '2' ) {
-						$('.puzzle').removeClass('selected');
-						$('.letter').removeClass('selected');
-						$('.used span').removeClass('selected');
-						$puzzle = $('.p2');
-						$puzzle.addClass('selected');
-						$('.hint').text( $puzzle.attr('data-hint') );
-					} else if ( $character == '3' ) {
-						$('.puzzle').removeClass('selected');
-						$('.letter').removeClass('selected');
-						$('.used span').removeClass('selected');
-						$puzzle = $('.p3');
-						$puzzle.addClass('selected');
-						$('.hint').text( $puzzle.attr('data-hint') );
-					} else if ( $character == '4' ) {
-						$('.puzzle').removeClass('selected');
-						$('.letter').removeClass('selected');
-						$('.used span').removeClass('selected');
-						$puzzle = $('.p4');
-						$puzzle.addClass('selected');
-						$('.hint').text( $puzzle.attr('data-hint') );
-					} else if ( $character == '5' ) {
-						$('.puzzle').removeClass('selected');
-						$('.letter').removeClass('selected');
-						$('.used span').removeClass('selected');
-						$puzzle = $('.p5');
-						$puzzle.addClass('selected');
-						$('.hint').text( $puzzle.attr('data-hint') );
-					} else if ( $character == '6' ) {
-						$('.puzzle').removeClass('selected');
-						$('.letter').removeClass('selected');
-						$('.used span').removeClass('selected');
-						$puzzle = $('.p6');
-						$puzzle.addClass('selected');
-						$('.hint').text( $puzzle.attr('data-hint') );
-					} else {
-						if ( $character == '!' ) {
-							$puzzle.find('.letter').addClass('selected');
-						} else {
-							$('.used span').each(function(){
-								if ( String($(this).text()) == $character.toUpperCase() ) {
-									$(this).addClass('selected');
-								}
-					    	});
-					        $puzzle.find('.letter').each(function(){
-						    	var $letter = $(this);
-						    	if ( String($letter.text()) == $character.toUpperCase() ) {
-							    	$letter.addClass('selected');
-						    	}
-					        });
-					    }
-				    }
-			    }
-			});
-		});
-	</script>
+	<script src="wof.js"></script>
 </body>
 </html>
