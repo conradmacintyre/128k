@@ -6,7 +6,7 @@
  * Sublime Text. The filetype for this document is
  * JavaScript.
  * 
- * Either way, edit with care, and possible make a 
+ * Either way, edit with care, and if possible make a 
  * backup of this file so you can rollback if something
  * goes *really* sideway.
  * 
@@ -105,10 +105,16 @@ function processInput(e) {
   } else if ( char == "!" ) {
   	puzzleReveal();
   } else if ( char == "," || char == "." ) {
-  	audioNoLetter();
+  	playAudio(audioNoLetter);
+  } else if ( char == "?" || char == "/" ) {
+  	showInstructions();
   } else {
-  	alert(`${char} is not a valid input.`);
+  	window.console && console.log(`${char} is not a valid input.`);
   }
+}
+
+function showInstructions() {
+	document.getElementById('instructions').classList.toggle('display');
 }
 
 function playAudio(_file){
