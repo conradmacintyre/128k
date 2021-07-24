@@ -1,5 +1,58 @@
+/** EDITOR'S NOTES - EDITING **************************
+ * This can be edited with any text editor, but if
+ * you can use one that has Syntax Highlighting, that
+ * will make mistakes much harder. There are many 
+ * wonderful free editors like Atom, VS Code, or 
+ * Sublime Text. The filetype for this document is
+ * JavaScript.
+ * 
+ * Either way, edit with care, and possible make a 
+ * backup of this file so you can rollback if something
+ * goes *really* sideway.
+ * 
+ * Happy puzzling!
+*******************************************************/
+
 const puzzles = [];
-	// Indented so this is human-readable
+	/** EDITOR'S NOTES - PUZZLE CONFIG ********************
+	 * The Puzzle is configured in a two-part equation,
+	 * as you can see below.
+	 * 
+	 * The first part is the assignment of the puzzle to 
+	 * a number key (the part in square brackets). It's
+	 * best if you don't mess with this part.
+	 * 
+	 * The second part (after the equals sign) is the text 
+	 * you read on screen. NOTE that the whole thing is 
+	 * wrapped in double-quotes. These are critical, and 
+	 * the page will break without them.
+	 * 
+	 * Also make a note of the semi-colon at the end of 
+	 * the line. This is also important and can break the 
+	 * page.
+	 * 
+	 * The Hint & Puzzle are separated by a pipe character.
+	 * 
+	 * The Hint will appear exactly as written.
+	 * 
+	 * The Puzzle is a string of characters representing 
+	 * every space on the board. 52 total characters are 
+	 * available across 4 rows (12, 14, 14, 12). This 
+	 * script simply fills in the characters in order from 
+	 * the top-left to the bottom-right.
+	 * 
+	 * Because it is difficult to track the number of blank
+	 * spaces used, I have set each of " ", "*", and "+" to
+	 * render as a blank space so that the empty spaces can
+	 * be more easily tracked.
+	 * 
+	 * Also note that double-quotes - " - *can* be used in
+	 * the puzzle, but MUST be escaped with a backslash "\"
+	 * first.
+	 * 
+	 * Finally, any character that is NOT a letter will be
+	 * revealed as soon as the puzzle loads.
+	*******************************************************/
 	puzzles[1] = "Sequels Assemble!|************+++AVENGERS:++*Infinity War*++++++++++++";
 	puzzles[2] = "Perry the Platypus!?|Semi-Aquatic**Egg-Laying*****Mammal of*****Action***";
 	puzzles[3] = "We Are All Canucks|*The Weeknd,++++Justin++++***Bieber,****+++& Drake++";
@@ -7,55 +60,39 @@ const puzzles = [];
 	puzzles[5] = "Canadian Confections|*Caramilk,**Coffee Crisp, Crispy Crunch  & Crunchie";
 	puzzles[6] = "And Then There Were 3|************+Lucy, Alice++***& Daisy****++++++++++++";
 	puzzles[7] = "Matthew, Mark, Luke & John|************+++++The++++++***Gospels****++++++++++++";
-	puzzles[8] = "Expanding Ice|************+++Seattle++++****KRACKEN***++++++++++++";
+	puzzles[8] = "Expanding Ice|************+++Seattle++++***\"KRACKEN***++++++++++++";
 	puzzles[9] = "Fusion|**The*best**+++place to+++*spend friday*++nights!+++";
 	puzzles[0] = "Sing Along|************+++You Came+++***(Lazarus)**++++++++++++";
-	puzzles[10] = "HINT|************++++++++++++++**************++++++++++++"; //Don't change this, this is a placeholder
-	
-const boardLineSize = [12,14,14,12]; // Get this by parsing the HTML - NO Magic Numbers!
-const boardSize = boardLineSize.reduce((a, b) => a + b, 0);
+	//This last one cannot be loaded, I simply use it as a placeholder to build new puzzles with
+	puzzles[10] = "HINT|************++++++++++++++**************++++++++++++";
+
+/** EDITOR'S NOTES - AUDIO FILES **********************
+ * These are the audio files used. You can change 
+ * these files if you like. Just replace the file or 
+ * update the filename to point to the new one.
+ * 
+ * Note the double-quotes and trailing semi-colon!
+ * 
+ * Paths are relative to THIS file.
+*******************************************************/
+const audioLetter = "ding.mp3"
+const audioNoLetter = "buzz.mp3";
+const audioReveal = "reveal.mp3";
+const audioSolve = "solve.mp3";
+
+/** EDITOR'S NOTES - STOP HERE ***************************
+ * This song is about editing past this line and it's
+ * called, "Don't You Do It!".
+ * 
+ * Feel free to poke around at your own risk, but 
+ * don't be surprised if you break things messing about
+ * down here. :)
+*******************************************************/
 const numbers = ["1","2","3","4","5","6","7","8","9","0"];
 const letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-const $puzzle = document.getElementById('puzzle');
-const $row1 = document.getElementById('row1');
-const $row2 = document.getElementById('row2');
-const $row3 = document.getElementById('row3');
-const $row4 = document.getElementById('row4');
 const $letters = [...document.getElementsByClassName('letter')];
 const $hint = document.getElementById('hint');
 const $used = document.getElementById('used');
-const audioLetter = function (){
-        let audio = document.createElement("audio");
-        audio.src = "ding.mp3";
-        audio.addEventListener("ended", function () {
-            document.removeChild(this);
-        }, false);
-        audio.play();   
-    }
-const audioNoLetter = function (){
-        let audio = document.createElement("audio");
-        audio.src = "buzz.mp3";
-        audio.addEventListener("ended", function () {
-            document.removeChild(this);
-        }, false);
-        audio.play();   
-    }
-const audioReveal = function (){
-        let audio = document.createElement("audio");
-        audio.src = "reveal.mp3";
-        audio.addEventListener("ended", function () {
-            document.removeChild(this);
-        }, false);
-        audio.play();   
-    }
-const audioSolve = function (){
-        let audio = document.createElement("audio");
-        audio.src = "solve.mp3";
-        audio.addEventListener("ended", function () {
-            document.removeChild(this);
-        }, false);
-        audio.play();   
-    }
 
 document.addEventListener('keydown', processInput);
 
@@ -70,8 +107,17 @@ function processInput(e) {
   } else if ( char == "," || char == "." ) {
   	audioNoLetter();
   } else {
-  	window.console && console.log (`${char} is not a valid input.`)
+  	alert(`${char} is not a valid input.`);
   }
+}
+
+function playAudio(_file){
+    let audio = document.createElement("audio");
+    audio.src = _file;
+    audio.addEventListener("ended", function () {
+        document.removeChild(this);
+    }, false);
+    audio.play();   
 }
 
 function puzzleWiper() {
@@ -88,13 +134,10 @@ function puzzleWiper() {
 }
 
 function puzzleLoader(_puzzle) {
-	audioReveal();
-	// Clear out the old puzzle
+	playAudio(audioReveal);
 	puzzleWiper();
-	// Fill out the hint
 	let thisHint = puzzles[_puzzle].split("|")[0];
 	$hint.innerHTML = thisHint;
-	// Build the puzzle
 	let thisPuzzle = puzzles[_puzzle].split("|")[1];
 	let thisLetters = [...thisPuzzle];
 	$letters.forEach( $letter => {
@@ -111,11 +154,10 @@ function puzzleLoader(_puzzle) {
 			thisLetters.splice(0,1);
 		}
 	});
-
 }
 
 function puzzleReveal() {
-	audioSolve();
+	playAudio(audioSolve);
 	$letters.forEach( $letter => {
   		$letter.classList.add('solved');
   	});
@@ -130,9 +172,9 @@ function letterReveal(_char) {
 		}
 	});
 	if ( letterUsed ) {
-		audioLetter();
+		playAudio(audioLetter);
 	} else {
-		audioNoLetter();
+		playAudio(audioNoLetter);
 	}
 	[...$used.children].forEach( $span => {
 		if ( $span.textContent == _char ) {

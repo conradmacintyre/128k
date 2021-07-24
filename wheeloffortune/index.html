@@ -1,9 +1,19 @@
+<!--- EDITOR'S NOTE - HTML ---------------------------
+	The JavaScript that runs this game uses the 
+	elements on this page to render out the game. 
+	You probably shouldn't change things here.
+
+	UNLESS the changes you are making in the 
+	Javascript file are not loading in your browser.
+	In that case, scroll to the bottom of this page.
+------------------------------------------------------>
+
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Wheel Of Fortune</title>
-	<meta name="description" content="description_here">
+	<meta name="description" content="Wheel of Fortune Board">
 	<meta name="author" content="Conrad">
 	<link rel="stylesheet" type="text/css" href="wof.css?v=1.101">
 </head>
@@ -71,7 +81,7 @@
 		</div>
 	</section>
 	<section class="hint" id="hint">
-		<!-- TEXT GOES HERE -->
+		<!-- This is filled by Javascript -->
 	</section>
 	<section class="used" id="used">
 		<span>A</span>
@@ -101,6 +111,24 @@
 		<span>Y</span>
 		<span>Z</span>
 	</section>
+	<!--- EDITOR'S NOTE - VERSIONING ---------------------------
+		If you're down here, it means youre having issues with
+		your browser loading changes made to the .js file.
+
+		This is due to browser caching. There are two solutions.
+
+		1. Clear your browser's cache.
+
+		2. Change the version number of the .js file. If you
+		look below, you'll see that it is wof.js?v=1.0 -- that
+		v=1.0 is the part we care about. Change that (to 
+		whatever number fancies you) and it will bypass the 
+		browser cache (until you update the javascript file 
+		again, that is).
+
+		Be mindful not to delete the closing double-quote when
+		changing teh version number.
+	------------------------------------------------------------>
 	<script src="wof.min.js?v=1.0"></script>
 </body>
 </html>
