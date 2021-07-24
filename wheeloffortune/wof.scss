@@ -53,7 +53,7 @@ body {
 	box-shadow: inset 0 0 0 8px black;
 	display: table-cell;
 	text-align: center;
-	font-family: Helvetica;
+	font-family: Helvetica, sans-serif;
 	font-weight: 600;
 	font-size: 70px;
 	line-height: 95px;
@@ -87,10 +87,13 @@ body {
 			to { opacity: 0; }
 		}
 	}
+	&.solved {
+		color: black;
+	}
 }
 .hint {
 	background-image: linear-gradient(lightblue, blue, blue, lightblue);
-	font-family: Gill Sans;
+	font-family: Gill Sans, Arial, sans-serif;
 	font-size: 40px;
 	color: white;
 	text-shadow:0px 0px 9px black;
@@ -108,7 +111,7 @@ body {
 	}
 	span {
 		opacity: 0;
-		font-family: Gill Sans;
+		font-family: Gill Sans, Arial, sans-serif;
 		font-size: 50px;
 		color: white;
 		&.selected {

@@ -3,7 +3,7 @@ const puzzles = [];
 	puzzles[1] = "Sequels Assemble!|************+++AVENGERS:++*Infinity War*++++++++++++";
 	puzzles[2] = "Perry the Platypus!?|Semi-Aquatic**Egg-Laying*****Mammal of*****Action***";
 	puzzles[3] = "We Are All Canucks|*The Weeknd,++++Justin++++***Bieber,****+++& Drake++";
-	puzzles[4] = "Probably Definately Not Hoaxes|****The*****++Loch Ness+++**Monster &***++Ogopogo+++";
+	puzzles[4] = "Probably Definitely Not Hoaxes|****The*****++Loch Ness+++**Monster &***++Ogopogo+++";
 	puzzles[5] = "Canadian Confections|*Caramilk,**Coffee Crisp, Crispy Crunch  & Crunchie";
 	puzzles[6] = "And Then There Were 3|************+Lucy, Alice++***& Daisy****++++++++++++";
 	puzzles[7] = "Matthew, Mark, Luke & John|************+++++The++++++***Gospels****++++++++++++";
@@ -24,10 +24,38 @@ const $row4 = document.getElementById('row4');
 const $letters = [...document.getElementsByClassName('letter')];
 const $hint = document.getElementById('hint');
 const $used = document.getElementById('used');
-const audioLetter = new Audio('ding.mp3');
-const audioNoLetter = new Audio('buzz.mp3');
-const audioReveal = new Audio('reveal.mp3');
-const audioSolve = new Audio('solve.mp3');
+const audioLetter = function (){
+        let audio = document.createElement("audio");
+        audio.src = "ding.mp3";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+const audioNoLetter = function (){
+        let audio = document.createElement("audio");
+        audio.src = "buzz.mp3";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+const audioReveal = function (){
+        let audio = document.createElement("audio");
+        audio.src = "reveal.mp3";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
+const audioSolve = function (){
+        let audio = document.createElement("audio");
+        audio.src = "solve.mp3";
+        audio.addEventListener("ended", function () {
+            document.removeChild(this);
+        }, false);
+        audio.play();   
+    }
 
 document.addEventListener('keydown', processInput);
 
@@ -39,6 +67,8 @@ function processInput(e) {
   	letterReveal(char);
   } else if ( char == "!" ) {
   	puzzleReveal();
+  } else if ( char == "," || char == "." ) {
+  	audioNoLetter();
   } else {
   	window.console && console.log (`${char} is not a valid input.`)
   }
@@ -50,6 +80,7 @@ function puzzleWiper() {
 	$letters.forEach( $letter => {
 		$letter.innerHTML = '';
 		$letter.classList.remove('selected');
+		$letter.classList.remove('solved');
 	});
 	[...$used.children].forEach( $span => {
 			$span.classList.remove('selected');
@@ -57,7 +88,7 @@ function puzzleWiper() {
 }
 
 function puzzleLoader(_puzzle) {
-	audioReveal.play();
+	audioReveal();
 	// Clear out the old puzzle
 	puzzleWiper();
 	// Fill out the hint
@@ -84,9 +115,9 @@ function puzzleLoader(_puzzle) {
 }
 
 function puzzleReveal() {
-	audioSolve.play();
+	audioSolve();
 	$letters.forEach( $letter => {
-  		$letter.classList.add('selected');
+  		$letter.classList.add('solved');
   	});
 }
 
@@ -99,9 +130,9 @@ function letterReveal(_char) {
 		}
 	});
 	if ( letterUsed ) {
-		audioLetter.play();
+		audioLetter();
 	} else {
-		audioNoLetter.play();
+		audioNoLetter();
 	}
 	[...$used.children].forEach( $span => {
 		if ( $span.textContent == _char ) {
