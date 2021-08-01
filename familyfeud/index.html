@@ -6,206 +6,65 @@
 	<meta name="description" content="description_here">
 	<meta name="author" content="Conrad">
 	<link rel="stylesheet" href="index.css?v=0.1">
-	<style>
-
-	</style>
 </head>
 <body>
-	<a class="info popup-link" data-content="game-info">?</a>
-	<div class="popup-content" id="game-info">
-		<div>
-			<p>Hey, this game requires a host who knows the answers, so no solo play.</p>
-			<p>Press the shift key plus a number to load a puzzle (so 1 is !, 2 is @, 3 is #, etc)</p>
-			<p>Press the number keys to reveal specific answers.</p>
-			<p>Press the x key to show an x on the screen.</p>
-		</div>
-	</div>
-	<div class="popup-bg" id="popup-bg">
-        <div class="popup-close" id="popup-close">X</div>
-        <div class="popup-container" id="popup-container">
-        </div>
-    </div>
-	<section class="puzzle" id="puzzle">
-		<div class="question"></div>
+	<section class="board" id="board">
+		<div class="hint" id="hint"></div>
 		<div class="total" id="total">00</div>
-		<div class="answers1">
-			<div class="answer">
-				<div class="number nonum">
-					<div class="char">1</div>
-				</div>
-				<div class="text"></div>
+		<div class="answers" id="answers">
+			<div class="answer answer-1" id="answer-1" data-number="1">
+				<div class="text-wrapper"><span class="text"></span></div>
 				<div class="value"></div>
 			</div>
-			<div class="answer">
-				<div class="number nonum">
-					<div class="char">2</div>
-				</div>
-				<div class="text"></div>
+			<div class="answer answer-2" id="answer-2" data-number="2">
+				<div class="text-wrapper"><span class="text"></span></div>
 				<div class="value"></div>
 			</div>
-			<div class="answer">
-				<div class="number nonum">
-					<div class="char">3</div>
-				</div>
-				<div class="text"></div>
+			<div class="answer answer-3" id="answer-3" data-number="3">
+				<div class="text-wrapper"><span class="text"></span></div>
 				<div class="value"></div>
 			</div>
-			<div class="answer">
-				<div class="number nonum">
-					<div class="char">4</div>
-				</div>
-				<div class="text"></div>
+			<div class="answer answer-4" id="answer-4" data-number="4">
+				<div class="text-wrapper"><span class="text"></span></div>
 				<div class="value"></div>
 			</div>
-		</div>
-		<div class="answers2">
-			<div class="answer">
-				<div class="number nonum">
-					<div class="char">5</div>
-				</div>
-				<div class="text"></div>
+			<div class="answer answer-5" id="answer-5" data-number="5">
+				<div class="text-wrapper"><span class="text"></span></div>
 				<div class="value"></div>
 			</div>
-			<div class="answer">
-				<div class="number nonum">
-					<div class="char">6</div>
-				</div>
-				<div class="text"></div>
+			<div class="answer answer-6" id="answer-6" data-number="6">
+				<div class="text-wrapper"><span class="text"></span></div>
 				<div class="value"></div>
 			</div>
-			<div class="answer">
-				<div class="number nonum">
-					<div class="char">7</div>
-				</div>
-				<div class="text"></div>
+			<div class="answer answer-7" id="answer-7" data-number="7">
+				<div class="text-wrapper"><span class="text"></span></div>
 				<div class="value"></div>
 			</div>
-			<div class="answer">
-				<div class="number nonum">
-					<div class="char">8</div>
-				</div>
-				<div class="text"></div>
+			<div class="answer answer-8" id="answer-8" data-number="8">
+				<div class="text-wrapper"><span class="text"></span></div>
 				<div class="value"></div>
 			</div>
 		</div>
 	</section>
-	
-	<div class="errors hide">
-		<div class="error error1 hide"></div><div class="error error2 hide"></div><div class="error error3 hide"></div>
+	<div class="errors hide" id="errors">
+		<div class="error error-1 hide" id="error-1"></div>
+		<div class="error error-2 hide" id="error-2"></div>
+		<div class="error error-3 hide" id="error-3"></div>
 	</div>
-
-	<div class="popup-bg" id="popup-bg">
-        <div class="popup-close" id="popup-close">X</div>
-        <div class="popup-container" id="popup-container">
-        </div>
-    </div>
-
-    <!-- JAVASCRIPT~! -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script>
-		puzzles = [
-			[
-				"Name a reason people prefer summer to winter",
-				"Warm Weather|39",
-				"Lighter Clothes|17",
-				"More Acivities|15",
-				"Beach|12",
-				"Fun|8",
-				"No Snow|4",
-				"Swimming|3",
-				"Happier|2"
-			],
-			[
-				"Besides eating, name something people do during their lunch hour",
-				"Sleep/Nap|34",
-				"Exercise|18",
-				"Read|16",
-				"Shop|13",
-				"Go to Bank|11",
-				"Talk on Phone|8",
-				"|0",
-				"|0"
-			],
-			[
-				"Name the most annoying thing other drivers do on the road",
-				"No turn Signal|31",
-				"Cut you off|30",
-				"Drive too slow|13",
-				"Tailgating|12",
-				"Talk on cell phone|10",
-				"Speed|4",
-				"|0",
-				"|0"
-			],
-			[
-				"Name something that's filtered",
-				"Water|50",
-				"Coffee|27",
-				"Air|10",
-				"Gasonline|5",
-				"Vacuum|4",
-				"Pool|4",
-				"|0",
-				"|0"
-			],
-			[
-				"Name something associated with Zorro",
-				"Sword|49",
-				"\"Z\"|30",
-				"Mask|13",
-				"Cape|8",
-				"|0",
-				"|0",
-				"|0",
-				"|0"
-			],
-			[
-				"Name an occupation bad drivers should avoid",
-				"Trucking|32",
-				"Bus Driver|28",
-				"Taxi Driver|21",
-				"Delivery Driver|6",
-				"Race Car|4",
-				"Ambulance|4",
-				"Chauffer|3",
-				"Heavy Equip.|2"
-			],
-			[
-				"Name something specific people make reservations for",
-				"Dinner|35",
-				"Hotel|32",
-				"Airplane|20",
-				"Tours|6",
-				"Vacation|3",
-				"Car Rental|2",
-				"Cruise|2",
-				"|0"
-			],
-			[
-				"Name a phrase that starts with \"Happy\"",
-				"Birthday|38",
-				"New Year|18",
-				"Anniversary|14",
-				"Days|11",
-				"Meal|10",
-				"Go Lucky|9",
-				"|0",
-				"|0"
-			],
-			[
-				"Name a type of business people call and expect to be put on hold",
-				"Dr's Office|30",
-				"Phone Co.|20",
-				"Bank|15",
-				"Insurance Co.|12",
-				"Dept Store|10",
-				"Restaurant|6",
-				"Electric/Power Co.|4",
-				"Credit Card Co.|3"
-			]
-		];
-	</script>
-	<script src="../_js/library.min.js?v=0.1"></script>
+	<section class="instructions display" id="instructions">
+		<div class="inst-wrapper">
+			<h2>Welcome to Family Feud!</h2>
+			<h6>Instructions</h6>
+			<br>
+			<p>To load a board, press letter keys <span class="key">A</span> though <span class="key">Z</span>, inclusive.</p>
+			<br>
+			<p>To reveal an answer, press the correcponding number keys, <span class="key">1</span>through <span class="key">8</span></p>
+			<br>
+			<p>To display an "X" for an Incorrect Guess, press <span class="key">.</span></p>
+			<br>
+			<p>To toggle this help sheet on and off, press <span class="key">?</span> (<span class="key">Shift</span> + <span class="key">/</span>).</p>
+		</div>
+	</section>	
 	<script src="familyfeud.min.js?v=0.1"></script>
 </body>
 </html>
