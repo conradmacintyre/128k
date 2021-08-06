@@ -197,9 +197,9 @@
 					<p class="description">When my son started randomly saying Dave's oft-repeated phrases, I knew this would be a great bingo game. I have been watching DGR "competitively" ever since. </p>
 				</a>
 				<a href="/familyfeud" class="project-card tag-game" data-ci="_images/project-familyfeud.jpg" data-ci-type="height">
-					<h3 class="title">Family Feud (Beta)</h3>
+					<h3 class="title">Family Feud</h3>
 					<span class="image"></span>
-					<p class="description">As a youth pastor I needed to make some games that could be played by a fairly large group in a fairly small space. Game shows seemed like a great option. So I threw this together. Currently they have no documentation, but I'll work on that. In the meantime, feel free to poke around.</p>
+					<p class="description">As a youth pastor I needed to make some games that could be played by a fairly large group in a fairly small space. Game shows seemed like a great option. This game really cannot be played single-player.</p>
 				</a>
 				<a href="/fanedits/it.php" class="project-card tag-video" data-ci="_images/project-it.jpg" data-ci-type="height">
 					<h3 class="title">It (1990)</h3>
@@ -229,7 +229,7 @@
 				<a href="/wheeloffortune" class="project-card tag-game" data-ci="_images/project-wheel.jpg" data-ci-type="height">
 					<h3 class="title">Wheel of Fortune (Beta)</h3>
 					<span class="image"></span>
-					<p class="description">As a youth pastor I needed to make some games that could be played by a fairly large group in a fairly small space. Game shows seemed like a great option. So I threw this together. Currently they have no documentation, but I'll work on that. In the meantime, feel free to poke around.</p>
+					<p class="description">As a youth pastor I needed to make some games that could be played by a fairly large group in a fairly small space. Game shows seemed like a great option. This is documented, so have a look. There are several puzzles. Some of them are very specific to my circumstances.</p>
 				</a>
 				<a href="https://youtube.com/user/conradmacintyre" class="project-card tag-video" data-ci="_images/project-youtube.jpg" data-ci-type="height">
 					<h3 class="title">YouTube Channel</h3>

@@ -1,8 +1,52 @@
-// Constants
+/** EDITOR'S NOTES - EDITING **************************
+ * This can be edited with any text editor, but if
+ * you can use one that has Syntax Highlighting, that
+ * will make mistakes much harder. There are many 
+ * wonderful free editors like Atom, VS Code, or 
+ * Sublime Text. The filetype for this document is
+ * JavaScript.
+ * 
+ * Either way, edit with care, and if possible make a 
+ * backup of this file so you can rollback if something
+ * goes *really* sideway.
+ * 
+ * Happy puzzling!
+*******************************************************/
+
 const boards = {}
+	/** EDITOR'S NOTES - PUZZLE CONFIG ********************
+	 * The boards are configured in a two-part equation,
+	 * as you can see below.
+	 * 
+	 * The first part (to the left of the equals sign)
+	 * assigns the board to a specific letter. This is the 
+	 * letter that will be used to load this specific 
+	 * board during the game. This has been designed to 
+	 * support up to 26 boards.
+	 * 
+	 * The seconc part (to the right of the equals sign) is
+	 * a text "string" that contains all the data to build 
+	 * and score the board. NOTE the surrounding 
+	 * double-quotes and the semi-colon at the end of the
+	 * line.
+	 * 
+	 * Each section is separated by a pipe character "|".
+	 * 
+	 * The first part MUST be the Hint text. Then a pipe 
+	 * character.
+	 * 
+	 * Then the answers, each separated by a pipe 
+	 * character. The values for each answer MUST come 
+	 * after the answer itself AND be separated by an 
+	 * equals sign.
+	 * 
+	 * Also note that double-quotes - " - *can* be used in
+	 * the puzzle, but MUST be escaped with a backslash "\"
+	 * first.
+	*******************************************************/
 	boards.a = "Name a reason people prefer summer to winter|Warm Weather=39|Lighter Clothes=17|More Acivities=15|Beach=12|Fun=8|No Snow=4|Swimming=3|Happier=2";
 	boards.b = "Besides eating, name something people do during their lunch break|Sleep/Nap=34|Exercise=18|Read=16|Shop=13|Go to Bank=11|Talk on Phone=8";
-	boards.c = "Name a phrase that starts with \"Happy\"|Birthday=38|New Year=18|Anniversary=14|Days=11Meal=10|Go Lucky=9";
+	boards.c = "Name a phrase that starts with \"Happy\"|Birthday=38|New Year=18|Anniversary=14|Days=11|Meal=10|Go Lucky=9";
 	boards.d = "Name something specific people make reservations for|Dinner=35|Hotel=32|Airplane=20|Tours=6|Vacation=3|Car Rental=2|Cruise=2";
 	boards.e = "Name an occupation bad drivers should avoid|Trucking=32|Bus Driver=28|Taxi Driver=21|Delivery Driver=6|Race Car=4|Ambulance=4|Chauffer=3|Heavy Equip.=2";
 	boards.f = "Name something that's filtered|Water=50|Coffee=27|Air=10|Gasonline=5|Vacuum=4|Pool=4";
@@ -26,14 +70,31 @@ const boards = {}
 	boards.x = "";
 	boards.y = "";
 	boards.z = "";
+
+/** EDITOR'S NOTES - AUDIO FILES **********************
+ * These are the audio files used. You can change 
+ * these files if you like. Just replace the file or 
+ * update the filename to point to the new one.
+ * 
+ * Note the double-quotes and trailing semi-colon!
+ * 
+ * Paths are relative to THIS file.
+*******************************************************/
 const audioCorrect = "correct.mp3";
 const audioIncorrect = "incorrect.mp3";
+
+/** EDITOR'S NOTES - STOP HERE ***************************
+ * This song is about editing past this line and it's
+ * called, "Don't You Do It!".
+ * 
+ * Feel free to poke around at your own risk, but 
+ * don't be surprised if you break things messing about
+ * down here. :)
+*******************************************************/
 const positions = ["1","2","3","4","5","6","7","8"];
 const $board = document.getElementById('board');
 const $hint = document.getElementById('hint');
 const $total = document.getElementById('total');
-
-// Variables
 let errors = 0;
 let points = 0;
 
@@ -60,7 +121,7 @@ function textFitter(_element) {
 	let $inner = _element;
 	let $wrapper = $inner.parentNode;
 	let innerWidth = $inner.clientWidth;
-	let wrapperWidth = $wrapper.clientWidth - 16;
+	let wrapperWidth = $wrapper.clientWidth - 40;
 	if ( innerWidth > wrapperWidth ) {
 		$inner.style.transform = 'scaleX('+(wrapperWidth/innerWidth)+')';
 	}

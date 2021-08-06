@@ -22,6 +22,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 html,
 body {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 	height: 100%;
 	background-image: radial-gradient(white 10%,yellow 15%,orange 30%, black 70%);
     background-size: 100px 100px;
@@ -30,34 +34,37 @@ body {
 section.board {
     border: 1px solid black;
     position: relative;
-    margin-top: 130px;
+    margin-top: 110px;
 	border-top: 3px solid yellow;
 	box-shadow: 0px 0px 10px 2px black;
+	width: 98%;
 }
 
-// Clus
+// Hint
 .hint {
     font-family: Helvetica Neue;
     text-transform: uppercase;
     text-align: center;
     color: white;
     background: black;
-    padding: 20px;
-    font-size: 30px;
+    padding: 30px;
+    font-size: 45px;
+    border-left: 3px solid yellow;
+    border-right: 3px solid yellow;
 }
 
 // Points
 .total {
 	position: absolute;
-	top: 0;
+	top: 10px;
 	background: black;
 	font-family: digital, monospace;
 	color: yellow;
-	font-size: 100px;
+	font-size: 150px;
 	left: 50%;
 	transform: translate(-50%, -100%);
 	text-align: center;
-	line-height: 80px;
+	line-height: 1;
 	padding: 30px 70px 0;
 	border-top-left-radius: 50%;
 	border: 3px solid yellow;
@@ -74,6 +81,8 @@ section.board {
 	padding-bottom: 20px;
     background: black;
     border-bottom: 3px solid yellow;
+    border-left: 3px solid yellow;
+    border-right: 3px solid yellow;
 }
 .answer {
     display: block;
@@ -89,7 +98,8 @@ section.board {
     height: 10vh;
     line-height: 80px;
     overflow: hidden;
-    width: 50%;
+    width: 49.6%;
+    margin: 0.2%;
     &-1 { order: 1; }
     &-2 { order: 3; }
     &-3 { order: 5; }
@@ -116,16 +126,17 @@ section.board {
 	    position: absolute;
 	    height: 80%;
 	    z-index: 3;
-	    width: 90px;
-	    display: block;
+	    width: 20%;
+	    display: flex;
 	    top: 10%;
 	    left: calc(50% - 45px);
 	    border-radius: 50%;
 	    box-shadow: inset 2px 2px 5px -1px black;
 	    border: 2px solid blue;
-	    line-height: 54px;
 	    font-size: 60px;
 	    text-shadow: 1px 1px 2px black;
+	    justify-content: center;
+	    align-items: center;
 	}
 	&.revealed:before,
 	&.revealed:after {
@@ -145,7 +156,9 @@ section.board {
 		border: 1px solid blue;
 		background: linear-gradient(to bottom,darkblue,black,darkblue);
     	box-shadow: inset 0px 0px 6px -1px yellow;
-		padding: 8px;
+		padding: 20px;
+		display: flex;
+    	align-items: center;
 	}
 	& {
 		position: absolute;
@@ -164,8 +177,10 @@ section.board {
 	height: 100%;
 	z-index: 2;
 	background-image: linear-gradient(blue,darkblue);
-	font-size: 50px;
-	line-height: 70px;
+	font-size: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 // Errors
@@ -180,6 +195,7 @@ section.board {
     display: flex;
     justify-content: center;
     align-items: center;
+    pointer-events: none;
 	&.hide {
 		opacity: 0;
 	}
