@@ -29,6 +29,7 @@ body {
 	height: 100%;
 	background-image: radial-gradient(white 10%,yellow 15%,orange 30%, black 70%);
     background-size: 100px 100px;
+    background-position: center;
 }
 
 section.board {
@@ -229,6 +230,49 @@ section.board {
 		}
 	}
 }
+.big-error {
+	transition: opacity .25s ease;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    transform: scale(2);
+	&.hide {
+		opacity: 0;
+	}
+	> div {
+		width: 33%;
+	    padding-bottom: 33%;
+	    border: 3vw ridge red;
+		background-image: 
+			linear-gradient(55deg, 
+				transparent calc(50% - 2vw), 
+				red calc(50% - 2vw), 
+				red 50%,
+				#ab0000 50%,
+				#ab0000 calc(50% + 2vw), 
+				transparent calc(50% + 2vw)
+			), 
+			linear-gradient(-55deg, 
+				transparent calc(50% - 2vw), 
+				red calc(50% - 2vw), 
+				red 50%,
+				#ab0000 50%,
+				#ab0000 calc(50% + 2vw), 
+				transparent calc(50% + 2vw)
+			)
+		;
+		display: inline-block;
+		margin: 0 15px;
+		box-shadow: 0 0 20px 5px black;
+	}
+}
 // Instructions
 .instructions {
 	display: none;
@@ -263,8 +307,8 @@ section.board {
 	    border: 2px solid white;
 	    border-radius: 4px;
 	    text-transform: uppercase;
-	    font-size: 65%;
-	    padding: 2px 4px;
+	    font-size: 150%;
+    	padding: 1% 2%;
 	    margin: 0 3px;
 	    position: relative;
 	    box-shadow: -1px 1px 0px 0px lightgrey;

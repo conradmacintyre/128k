@@ -106,8 +106,10 @@ function processInput(e) {
 		boardLoader(character);
 	} else if ( positions.includes(character) ) {
 		revealAnswer(character);
-	} else if ( character == "," || character == "." ) {
+	} else if ( character == "." ) {
 		fireError();
+	} else if ( character == "," ) {
+		fireBigError();
 	} else if ( character == "?" || character == "/" ) {
 		showInstructions();
 	}
@@ -151,6 +153,9 @@ function resetBoard() {
 	points = 0;
 	$total.innerHTML="00";
 	$hint.innerHTML='';
+	[...document.getElementsByClassName('error')].forEach( _el => {
+		_el.classList.add('hide');
+	});
 	[...document.getElementsByClassName('answer')].forEach( _el => {
 		_el.classList.remove('loaded');
 		_el.classList.remove('revealed');
@@ -188,6 +193,14 @@ function fireError() {
 	    }, 1000 );
 		playAudio(audioIncorrect);
     }
+}
+
+function fireBigError() {
+    document.getElementById('big-error').classList.remove('hide');
+    setTimeout( function(){
+        document.getElementById('big-error').classList.add('hide');
+    }, 1000 );
+	playAudio(audioIncorrect);
 }
 
 function playAudio(_file){
