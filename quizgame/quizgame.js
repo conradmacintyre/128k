@@ -48,8 +48,8 @@ const defaultQuiz = {
 	primaryColor: "black",
 	secondaryColor: "orange",
 	questions: [
-		"On which continent do pumpkins not grow?|Africa|*Antartica|Asia|Europe",
-		"What is the pumpkin capital of the world?|Bulgaria|Chilliwack|Guatemala|*Morton",
+		"Which continent do pumpkins NOT grow on?|Africa|*Antartica|Asia|Europe",
+		"Where is the pumpkin capital of the world?|Varna, Bulgaria|Chilliwack, BC|Mixco, Guatemala|*Morton, Illinois",
 		"In what country did pumpkin carving originate?|*Ireland|America|Bulgaria|Russia",
 		"What was the diameter of the largest pumpkin pie ever made?|3 Feet|4 Feet|*5 Feet|6 Feet",
 		"Which of these did people used to think pumpkins would cure?|*Snake Bits|Cancer|Tuberculosis|Rabies",
@@ -82,7 +82,8 @@ const defaultQuiz = {
  * 
  * Paths are relative to THIS file.
 *******************************************************/
-const audioCorrect = "correct.mp3";
+const audioClear = "course-clear.mp3";
+const audioCorrect = "you-got-it-dude.mp3";
 const audioHallelujah = "hallelujah.mp3";
 const audioBigBrain = "big-brain.mp3";
 const audioIncorrect = "incorrect.mp3";
@@ -184,6 +185,8 @@ function checkAnswer(value) {
 		// Play the correct sound
 		switch (guesses) {
 			case 1:
+				playAudio(audioClear);
+				break;
 			case 2:
 				playAudio(audioCorrect);
 				break;
