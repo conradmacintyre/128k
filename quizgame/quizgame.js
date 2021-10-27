@@ -52,7 +52,7 @@ const defaultQuiz = {
 		"Where is the pumpkin capital of the world?|Varna, Bulgaria|Chilliwack, BC|Mixco, Guatemala|*Morton, Illinois",
 		"In what country did pumpkin carving originate?|*Ireland|America|Bulgaria|Russia",
 		"What was the diameter of the largest pumpkin pie ever made?|3 Feet|4 Feet|*5 Feet|6 Feet",
-		"Which of these did people used to think pumpkins would cure?|*Snake Bits|Cancer|Tuberculosis|Rabies",
+		"Which of these did people used to think pumpkins would cure?|*Snake Bits|COVID 19|Tuberculosis|Rabies",
 		"How much did the heaviest pumpkin ever weigh?|300 lbs|527 lbs|*1140 lbs|1372 lbs",
 		"What percentage of pumpkin is water?|*90%|70%|50%|30%",
 		"Where did pumpkins originate?|North America|*Central America|Europe|South America",
