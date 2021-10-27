@@ -60,7 +60,7 @@ const defaultQuiz = {
 		"Which of these is NOT a pumpkin color?|Red|Blue|Green|*Purple",
 		"Which of these can pumpkin lower?|Body Fat|Blood Pressure|*Cholesterol|Self Esteem",
 		"Into which food group do pumpkins fit?|*Fruit|Veggie|Dairy|Meat",
-		"Have many millions of pounds of pumpkins were grown in 2005?|799|124|*496|654",
+		"How many millions of pounds of pumpkins were grown in 2005?|799|124|*496|654",
 		"Which of these is NOT a type of pumpkin?|Spooktacular|Munchkin|Funny Face|*Pumptacular",
 		"Which of these is NOT an ingredient in pumpkin pie?|Salt|Sugar|*Baking Soda|Flour",
 		"What is the world record for fastest pumpkin carving?|*74.8 Seconds|55.2 Seconds|93.0 Seconds|45.5 Seconds",
@@ -70,8 +70,6 @@ const defaultQuiz = {
 		"Which of these is Pastor Mike's favourite pumpkin food?|Pie|Loaf|*Scones|Seeds"
 	]
 }
-
-	
 
 /** EDITOR'S NOTES - AUDIO FILES **********************
  * These are the audio files used. You can change 
@@ -100,6 +98,7 @@ const audioFogHorn = "fog-horn.mp3";
  * down here. :)
 *******************************************************/
 const $title = document.getElementById('title');
+const $done = document.getElementById('all-done');
 const $question = document.getElementById('questionContent');
 const $answers = document.getElementsByClassName('answer');
 const $answer1 = document.getElementById('answer-1');
@@ -139,6 +138,7 @@ function loadQuiz() {
 		correctAnswer = undefined;
 		document.title = quiz.title;
 		$title.innerHTML = quiz.title;
+		$done.classList.add('hide');
 		// Set primary color
 		// Set secondary color
 		// Set background image
@@ -161,7 +161,7 @@ function nextQuestion() {
 	} else if (!quizLoaded) {
 		alert("You'll need to load a quiz first. Press 'L' to load a quiz.");
 	} else if (quiz.questions.length == 0) {
-		alert ('ALL DONE') 
+		$done.classList.remove('hide');
 	// } else {
 		// window.console && console.log("I don't know what's happening");
 	}
