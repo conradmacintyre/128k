@@ -45,14 +45,16 @@
 *******************************************************/
 const defaultQuiz = {
 	title: "PumpkinFest",
-	primaryColor: "black",
-	secondaryColor: "orange",
+	darkColor: "black",
+	lightColor: "white",
+	accentColor: "orange",
+	font: "Futura, Verdana, sans-serif",
 	questions: [
 		"Which continent do pumpkins NOT grow on?|Africa|*Antartica|Asia|Europe",
 		"Where is the pumpkin capital of the world?|Varna, Bulgaria|Chilliwack, BC|Mixco, Guatemala|*Morton, Illinois",
 		"In what country did pumpkin carving originate?|*Ireland|America|Bulgaria|Russia",
 		"What was the diameter of the largest pumpkin pie ever made?|3 Feet|4 Feet|*5 Feet|6 Feet",
-		"Which of these did people used to think pumpkins would cure?|*Snake Bits|COVID 19|Tuberculosis|Rabies",
+		"Which of these did people used to think pumpkins would cure?|*Snake Bites|COVID 19|Tuberculosis|Rabies",
 		"How much did the heaviest pumpkin ever weigh?|300 lbs|527 lbs|*1140 lbs|1372 lbs",
 		"What percentage of pumpkin is water?|*90%|70%|50%|30%",
 		"Where did pumpkins originate?|North America|*Central America|Europe|South America",
@@ -105,10 +107,11 @@ const $answer1 = document.getElementById('answer-1');
 const $answer2 = document.getElementById('answer-2');
 const $answer3 = document.getElementById('answer-3');
 const $answer4 = document.getElementById('answer-4');
+let bgImage;
 let quizLoaded = false;
 let correctAnswer = undefined;
 let guesses = 0; //Can be used for cheeky replies
-let quiz = {};
+let quiz = JSON.parse(JSON.stringify(defaultQuiz));
 
 document.addEventListener('keydown', processInput);
 
@@ -124,8 +127,6 @@ function processInput(e) {
 		checkAnswer($answer4);
 	} else if ( character == "n" ) {
 		nextQuestion();
-	} else if ( character == "l" ) {
-		loadQuiz();
 	} else if ( character == "?" || character == "/" ) {
 		showInstructions();
 	}
@@ -133,17 +134,30 @@ function processInput(e) {
 
 function loadQuiz() {
 	if ( !quizLoaded || confirm('You already have a puzzle loaded. Reload?') ) { 
-		quiz = JSON.parse(JSON.stringify(defaultQuiz));
 		quizLoaded = true;
 		correctAnswer = undefined;
 		document.title = quiz.title;
 		$title.innerHTML = quiz.title;
 		$done.classList.add('hide');
-		// Set primary color
-		// Set secondary color
-		// Set background image
+		loadStyles(quiz);
 		nextQuestion();
 	}
+} loadQuiz();
+
+function loadStyles(values) {
+	let styles = `
+		:root {
+		  --white: ${values.lightColor};
+		  --black: ${values.darkColor};
+		  --accent: ${values.accentColor};
+		  --font: ${values.font};
+		}	
+	`;
+	const head = document.head;
+	let overrideStyles = document.createElement('style');
+	head.appendChild(overrideStyles);
+	overrideStyles.type = 'text/css';
+	overrideStyles.appendChild(document.createTextNode(styles));
 }
 
 function nextQuestion() {
@@ -226,8 +240,48 @@ function showInstructions() {
 	document.getElementById('instructions').classList.toggle('display');
 }
 
+function dropHandler(ev) {
+	// Prevent default behavior (Prevent file from being opened)
+  	ev.preventDefault();
+  	document.getElementById('drop-zone').classList.add('hide');
+	let fileList = ev.dataTransfer.files;
+	[...fileList].forEach(file => {
+		if ( file.type.indexOf('image') > -1) {
+			setImage(file);
+		} else if ( file.type.indexOf('text') > -1) {
+			parseGameText(file);
+		} else {
+			alert('Invalid file type. Upload a properly formatted .txt game file, or a .jpg, .jpeg, or .png file to use a background image.');
+		}
+	});
+}
+
+function parseGameText(file) {
+	const reader = new FileReader();
+	reader.addEventListener('load', (event) => {
+		let textString = event.target.result;
+		quiz = JSON.parse(textString);
+		loadQuiz();
+		quizLoaded = true;
+	});
+	reader.readAsText(file);
+}
 
 
+function setImage(file) {
+	const reader = new FileReader();
+	reader.addEventListener('load', (event) => {
+		bgImage = event.target.result;
+		document.body.style.backgroundImage = `url(${bgImage})`;
+	});
+	reader.readAsDataURL(file);
+}
+
+function dragOverHandler(ev) {
+  ev.preventDefault();
+  // Get this to style the DROP ZONE!
+  document.getElementById('drop-zone').classList.remove('hide');
+}
 
 
 

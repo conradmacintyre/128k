@@ -1,0 +1,29 @@
+{
+	"title": "PumpkinFest",
+	"darkColor": "black",
+	"lightColor": "white",
+	"accentColor": "orange",
+	"font": "Futura, Verdana, sans-serif",
+	"questions": [
+		"Which continent do pumpkins NOT grow on?|Africa|*Antartica|Asia|Europe",
+		"Where is the pumpkin capital of the world?|Varna, Bulgaria|Chilliwack, BC|Mixco, Guatemala|*Morton, Illinois",
+		"In what country did pumpkin carving originate?|*Ireland|America|Bulgaria|Russia",
+		"What was the diameter of the largest pumpkin pie ever made?|3 Feet|4 Feet|*5 Feet|6 Feet",
+		"Which of these did people used to think pumpkins would cure?|*Snake Bites|COVID 19|Tuberculosis|Rabies",
+		"How much did the heaviest pumpkin ever weigh?|300 lbs|527 lbs|*1140 lbs|1372 lbs",
+		"What percentage of pumpkin is water?|*90%|70%|50%|30%",
+		"Where did pumpkins originate?|North America|*Central America|Europe|South America",
+		"Which of these is NOT part of a pumpkin?|Ribs|*Spine|Seed Coat|Brains",
+		"Which of these is NOT a pumpkin color?|Red|Blue|Green|*Purple",
+		"Which of these can pumpkin lower?|Body Fat|Blood Pressure|*Cholesterol|Self Esteem",
+		"Into which food group do pumpkins fit?|*Fruit|Veggie|Dairy|Meat",
+		"How many millions of pounds of pumpkins were grown in 2005?|799|124|*496|654",
+		"Which of these is NOT a type of pumpkin?|Spooktacular|Munchkin|Funny Face|*Pumptacular",
+		"Which of these is NOT an ingredient in pumpkin pie?|Salt|Sugar|*Baking Soda|Flour",
+		"What is the world record for fastest pumpkin carving?|*74.8 Seconds|55.2 Seconds|93.0 Seconds|45.5 Seconds",
+		"How wide was the smallest pumpkin ever grown?|1/2 inch |*1/2 centimeter|1/2 foot|1/2 decimeter",
+		"From what Greek word, meaning 'Large Melon' is the word Pumpkin derived?|Lepon|*Pepon|Mepon|Parthenon",
+		"Which of these is known as the Pumpkin State?|New York|*New Hampshire|Illinois|Montana",
+		"Which of these is Pastor Mike's favourite pumpkin food?|Pie|Loaf|*Scones|Seeds"
+	]
+}

@@ -9059,6 +9059,14 @@
       "oAP" : "\/n64\/zurchxk-webfont.woff2",
       "oF" : 0
     },
+    "\/quizgame\/!readme.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/quizgame\/!readme.txt",
+      "oF" : 0
+    },
     "\/quizgame\/background.jpg" : {
       "ft" : 16384,
       "iS" : 157800,
@@ -9160,6 +9168,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/quizgame\/price-horn.mp3",
+      "oF" : 0
+    },
+    "\/quizgame\/quiz-conradtest.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/quizgame\/quiz-conradtest.txt",
+      "oF" : 0
+    },
+    "\/quizgame\/quiz-pumpkinfest.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/quizgame\/quiz-pumpkinfest.txt",
       "oF" : 0
     },
     "\/quizgame\/quizgame.js" : {

@@ -36,7 +36,9 @@
 			<h2>Welcome to Quiz Game!</h2>
 			<h6>Instructions</h6>
 			<br>
-			<p>To load the default quiz, press <span class="key">L</span>.</p>
+			<p>To load a custom quiz, drag and drop a properly formatted .txt file on this window.</p>
+			<br>
+			<p>To load a custom background, drag and drop a properly formatted image file on this window.</p>
 			<br>
 			<p>To guess an answer, press the corresponding letter keys, <span class="key">A</span>, <span class="key">B</span>, <span class="key">C</span>, and <span class="key">D</span>.</p>
 			<br>
@@ -44,7 +46,10 @@
 			<br>
 			<p>To toggle this help sheet on and off, press <span class="key">?</span> (<span class="key">Shift</span> + <span class="key">/</span>).</p>
 		</div>
-	</section>	
+	</section>
+	<section class="drop-zone hide" id="drop-zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+	  <p>Drag one or more files to this Drop Zone ...</p>
+	</section>
 	<script src="quizgame.min.js?v=1.0"></script>
 </body>
 </html>

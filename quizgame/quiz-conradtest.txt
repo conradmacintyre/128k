@@ -1,0 +1,11 @@
+{
+	"title": "ConradTest",
+	"darkColor": "Red",
+	"lightColor": "White",
+	"accentColor": "Blue",
+	"font": "Roboto Slab",
+	"questions": [
+		"Who loves you, baby?|Justin Bieber|Mariana's Trench|*Kojak|Tele Savalis",
+		"Who loves you, baby?|Justin Bieber|Mariana's Trench|*Kojak|Tele Savalis"
+	]
+}
