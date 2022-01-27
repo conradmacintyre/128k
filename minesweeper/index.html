@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Minesweeper</title>
+        <meta name="description" content="Minesweeper">
+        <meta name="author" content="Conrad MacIntyre">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+        <link rel="stylesheet" href="styles.css?v=0.0">
+    </head>
+    <body>
+        <section class="title">
+            <h1>MINESWEEPER</h1>
+        </section>
+        <section class="minefield" id="minefield"></section>
+        <section class="info">
+            <div class="bomb-counter">
+                003/030
+            </div>
+            <div class="new-game-wrapper">
+                <button class="new-game" id="new-game">New Game</button>
+            </div>
+            <div class="settings-wrapper" data-content="settings-menu">
+                <a class="settings popup-link" data-content="settings-menu">
+                    COG
+                </a>
+                <div class="hide" id="settings-menu">
+                    <div>
+                        <h1>SETTINGS GO HERE</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Popup Menu -->
+        <div class="popup-bg" id="popup-bg">
+            <div class="popup-close" id="popup-close">X</div>
+            <div class="popup-container" id="popup-container">
+            </div>
+        </div>
+        <script src="../_js/library.min.js?v=1.06"></script>
+        <script src="index.min.js?v=0.0"></script>
+    </body>
+</html>

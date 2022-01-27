@@ -1,3 +1,4 @@
+
 /** EDITOR'S NOTES - EDITING **************************
  * This can be edited with any text editor, but if
  * you can use one that has Syntax Highlighting, that
@@ -28,43 +29,46 @@ const puzzles = [];
 	 * the page will break without them.
 	 * 
 	 * Also make a note of the semi-colon at the end of 
-	 * the line. This is also important and can break the 
+	 * the line. This is also important and will break the 
 	 * page.
 	 * 
-	 * The Hint & Puzzle are separated by a pipe character.
+	 * The Hint & Puzzle are separated by a pipe "|" 
+	 * character.
 	 * 
 	 * The Hint will appear exactly as written.
 	 * 
 	 * The Puzzle is a string of characters representing 
 	 * every space on the board. 52 total characters are 
 	 * available across 4 rows (12, 14, 14, 12). This 
-	 * script simply fills in the characters in order from 
-	 * the top-left to the bottom-right.
+	 * script will center the characters on each line as 
+	 * deliniated by you.
 	 * 
-	 * Because it is difficult to track the number of blank
-	 * spaces used, I have set each of " ", "*", and "+" to
-	 * render as a blank space so that the empty spaces can
-	 * be more easily tracked.
+	 * A caret "^" should be used as a line break. If 
+	 * you use a caret as the first character, then the 
+	 * top line will be empty. If any lines are TOO long 
+	 * for the row they are in, the puzzle will not load.
+	 * Trial & error FTW.
 	 * 
 	 * Also note that double-quotes - " - *can* be used in
 	 * the puzzle, but MUST be escaped with a backslash "\"
-	 * first.
+	 * first. The same is true of the pipe character and
+	 * the caret, for whatever that's worth.
 	 * 
 	 * Finally, any character that is NOT a letter will be
 	 * revealed as soon as the puzzle loads.
 	*******************************************************/
-	puzzles[1] = "Sequels Assemble!|************+++AVENGERS:++*Infinity War*++++++++++++";
-	puzzles[2] = "Perry the Platypus!?|Semi-Aquatic**Egg-Laying*****Mammal of*****Action***";
-	puzzles[3] = "We Are All Canucks|*The Weeknd,++++Justin++++***Bieber,****+++& Drake++";
-	puzzles[4] = "Probably Definitely Not Hoaxes|****The*****++Loch Ness+++**Monster &***++Ogopogo+++";
-	puzzles[5] = "Canadian Confections|*Caramilk,**Coffee Crisp, Crispy Crunch  & Crunchie";
-	puzzles[6] = "And Then There Were 3|************+Lucy, Alice++***& Daisy****++++++++++++";
-	puzzles[7] = "Matthew, Mark, Luke & John|************+++++The++++++***Gospels****++++++++++++";
-	puzzles[8] = "Expanding Ice|************+++Seattle++++***\"KRACKEN***++++++++++++";
-	puzzles[9] = "Fusion|**The*best**+++place to+++*spend friday*++nights!+++";
-	puzzles[0] = "Sing Along|************+++You Came+++***(Lazarus)**++++++++++++";
+	puzzles[1] = "Values|^Kids, God,^Relationships,^Integrity";
+	puzzles[2] = "What Character Matters|^Practice^what you^preach^";
+	puzzles[3] = "Our Goal|Nobody^gets hurt and^everybody gets^home";
+	puzzles[4] = "Rule to Live By|^Two workers^at all times^";
+	puzzles[5] = "What's Appropriate|Touch^Kids' Lives,^nothing^else";
+	puzzles[6] = "When You're Out of Your Depth|^Tag in,^Don't tap out^";
+	puzzles[7] = "HINT|a^b^c";
+	puzzles[8] = "HINT|^^^";
+	puzzles[9] = "HINT|^^^";
+	puzzles[0] = "HINT|^^^";
 	//This last one cannot be loaded, I simply use it as a placeholder to build new puzzles with
-	puzzles[10] = "HINT|************++++++++++++++**************++++++++++++";
+	puzzles[10] = "HINT|^^^";
 
 /** EDITOR'S NOTES - AUDIO FILES **********************
  * These are the audio files used. You can change 
@@ -91,6 +95,11 @@ const audioSolve = "solve.mp3";
 const numbers = ["1","2","3","4","5","6","7","8","9","0"];
 const letters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 const $letters = [...document.getElementsByClassName('letter')];
+const $rows = [];
+	  $rows[0] = [...document.getElementById('row1').getElementsByClassName('letter')];
+	  $rows[1] = [...document.getElementById('row2').getElementsByClassName('letter')];
+	  $rows[2] = [...document.getElementById('row3').getElementsByClassName('letter')];
+	  $rows[3] = [...document.getElementById('row4').getElementsByClassName('letter')];
 const $hint = document.getElementById('hint');
 const $used = document.getElementById('used');
 
@@ -121,7 +130,7 @@ function playAudio(_file){
     let audio = document.createElement("audio");
     audio.src = _file;
     audio.addEventListener("ended", function () {
-        document.removeChild(this);
+        // document.removeChild(this);
     }, false);
     audio.play();   
 }
@@ -139,25 +148,44 @@ function puzzleWiper() {
 	});
 }
 
+function lineFiller(_line,_index) {
+	let line = [..._line];
+	console.log('A',line);
+	let row = $rows[_index];
+	console.log('B',row);
+	let offset = parseInt((row.length - line.length) / 2);
+	console.log('C',offset);
+	// for (offset; offset <= row.length; offset++) {
+	while (line.length > 0) {
+		console.log('CC',offset, row.length);
+		let character = line[0].toUpperCase();
+		console.log('D',character);
+		if ( character == ' ') {
+			row[offset].innerHTML = '';
+			line.splice(0,1);
+		} else if ( !letters.includes(character) ) {
+			row[offset].innerHTML = character;
+			row[offset].classList.add('selected');
+			line.splice(0,1);
+		} else if ( letters.includes(character) ) {
+			row[offset].innerHTML = character;
+			line.splice(0,1);
+		}
+		offset++;
+	}
+}
+
 function puzzleLoader(_puzzle) {
 	playAudio(audioReveal);
 	puzzleWiper();
 	let thisHint = puzzles[_puzzle].split("|")[0];
 	$hint.innerHTML = thisHint;
 	let thisPuzzle = puzzles[_puzzle].split("|")[1];
-	let thisLetters = [...thisPuzzle];
-	$letters.forEach( $letter => {
-		let character = thisLetters[0].toUpperCase();
-		if ( character == ' ' || character == '*' || character == '+') {
-			$letter.innerHTML = '';
-			thisLetters.splice(0,1);
-		} else if ( !letters.includes(character) ) {
-			$letter.innerHTML = character;
-			$letter.classList.add('selected');
-			thisLetters.splice(0,1);
-		} else if ( letters.includes(character) ) {
-			$letter.innerHTML = character;
-			thisLetters.splice(0,1);
+	let theLines = thisPuzzle.split("^");
+	theLines.forEach ( (line,index) => {
+		console.log("AA", line, index);
+		if ( line.length > 0 ) {
+			lineFiller(line, index);
 		}
 	});
 }

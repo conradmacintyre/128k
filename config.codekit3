@@ -7,7 +7,7 @@
       "uuidString" : "59A53396-497F-465C-8AD4-206C73527568"
     }
   ],
-  "creatorBuild" : "34127",
+  "creatorBuild" : "34335",
   "files" : {
     "\/_images\/billboard-code.jpg" : {
       "ft" : 16384,
@@ -536,6 +536,7 @@
     "\/_scss\/_base.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -550,6 +551,7 @@
     "\/_scss\/_forms.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -564,6 +566,7 @@
     "\/_scss\/_functions.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -578,6 +581,7 @@
     "\/_scss\/_grid.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -592,6 +596,7 @@
     "\/_scss\/_router.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -606,6 +611,7 @@
     "\/_scss\/_variables.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -733,6 +739,7 @@
     "\/bingo\/style.scss" : {
       "aP" : 1,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -6677,6 +6684,7 @@
     "\/brandwars\/css\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -7098,6 +7106,7 @@
     "\/dgr\/style.scss" : {
       "aP" : 1,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -7231,6 +7240,7 @@
     "\/familyfeud\/index.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -7245,6 +7255,7 @@
     "\/fanedits\/_fanedit.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -8409,6 +8420,7 @@
     "\/fanedits\/index.scss" : {
       "aP" : 1,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -8451,6 +8463,7 @@
     "\/fanedits\/it.scss" : {
       "aP" : 1,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -8509,6 +8522,7 @@
     "\/fanedits\/shining.scss" : {
       "aP" : 1,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -8551,6 +8565,7 @@
     "\/fanedits\/stand.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -8568,6 +8583,735 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/favicon.ico",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/2handmods.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/2handmods.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/ACGSAR.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/ACGSAR.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Achievement Stats Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Achievement Stats Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Ammo Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Ammo Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Animationmods1.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Animationmods1.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Attackstrength.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Attackstrength.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/AutoExhibitionsDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/AutoExhibitionsDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/BaseColorMD.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/BaseColorMD.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/ButtChangsers.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/ButtChangsers.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/ButtonCheatMods.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/ButtonCheatMods.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/CarDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/CarDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Cardrop.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Cardrop.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/cargarModDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/cargarModDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/CDropGSAR.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/CDropGSAR.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Cheat_Active_CodesButton_Mods.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Cheat_Active_CodesButton_Mods.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/CheatActiveAlwayson.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/CheatActiveAlwayson.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/CheatActivejokerd.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/CheatActivejokerd.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/CJAmod.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/CJAmod.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/colormodsdigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/colormodsdigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Crimes Stats Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Crimes Stats Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/CustomNameMods.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/CustomNameMods.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/DefaultDecisionMaker.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/DefaultDecisionMaker.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Defendweakness.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Defendweakness.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/DigitsSkillerModShop.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/DigitsSkillerModShop.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Disabler Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Disabler Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/ediconcarter-san-andreas-codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/ediconcarter-san-andreas-codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Fear.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Fear.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/FleeDistance.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/FleeDistance.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Gangs Stats Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Gangs Stats Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/GlChStMods.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/GlChStMods.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Gravity codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Gravity codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/gtasa.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/gtasa-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/gtasa-hacking\/gtasa.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/gtasa.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/gtasa-hacking\/gtasa.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/gtasa.min.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/gtasa-hacking\/gtasa.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/gtasa.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/gtasa-hacking\/GtaSacodes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/GtaSacodes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Headingchangerate.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Headingchangerate.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/HotCoffie.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/HotCoffie.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Hydraulics_Digits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Hydraulics_Digits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/IdleStMDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/IdleStMDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/index.html",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Infinite Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Infinite Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Invisible Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Invisible Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Joker Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Joker Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/jokers.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/jokers.html",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Lawfullness.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Lawfullness.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/misc_codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/misc_codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Misc_stats.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Misc_stats.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Mission Mods.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Mission Mods.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Mission_Stats_Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Mission_Stats_Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/MissionMdDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/MissionMdDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/money_stats.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/money_stats.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/MovingSidewalkDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/MovingSidewalkDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Never Explode Code.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Never Explode Code.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Peddigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Peddigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Player Stats Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Player Stats Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/ProofDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/ProofDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Proofs.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Proofs.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Radar Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Radar Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/radarModDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/radarModDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/RangeWeClipMod.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/RangeWeClipMod.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Rank Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Rank Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Rankmoddigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Rankmoddigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/RoadCMdigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/RoadCMdigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/RunMDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/RunMDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/san-adreas-walkthrough.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/san-adreas-walkthrough.html",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/secodigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/secodigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Sexiness.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Sexiness.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Shooting.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Shooting.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/SkillersmodshopA.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/SkillersmodshopA.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Speed Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Speed Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/SprintMDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/SprintMDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Temper.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Temper.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/the_scraps.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/the_scraps.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Time Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Time Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/TimeMDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/TimeMDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Trafic Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Trafic Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Vehicle Mods.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Vehicle Mods.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/WalkMDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/WalkMDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/walkstMDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/walkstMDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Wanted Level Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Wanted Level Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/WaterlvlDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/WaterlvlDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/WeaponModsa.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/WeaponModsa.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Weapons Stats Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Weapons Stats Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Weather Codes.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Weather Codes.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/WeatherDigits.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/WeatherDigits.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/WeatherModsd.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/WeatherModsd.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/Wheel mods.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/Wheel mods.htm",
+      "oF" : 0
+    },
+    "\/gtasa-hacking\/WheelModD.htm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/gtasa-hacking\/WheelModD.htm",
       "oF" : 0
     },
     "\/index.css" : {
@@ -8601,6 +9345,7 @@
     "\/index.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -8635,6 +9380,7 @@
     "\/jeopardy\/css\/styles.scss" : {
       "aP" : 1,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -8850,6 +9596,63 @@
       "oAP" : "\/lyrics\/index.html",
       "oF" : 0
     },
+    "\/minesweeper\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/minesweeper\/index.html",
+      "oF" : 0
+    },
+    "\/minesweeper\/index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/minesweeper\/index.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/minesweeper\/index.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/minesweeper\/index.min.min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/minesweeper\/styles.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/minesweeper\/styles-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/minesweeper\/styles.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/minesweeper\/styles.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/n64\/app-icon.png" : {
       "ft" : 32768,
       "iS" : 5830,
@@ -8950,6 +9753,7 @@
     "\/n64\/n64.scss" : {
       "aP" : 1,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -9059,12 +9863,12 @@
       "oAP" : "\/n64\/zurchxk-webfont.woff2",
       "oF" : 0
     },
-    "\/quizgame\/!readme.txt" : {
+    "\/quizgame\/!ReadMe.txt" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/quizgame\/!readme.txt",
+      "oAP" : "\/quizgame\/!ReadMe.txt",
       "oF" : 0
     },
     "\/quizgame\/background.jpg" : {
@@ -9151,6 +9955,7 @@
     "\/quizgame\/index.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -9263,6 +10068,7 @@
     "\/test-styles.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -9280,6 +10086,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/validator.php",
+      "oF" : 0
+    },
+    "\/wheeloffortune.zip" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/wheeloffortune.zip",
       "oF" : 0
     },
     "\/wheeloffortune\/buzz.mp3" : {
@@ -9391,6 +10205,7 @@
     "\/wheeloffortune\/wof.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -9433,6 +10248,7 @@
     "\/wishlist\/index.scss" : {
       "aP" : 0,
       "bl" : 0,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -9763,144 +10579,6 @@
     "buildFolderActive" : 0,
     "buildFolderName" : "build",
     "cleanBuild" : 1,
-    "coffeeLintFlags2" : {
-      "arrow_spacing" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "camel_case_classes" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "colon_assignment_spacing" : {
-        "active" : 0,
-        "flagValue" : 1
-      },
-      "cyclomatic_complexity" : {
-        "active" : 0,
-        "flagValue" : 10
-      },
-      "duplicate_key" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "empty_constructor_needs_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "ensure_comprehensions" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "indentation" : {
-        "active" : 1,
-        "flagValue" : 2
-      },
-      "line_endings" : {
-        "active" : 0,
-        "flagValue" : 0
-      },
-      "max_line_length" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "missing_fat_arrows" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "newlines_after_classes" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "no_backticks" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_debugger" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_empty_functions" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_empty_param_list" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_implicit_braces" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_implicit_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_interpolation_in_single_quotes" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_nested_string_interpolation" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_plusplus" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_private_function_fat_arrows" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_stand_alone_at" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_tabs" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_this" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_throwing_strings" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_trailing_semicolons" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_trailing_whitespace" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_unnecessary_double_quotes" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_unnecessary_fat_arrows" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "non_empty_constructor_needs_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "prefer_english_operator" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "space_operators" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "spacing_after_comma" : {
-        "active" : 1,
-        "flagValue" : -1
-      }
-    },
     "cssoForceMediaMerge" : 0,
     "cssoRestructure" : 1,
     "environmentVariableEntries" : [
@@ -10400,7 +11078,8 @@
         "optionString" : ""
       },
       "no-multi-assign" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'ignoreNonDeclaration': false}"
       },
       "no-multi-spaces" : {
         "active" : 0,
@@ -10523,7 +11202,8 @@
         "active" : 0
       },
       "no-sequences" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowInParentheses': true}"
       },
       "no-setter-return" : {
         "active" : 1
@@ -10610,6 +11290,9 @@
       },
       "no-unused-labels" : {
         "active" : 1
+      },
+      "no-unused-private-class-members" : {
+        "active" : 0
       },
       "no-unused-vars" : {
         "active" : 1,
@@ -10729,6 +11412,9 @@
       "prefer-numeric-literals" : {
         "active" : 0
       },
+      "prefer-object-has-own" : {
+        "active" : 0
+      },
       "prefer-object-spread" : {
         "active" : 0
       },
@@ -10761,7 +11447,8 @@
         "optionString" : "'always'"
       },
       "require-atomic-updates" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowProperties': false}"
       },
       "require-await" : {
         "active" : 0
@@ -10887,354 +11574,6 @@
     "gitIgnoreBuildFolder" : 1,
     "hideConfigFile" : 0,
     "jsCheckerReservedNamesString" : "",
-    "jsHintFlags2" : {
-      "asi" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "bitwise" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "boss" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "browser" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "browserify" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "camelcase" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "couch" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "curly" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "debug" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "devel" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "dojo" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "elision" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "eqeqeq" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "eqnull" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "es3" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "esnext" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "evil" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "expr" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "forin" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "freeze" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "funcscope" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "futurehostile" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "globalstrict" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "immed" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "indent" : {
-        "active" : 0,
-        "flagValue" : 4
-      },
-      "iterator" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "jasmine" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "jquery" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "lastsemic" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "latedef" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "laxbreak" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "laxcomma" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "loopfunc" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "maxcomplexity" : {
-        "active" : 0,
-        "flagValue" : 10
-      },
-      "maxdepth" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "maxlen" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "maxparams" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "maxstatements" : {
-        "active" : 0,
-        "flagValue" : 4
-      },
-      "mocha" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "mootools" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "moz" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "multistr" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "newcap" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "noarg" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "nocomma" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "node" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "noempty" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "nonbsp" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "nonew" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "nonstandard" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "notypeof" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "noyield" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "onecase" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "phantom" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "plusplus" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "proto" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "prototypejs" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "qunit" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "regexp" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "rhino" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "scripturl" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "shadow" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "shelljs" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "singleGroups" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "strict" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "sub" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "supernew" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "typed" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "undef" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "unused" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "varstmt" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "withstmt" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "worker" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "wsh" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "yui" : {
-        "active" : 0,
-        "flagValue" : -1
-      }
-    },
-    "jsLintFlags2" : {
-      "bitwise" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "browser" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "couch" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "devel" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "es6" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "eval" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "for" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "maxlen" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "node" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "this" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "white" : {
-        "active" : 0,
-        "flagValue" : -1
-      }
-    },
     "languageDefaultsCOFFEE" : {
       "autoOutputAction" : 0,
       "autoOutputPathFilenamePattern" : "*.js",
@@ -11245,7 +11584,6 @@
       "minifierStyle" : 1,
       "outputStyle" : 0,
       "sourceMapStyle" : 0,
-      "syntaxCheckerStyle" : 1,
       "transpilerStyle" : 1
     },
     "languageDefaultsCSS" : {
@@ -11543,6 +11881,7 @@
     "tsEmitBOM" : 0,
     "tsEmitDecoratorMetadata" : 0,
     "tsESModuleInterop" : 0,
+    "tsExactOptionalPropertyTypes" : 0,
     "tsForceConsistentCasingInFileNames" : 0,
     "tsImportHelpers" : 0,
     "tsIsolatedModules" : 0,
@@ -11551,6 +11890,7 @@
     "tsNoEmitHelpers" : 0,
     "tsNoFallthroughCasesInSwitch" : 0,
     "tsNoImplicitAny" : 0,
+    "tsNoImplicitOverride" : 0,
     "tsNoImplicitReturns" : 0,
     "tsNoImplicitThis" : 0,
     "tsNoImplicitUseStrict" : 0,
@@ -11571,6 +11911,7 @@
     "tsStripInternal" : 0,
     "tsSuppressExcessPropertyErrors" : 0,
     "tsSuppressImplicitAnyIndexErrors" : 0,
+    "tsUseUnknownInCatchVariables" : 0,
     "uglifyDefinesString" : "",
     "uglifyFlags2" : {
       "arguments" : {

@@ -6,6 +6,7 @@ const commonPhrases = [
     'Dave laughs at this own demise',
     'Dave makes a face',
     'Dave says a non-swear',
+    'Dude',
     'Fire (it) up!',
     'Gang',
     'Hello my friends!',
@@ -16,6 +17,7 @@ const commonPhrases = [
     'Smack! Dat! Axe!',
     'Take care',
     'YEESS!',
+    'Yo',
     'Zoom in on Dave(\'s face)'
 ];
 

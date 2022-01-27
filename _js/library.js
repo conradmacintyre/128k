@@ -522,14 +522,9 @@
 	@default: none
 	 
 	DEPENDENCIES:
-	None
 
 	BASIC SASS:
-	table.broken {
-		&, & tbody, & tr, & td { display: block; }
-		& tr:first-of-type { display: none; }
-		& td:before { content: attr(data-heading); display: block; font-weight: bold; }
-	}
+	
 	*********************************/
     function customPopup() {
         //Reusable Vars
@@ -565,6 +560,7 @@
         }
         //Open popup
         function openPopUp( link ) {
+        	console.log('test');
         	let el = link.getAttribute( 'data-content' );
             let element = document.getElementById( el );
             body.classList.add('popup-open'); 
@@ -600,7 +596,7 @@
 					link.onclick = scrollAnchors;
 				}
 			}
-
+xf
 		function scrollAnchors(e, respond = null) {
 			const distanceToTop = el => Math.floor(el.getBoundingClientRect().top - 100);
 			e.preventDefault();

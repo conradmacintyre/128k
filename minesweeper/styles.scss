@@ -1,0 +1,233 @@
+// Colours
+$color-primary: #1133aa !default; // Navy
+$color-secondary: #aa3311 !default; // Olive
+$color-tertiary: #B10DC9 !default; // Purple
+$color-success: #2ECC40 !default;
+$color-warning: #ff9900 !default;
+$color-danger: #FF4136 !default;
+
+// Shades
+$shade-dark: #111 !default;
+$shade-medium-dark: #333 !default;
+$shade-medium: #777 !default;
+$shade-medium-lite: #BBB !default;
+$shade-lite: #EEE !default;
+
+//*******************************************
+// Popups
+//*******************************************
+	// TODO: Make the close button customizable
+	//***************************************
+	// Popups
+	$popup: (
+		open-class:'open',
+		bg-class:'bg',
+		body-class:'popup-open',
+		wrap-class:'wrap',
+		container-class:'container',
+		close-class:'close',
+		content-class:'content'
+	) !default;
+	@mixin popup(
+		$open-class:map-get($popup,open-class),
+		$bg-class:map-get($popup,bg-class),
+		$body-class:map-get($popup,body-class),
+		$wrap-class:map-get($popup,wrap-class),
+		$container-class:map-get($popup,container-class),
+		$close-class:map-get($popup,close-class),
+		$content-class:map-get($popup,content-class)
+	) {
+		&-#{$open-class} {
+			overflow: hidden;
+		}
+		&-#{$bg-class} {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba($shade-dark,0.5);
+			overflow: hidden;
+			pointer-events: none;
+			// Paint-friendly transforms
+			opacity: 0;
+			transform: scaleY(0);
+			transition: all 0.25s ease;
+			.#{$body-class} & {
+				pointer-events: auto;
+				opacity: 1;
+				transform: scaleY(1);
+				z-index: 10;
+			}
+		}
+		&-#{$wrap-class} {
+			background: $shade-lite;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			max-width: 80vw;
+			max-height: 75vh;
+		}
+		&-#{$container-class} {
+			padding: 30px;
+			overflow: auto;
+			max-width: 80vw;
+			max-height: 75vh;
+		}
+		&-#{$close-class} {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: block;
+			width: 30px; 
+			height: 30px;
+			transform: translate(40%, -40%);
+			background: $color-danger;
+			cursor: pointer;
+			text-align: center;
+			line-height: 23px;
+			color: white;
+			border: 3px solid $shade-lite;
+			border-radius: 50%;
+			font-size: 30px;
+			transition: transform 0.3s ease;
+			z-index: 10;
+			&:before {
+				content: '\00d7';
+				position: relative;
+				top: -2px;
+			}
+			&:hover {
+				transform: translate(40%, -40%) rotate(90deg);
+				&:before {
+					left: 0px;
+					top: -1px;
+				}
+			}
+		}
+		&-#{$content-class} {
+			display: none;
+		}
+	}
+
+* {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: inherit;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	padding: 0;
+	background: white;
+	color: darkgray;
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+
+}
+
+.minefield {
+	margin: 25px;
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	.tile {
+		cursor: pointer;
+		background: #AAA;
+		display: block;
+		border: 3px solid #666;
+		width: 35px;
+		height: 35px;
+		&:hover {
+			background: darken(lightgrey,10%);
+		}
+		&.bomb {
+			&.show {
+				background: red;
+			}
+		}
+		&.touch {
+			font-size: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: bold;
+			&[data-touches='1'] {
+				color: black;
+			}
+			&[data-touches='2'] {
+				color: violet;
+			}
+			&[data-touches='3'] {
+				color: indigo;
+			}
+			&[data-touches='4'] {
+				color: blue;
+			}
+			&[data-touches='5'] {
+				color: green;
+			}
+			&[data-touches='6'] {
+				color: yellow;
+			}
+			&[data-touches='7'] {
+				color: orange;
+			}
+			&[data-touches='8'] {
+				color: red;
+			}
+			&.show {
+				font-size: 20pt;
+			}
+		}
+		&.empty {
+			&.show {
+				background: transparent;
+				border: 1px solid grey;
+			}
+		}
+		&.flagged {
+			background: blue;
+		}
+	}
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+	.bomb-counter {
+		background: black;
+		color: red;
+		font-size: 16pt;
+	}
+	.new-game-wrapper {
+		font-size: 16pt;
+	}
+	.settings-wrapper {
+		font-size: 16pt;
+	}
+}
+
+.popup {
+	@include popup();
+}
+
+.hide {
+	display: none;
+}
