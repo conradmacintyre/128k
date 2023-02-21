@@ -1,11 +1,14 @@
 {
-	"title": "ConradTest",
-	"darkColor": "Red",
-	"lightColor": "White",
-	"accentColor": "Blue",
-	"font": "Roboto Slab",
+	"title": "Test Quiz",
+	"darkColor": "rgb(150,25,25)",
+	"lightColor": "rgb(200,100,100)",
+	"accentColor": "rgb(10,10,10)",
+	"font": "San Francisco, Verdana, sans-serif",
 	"questions": [
-		"Who loves you, baby?|Justin Bieber|Mariana's Trench|*Kojak|Tele Savalis",
-		"Who loves you, baby?|Justin Bieber|Mariana's Trench|*Kojak|Tele Savalis"
+		"On the TV show M*A*S*H, what is Hawkeye's first name?|John|Henry|*Benjamin|Walter",
+		"Who was Jim Rockford's attorney for the first 4 years of the show?|Joseph Rockford|Evelyn Martin|Dennis Becker|*Elizabeth Devenport",
+		"In what year did the original Twilight Zone debut?|1965|*1959|1951|1955",
+		"What was MacGyver's first name?|*Angus|Graeme|Tavish|Mac",
+		"In Quantum Leap, Al would use a handheld device to interact with...|Beckett|*Ziggy|Gooshie|Zoey"
 	]
 }

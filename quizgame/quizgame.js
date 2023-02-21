@@ -44,34 +44,32 @@
  * first.
 *******************************************************/
 const defaultQuiz = {
-	title: "PumpkinFest",
-	darkColor: "black",
-	lightColor: "white",
-	accentColor: "orange",
-	font: "Futura, Verdana, sans-serif",
-	questions: [
-		"Which continent do pumpkins NOT grow on?|Africa|*Antartica|Asia|Europe",
-		"Where is the pumpkin capital of the world?|Varna, Bulgaria|Chilliwack, BC|Mixco, Guatemala|*Morton, Illinois",
-		"In what country did pumpkin carving originate?|*Ireland|America|Bulgaria|Russia",
-		"What was the diameter of the largest pumpkin pie ever made?|3 Feet|4 Feet|*5 Feet|6 Feet",
-		"Which of these did people used to think pumpkins would cure?|*Snake Bites|COVID 19|Tuberculosis|Rabies",
-		"How much did the heaviest pumpkin ever weigh?|300 lbs|527 lbs|*1140 lbs|1372 lbs",
-		"What percentage of pumpkin is water?|*90%|70%|50%|30%",
-		"Where did pumpkins originate?|North America|*Central America|Europe|South America",
-		"Which of these is NOT part of a pumpkin?|Ribs|*Spine|Seed Coat|Brains",
-		"Which of these is NOT a pumpkin color?|Red|Blue|Green|*Purple",
-		"Which of these can pumpkin lower?|Body Fat|Blood Pressure|*Cholesterol|Self Esteem",
-		"Into which food group do pumpkins fit?|*Fruit|Veggie|Dairy|Meat",
-		"How many millions of pounds of pumpkins were grown in 2005?|799|124|*496|654",
-		"Which of these is NOT a type of pumpkin?|Spooktacular|Munchkin|Funny Face|*Pumptacular",
-		"Which of these is NOT an ingredient in pumpkin pie?|Salt|Sugar|*Baking Soda|Flour",
-		"What is the world record for fastest pumpkin carving?|*74.8 Seconds|55.2 Seconds|93.0 Seconds|45.5 Seconds",
-		"How wide was the smallest pumpkin ever grown?|1/2 inch |*1/2 centimeter|1/2 foot|1/2 decimeter",
-		"From what Greek word, meaning 'Large Melon' is the word Pumpkin derived?|Lepon|*Pepon|Mepon|Parthenon",
-		"Which of these is known as the Pumpkin State?|New York|*New Hampshire|Illinois|Montana",
-		"Which of these is Pastor Mike's favourite pumpkin food?|Pie|Loaf|*Scones|Seeds"
+	"title": "Random 60s",
+	"darkColor": "#2f1b19",
+	"lightColor": "#ea449d",
+	"accentColor": "#296fbb",
+	"font": "Helvetica, Helvetica Neue, Futura, Verdana, sans-serif",
+	"bgImage": "1960s.jpg",
+	"questions": [
+		"Who had a US top ten hit with the song \"When Will I Be Loved\" in 1960?|Linda Ronstadt|Roy Orbison|Ricky Nelson|*The Everly Brothers|everly-brothers.jpg",
+		"What ship ran aground on the shore of \"an uncharted desert isle\" marooning its crew on \"Gilligan's Island\"? |S.S. Gilligan| S.S. Seaman|S.S. Mariner|*S.S. Minnow|ss-minnow.jpg",
+		"The first NFL Super Bowl was played in January of this year. |1966|*1967|1968|1965|superbowl-1967.jpg",
+		"Recorded in 1964, which Beatle's hit song has the lyric - \"You know I work all day to get you money to buy you things\"? |*A Hard Day's Night| We Can Work it Out|I Want to Hold Your Hand|Can't Buy Me Love|beatles.jpg",
+		"The first worldwide dance craze, what 1960s dance was inspired by rock and roll music and specifically Chubby Checker? |The Monster Mash|*The Twist|The Hully Gully|Mashed Potato|chubby-checker.jpg",
+		"Which of the following James Bond movies was NOT released during the sixties? |*The Man with the Golden Gun| Goldfinger|From Russia with Love|Thunderball|golden-gun.jpg",
+		"What sitcom series followed the adventures of seven castaways as they attempted to survive after being shipwrecked on an island? |The Avengers| Days of our Lives|*Gilligan's Island|Green Acres|gilligans-island.jpg",
+		"On the TV sitcom \"Beverly Hillbillies\", what was granny's name? |Pearly Jane|Liza Jane|Hattie Louise|Daisy May Moses|granny.jpg",
+		"What color is Captain Kirk's tunic in most of the Star Trek episodes? |*Green|Gold|Blue|Red|kirks-tunic.jpg",
+		"Who whistled the opening theme on \"The Andy Griffith Show\"? |Toots Thielmans| Bob Keeshan|*Earle H. Hagen|Frank Sinatra|andy-griffith.jpg",
+		"Which show, that first aired on November 23 1963, is still airing new episodes today?|Lost in Space|Get Smart|*Doctor Who|The Flintstones|doctor-who.jpg",
+		"In 1962, this company opened its first store.|Piggly Wiggly  |K-Mart|Gold Circle|*Wal-Mart|wal-mart.jpg",
+		"This astronaut became the first American to orbit the earth in 1962.|Neil Armstrong |Yuri Gagarin|Norton Juster|*John Glenn|john-glenn.jpg",
+		"This actress won an Academy Award for Best Actress in 1964 for her portayal of Mary Poppins.|Sophia Loren |Kim Stanley|Debbie Reynolds|*Julie Andrews|julie-andrews.jpg",
+		"This author wrote the all-time great book To Kill A Mockingbird, published in 1960.|Madeleine L'Engle | Roald Dahl |*Harper Lee |Sylvia Plath|harper-lee.jpg"
 	]
 }
+
+
 
 /** EDITOR'S NOTES - AUDIO FILES **********************
  * These are the audio files used. You can change 
@@ -101,6 +99,7 @@ const audioFogHorn = "fog-horn.mp3";
 *******************************************************/
 const $title = document.getElementById('title');
 const $done = document.getElementById('all-done');
+const $last = document.getElementById('last-question');
 const $question = document.getElementById('questionContent');
 const $answers = document.getElementsByClassName('answer');
 const $answer1 = document.getElementById('answer-1');
@@ -139,6 +138,7 @@ function loadQuiz() {
 		document.title = quiz.title;
 		$title.innerHTML = quiz.title;
 		$done.classList.add('hide');
+		$last.classList.remove('show');
 		loadStyles(quiz);
 		nextQuestion();
 	}
@@ -172,6 +172,12 @@ function nextQuestion() {
 		loadAnswer($answer2,questionArray[2]);
 		loadAnswer($answer3,questionArray[3]);
 		loadAnswer($answer4,questionArray[4]);
+		if ( questionArray[5] ) {
+			document.body.style.backgroundImage = "url('" + questionArray[5] + "')";
+		}
+		if (quiz.questions.length == 1) {
+			$last.classList.add('show');
+		}
 	} else if (!quizLoaded) {
 		alert("You'll need to load a quiz first. Press 'L' to load a quiz.");
 	} else if (quiz.questions.length == 0) {

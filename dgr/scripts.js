@@ -6,9 +6,7 @@ const commonPhrases = [
     'Dave laughs at this own demise',
     'Dave makes a face',
     'Dave says a non-swear',
-    'Dude',
     'Fire (it) up!',
-    'Gang',
     'Hello my friends!',
     'It\'s a beautiful city',
     'Ohhhhhh',
@@ -17,21 +15,21 @@ const commonPhrases = [
     'Smack! Dat! Axe!',
     'Take care',
     'YEESS!',
-    'Yo',
     'Zoom in on Dave(\'s face)'
 ];
 
 const uncommonPhrases = [
-    'Awful pun or dad joke',
     'Big dumb / brain!',
     'Boom-Boom',
     'Cheese / Gouda / Cheddar',
     'Clench / Clenched / Clencher',
     'Dave breaks out in song',
     'Dave gets softlocked',
+    'Dave mentions his college days',    
     'Dave says nonsense word(s)',
     'Dave wears a hat',
     'DGR Guarantee',
+    '*Food-coloured* Pipe',
     'Gamer / Gaming',
     'Holy rip!',
     'It\'s Christmas!',
@@ -39,23 +37,27 @@ const uncommonPhrases = [
     'I (don\'t) understand',
     'P/Clutch Daddy',
     'Progress City',
+    'The pioneers...',
     'Uncle DGR',
     'Wait... what?'
 ];
 
 const rarePhrases = [
+    'And then I spoke',
     'Dave leaves the frame',
     'Dave lowers the green screen',
     'Dave mentions another streamer',
-    'Dave mentions his college days',   
     'Every hole is a chance for glory',
-    '*Food-coloured* Pipe',
-    'Thine Horn / Gird',
+    'THye Thine Horn / Gird',
+    'Fifty-fifty / 50%',
+    'Hot garbage',
     'Learning! / Lore',
     'One more shot at the title',
     'Rapscallion',
-    'The pioneers...',
     'Well endowed',
+    'When I speak, I die',
+    'Why do I talk?',
+    'Ya boy / Makin\' plays',
     'YOLO Bolo'
 ];
 
@@ -66,18 +68,18 @@ let schedPhrase = '';
 switch (day) {
     case 1:
         // 0.00%
-        // schedPhrase ='No level left uncleared'
-        // break;
+        schedPhrase ='No level left uncleared'
+        break;
     case 3:
         // UNO MAS
-        // schedPhrase ='Uno Mas'
-        // break;
+        schedPhrase ='Uno Mas'
+        break;
     case 6:
         // Trolled
-        // schedPhrase ='Look like an idiot'
-        // break;
+        schedPhrase ='Look like an idiot'
+        break;
     default:
-    schedPhrase ='Series Catchphrase'
+    schedPhrase ='Awful pun or dad joke'
 }
 console.log(schedPhrase);
 

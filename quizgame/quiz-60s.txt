@@ -1,0 +1,26 @@
+{
+	"title": "PumpkinFest",
+	"darkColor": "#303030",
+	"lightColor": "#ececec",
+	"accentColor": "#cf4916",
+	"font": "Helvetica, Helvetica Neue, Futura, Verdana, sans-serif",
+	"bgImage": "1960s.jpg",
+	"questions": [
+		"Who had a US top ten hit with the song \"When Will I Be Loved\" in 1960?|Linda Ronstadt|Roy Orbison|Ricky Nelson|*The Everly Brothers|everly-brothers.jpg",
+		"What ship ran aground on the shore of \"an uncharted desert isle\" marooning its crew on \"Gilligan's Island\"? |S.S. Gilligan| S.S. Seaman|S.S. Mariner|*S.S. Minnow|ss-minnow.jpg",
+		"The first NFL Super Bowl was played in January of this year. |1966|*1967|1968|1965|superbowl-1967.jpg",
+		"Recorded in 1964, which Beatle's hit song has the lyric - \"You know I work all day to get you money to buy you things\"? |*A Hard Day's Night| We Can Work it Out|I Want to Hold Your Hand|Can't Buy Me Love|beatles.jpg",
+		"The first worldwide dance craze, what 1960s dance was inspired by rock and roll music and specifically Chubby Checker? |The Monster Mash|*The Twist|The Hully Gully|Mashed Potato|chubby-checker.jpg",
+		"Which of the following James Bond movies was NOT released during the sixties? |*The Man with the Golden Gun| Goldfinger|From Russia with Love|Thunderball|golden-gun.jpg",
+		"What sitcom series followed the adventures of seven castaways as they attempted to survive after being shipwrecked on an island? |The Avengers| Days of our Lives|*Gilligan's Island|Green Acres|gilligans-island.jpg",
+		"On the TV sitcom \"Beverly Hillbillies\", what was granny's name? |Pearly Jane|Liza Jane|Hattie Louise|Daisy May Moses|granny.jpg",
+		"What color is Captain Kirk's tunic in most of the Star Trek episodes? |*Green|Gold|Blue|Red|kirks-tunic.jpg",
+		"Who whistled the opening theme on \"The Andy Griffith Show\"? |Toots Thielmans| Bob Keeshan|*Earle H. Hagen|Frank Sinatra|andy-griffith.jpg",
+		"Which show, that first aired on November 23 1963, is still airing new episodes today?|Lost in Space|Get Smart|*Doctor Who|The Flintstones|doctor-who.jpg",
+		"In 1962, this company opened its first store.|Piggly Wiggly  |K-Mart|Gold Circle|*Wal-Mart|wal-mart.jpg",
+		"This astronaut became the first American to orbit the earth in 1962.|Neil Armstrong |Yuri Gagarin|Norton Juster|*John Glenn|john-glenn.jpg",
+		"This actress won an Academy Award for Best Actress in 1964 for her portayal of Mary Poppins.|Sophia Loren |Kim Stanley|Debbie Reynolds|*Julie Andrews|julie-andrews.jpg",
+		"This author wrote the all-time great book To Kill A Mockingbird, published in 1960.|Madeleine L'Engle | Roald Dahl |*Harper Lee |Sylvia Plath|harper-lee.jpg"
+	]
+}
+
