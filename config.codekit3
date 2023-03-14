@@ -8181,17 +8181,9 @@
 		"oAP": "/favicon.ico",
 		"oF": 0
 		},
-	"/gd-dist/alberta-2.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/gd-dist/alberta-2.mp4",
-		"oF": 0
-		},
 	"/gd-dist/alberta-flag.jpg": {
 		"ft": 16384,
-		"iS": 296799,
+		"iS": 37758,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/gd-dist/alberta-flag.jpg",
@@ -8202,7 +8194,7 @@
 		},
 	"/gd-dist/alberta.jpg": {
 		"ft": 16384,
-		"iS": 1128461,
+		"iS": 541228,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/gd-dist/alberta.jpg",
@@ -8211,17 +8203,9 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/gd-dist/alberta.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/gd-dist/alberta.mp4",
-		"oF": 0
-		},
 	"/gd-dist/calgary-alberta.jpg": {
 		"ft": 16384,
-		"iS": 1274083,
+		"iS": 222425,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/gd-dist/calgary-alberta.jpg",
@@ -8232,7 +8216,7 @@
 		},
 	"/gd-dist/email-background.png": {
 		"ft": 32768,
-		"iS": 24080,
+		"iS": 9747,
 		"oA": 0,
 		"oAP": "/gd-dist/email-background.png",
 		"oF": 0,
@@ -8243,7 +8227,7 @@
 		},
 	"/gd-dist/gary-dober-fade.png": {
 		"ft": 32768,
-		"iS": 433273,
+		"iS": 117224,
 		"oA": 0,
 		"oAP": "/gd-dist/gary-dober-fade.png",
 		"oF": 0,
@@ -8254,7 +8238,7 @@
 		},
 	"/gd-dist/gary-dober.png": {
 		"ft": 32768,
-		"iS": 410355,
+		"iS": 141999,
 		"oA": 0,
 		"oAP": "/gd-dist/gary-dober.png",
 		"oF": 0,
@@ -8284,7 +8268,7 @@
 		},
 	"/gd-dist/phone-background.png": {
 		"ft": 32768,
-		"iS": 32124,
+		"iS": 13154,
 		"oA": 0,
 		"oAP": "/gd-dist/phone-background.png",
 		"oF": 0,
@@ -8295,7 +8279,7 @@
 		},
 	"/gd-dist/rocky-mountains.jpg": {
 		"ft": 16384,
-		"iS": 651438,
+		"iS": 99043,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/gd-dist/rocky-mountains.jpg",
@@ -8306,7 +8290,7 @@
 		},
 	"/gd-dist/rocky-mountains.png": {
 		"ft": 32768,
-		"iS": 963503,
+		"iS": 317350,
 		"oA": 0,
 		"oAP": "/gd-dist/rocky-mountains.png",
 		"oF": 0,
@@ -8317,7 +8301,7 @@
 		},
 	"/gd-dist/rv-hauling-grey-dodge.jpeg": {
 		"ft": 16384,
-		"iS": 75772,
+		"iS": 73821,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/gd-dist/rv-hauling-grey-dodge.jpg",
@@ -8328,7 +8312,7 @@
 		},
 	"/gd-dist/rv-hauling-red-chevy.jpg": {
 		"ft": 16384,
-		"iS": 958317,
+		"iS": 315617,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/gd-dist/rv-hauling-red-chevy.jpg",
@@ -8339,7 +8323,7 @@
 		},
 	"/gd-dist/rv-hauling-red-toyota.jpeg": {
 		"ft": 16384,
-		"iS": 193248,
+		"iS": 192035,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/gd-dist/rv-hauling-red-toyota.jpg",
@@ -8350,7 +8334,7 @@
 		},
 	"/gd-dist/rv-hauling-white-chevy.jpeg": {
 		"ft": 16384,
-		"iS": 135980,
+		"iS": 134689,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/gd-dist/rv-hauling-white-chevy.jpg",
@@ -8359,17 +8343,9 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/gd-dist/rv-hauling-white-dodge.webp": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/gd-dist/rv-hauling-white-dodge.webp",
-		"oF": 0
-		},
 	"/gd-dist/rv-hauling-white-ford.jpeg": {
 		"ft": 16384,
-		"iS": 489377,
+		"iS": 386705,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/gd-dist/rv-hauling-white-ford.jpg",
@@ -8402,7 +8378,7 @@
 		},
 	"/gd-dist/signature.png": {
 		"ft": 32768,
-		"iS": 27463,
+		"iS": 13301,
 		"oA": 0,
 		"oAP": "/gd-dist/signature.png",
 		"oF": 0,

@@ -1405,6 +1405,7 @@
 				margin-bottom: 0;
 				line-height: 1;
     			padding: 1rem;
+    			font-size: text(8,18);
 			}
 			.alt-text {
 				position: absolute;
@@ -1481,7 +1482,7 @@
 			transform: scale(1, 0);
 			transition: transform 0.5s ease, background 0.5s ease, backdrop-filter 0.5s ease;
 			.standalone & {
-				background-color: rgba($shade-lite, 0.9);
+				background-color: rgba($shade-dark, 0.9);
     			backdrop-filter: blur(5px);
 			}
 			&.open {
@@ -1560,6 +1561,15 @@
 	@include shift(sm 1, md 3, lg 4);
 	&-wrapper {
 		@include row;
+		@include full-width();
+		&:before {
+		    position: absolute;
+		    top: 60vh;
+		    content: '';
+		    width: 100%;
+		    height: 10px;
+		    background-image: linear-gradient(to bottom, $shade-medium-dark 0%, transparent 100%);
+		}
 	}
 	small {
 		text-align: center;
@@ -1575,7 +1585,7 @@
 }
 
 section.about {
-	@include full-width();
+	// 
 	img[src*="gary-dober"] {
 		@include bp(sm, only) {
 			margin: 0 auto 2rem;
@@ -1596,14 +1606,7 @@ section.about {
 		}
 		max-width: 200px;
 	}
-	&:before {
-	    position: absolute;
-	    top: 60vh;
-	    content: '';
-	    width: 100%;
-	    height: 10px;
-	    background-image: linear-gradient(to bottom, $shade-medium-dark 0%, transparent 100%);
-	}
+	
 }
 
 

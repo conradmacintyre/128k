@@ -5,7 +5,7 @@
 		<title>Hot-Shot & In-Town Delivery Service | G.D. Distribution</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Professional 24/7 Delivery & Transportation Service in Alberta">
-		<link rel="stylesheet" type="text/css" href="styles.css?v=1.0">
+		<link rel="stylesheet" type="text/css" href="styles.css?v=1.1">
 	</head>
 	<body>
 		<header class="header" id="header" data-st="standalone" data-st-offset="160" data-st-toggle="true">
