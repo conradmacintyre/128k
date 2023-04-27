@@ -5,7 +5,7 @@
 		<title>Hot-Shot & In-Town Delivery Service | G.D. Distribution</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Professional 24/7 Delivery & Transportation Service in Alberta">
-		<link rel="stylesheet" type="text/css" href="styles.css?v=1.1">
+		<link rel="stylesheet" type="text/css" href="styles.css?v=1.2">
 	</head>
 	<body>
 		<header class="header" id="header" data-st="standalone" data-st-offset="160" data-st-toggle="true">
@@ -43,7 +43,7 @@
 			<div class="text-section">
 				<h2>About G.D. Distribution Ltd.</h2>
 				<img src="gary-dober-fade.png" alt="Gary Dober, driver for G.D. Distribution Ltd.">
-				<p>Hello there! My name is Gary Dober, and I've been driving professionally for more than 30 years. Like the old Johnny Cash song says, I've been everywhere! People just like you have relied on me to transport some of their most valuable items all over this country. From Vancouver to Newfoundland & Labrador. For many years I was even contracted by the City of Calgary to handle transportation and logistics.</p>
+				<p>Hello there! My name is Gary Dober, and I've been driving professionally for more than 30 years. Like the old Johnny Cash song says, I've been everywhere! People just like you have relied on me to transport some of their most valuable items all over this country. From Vancouver to Newfoundland & Labrador. For many years I even handled transportation and logistics for the City of Calgary via contract with Westburne.</p>
 				<p>All that to say this; I work hard every day to make sure you can relax knowing that you will be well cared for! I want you to get the same quality of service I would expect from any contractor I hired myself.</p>
 				<p><a href="email" user="g.d.distributionltd01" domain="gmail.com">Reach out today</a> and let me show you why you can trust G.D. Distribution!</p>
 				<img src="signature.png" alt="Signed, Gary Dober. Owner & Driver.">
@@ -59,7 +59,7 @@
 		<section class="services" id="services">
 			<div class="text-section">
 				<h2>Unparallelled Service. Every time.</h2>
-				<p>Save the wear-and-tear on your own vehilce and let my decades of experince be your peace-of-mind. G.D. Distribution does it right the first time, every time. Plus I'm fully bonded, licenced, and insured.</p>
+				<p>Save the wear-and-tear on your own vehilce and let my decades of experience be your peace-of-mind. G.D. Distribution does it right the first time, every time. Plus I'm fully bonded, licenced, and insured.</p>
 				<ul>
 					<li>Dealer Pickups</li>
 					<li>Service to Campsites</li>
@@ -126,7 +126,7 @@
 
 		<!-- Call Javascript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="../_js/library.min.js"></script>
+		<script src="library.min.js"></script>
 		<script src="scripts.min.js"></script>
 	</body>
 </html>

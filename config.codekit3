@@ -8225,6 +8225,14 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/gd-dist/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/gd-dist/favicon.ico",
+		"oF": 0
+		},
 	"/gd-dist/gary-dober-fade.png": {
 		"ft": 32768,
 		"iS": 117224,
@@ -8265,6 +8273,17 @@
 		"oA": 0,
 		"oAP": "/gd-dist/index.php",
 		"oF": 0
+		},
+	"/gd-dist/library.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/gd-dist/library.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/gd-dist/phone-background.png": {
 		"ft": 32768,
